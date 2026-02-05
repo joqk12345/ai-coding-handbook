@@ -417,3 +417,540 @@ export CLAUDE_CODE_ENABLE_PROMPT_SUGGESTION=false
   3. **边界条件与异常处理**：特别要求 Claude 考虑各种边界条件和错误情况。
   4. **运行与修正**：将生成的测试代码集成到项目中运行，并根据结果进行修正。
 - **关键收获**：掌握如何高效利用 AI 来提升测试覆盖率。
+
+## 2.6 Hooks 与交互命令实战
+
+本节通过实际案例展示如何配置和使用 Claude Code 的 Hooks 功能，以及如何熟练运用交互式命令提升开发效率。
+
+### 2.6.1 Hooks 实战案例
+
+#### 案例一：自动化代码风格检查
+
+**场景**：每次保存代码后自动运行格式化工具，确保代码风格一致。
+
+**步骤**：
+
+1. 创建 Hook 脚本 `.claude/hooks/format-check.sh`：
+
+```bash
+#!/bin/bash
+# .claude/hooks/format-check.sh
+
+# 读取 hook 输入
+INPUT=$(cat)
+FILE_PATH=$(echo "$INPUT" | jq -r '.tool_input.file_path // empty')
+
+# 只处理代码文件
+if [[ ! "$FILE_PATH" =~ \.(ts|js|py|go|rs)$ ]]; then
+  exit 0
+fi
+
+# 根据文件类型运行相应的格式化工具
+case "$FILE_PATH" in
+  *.ts|*.js)
+    npx prettier --write "$FILE_PATH" 2>/dev/null
+    npx eslint --fix "$FILE_PATH" 2>/dev/null
+    ;;
+  *.py)
+    black "$FILE_PATH" 2>/dev/null
+    ;;
+  *.go)
+    gofmt -w "$FILE_PATH" 2>/dev/null
+    ;;
+  *.rs)
+    rustfmt "$FILE_PATH" 2>/dev/null
+    ;;
+esac
+
+exit 0
+```
+
+2. 赋予执行权限：
+
+```bash
+chmod +x .claude/hooks/format-check.sh
+```
+
+3. 配置 `.claude/settings.json`：
+
+```json
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/format-check.sh",
+            "async": true,
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+**效果**：每当 Claude 写入或编辑文件时，自动运行格式化工具，确保代码风格一致。
+
+---
+
+#### 案例二：敏感操作保护
+
+**场景**：防止 Claude 执行危险命令，保护生产环境。
+
+**步骤**：
+
+1. 创建 Hook 脚本 `.claude/hooks/safety-check.sh`：
+
+```bash
+#!/bin/bash
+# .claude/hooks/safety-check.sh
+
+INPUT=$(cat)
+COMMAND=$(echo "$INPUT" | jq -r '.tool_input.command // empty')
+CWD=$(echo "$INPUT" | jq -r '.cwd // empty')
+
+# 检测是否在生产目录
+if [[ "$CWD" =~ /prod/|/production/ ]]; then
+  # 阻止所有删除操作
+  if echo "$COMMAND" | grep -qE '(rm|delete|drop)'; then
+    jq -n '{
+      hookSpecificOutput: {
+        hookEventName: "PreToolUse",
+        permissionDecision: "deny",
+        permissionDecisionReason: "生产环境中禁止执行删除操作"
+      }
+    }'
+    exit 0
+  fi
+fi
+
+# 检测危险命令模式
+DANGER_PATTERNS=(
+  "rm -rf /"
+  "rm -rf /.*"
+  ":> /"
+  "dd if=/"
+  "mkfs"
+  "chmod -R 777"
+)
+
+for pattern in "${DANGER_PATTERNS[@]}"; do
+  if echo "$COMMAND" | grep -q "$pattern"; then
+    jq -n "{
+      hookSpecificOutput: {
+        hookEventName: \"PreToolUse\",
+        permissionDecision: \"ask\",
+        permissionDecisionReason: \"检测到危险命令模式: $pattern\"
+      }
+    }"
+    exit 0
+  fi
+done
+
+exit 0
+```
+
+2. 配置 `.claude/settings.json`：
+
+```json
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/safety-check.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+**效果**：在生产环境中自动阻止危险命令，或在检测到可疑操作时提示用户确认。
+
+---
+
+#### 案例三：会话启动自动配置
+
+**场景**：每次启动会话时自动加载项目上下文。
+
+**步骤**：
+
+1. 创建 Hook 脚本 `.claude/hooks/session-init.sh`：
+
+```bash
+#!/bin/bash
+# .claude/hooks/session-init.sh
+
+INPUT=$(cat)
+SOURCE=$(echo "$INPUT" | jq -r '.source // empty')
+CWD=$(echo "$INPUT" | jq -r '.cwd // empty')
+
+# 只在首次启动时执行
+if [ "$SOURCE" != "startup" ]; then
+  exit 0
+fi
+
+# 构建项目上下文
+CONTEXT=""
+
+# 添加项目信息
+if [ -f "$CWD/package.json" ]; then
+  PROJECT_NAME=$(jq -r '.name // "unknown"' "$CWD/package.json")
+  CONTEXT="项目名称: $PROJECT_NAME\n"
+fi
+
+# 添加最近修改的文件
+if [ -d "$CWD/.git" ]; then
+  RECENT_FILES=$(git diff --name-only HEAD~5..HEAD 2>/dev/null | head -5)
+  if [ -n "$RECENT_FILES" ]; then
+    CONTEXT="$CONTEXT\n最近修改的文件:\n$RECENT_FILES\n"
+  fi
+fi
+
+# 添加当前分支
+if [ -d "$CWD/.git" ]; then
+  BRANCH=$(git branch --show-current 2>/dev/null)
+  if [ -n "$BRANCH" ]; then
+    CONTEXT="$CONTEXT\n当前分支: $BRANCH\n"
+  fi
+fi
+
+# 添加环境变量
+if [ -n "$CLAUDE_ENV_FILE" ]; then
+  echo 'export PROJECT_ROOT="'"$CWD"'"' >> "$CLAUDE_ENV_FILE"
+
+  # 检测项目类型并设置相应环境
+  if [ -f "$CWD/package.json" ]; then
+    echo 'export PROJECT_TYPE=node' >> "$CLAUDE_ENV_FILE"
+  elif [ -f "$CWD/pyproject.toml" ] || [ -f "$CWD/requirements.txt" ]; then
+    echo 'export PROJECT_TYPE=python' >> "$CLAUDE_ENV_FILE"
+  elif [ -f "$CWD/go.mod" ]; then
+    echo 'export PROJECT_TYPE=go' >> "$CLAUDE_ENV_FILE"
+  fi
+fi
+
+# 返回上下文
+jq -n "{
+  hookSpecificOutput: {
+    hookEventName: \"SessionStart\",
+    additionalContext: $(echo -e "$CONTEXT" | jq -Rs .)
+  }
+}"
+```
+
+2. 配置 `.claude/settings.json`：
+
+```json
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/session-init.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+**效果**：每次启动会话时自动加载项目信息、最近修改的文件和当前分支，帮助 Claude 更好地理解项目状态。
+
+---
+
+#### 案例四：提交前自动验证
+
+**场景**：在 Claude 尝试提交代码前自动运行测试和检查。
+
+**步骤**：
+
+1. 创建 Hook 脚本 `.claude/hooks/pre-commit.sh`：
+
+```bash
+#!/bin/bash
+# .claude/hooks/pre-commit.sh
+
+INPUT=$(cat)
+COMMAND=$(echo "$INPUT" | jq -r '.tool_input.command // empty')
+
+# 只在 git commit 时执行
+if ! echo "$COMMAND" | grep -q "git commit"; then
+  exit 0
+fi
+
+# 运行测试
+echo "运行测试套件..."
+if command -v npm &> /dev/null && [ -f "package.json" ]; then
+  npm test 2>&1
+  TEST_RESULT=$?
+elif command -v pytest &> /dev/null; then
+  pytest 2>&1
+  TEST_RESULT=$?
+else
+  TEST_RESULT=0
+fi
+
+if [ $TEST_RESULT -ne 0 ]; then
+  jq -n '{
+    decision: "block",
+    reason: "测试未通过，请修复后再提交"
+  }'
+  exit 0
+fi
+
+# 运行 linting
+echo "运行代码检查..."
+if command -v npm &> /dev/null && [ -f "package.json" ]; then
+  npm run lint 2>&1
+  LINT_RESULT=$?
+else
+  LINT_RESULT=0
+fi
+
+if [ $LINT_RESULT -ne 0 ]; then
+  jq -n '{
+    decision: "block",
+    reason: "代码检查未通过，请修复 lint 错误"
+  }'
+  exit 0
+fi
+
+# 所有检查通过
+exit 0
+```
+
+2. 配置 `.claude/settings.json`：
+
+```json
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/pre-commit.sh",
+            "timeout": 300
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+**效果**：在提交前自动运行测试和代码检查，确保只有通过验证的代码才能提交。
+
+---
+
+### 2.6.2 交互式命令实战案例
+
+#### 案例一：完整开发工作流
+
+**场景**：从零开始实现一个新功能并提交。
+
+```
+# 步骤1：初始化项目
+/init
+
+# 步骤2：查看当前上下文使用情况
+/context
+
+# 步骤3：开始新功能开发
+创建一个用户登录功能，包括：
+- JWT 认证
+- 密码加密
+- 登录状态管理
+
+# 步骤4：切换到详细模式查看执行细节
+Ctrl+O
+
+# 步骤5：后台运行测试
+运行测试套件
+Ctrl+B (后台化)
+
+# 步骤6：查看任务列表
+Ctrl+T
+
+# 步骤7：压缩对话以节省上下文
+/compact 保留用户登录相关的上下文
+
+# 步骤8：查看 token 使用情况
+/cost
+
+# 步骤9：提交代码
+暂存所有修改并提交，信息为 "feat: implement user authentication with JWT"
+
+# 步骤10：导出对话记录
+/export login-feature-session.md
+```
+
+---
+
+#### 案例二：调试工作流
+
+**场景**：使用交互命令快速定位和修复问题。
+
+```
+# 步骤1：启动调试模式
+/debug 测试失败，用户登录后无法正确设置 cookie
+
+# 步骤2：查看详细输出
+Ctrl+O (开启详细模式)
+
+# 步骤3：查看特定文件
+@src/auth/login.ts
+
+# 步骤4：运行特定测试
+! npm test -- --testNamePattern="login"
+
+# 步骤5：反向搜索之前的相关命令
+Ctrl+R
+输入: cookie
+
+# 步骤6：使用 Vim 模式编辑代码
+/vim
+(进入 NORMAL 模式)
+/Error (搜索 Error 相关代码)
+n (跳转到下一个匹配)
+
+# 步骤7：回退到之前的状态
+Esc+Esc
+
+# 步骤8：修复后重新测试
+运行登录测试
+```
+
+---
+
+#### 案例三：代码审查工作流
+
+**场景**：审查 Pull Request 并提供反馈。
+
+```
+# 步骤1：查看当前分支状态
+! git status
+
+# 步骤2：查看与主分支的差异
+! git diff main...feature/login --stat
+
+# 步骤3：查看 PR 审查状态
+(页脚显示 PR 链接，Cmd+click 打开)
+
+# 步骤4：使用 Agent 驱动的代码审查
+请审查当前分支的所有改动，关注：
+1. 安全性问题
+2. 代码风格一致性
+3. 测试覆盖率
+4. 性能考虑
+
+# 步骤5：生成审查报告
+/export pr-review-report.md
+
+# 步骤6：压缩对话保留审查上下文
+/compact 保留代码审查相关的讨论
+
+# 步骤7：复制审查结果
+/copy
+```
+
+---
+
+### 2.6.3 Hooks 配置最佳实践
+
+#### 1. 层级化配置
+
+```
+~/.claude/settings.json        # 用户级配置（所有项目）
+  ├─ 基础安全规则
+  └─ 个人偏好设置
+
+.claude/settings.json          # 项目级配置（可共享）
+  ├─ 项目特定 Hooks
+  └─ 团队规范
+
+.claude/settings.local.json    # 本地配置（不共享）
+  └─ 敏感信息（API 密钥等）
+```
+
+#### 2. Hook 性能优化
+
+```json
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/lint.sh",
+            "async": true,
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+**优化要点**：
+- 使用 `async: true` 避免阻塞
+- 设置合理的 `timeout`
+- 在脚本中提前过滤不必要的执行
+
+#### 3. 错误处理
+
+```bash
+#!/bin/bash
+set -euo pipefail  # 严格模式
+
+trap 'echo "Hook failed with exit code $?"' ERR
+
+# Hook 逻辑
+...
+```
+
+---
+
+### 2.6.4 快速参考卡片
+
+#### 常用 Hook 事件速查
+
+| 事件 | 触发时机 | 常用用途 |
+|------|----------|----------|
+| `SessionStart` | 会话启动 | 加载上下文、设置环境 |
+| `PreToolUse` | 工具执行前 | 安全检查、权限控制 |
+| `PostToolUse` | 工具执行后 | 代码检查、格式化 |
+| `UserPromptSubmit` | 提交提示前 | 内容验证、上下文注入 |
+| `Stop` | Claude 停止前 | 验证完成度 |
+
+#### 常用交互命令速查
+
+| 命令 | 用途 |
+|------|------|
+| `/init` | 初始化项目 |
+| `/context` | 查看上下文 |
+| `/compact` | 压缩对话 |
+| `/cost` | 查看 token 使用 |
+| `/tasks` | 管理任务列表 |
+| `/export` | 导出对话 |
+| `/debug` | 调试会话 |
+| `Ctrl+R` | 搜索历史 |
+| `Ctrl+B` | 后台任务 |
+| `Ctrl+T` | 切换任务列表 |
