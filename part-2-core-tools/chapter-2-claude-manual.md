@@ -58,9 +58,9 @@ Claude 最独特之处在于其训练方法——**"Constitutional AI" (CAI，�
 - **示例**：指示 Claude "创建一个新的 Git 分支并提交我的修改"，或"运行测试并修复所有失败的测试用例"。
 - **价值**：将自然语言指令无缝转化为实际操作，减少上下文切换，提高效率。
 
-## 2.3 Claude Code 交互式模式
+## 2.3 Claude Code 基础操作
 
-Claude Code 交互式模式是开发者与 AI 协作的核心界面。通过丰富的键盘快捷键、内置命令和交互功能，可以大幅提升开发效率。
+Claude Code 基础操作涵盖了与 AI 日常协作的核心界面功能。通过掌握键盘快捷键、内置命令和交互模式，可以大幅提升开发效率。
 
 ### 2.3.1 键盘快捷键
 
@@ -337,7 +337,7 @@ export CLAUDE_CODE_ENABLE_PROMPT_SUGGESTION=false
 
 `Cmd+click`（Mac）或 `Ctrl+click`（Windows/Linux）链接在浏览器中打开拉取请求。状态每 60 秒自动更新。
 
-### 2.3.7 交互模式最佳实践
+### 2.3.7 基础操作最佳实践
 
 1. **熟练使用键盘快捷键**：特别是 `Ctrl+R` 历史搜索和 `Ctrl+O` 详细输出，可以大幅提升效率
 2. **利用多行输入**：对于复杂的代码块或长提示词，使用 `\` + `Enter` 或 `Option+Enter` 分行
@@ -347,80 +347,298 @@ export CLAUDE_CODE_ENABLE_PROMPT_SUGGESTION=false
 6. **管理上下文**：定期使用 `/compact` 压缩对话，或使用 `/context` 查看上下文使用情况
 7. **任务跟踪**：对于复杂项目，依赖任务列表功能，使用 `Ctrl+T` 切换视图
 
-## 2.4 与 Claude 高效协作的最佳实践
+## 2.4 CLI 命令行参考
 
-与 Claude 的协作远不止于提出问题那么简单，它更像是一门艺术和科学的结合——即所谓的"提示工程"（Prompt Engineering）。高效的提示能充分发挥 Claude 的潜力，而模糊的指令则可能导致南辕北辙的结果。
+Claude Code 提供了丰富的命令行接口（CLI），允许用户通过命令行参数和标志来定制其行为。本节将详细介绍所有可用的 CLI 命令和标志。
 
-### 2.4.1 构建清晰的上下文
+### 2.4.1 CLI 命令
 
-- **明确任务目标**：清晰地阐述你想要 Claude 完成什么，以及为什么。
-- **提供相关代码片段**：当讨论特定代码时，直接提供代码，而不是模糊地描述。
-- **指定约束条件**：明确语言、框架、版本、性能要求、安全考量等。
-- **错误信息与日志**：在调试时，提供完整的错误堆栈和相关日志，帮助 Claude 快速定位问题。
-- **利用代理模式**：对于 `claude-code` 等代理工具，可以直接让 Claude 访问和理解你的代码库环境。
+CLI 命令是启动 Claude Code 的不同方式，每个命令都有特定的用途。
 
-### 2.4.2 迭代式对话
+| 命令 | 描述 | 示例 |
+| --- | --- | --- |
+| `claude` | 启动交互式 REPL | `claude` |
+| `claude "query"` | 使用初始提示启动 REPL | `claude "解释这个项目"` |
+| `claude -p "query"` | 通过 SDK 查询后退出 | `claude -p "解释这个函数"` |
+| `cat file \| claude -p "query"` | 处理管道输入内容 | `cat logs.txt \| claude -p "解释"` |
+| `claude -c` | 在当前目录继续最近的对话 | `claude -c` |
+| `claude -c -p "query"` | 通过 SDK 继续对话 | `claude -c -p "检查类型错误"` |
+| `claude -r "<session>" "query"` | 按 ID 或名称恢复会话 | `claude -r "auth-refactor" "完成这个 PR"` |
+| `claude update` | 更新到最新版本 | `claude update` |
+| `claude mcp` | 配置模型上下文协议 (MCP) 服务器 | 参见 Claude Code MCP 文档 |
 
-- **渐进式引导**：不要期望 Claude 一次性完成所有复杂任务。将大问题拆解成一系列小问题，逐步引导它。
-- **提供明确反馈**：当 Claude 的输出不符合预期时，提供具体且建设性的反馈。
-- **寻求替代方案**：要求 Claude 提供多个解决方案，对比其优缺点。
+### 2.4.2 CLI 标志
+### 2.4.2 CLI 标志
 
-### 2.4.3 角色扮演技巧
+CLI 标志用于自定义 Claude Code 的行为。以下是所有可用的标志及其详细说明。
 
-- **设定专业角色**：通过设定角色（例如"你是一位资深的 Python 后端工程师"、"你是一位专注于性能优化的 Go 语言专家"），可以引导 Claude 生成更符合特定语境、风格和专业水准的代码及建议。
+#### 会话控制
 
-### 2.4.4 发挥长上下文优势
+| 标志 | 描述 | 示例 |
+| --- | --- | --- |
+| `--continue`, `-c` | 加载当前目录中最近的对话 | `claude --continue` |
+| `--resume`, `-r` | 按 ID 或名称恢复特定会话，或显示交互式选择器 | `claude --resume auth-refactor` |
+| `--session-id` | 为对话使用特定的会话 ID（必须是有效的 UUID） | `claude --session-id "550e8400-e29b-41d4-a716-446655440000"` |
+| `--fork-session` | 恢复时创建新的会话 ID 而不是重用原始 ID（与 `--resume` 或 `--continue` 一起使用） | `claude --resume abc123 --fork-session` |
+| `--no-session-persistence` | 禁用会话持久化，使会话不保存到磁盘且无法恢复（仅打印模式） | `claude -p --no-session-persistence "query"` |
 
-- **全局视角**：利用 Claude 的超长上下文窗口，一次性提供整个文件、相关模块、甚至整个项目的部分代码。
-- **持续对话**：在一个较长的对话中，Claude 会记住之前的上下文，这使得你可以围绕一个大型项目进行持续、深入的讨论和迭代。
+#### 模型与输出
 
-### 2.4.5 Git 工作流集成
+| 标志 | 描述 | 示例 |
+| --- | --- | --- |
+| `--model` | 设置当前会话的模型，使用最新模型的别名（`sonnet` 或 `opus`）或模型的完整名称 | `claude --model claude-sonnet-4-5-20250929` |
+| `--print`, `-p` | 打印响应而不进入交互模式（参见 Agent SDK 文档以获取程序化使用详细信息） | `claude -p "query"` |
+| `--output-format` | 指定打印模式的输出格式（选项：`text`、`json`、`stream-json`） | `claude -p "query" --output-format json` |
+| `--input-format` | 指定打印模式的输入格式（选项：`text`、`stream-json`） | `claude -p --output-format json --input-format stream-json` |
+| `--include-partial-messages` | 在输出中包含部分流式事件（需要 `--print` 和 `--output-format=stream-json`） | `claude -p --output-format stream-json --include-partial-messages "query"` |
+| `--json-schema` | 在代理完成其工作流程后获取匹配 JSON Schema 的验证 JSON 输出（仅打印模式，参见结构化输出） | `claude -p --json-schema '{"type":"object","properties":{...}}' "query"` |
+| `--verbose` | 启用详细日志记录，显示完整的逐轮输出（有助于在打印和交互模式中进行调试） | `claude --verbose` |
 
-- **终端代理的强大**：通过 `claude-code` 这样的代理工具，可以直接指示 Claude 执行 Git 命令。
-- **自动化版本控制**：例如，你可以指令 Claude "在 `feature/new-login` 分支上开始工作"、"完成当前功能后，暂存所有修改并提交"。
-- **代码审查辅助**：让 Claude 检查当前分支与 `main` 分支的差异，并生成一份代码审查报告。
+#### 系统提示
 
-### 2.4.6 插件与扩展
+| 标志 | 描述 | 示例 |
+| --- | --- | --- |
+| `--system-prompt` | 用自定义文本替换整个系统提示（在交互和打印模式下都有效） | `claude --system-prompt "你是 Python 专家"` |
+| `--system-prompt-file` | 从文件加载系统提示，替换默认提示（仅打印模式） | `claude -p --system-prompt-file ./custom-prompt.txt "query"` |
+| `--append-system-prompt` | 将自定义文本附加到默认系统提示的末尾（在交互和打印模式下都有效） | `claude --append-system-prompt "始终使用 TypeScript"` |
+| `--append-system-prompt-file` | 从文件加载额外的系统提示文本并附加到默认提示（仅打印模式） | `claude -p --append-system-prompt-file ./extra-rules.txt "query"` |
 
-- **定制化工作流**：`claude-code` 支持通过插件来扩展其功能。这意味着开发者可以根据自己的特定需求和工作流，为 Claude 定制工具和接口。
+**系统提示标志比较：**
 
-## 2.5 实战场景演练
+| 标志 | 行为 | 模式 | 使用场景 |
+| --- | --- | --- | --- |
+| `--system-prompt` | **替换** 整个默认提示 | 交互 + 打印 | 完全控制 Claude 的行为和指令 |
+| `--system-prompt-file` | **替换** 为文件内容 | 仅打印 | 从文件加载提示以实现可重现性和版本控制 |
+| `--append-system-prompt` | **附加** 到默认提示 | 交互 + 打印 | 在保持默认 Claude Code 行为的同时添加特定指令 |
+| `--append-system-prompt-file` | **附加** 文件内容到默认提示 | 仅打印 | 从文件附加指令同时保持默认值 |
 
-本节将通过具体的编程案例，展示如何将上述最佳实践应用于实际开发中，充分发挥 Claude 作为 AI 编程助手的潜力。
+**使用建议：**
+- 对于大多数用例，推荐使用 `--append-system-prompt` 或 `--append-system-prompt-file`，因为它们保留了 Claude Code 的内置功能，同时添加了自定义要求
+- 仅当您需要完全控制系统提示时，才使用 `--system-prompt` 或 `--system-prompt-file`
 
-### 2.5.1 场景一：从零到一构建 RESTful API
+#### 工作目录与文件访问
 
-- **目标**：利用 Claude 快速搭建一个简单的用户管理 RESTful API。
-- **步骤**：
-  1. **需求分析与设计**：向 Claude 描述 API 的功能，并要求它设计数据库模型和 API 接口规范。
-  2. **框架选择与初始化**：与 Claude 讨论选择合适的后端框架，并让它生成项目的基础结构。
-  3. **核心逻辑实现**：逐步引导 Claude 实现用户模型、数据库交互、认证逻辑和 API 路由。
-  4. **测试与验证**：要求 Claude 为生成的 API 编写单元测试和集成测试。
-- **关键收获**：理解如何将一个复杂项目分解为可由 AI 协助的子任务。
+| 标志 | 描述 | 示例 |
+| --- | --- | --- |
+| `--add-dir` | 为 Claude 添加额外的工作目录以访问（验证每个路径是否作为目录存在） | `claude --add-dir ../apps ../lib` |
 
-### 2.5.2 场景二：遗留代码重构与优化
+#### 代理 (Agents)
 
-- **目标**：对一个具有可读性差、性能低下的遗留函数进行现代化重构和性能优化。
-- **步骤**：
-  1. **代码分析与问题诊断**：将遗留函数的代码粘贴给 Claude，要求它分析代码并指出潜在的改进点。
-  2. **重构建议**：要求 Claude 提出具体的重构方案。
-  3. **性能优化**：针对性能瓶颈，要求 Claude 提供优化建议，并逐步实现。
-  4. **验证与测试**：要求 Claude 协助编写基准测试以验证性能改进。
-- **关键收获**：学习如何利用 Claude 的分析能力来诊断问题。
+| 标志 | 描述 | 示例 |
+| --- | --- | --- |
+| `--agent` | 为当前会话指定代理（覆盖 `agent` 设置） | `claude --agent my-custom-agent` |
+| `--agents` | 通过 JSON 动态定义自定义子代理（参见下文格式） | `claude --agents '{"reviewer":{"description":"审查代码","prompt":"你是代码审查员"}}'` |
 
-### 2.5.3 场景三：自动化测试生成
+**`--agents` 标志格式：**
 
-- **目标**：为现有但缺乏测试覆盖的模块自动生成高质量的测试用例。
-- **步骤**：
-  1. **选择测试目标**：向 Claude 提供一个函数、类或模块的代码，说明其功能。
-  2. **指定测试类型**：要求 Claude 生成单元测试、集成测试或端到端测试。
-  3. **边界条件与异常处理**：特别要求 Claude 考虑各种边界条件和错误情况。
-  4. **运行与修正**：将生成的测试代码集成到项目中运行，并根据结果进行修正。
-- **关键收获**：掌握如何高效利用 AI 来提升测试覆盖率。
+`--agents` 标志接受一个 JSON 对象，定义一个或多个自定义子代理。每个子代理需要一个唯一的名称（作为键）和一个包含以下字段的定义对象：
 
-## 2.6 Hooks 与交互命令实战
+| 字段 | 必需 | 描述 |
+| --- | --- | --- |
+| `description` | 是 | 何时调用子代理的自然语言描述 |
+| `prompt` | 是 | 指导子代理行为的系统提示 |
+| `tools` | 否 | 子代理可以使用的特定工具数组（例如 `["Read", "Edit", "Bash"]`）。如果省略，继承所有工具 |
+| `model` | 否 | 要使用的模型别名：`sonnet`、`opus`、`haiku` 或 `inherit`。如果省略，默认为 `inherit`（使用主对话的模型） |
 
-本节通过实际案例展示如何配置和使用 Claude Code 的 Hooks 功能，以及如何熟练运用交互式命令提升开发效率。
+**示例：**
+
+```bash
+claude --agents '{
+  "code-reviewer": {
+    "description": "专家代码审查员。在代码变更后主动使用。",
+    "prompt": "你是高级代码审查员。专注于代码质量、安全性和最佳实践。",
+    "tools": ["Read", "Grep", "Glob", "Bash"],
+    "model": "sonnet"
+  },
+  "debugger": {
+    "description": "错误和测试失败的调试专家。",
+    "prompt": "你是专家调试员。分析错误，找出根本原因，并提供修复方案。"
+  }
+}'
+```
+
+#### 工具与权限
+
+| 标志 | 描述 | 示例 |
+| --- | --- | --- |
+| `--tools` | 限制 Claude 可以使用的内置工具（在交互和打印模式下都有效）。使用 `""` 禁用所有，`"default"` 使用所有，或工具名称如 `"Bash,Edit,Read"` | `claude --tools "Bash,Edit,Read"` |
+| `--allowedTools` | 无需提示权限即可执行的工具。参见权限规则语法以获取模式匹配。要限制可用工具，请改用 `--tools` | `"Bash(git log *)" "Bash(git diff *)" "Read"` |
+| `--disallowedTools` | 从模型的上下文中移除且无法使用的工具 | `"Bash(git log *)" "Bash(git diff *)" "Edit"` |
+| `--permission-mode` | 以指定的权限模式开始 | `claude --permission-mode plan` |
+| `--permission-prompt-tool` | 指定 MCP 工具来处理非交互模式下的权限提示 | `claude -p --permission-prompt-tool mcp_auth_tool "query"` |
+| `--allow-dangerously-skip-permissions` | 启用权限绕过作为选项而不立即激活。允许与 `--permission-mode` 组合（谨慎使用） | `claude --permission-mode plan --allow-dangerously-skip-permissions` |
+| `--dangerously-skip-permissions` | 跳过所有权限提示（谨慎使用） | `claude --dangerously-skip-permissions` |
+
+#### MCP 配置
+
+| 标志 | 描述 | 示例 |
+| --- | --- | --- |
+| `--mcp-config` | 从 JSON 文件或字符串加载 MCP 服务器（空格分隔） | `claude --mcp-config ./mcp.json` |
+| `--strict-mcp-config` | 仅使用来自 `--mcp-config` 的 MCP 服务器，忽略所有其他 MCP 配置 | `claude --strict-mcp-config --mcp-config ./mcp.json` |
+
+#### 设置与配置
+
+| 标志 | 描述 | 示例 |
+| --- | --- | --- |
+| `--settings` | 设置 JSON 文件的路径或要从中加载其他设置的 JSON 字符串 | `claude --settings ./settings.json` |
+| `--setting-sources` | 要加载的设置源逗号分隔列表（`user`、`project`、`local`） | `claude --setting-sources user,project` |
+| `--plugin-dir` | 仅为此会话从目录加载插件（可重复） | `claude --plugin-dir ./my-plugins` |
+
+#### 初始化与维护
+
+| 标志 | 描述 | 示例 |
+| --- | --- | --- |
+| `--init` | 运行初始化挂钩并启动交互模式 | `claude --init` |
+| `--init-only` | 运行初始化挂钩并退出（无交互会话） | `claude --init-only` |
+| `--maintenance` | 运行维护挂钩并退出 | `claude --maintenance` |
+
+#### 调试与日志
+
+| 标志 | 描述 | 示例 |
+| --- | --- | --- |
+| `--debug` | 启用调试模式并可选类别过滤（例如 `"api,hooks"` 或 `"!statsig,!file"`） | `claude --debug "api,mcp"` |
+
+#### 限制与控制
+
+| 标志 | 描述 | 示例 |
+| --- | --- | --- |
+| `--max-turns` | 限制代理轮数（仅打印模式）。达到限制时退出并显示错误。默认无限制 | `claude -p --max-turns 3 "query"` |
+| `--max-budget-usd` | 在 API 调用停止前花费的最大美元金额（仅打印模式） | `claude -p --max-budget-usd 5.00 "query"` |
+| `--fallback-model` | 当默认模型过载时启用自动回退到指定模型（仅打印模式） | `claude -p --fallback-model sonnet "query"` |
+
+#### 浏览器集成
+
+| 标志 | 描述 | 示例 |
+| --- | --- | --- |
+| `--chrome` | 为 Web 自动化和测试启用 Chrome 浏览器集成 | `claude --chrome` |
+| `--no-chrome` | 在此会话中禁用 Chrome 浏览器集成 | `claude --no-chrome` |
+
+#### IDE 集成
+
+| 标志 | 描述 | 示例 |
+| --- | --- | --- |
+| `--ide` | 启动时如果有恰好一个有效的 IDE 可用，则自动连接 | `claude --ide` |
+
+#### 远程会话
+
+| 标志 | 描述 | 示例 |
+| --- | --- | --- |
+| `--remote` | 使用提供的任务描述在 claude.ai 上创建新的 Web 会话 | `claude --remote "修复登录错误"` |
+| `--teleport` | 在本地终端中恢复 Web 会话 | `claude --teleport` |
+| `--from-pr` | 恢复链接到特定 GitHub PR 的会话。接受 PR 编号或 URL。通过 `gh pr create` 创建的会话会自动链接 | `claude --from-pr 123` |
+
+#### 其他标志
+
+| 标志 | 描述 | 示例 |
+| --- | --- | --- |
+| `--betas` | 要包含在 API 请求中的 Beta 头（仅 API 密钥用户） | `claude --betas interleaved-thinking` |
+| `--disable-slash-commands` | 在此会话中禁用所有技能和斜杠命令 | `claude --disable-slash-commands` |
+| `--version`, `-v` | 输出版本号 | `claude -v` |
+
+### 2.4.3 CLI 使用场景示例
+
+#### 场景一：快速一次性查询
+
+```bash
+# 解释一个函数
+claude -p "解释 src/auth.ts 中的 authenticate 函数"
+
+# 分析错误日志
+cat error.log | claude -p "分析这个错误日志并提供修复建议"
+
+# 检查代码风格
+claude -p --tools "Read,Grep,Glob" "检查 src/ 目录中的代码风格问题"
+```
+
+#### 场景二：使用自定义系统提示
+
+```bash
+# 作为 Python 专家
+claude --append-system-prompt "你是 Python 专家，始终使用类型注解和 docstring"
+
+# 从文件加载提示
+claude -p --system-prompt-file ./prompts/code-review.txt "审查这个 PR"
+```
+
+#### 场景三：继续之前的会话
+
+```bash
+# 继续最近的会话
+claude -c
+
+# 继续特定会话
+claude -r "auth-refactor" "完成剩余工作"
+
+# 从 PR 恢复会话
+claude --from-pr 123
+```
+
+#### 场景四：调试模式
+
+```bash
+# 启用 API 和 hooks 调试
+claude --debug "api,hooks"
+
+# 详细输出模式
+claude --verbose
+```
+
+#### 场景五：限制工具和权限
+
+```bash
+# 只允许读取工具
+claude --tools "Read,Grep,Glob" "分析项目结构"
+
+# 自动批准特定工具
+claude --allowedTools "Read,Grep" "搜索函数定义"
+
+# 计划模式开始
+claude --permission-mode plan
+```
+
+### 2.4.4 CLI 最佳实践
+
+1. **使用 `-p` 进行脚本集成**：在脚本中使用 `claude -p` 进行程序化调用
+2. **利用 `--append-system-prompt`**：保持 Claude Code 默认行为的同时添加自定义指令
+3. **合理使用 `--tools`**：限制可用工具可以提高安全性和性能
+4. **配置自定义代理**：为特定任务创建专用子代理提高效率
+5. **使用 `--verbose` 调试**：遇到问题时启用详细日志
+6. **利用管道输入**：使用管道将其他命令的输出传递给 Claude
+7. **会话持久化**：使用 `-c` 和 `-r` 快速恢复之前的工作
+
+## 2.5 高级配置：Hooks
+
+Hooks 是 Claude Code 的高级配置功能，允许在特定事件发生时自动执行自定义脚本。通过 Hooks，你可以实现代码自动化检查、安全保护、会话初始化等功能。
+
+### 2.5.1 Hooks 系统概述
+
+#### 什么是 Hooks
+
+Hooks 是在特定事件发生时触发的自定义脚本，类似于 Git Hooks 的工作方式。Claude Code 支持多种 Hook 事件，每个事件都可以配置一个或多个 Hook 脚本。
+
+#### Hook 事件类型
+
+| 事件 | 触发时机 | 常用用途 |
+|------|----------|----------|
+| `SessionStart` | 会话启动 | 加载上下文、设置环境变量 |
+| `PreToolUse` | 工具执行前 | 安全检查、权限控制、输入验证 |
+| `PostToolUse` | 工具执行后 | 代码检查、格式化、通知 |
+| `UserPromptSubmit` | 提交提示前 | 内容验证、上下文注入、提示词优化 |
+| `Stop` | Claude 停止前 | 验证完成度、清理资源 |
+
+#### Hook 匹配器 (Matcher)
+
+Matcher 用于指定 Hook 应该响应哪些工具或事件：
+
+| Matcher | 描述 |
+|---------|------|
+| `Read` | 文件读取工具 |
+| `Write` | 文件写入工具 |
+| `Edit` | 文件编辑工具 |
+| `Bash` | Bash 命令执行 |
+| `Bash(command*)` | 匹配特定命令模式 |
+| `startup` | 会话启动时 |
+| 工具名称 | 任何内置工具名称 |
 
 ### 2.6.1 Hooks 实战案例
 
@@ -955,260 +1173,183 @@ trap 'echo "Hook failed with exit code $?"' ERR
 | `Ctrl+B` | 后台任务 |
 | `Ctrl+T` | 切换任务列表 |
 
-## 2.7 CLI 命令行参考
 
-Claude Code 提供了丰富的命令行接口（CLI），允许用户通过命令行参数和标志来定制其行为。本节将详细介绍所有可用的 CLI 命令和标志。
+## 2.6 与 Claude 高效协作的最佳实践
 
-### 2.7.1 CLI 命令
+与 Claude 的协作远不止于提出问题那么简单，它更像是一门艺术和科学的结合——即所谓的"提示工程"（Prompt Engineering）。高效的提示能充分发挥 Claude 的潜力，而模糊的指令则可能导致南辕北辙的结果。
 
-CLI 命令是启动 Claude Code 的不同方式，每个命令都有特定的用途。
+### 2.6.1 构建清晰的上下文
 
-| 命令 | 描述 | 示例 |
-| --- | --- | --- |
-| `claude` | 启动交互式 REPL | `claude` |
-| `claude "query"` | 使用初始提示启动 REPL | `claude "解释这个项目"` |
-| `claude -p "query"` | 通过 SDK 查询后退出 | `claude -p "解释这个函数"` |
-| `cat file \| claude -p "query"` | 处理管道输入内容 | `cat logs.txt \| claude -p "解释"` |
-| `claude -c` | 在当前目录继续最近的对话 | `claude -c` |
-| `claude -c -p "query"` | 通过 SDK 继续对话 | `claude -c -p "检查类型错误"` |
-| `claude -r "<session>" "query"` | 按 ID 或名称恢复会话 | `claude -r "auth-refactor" "完成这个 PR"` |
-| `claude update` | 更新到最新版本 | `claude update` |
-| `claude mcp` | 配置模型上下文协议 (MCP) 服务器 | 参见 Claude Code MCP 文档 |
+- **明确任务目标**：清晰地阐述你想要 Claude 完成什么，以及为什么。
+- **提供相关代码片段**：当讨论特定代码时，直接提供代码，而不是模糊地描述。
+- **指定约束条件**：明确语言、框架、版本、性能要求、安全考量等。
+- **错误信息与日志**：在调试时，提供完整的错误堆栈和相关日志，帮助 Claude 快速定位问题。
+- **利用代理模式**：对于 `claude-code` 等代理工具，可以直接让 Claude 访问和理解你的代码库环境。
 
-### 2.7.2 CLI 标志
+### 2.6.2 迭代式对话
 
-CLI 标志用于自定义 Claude Code 的行为。以下是所有可用的标志及其详细说明。
+- **渐进式引导**：不要期望 Claude 一次性完成所有复杂任务。将大问题拆解成一系列小问题，逐步引导它。
+- **提供明确反馈**：当 Claude 的输出不符合预期时，提供具体且建设性的反馈。
+- **寻求替代方案**：要求 Claude 提供多个解决方案，对比其优缺点。
 
-#### 会话控制
+### 2.6.3 角色扮演技巧
 
-| 标志 | 描述 | 示例 |
-| --- | --- | --- |
-| `--continue`, `-c` | 加载当前目录中最近的对话 | `claude --continue` |
-| `--resume`, `-r` | 按 ID 或名称恢复特定会话，或显示交互式选择器 | `claude --resume auth-refactor` |
-| `--session-id` | 为对话使用特定的会话 ID（必须是有效的 UUID） | `claude --session-id "550e8400-e29b-41d4-a716-446655440000"` |
-| `--fork-session` | 恢复时创建新的会话 ID 而不是重用原始 ID（与 `--resume` 或 `--continue` 一起使用） | `claude --resume abc123 --fork-session` |
-| `--no-session-persistence` | 禁用会话持久化，使会话不保存到磁盘且无法恢复（仅打印模式） | `claude -p --no-session-persistence "query"` |
+- **设定专业角色**：通过设定角色（例如"你是一位资深的 Python 后端工程师"、"你是一位专注于性能优化的 Go 语言专家"），可以引导 Claude 生成更符合特定语境、风格和专业水准的代码及建议。
 
-#### 模型与输出
+### 2.6.4 发挥长上下文优势
 
-| 标志 | 描述 | 示例 |
-| --- | --- | --- |
-| `--model` | 设置当前会话的模型，使用最新模型的别名（`sonnet` 或 `opus`）或模型的完整名称 | `claude --model claude-sonnet-4-5-20250929` |
-| `--print`, `-p` | 打印响应而不进入交互模式（参见 Agent SDK 文档以获取程序化使用详细信息） | `claude -p "query"` |
-| `--output-format` | 指定打印模式的输出格式（选项：`text`、`json`、`stream-json`） | `claude -p "query" --output-format json` |
-| `--input-format` | 指定打印模式的输入格式（选项：`text`、`stream-json`） | `claude -p --output-format json --input-format stream-json` |
-| `--include-partial-messages` | 在输出中包含部分流式事件（需要 `--print` 和 `--output-format=stream-json`） | `claude -p --output-format stream-json --include-partial-messages "query"` |
-| `--json-schema` | 在代理完成其工作流程后获取匹配 JSON Schema 的验证 JSON 输出（仅打印模式，参见结构化输出） | `claude -p --json-schema '{"type":"object","properties":{...}}' "query"` |
-| `--verbose` | 启用详细日志记录，显示完整的逐轮输出（有助于在打印和交互模式中进行调试） | `claude --verbose` |
+- **全局视角**：利用 Claude 的超长上下文窗口，一次性提供整个文件、相关模块、甚至整个项目的部分代码。
+- **持续对话**：在一个较长的对话中，Claude 会记住之前的上下文，这使得你可以围绕一个大型项目进行持续、深入的讨论和迭代。
 
-#### 系统提示
+### 2.6.5 Git 工作流集成
 
-| 标志 | 描述 | 示例 |
-| --- | --- | --- |
-| `--system-prompt` | 用自定义文本替换整个系统提示（在交互和打印模式下都有效） | `claude --system-prompt "你是 Python 专家"` |
-| `--system-prompt-file` | 从文件加载系统提示，替换默认提示（仅打印模式） | `claude -p --system-prompt-file ./custom-prompt.txt "query"` |
-| `--append-system-prompt` | 将自定义文本附加到默认系统提示的末尾（在交互和打印模式下都有效） | `claude --append-system-prompt "始终使用 TypeScript"` |
-| `--append-system-prompt-file` | 从文件加载额外的系统提示文本并附加到默认提示（仅打印模式） | `claude -p --append-system-prompt-file ./extra-rules.txt "query"` |
+- **终端代理的强大**：通过 `claude-code` 这样的代理工具，可以直接指示 Claude 执行 Git 命令。
+- **自动化版本控制**：例如，你可以指令 Claude "在 `feature/new-login` 分支上开始工作"、"完成当前功能后，暂存所有修改并提交"。
+- **代码审查辅助**：让 Claude 检查当前分支与 `main` 分支的差异，并生成一份代码审查报告。
 
-**系统提示标志比较：**
+### 2.6.6 插件与扩展
 
-| 标志 | 行为 | 模式 | 使用场景 |
-| --- | --- | --- | --- |
-| `--system-prompt` | **替换** 整个默认提示 | 交互 + 打印 | 完全控制 Claude 的行为和指令 |
-| `--system-prompt-file` | **替换** 为文件内容 | 仅打印 | 从文件加载提示以实现可重现性和版本控制 |
-| `--append-system-prompt` | **附加** 到默认提示 | 交互 + 打印 | 在保持默认 Claude Code 行为的同时添加特定指令 |
-| `--append-system-prompt-file` | **附加** 文件内容到默认提示 | 仅打印 | 从文件附加指令同时保持默认值 |
+- **定制化工作流**：`claude-code` 支持通过插件来扩展其功能。这意味着开发者可以根据自己的特定需求和工作流，为 Claude 定制工具和接口。
 
-**使用建议：**
-- 对于大多数用例，推荐使用 `--append-system-prompt` 或 `--append-system-prompt-file`，因为它们保留了 Claude Code 的内置功能，同时添加了自定义要求
-- 仅当您需要完全控制系统提示时，才使用 `--system-prompt` 或 `--system-prompt-file`
 
-#### 工作目录与文件访问
+## 2.7 实战场景演练
 
-| 标志 | 描述 | 示例 |
-| --- | --- | --- |
-| `--add-dir` | 为 Claude 添加额外的工作目录以访问（验证每个路径是否作为目录存在） | `claude --add-dir ../apps ../lib` |
+本节将通过具体的编程案例和交互命令工作流，展示如何将上述最佳实践应用于实际开发中，充分发挥 Claude 作为 AI 编程助手的潜力。
 
-#### 代理 (Agents)
+### 2.7.1 场景一：从零到一构建 RESTful API
 
-| 标志 | 描述 | 示例 |
-| --- | --- | --- |
-| `--agent` | 为当前会话指定代理（覆盖 `agent` 设置） | `claude --agent my-custom-agent` |
-| `--agents` | 通过 JSON 动态定义自定义子代理（参见下文格式） | `claude --agents '{"reviewer":{"description":"审查代码","prompt":"你是代码审查员"}}'` |
+- **目标**：利用 Claude 快速搭建一个简单的用户管理 RESTful API。
+- **步骤**：
+  1. **需求分析与设计**：向 Claude 描述 API 的功能，并要求它设计数据库模型和 API 接口规范。
+  2. **框架选择与初始化**：与 Claude 讨论选择合适的后端框架，并让它生成项目的基础结构。
+  3. **核心逻辑实现**：逐步引导 Claude 实现用户模型、数据库交互、认证逻辑和 API 路由。
+  4. **测试与验证**：要求 Claude 为生成的 API 编写单元测试和集成测试。
+- **关键收获**：理解如何将一个复杂项目分解为可由 AI 协助的子任务。
 
-**`--agents` 标志格式：**
+### 2.7.2 场景二：遗留代码重构与优化
 
-`--agents` 标志接受一个 JSON 对象，定义一个或多个自定义子代理。每个子代理需要一个唯一的名称（作为键）和一个包含以下字段的定义对象：
+- **目标**：对一个具有可读性差、性能低下的遗留函数进行现代化重构和性能优化。
+- **步骤**：
+  1. **代码分析与问题诊断**：将遗留函数的代码粘贴给 Claude，要求它分析代码并指出潜在的改进点。
+  2. **重构建议**：要求 Claude 提出具体的重构方案。
+  3. **性能优化**：针对性能瓶颈，要求 Claude 提供优化建议，并逐步实现。
+  4. **验证与测试**：要求 Claude 协助编写基准测试以验证性能改进。
+- **关键收获**：学习如何利用 Claude 的分析能力来诊断问题。
 
-| 字段 | 必需 | 描述 |
-| --- | --- | --- |
-| `description` | 是 | 何时调用子代理的自然语言描述 |
-| `prompt` | 是 | 指导子代理行为的系统提示 |
-| `tools` | 否 | 子代理可以使用的特定工具数组（例如 `["Read", "Edit", "Bash"]`）。如果省略，继承所有工具 |
-| `model` | 否 | 要使用的模型别名：`sonnet`、`opus`、`haiku` 或 `inherit`。如果省略，默认为 `inherit`（使用主对话的模型） |
+### 2.7.3 场景三：自动化测试生成
 
-**示例：**
+- **目标**：为现有但缺乏测试覆盖的模块自动生成高质量的测试用例。
+- **步骤**：
+  1. **选择测试目标**：向 Claude 提供一个函数、类或模块的代码，说明其功能。
+  2. **指定测试类型**：要求 Claude 生成单元测试、集成测试或端到端测试。
+  3. **边界条件与异常处理**：特别要求 Claude 考虑各种边界条件和错误情况。
+  4. **运行与修正**：将生成的测试代码集成到项目中运行，并根据结果进行修正。
+- **关键收获**：掌握如何高效利用 AI 来提升测试覆盖率。
 
-```bash
-claude --agents '{
-  "code-reviewer": {
-    "description": "专家代码审查员。在代码变更后主动使用。",
-    "prompt": "你是高级代码审查员。专注于代码质量、安全性和最佳实践。",
-    "tools": ["Read", "Grep", "Glob", "Bash"],
-    "model": "sonnet"
-  },
-  "debugger": {
-    "description": "错误和测试失败的调试专家。",
-    "prompt": "你是专家调试员。分析错误，找出根本原因，并提供修复方案。"
-  }
-}'
+### 2.7.4 交互命令实战案例
+
+#### 案例一：完整开发工作流
+
+**场景**：从零开始实现一个新功能并提交。
+
+```
+# 步骤1：初始化项目
+/init
+
+# 步骤2：查看当前上下文使用情况
+/context
+
+# 步骤3：开始新功能开发
+创建一个用户登录功能，包括：
+- JWT 认证
+- 密码加密
+- 登录状态管理
+
+# 步骤4：切换到详细模式查看执行细节
+Ctrl+O
+
+# 步骤5：后台运行测试
+运行测试套件
+Ctrl+B (后台化)
+
+# 步骤6：查看任务列表
+Ctrl+T
+
+# 步骤7：压缩对话以节省上下文
+/compact 保留用户登录相关的上下文
+
+# 步骤8：查看 token 使用情况
+/cost
+
+# 步骤9：提交代码
+暂存所有修改并提交，信息为 "feat: implement user authentication with JWT"
+
+# 步骤10：导出对话记录
+/export login-feature-session.md
 ```
 
-#### 工具与权限
+#### 案例二：调试工作流
 
-| 标志 | 描述 | 示例 |
-| --- | --- | --- |
-| `--tools` | 限制 Claude 可以使用的内置工具（在交互和打印模式下都有效）。使用 `""` 禁用所有，`"default"` 使用所有，或工具名称如 `"Bash,Edit,Read"` | `claude --tools "Bash,Edit,Read"` |
-| `--allowedTools` | 无需提示权限即可执行的工具。参见权限规则语法以获取模式匹配。要限制可用工具，请改用 `--tools` | `"Bash(git log *)" "Bash(git diff *)" "Read"` |
-| `--disallowedTools` | 从模型的上下文中移除且无法使用的工具 | `"Bash(git log *)" "Bash(git diff *)" "Edit"` |
-| `--permission-mode` | 以指定的权限模式开始 | `claude --permission-mode plan` |
-| `--permission-prompt-tool` | 指定 MCP 工具来处理非交互模式下的权限提示 | `claude -p --permission-prompt-tool mcp_auth_tool "query"` |
-| `--allow-dangerously-skip-permissions` | 启用权限绕过作为选项而不立即激活。允许与 `--permission-mode` 组合（谨慎使用） | `claude --permission-mode plan --allow-dangerously-skip-permissions` |
-| `--dangerously-skip-permissions` | 跳过所有权限提示（谨慎使用） | `claude --dangerously-skip-permissions` |
+**场景**：使用交互命令快速定位和修复问题。
 
-#### MCP 配置
+```
+# 步骤1：启动调试模式
+/debug 测试失败，用户登录后无法正确设置 cookie
 
-| 标志 | 描述 | 示例 |
-| --- | --- | --- |
-| `--mcp-config` | 从 JSON 文件或字符串加载 MCP 服务器（空格分隔） | `claude --mcp-config ./mcp.json` |
-| `--strict-mcp-config` | 仅使用来自 `--mcp-config` 的 MCP 服务器，忽略所有其他 MCP 配置 | `claude --strict-mcp-config --mcp-config ./mcp.json` |
+# 步骤2：查看详细输出
+Ctrl+O (开启详细模式)
 
-#### 设置与配置
+# 步骤3：查看特定文件
+@src/auth/login.ts
 
-| 标志 | 描述 | 示例 |
-| --- | --- | --- |
-| `--settings` | 设置 JSON 文件的路径或要从中加载其他设置的 JSON 字符串 | `claude --settings ./settings.json` |
-| `--setting-sources` | 要加载的设置源逗号分隔列表（`user`、`project`、`local`） | `claude --setting-sources user,project` |
-| `--plugin-dir` | 仅为此会话从目录加载插件（可重复） | `claude --plugin-dir ./my-plugins` |
+# 步骤4：运行特定测试
+! npm test -- --testNamePattern="login"
 
-#### 初始化与维护
+# 步骤5：反向搜索之前的相关命令
+Ctrl+R
+输入: cookie
 
-| 标志 | 描述 | 示例 |
-| --- | --- | --- |
-| `--init` | 运行初始化挂钩并启动交互模式 | `claude --init` |
-| `--init-only` | 运行初始化挂钩并退出（无交互会话） | `claude --init-only` |
-| `--maintenance` | 运行维护挂钩并退出 | `claude --maintenance` |
+# 步骤6：使用 Vim 模式编辑代码
+/vim
+(进入 NORMAL 模式)
+/Error (搜索 Error 相关代码)
+n (跳转到下一个匹配)
 
-#### 调试与日志
+# 步骤7：回退到之前的状态
+Esc+Esc
 
-| 标志 | 描述 | 示例 |
-| --- | --- | --- |
-| `--debug` | 启用调试模式并可选类别过滤（例如 `"api,hooks"` 或 `"!statsig,!file"`） | `claude --debug "api,mcp"` |
-
-#### 限制与控制
-
-| 标志 | 描述 | 示例 |
-| --- | --- | --- |
-| `--max-turns` | 限制代理轮数（仅打印模式）。达到限制时退出并显示错误。默认无限制 | `claude -p --max-turns 3 "query"` |
-| `--max-budget-usd` | 在 API 调用停止前花费的最大美元金额（仅打印模式） | `claude -p --max-budget-usd 5.00 "query"` |
-| `--fallback-model` | 当默认模型过载时启用自动回退到指定模型（仅打印模式） | `claude -p --fallback-model sonnet "query"` |
-
-#### 浏览器集成
-
-| 标志 | 描述 | 示例 |
-| --- | --- | --- |
-| `--chrome` | 为 Web 自动化和测试启用 Chrome 浏览器集成 | `claude --chrome` |
-| `--no-chrome` | 在此会话中禁用 Chrome 浏览器集成 | `claude --no-chrome` |
-
-#### IDE 集成
-
-| 标志 | 描述 | 示例 |
-| --- | --- | --- |
-| `--ide` | 启动时如果有恰好一个有效的 IDE 可用，则自动连接 | `claude --ide` |
-
-#### 远程会话
-
-| 标志 | 描述 | 示例 |
-| --- | --- | --- |
-| `--remote` | 使用提供的任务描述在 claude.ai 上创建新的 Web 会话 | `claude --remote "修复登录错误"` |
-| `--teleport` | 在本地终端中恢复 Web 会话 | `claude --teleport` |
-| `--from-pr` | 恢复链接到特定 GitHub PR 的会话。接受 PR 编号或 URL。通过 `gh pr create` 创建的会话会自动链接 | `claude --from-pr 123` |
-
-#### 其他标志
-
-| 标志 | 描述 | 示例 |
-| --- | --- | --- |
-| `--betas` | 要包含在 API 请求中的 Beta 头（仅 API 密钥用户） | `claude --betas interleaved-thinking` |
-| `--disable-slash-commands` | 在此会话中禁用所有技能和斜杠命令 | `claude --disable-slash-commands` |
-| `--version`, `-v` | 输出版本号 | `claude -v` |
-
-### 2.7.3 CLI 使用场景示例
-
-#### 场景一：快速一次性查询
-
-```bash
-# 解释一个函数
-claude -p "解释 src/auth.ts 中的 authenticate 函数"
-
-# 分析错误日志
-cat error.log | claude -p "分析这个错误日志并提供修复建议"
-
-# 检查代码风格
-claude -p --tools "Read,Grep,Glob" "检查 src/ 目录中的代码风格问题"
+# 步骤8：修复后重新测试
+运行登录测试
 ```
 
-#### 场景二：使用自定义系统提示
+#### 案例三：代码审查工作流
 
-```bash
-# 作为 Python 专家
-claude --append-system-prompt "你是 Python 专家，始终使用类型注解和 docstring"
+**场景**：审查 Pull Request 并提供反馈。
 
-# 从文件加载提示
-claude -p --system-prompt-file ./prompts/code-review.txt "审查这个 PR"
+```
+# 步骤1：查看当前分支状态
+! git status
+
+# 步骤2：查看与主分支的差异
+! git diff main...feature/login --stat
+
+# 步骤3：查看 PR 审查状态
+(页脚显示 PR 链接，Cmd+click 打开)
+
+# 步骤4：使用 Agent 驱动的代码审查
+请审查当前分支的所有改动，关注：
+1. 安全性问题
+2. 代码风格一致性
+3. 测试覆盖率
+4. 性能考虑
+
+# 步骤5：生成审查报告
+/export pr-review-report.md
+
+# 步骤6：压缩对话保留审查上下文
+/compact 保留代码审查相关的讨论
+
+# 步骤7：复制审查结果
+/copy
 ```
 
-#### 场景三：继续之前的会话
-
-```bash
-# 继续最近的会话
-claude -c
-
-# 继续特定会话
-claude -r "auth-refactor" "完成剩余工作"
-
-# 从 PR 恢复会话
-claude --from-pr 123
-```
-
-#### 场景四：调试模式
-
-```bash
-# 启用 API 和 hooks 调试
-claude --debug "api,hooks"
-
-# 详细输出模式
-claude --verbose
-```
-
-#### 场景五：限制工具和权限
-
-```bash
-# 只允许读取工具
-claude --tools "Read,Grep,Glob" "分析项目结构"
-
-# 自动批准特定工具
-claude --allowedTools "Read,Grep" "搜索函数定义"
-
-# 计划模式开始
-claude --permission-mode plan
-```
-
-### 2.7.4 CLI 最佳实践
-
-1. **使用 `-p` 进行脚本集成**：在脚本中使用 `claude -p` 进行程序化调用
-2. **利用 `--append-system-prompt`**：保持 Claude Code 默认行为的同时添加自定义指令
-3. **合理使用 `--tools`**：限制可用工具可以提高安全性和性能
-4. **配置自定义代理**：为特定任务创建专用子代理提高效率
-5. **使用 `--verbose` 调试**：遇到问题时启用详细日志
-6. **利用管道输入**：使用管道将其他命令的输出传递给 Claude
-7. **会话持久化**：使用 `-c` 和 `-r` 快速恢复之前的工作
