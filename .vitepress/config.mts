@@ -17,13 +17,15 @@ export default defineConfig({
       {
         text: '第一部分：入门',
         items: [
-          { text: '第1章: AI 编程新纪元', link: '/part-1-introduction/chapter-1-new-era-of-ai-programming' }
+          { text: '第1章: AI 编程新纪元', link: '/part-1-introduction/chapter-1-new-era-of-ai-programming' },
+          { text: 'Agent 本质', link: '/part-1-introduction/Agent%20%E6%9C%AC%E8%B4%A8' }
         ]
       },
       {
         text: '第二部分：核心工具详解',
         items: [
           { text: '第2章: Claude 使用手册', link: '/part-2-core-tools/chapter-2-claude-manual' },
+          { text: '第2.1章: Claude Code 深度解析', link: '/part-2-core-tools/chapter-2-1-claude-code-architecture' },
           { text: '第3章: OpenAI Codex 深度解析', link: '/part-2-core-tools/chapter-3-codex-deep-dive' },
           { text: '第4章: Gemini 编程实战', link: '/part-2-core-tools/chapter-4-gemini-in-practice' },
           { text: '第5章: 开源模型 (Opencode) 使用手册', link: '/part-2-core-tools/chapter-5-opencode-manual' },
