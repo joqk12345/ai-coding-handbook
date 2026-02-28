@@ -19,8 +19,3 @@ npm run docs:preview
 ```
 
 构建输出目录为 `.vitepress/dist`，可直接用于 GitHub Pages 发布。
-
-
-## CI/CD 说明
-
-GitHub Pages 工作流使用 `npm install` 安装依赖并执行 `npm run docs:build`。
