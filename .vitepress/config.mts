@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   lang: 'zh-CN',
+  base: '/ai-coding-handbook/',
   title: 'AI-Coding 使用手册',
   description: 'AI 辅助编程综合使用手册',
   cleanUrls: true,
