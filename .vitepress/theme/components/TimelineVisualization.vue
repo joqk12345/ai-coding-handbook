@@ -1,111 +1,98 @@
 <script setup lang="ts">
-interface VersionItem {
-  id: string
-  title: string
-  subtitle: string
-  coreAddition: string
-  loc: number
-  tools: number
-  layer: 'tools' | 'planning' | 'memory' | 'concurrency' | 'collaboration'
-  keyInsight?: string
-}
+import { computed } from 'vue'
+import { getContentGroups, getGlobalTotals } from './content-analytics'
 
-const layerList = [
-  { id: 'tools', label: 'Tools 层' },
-  { id: 'planning', label: 'Planning 层' },
-  { id: 'memory', label: 'Memory 层' },
-  { id: 'concurrency', label: 'Concurrency 层' },
-  { id: 'collaboration', label: 'Collaboration 层' }
-] as const
+type Layer = 'tools' | 'planning' | 'memory' | 'concurrency' | 'collaboration' | 'appendix'
 
-const versions: VersionItem[] = [
-  {
-    id: 's01',
-    title: '最小可运行 Agent',
-    subtitle: 'Single Loop',
-    coreAddition: 'read_file / write_file / run_command',
-    loc: 120,
-    tools: 3,
-    layer: 'tools',
-    keyInsight: '先建立最小闭环，再追求复杂能力。'
-  },
-  {
-    id: 's03',
-    title: '任务规划引入',
-    subtitle: 'Task Planning',
-    coreAddition: 'TodoManager + 可见任务状态',
-    loc: 245,
-    tools: 5,
-    layer: 'planning',
-    keyInsight: '把隐性推理转换为显性任务状态。'
-  },
-  {
-    id: 's06',
-    title: '上下文治理',
-    subtitle: 'Memory & Compression',
-    coreAddition: 'ContextManager + 分层压缩',
-    loc: 388,
-    tools: 7,
-    layer: 'memory',
-    keyInsight: '上下文不是越大越好，而是越有效越好。'
-  },
-  {
-    id: 's09',
-    title: '并发执行',
-    subtitle: 'Background Tasks',
-    coreAddition: 'BackgroundManager + 异步任务队列',
-    loc: 536,
-    tools: 9,
-    layer: 'concurrency',
-    keyInsight: '并发的价值在于非阻塞，不在于盲目并行。'
-  },
-  {
-    id: 's12',
-    title: '多 Agent 协同',
-    subtitle: 'Team Collaboration',
-    coreAddition: 'TeammateManager + SharedBoard',
-    loc: 740,
-    tools: 12,
-    layer: 'collaboration',
-    keyInsight: '协作能力决定了复杂任务的上限。'
-  }
+const groups = getContentGroups()
+const totals = getGlobalTotals(groups)
+
+const maxLines = Math.max(...groups.map((v) => v.lines), 1)
+
+const layerByIndex: Layer[] = [
+  'tools',
+  'planning',
+  'memory',
+  'concurrency',
+  'collaboration',
+  'appendix'
 ]
 
-const maxLoc = Math.max(...versions.map((v) => v.loc))
+const timelineData = computed(() =>
+  groups.map((group, index) => ({
+    ...group,
+    layer: layerByIndex[index] ?? 'appendix'
+  }))
+)
 
-const layerDotClass: Record<VersionItem['layer'], string> = {
+const layerList = [
+  { id: 'tools', label: 'Tools 语义层' },
+  { id: 'planning', label: 'Planning 结构层' },
+  { id: 'memory', label: 'Memory 内容层' },
+  { id: 'concurrency', label: 'Concurrency 实战层' },
+  { id: 'collaboration', label: 'Collaboration 协作层' },
+  { id: 'appendix', label: 'Appendix 支撑层' }
+] as const
+
+const layerDotClass: Record<Layer, string> = {
   tools: 'dot-tools',
   planning: 'dot-planning',
   memory: 'dot-memory',
   concurrency: 'dot-concurrency',
-  collaboration: 'dot-collaboration'
+  collaboration: 'dot-collaboration',
+  appendix: 'dot-appendix'
 }
 
-const layerLineClass: Record<VersionItem['layer'], string> = {
+const layerLineClass: Record<Layer, string> = {
   tools: 'line-tools',
   planning: 'line-planning',
   memory: 'line-memory',
   concurrency: 'line-concurrency',
-  collaboration: 'line-collaboration'
+  collaboration: 'line-collaboration',
+  appendix: 'line-appendix'
 }
 
-const layerBarClass: Record<VersionItem['layer'], string> = {
+const layerBarClass: Record<Layer, string> = {
   tools: 'bar-tools',
   planning: 'bar-planning',
   memory: 'bar-memory',
   concurrency: 'bar-concurrency',
-  collaboration: 'bar-collaboration'
+  collaboration: 'bar-collaboration',
+  appendix: 'bar-appendix'
 }
 
-function locPercent(loc: number): number {
-  return Math.round((loc / maxLoc) * 100)
+function linesPercent(lines: number): number {
+  return Math.round((lines / maxLines) * 100)
 }
 </script>
 
 <template>
   <div class="timeline-wrap">
+    <div class="summary-grid">
+      <div class="summary-card">
+        <div class="summary-label">Markdown 文件</div>
+        <div class="summary-value">{{ totals.files }}</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-label">总行数</div>
+        <div class="summary-value">{{ totals.lines }}</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-label">标题数</div>
+        <div class="summary-value">{{ totals.headings }}</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-label">代码块数</div>
+        <div class="summary-value">{{ totals.codeBlocks }}</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-label">词数</div>
+        <div class="summary-value">{{ totals.words }}</div>
+      </div>
+    </div>
+
     <div>
-      <h3 class="sub-title">能力层图例</h3>
+      <h3 class="sub-title">全书能力层图例</h3>
       <div class="legend-list">
         <div v-for="layer in layerList" :key="layer.id" class="legend-item">
           <span class="legend-dot" :class="layerDotClass[layer.id]" />
@@ -115,45 +102,43 @@ function locPercent(loc: number): number {
     </div>
 
     <div class="timeline">
-      <div v-for="(item, index) in versions" :key="item.id" class="timeline-row">
+      <div v-for="(item, index) in timelineData" :key="item.id" class="timeline-row">
         <div class="timeline-axis">
-          <div class="timeline-node" :class="layerDotClass[item.layer]">{{ item.id }}</div>
+          <div class="timeline-node" :class="layerDotClass[item.layer]">P{{ index + 1 }}</div>
           <div
-            v-if="index !== versions.length - 1"
+            v-if="index !== timelineData.length - 1"
             class="timeline-line"
-            :class="layerLineClass[versions[index + 1].layer]"
+            :class="layerLineClass[timelineData[index + 1].layer]"
           />
         </div>
 
         <article class="timeline-card">
           <div class="timeline-meta">
             <span class="version-badge">{{ item.id }}</span>
-            <span class="core-add">{{ item.coreAddition }}</span>
+            <span class="core-add">{{ item.subtitle }}</span>
           </div>
-          <h4 class="timeline-title">
-            {{ item.title }}
-            <span class="timeline-subtitle">{{ item.subtitle }}</span>
-          </h4>
+          <h4 class="timeline-title">{{ item.title }}</h4>
           <div class="stats-row">
-            <span>{{ item.loc }} LOC</span>
-            <span>{{ item.tools }} tools</span>
+            <span>{{ item.files }} files</span>
+            <span>{{ item.lines }} lines</span>
+            <span>{{ item.headings }} headings</span>
+            <span>{{ item.codeBlocks }} code blocks</span>
           </div>
           <div class="loc-track">
-            <div class="loc-fill" :class="layerBarClass[item.layer]" :style="{ width: `${locPercent(item.loc)}%` }" />
+            <div class="loc-fill" :class="layerBarClass[item.layer]" :style="{ width: `${linesPercent(item.lines)}%` }" />
           </div>
-          <p v-if="item.keyInsight" class="insight">“{{ item.keyInsight }}”</p>
         </article>
       </div>
     </div>
 
     <div>
-      <h3 class="growth-title">LOC 增长轨迹</h3>
+      <h3 class="growth-title">分部内容体量（按行数）</h3>
       <div class="growth-list">
-        <div v-for="item in versions" :key="`growth-${item.id}`" class="growth-row">
+        <div v-for="item in timelineData" :key="`growth-${item.id}`" class="growth-row">
           <span class="growth-id">{{ item.id }}</span>
           <div class="growth-track">
-            <div class="growth-fill" :class="layerBarClass[item.layer]" :style="{ width: `${Math.max(4, locPercent(item.loc))}%` }">
-              <span class="growth-value">{{ item.loc }}</span>
+            <div class="growth-fill" :class="layerBarClass[item.layer]" :style="{ width: `${Math.max(6, linesPercent(item.lines))}%` }">
+              <span class="growth-value">{{ item.lines }}</span>
             </div>
           </div>
         </div>
@@ -167,6 +152,29 @@ function locPercent(loc: number): number {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.6rem;
+}
+
+.summary-card {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  padding: 0.55rem 0.65rem;
+  background: var(--vp-c-bg-soft);
+}
+
+.summary-label {
+  color: var(--vp-c-text-2);
+  font-size: 0.72rem;
+}
+
+.summary-value {
+  font-size: 1.02rem;
+  font-weight: 700;
 }
 
 .sub-title,
@@ -270,17 +278,11 @@ function locPercent(loc: number): number {
   font-weight: 700;
 }
 
-.timeline-subtitle {
-  margin-left: 0.45rem;
-  font-size: 0.84rem;
-  font-weight: 500;
-  color: var(--vp-c-text-2);
-}
-
 .stats-row {
   margin-top: 0.5rem;
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
   color: var(--vp-c-text-2);
   font-size: 0.78rem;
 }
@@ -304,13 +306,6 @@ function locPercent(loc: number): number {
   transition: width 0.45s ease;
 }
 
-.insight {
-  margin: 0.65rem 0 0;
-  font-size: 0.82rem;
-  color: var(--vp-c-text-2);
-  font-style: italic;
-}
-
 .growth-list {
   display: flex;
   flex-direction: column;
@@ -324,10 +319,11 @@ function locPercent(loc: number): number {
 }
 
 .growth-id {
-  width: 2.2rem;
+  width: 8.7rem;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   text-align: right;
+  color: var(--vp-c-text-2);
 }
 
 .growth-track {
@@ -360,12 +356,15 @@ function locPercent(loc: number): number {
 .bar-concurrency { background: #f59e0b; }
 .dot-collaboration,
 .bar-collaboration { background: #ef4444; }
+.dot-appendix,
+.bar-appendix { background: #64748b; }
 
 .line-tools { background: rgba(59, 130, 246, 0.35); }
 .line-planning { background: rgba(16, 185, 129, 0.35); }
 .line-memory { background: rgba(168, 85, 247, 0.35); }
 .line-concurrency { background: rgba(245, 158, 11, 0.35); }
 .line-collaboration { background: rgba(239, 68, 68, 0.35); }
+.line-appendix { background: rgba(100, 116, 139, 0.35); }
 
 @keyframes card-in {
   from {
@@ -390,6 +389,11 @@ function locPercent(loc: number): number {
 
   .timeline-card {
     padding: 0.8rem;
+  }
+
+  .growth-id {
+    width: 5.8rem;
+    font-size: 0.66rem;
   }
 }
 </style>

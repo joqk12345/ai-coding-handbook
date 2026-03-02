@@ -8,6 +8,9 @@
 
 无论你是刚刚入门还是希望提升 Claude Code 技能，这里都有适合你的内容。
 
+> **参考资源**:
+> - [Advent of Claude 2025 - 原文](https://adocomplete.com/advent-of-claude-2025/) - 原始的 31 天 Claude Code 技巧完整指南
+
 ---
 
 ## 准备工作

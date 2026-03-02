@@ -2,6 +2,10 @@
 
 *   [前言](README.md)
 
+*   **可视化总览**
+    *   [Timeline](visualizations/timeline-overview.md)
+    *   [Architecture](visualizations/architecture-overview.md)
+
 *   **第一部分：入门**
     *   [第1章: AI 编程新纪元](part-1-introduction/chapter-1-new-era-of-ai-programming.md)
     *   [Agent 本质](part-1-introduction/Agent%20本质.md)

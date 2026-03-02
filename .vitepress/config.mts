@@ -11,9 +11,18 @@ export default defineConfig({
     nav: [
       { text: '前言', link: '/' },
       { text: '目录', link: '/SUMMARY' },
+      { text: 'Timeline', link: '/visualizations/timeline-overview' },
+      { text: 'Architecture', link: '/visualizations/architecture-overview' },
       { text: 'Hooks 参考', link: '/2026-02-02-claude-code-hooks-reference' }
     ],
     sidebar: [
+      {
+        text: '可视化总览',
+        items: [
+          { text: 'Timeline', link: '/visualizations/timeline-overview' },
+          { text: 'Architecture', link: '/visualizations/architecture-overview' }
+        ]
+      },
       {
         text: '第一部分：入门',
         items: [

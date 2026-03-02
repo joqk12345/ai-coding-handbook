@@ -1,90 +1,34 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
+import { getContentGroups } from './content-analytics'
 
-interface ArchClass {
-  name: string
-  introducedIn: string
-  description: string
-  layer: 'tools' | 'planning' | 'memory' | 'concurrency' | 'collaboration'
-  isNew?: boolean
+const groups = getContentGroups()
+const maxLines = Math.max(...groups.map((g) => g.lines), 1)
+
+const layerClassMap: Record<number, string> = {
+  0: 'layer-tools',
+  1: 'layer-planning',
+  2: 'layer-memory',
+  3: 'layer-concurrency',
+  4: 'layer-collaboration',
+  5: 'layer-appendix'
 }
 
-const classes = ref<ArchClass[]>([
-  {
-    name: 'TodoManager',
-    introducedIn: 's03',
-    description: '可见任务规划与约束管理',
-    layer: 'planning'
-  },
-  {
-    name: 'SkillLoader',
-    introducedIn: 's05',
-    description: '从 SKILL.md 动态加载领域能力',
-    layer: 'planning'
-  },
-  {
-    name: 'ContextManager',
-    introducedIn: 's06',
-    description: '三层上下文压缩与预算控制',
-    layer: 'memory'
-  },
-  {
-    name: 'TaskManager',
-    introducedIn: 's07',
-    description: '文件化任务状态持久化与依赖管理',
-    layer: 'memory'
-  },
-  {
-    name: 'BackgroundManager',
-    introducedIn: 's09',
-    description: '非阻塞后台执行与通知队列',
-    layer: 'concurrency'
-  },
-  {
-    name: 'TeammateManager',
-    introducedIn: 's12',
-    description: '多 Agent 生命周期调度',
-    layer: 'collaboration',
-    isNew: true
-  },
-  {
-    name: 'SharedBoard',
-    introducedIn: 's12',
-    description: '跨 Agent 共享状态与冲突协调',
-    layer: 'collaboration',
-    isNew: true
-  }
-])
+const contentFlowSteps = groups.map((g) => ({
+  label: g.title.replace('：', ':'),
+  color: 'pulse-default'
+}))
 
-const layerClassMap: Record<ArchClass['layer'], string> = {
-  tools: 'layer-tools',
-  planning: 'layer-planning',
-  memory: 'layer-memory',
-  concurrency: 'layer-concurrency',
-  collaboration: 'layer-collaboration'
-}
-
-const messageSteps = [
-  { label: 'user', color: 'msg-user' },
-  { label: 'assistant', color: 'msg-assistant' },
-  { label: 'tool_call', color: 'msg-tool-call' },
-  { label: 'tool_result', color: 'msg-tool-result' },
-  { label: 'assistant', color: 'msg-assistant' },
-  { label: 'tool_call', color: 'msg-tool-call' },
-  { label: 'tool_result', color: 'msg-tool-result' },
-  { label: 'assistant(final)', color: 'msg-assistant' }
-]
-
-const activeCount = ref(0)
+const pulseCount = ref(0)
 let timer: ReturnType<typeof setInterval> | null = null
 
 onMounted(() => {
   timer = setInterval(() => {
-    if (activeCount.value >= messageSteps.length) {
-      activeCount.value = 0
+    if (pulseCount.value >= contentFlowSteps.length) {
+      pulseCount.value = 0
       return
     }
-    activeCount.value += 1
+    pulseCount.value += 1
   }, 780)
 })
 
@@ -92,26 +36,49 @@ onBeforeUnmount(() => {
   if (timer) clearInterval(timer)
 })
 
-const activeSteps = computed(() => messageSteps.slice(0, activeCount.value))
+const activeSteps = computed(() => contentFlowSteps.slice(0, pulseCount.value))
+
+const flowNodes = computed(() => {
+  const startY = 48
+  const gap = 56
+  return groups.map((group, index) => ({
+    id: group.id,
+    label: group.title,
+    subtitle: `${group.files} files / ${group.lines} lines`,
+    x: 320,
+    y: startY + index * gap,
+    cls: layerClassMap[index] ?? 'layer-appendix'
+  }))
+})
+
+const svgHeight = computed(() => Math.max(320, 90 + flowNodes.value.length * 56))
+
+function linesPercent(lines: number): number {
+  return Math.max(4, Math.round((lines / maxLines) * 100))
+}
 </script>
 
 <template>
   <div class="arch-wrap">
     <section>
-      <h3 class="title">架构类栈演进</h3>
+      <h3 class="title">全书目录架构分层</h3>
       <div class="class-stack">
-        <template v-for="(item, index) in [...classes].reverse()" :key="item.name">
+        <template v-for="(item, index) in groups" :key="item.id">
           <div v-if="index !== 0" class="arrow">↓</div>
-          <article class="class-card" :class="layerClassMap[item.layer]">
+          <article class="class-card" :class="layerClassMap[index]">
             <div class="row">
               <div>
-                <div class="class-name">{{ item.name }}</div>
-                <p class="class-desc">{{ item.description }}</p>
+                <div class="class-name">{{ item.title }}</div>
+                <p class="class-desc">{{ item.subtitle }}</p>
               </div>
               <div class="meta">
-                <span>{{ item.introducedIn }}</span>
-                <span v-if="item.isNew" class="new-tag">NEW</span>
+                <span>{{ item.files }} files</span>
+                <span>{{ item.headings }} headings</span>
+                <span>{{ item.codeBlocks }} blocks</span>
               </div>
+            </div>
+            <div class="line-track">
+              <div class="line-fill" :style="{ width: `${linesPercent(item.lines)}%` }" />
             </div>
           </article>
         </template>
@@ -119,11 +86,11 @@ const activeSteps = computed(() => messageSteps.slice(0, activeCount.value))
     </section>
 
     <section>
-      <h3 class="title">消息流（messages[]）</h3>
+      <h3 class="title">内容流（按分部脉冲）</h3>
       <div class="msg-box">
         <div class="msg-header">
-          <span>messages[]</span>
-          <span class="len">len={{ activeCount }}</span>
+          <span>content_flow[]</span>
+          <span class="len">len={{ pulseCount }}</span>
         </div>
         <div class="msg-list">
           <span
@@ -134,43 +101,45 @@ const activeSteps = computed(() => messageSteps.slice(0, activeCount.value))
           >
             {{ step.label }}
           </span>
-          <span v-if="activeCount === 0" class="msg-empty">[]</span>
+          <span v-if="pulseCount === 0" class="msg-empty">[]</span>
         </div>
       </div>
     </section>
 
     <section>
-      <h3 class="title">执行流程图（Execution Flow）</h3>
+      <h3 class="title">分部关系流图</h3>
       <div class="svg-box">
-        <svg viewBox="0 0 640 360" class="flow-svg" role="img" aria-label="agent execution flow">
+        <svg :viewBox="`0 0 640 ${svgHeight}`" class="flow-svg" role="img" aria-label="book content flow">
           <defs>
             <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
               <polygon points="0 0, 8 3, 0 6" fill="var(--vp-c-text-2)" />
             </marker>
           </defs>
 
-          <path d="M320 42 L320 74" class="edge" marker-end="url(#arrow)" />
-          <path d="M320 108 L320 136" class="edge" marker-end="url(#arrow)" />
-          <path d="M320 186 L320 216" class="edge" marker-end="url(#arrow)" />
-          <path d="M320 256 L320 286" class="edge" marker-end="url(#arrow)" />
+          <template v-for="(node, index) in flowNodes" :key="node.id">
+            <path
+              v-if="index !== flowNodes.length - 1"
+              :d="`M ${node.x} ${node.y + 16} L ${node.x} ${flowNodes[index + 1].y - 18}`"
+              class="edge"
+              marker-end="url(#arrow)"
+            />
 
-          <rect x="250" y="18" width="140" height="30" rx="16" class="node node-start" />
-          <text x="320" y="37" text-anchor="middle" class="node-text">User Prompt</text>
-
-          <rect x="250" y="74" width="140" height="34" rx="6" class="node node-process" />
-          <text x="320" y="95" text-anchor="middle" class="node-text">Build Context</text>
-
-          <polygon points="320,136 350,161 320,186 290,161" class="node node-decision" />
-          <text x="320" y="164" text-anchor="middle" class="node-text-small">Need Tool?</text>
-
-          <rect x="250" y="216" width="140" height="40" rx="6" class="node node-subprocess" />
-          <text x="320" y="231" text-anchor="middle" class="node-text-small">Tool Call +</text>
-          <text x="320" y="246" text-anchor="middle" class="node-text-small">Tool Result</text>
-
-          <rect x="250" y="286" width="140" height="30" rx="16" class="node node-end" />
-          <text x="320" y="305" text-anchor="middle" class="node-text">Final Answer</text>
-
-          <text x="336" y="205" class="label">loop until done</text>
+            <rect
+              :x="node.x - 185"
+              :y="node.y - 18"
+              width="370"
+              height="40"
+              rx="8"
+              class="node"
+              :class="node.cls"
+            />
+            <text :x="node.x" :y="node.y - 2" text-anchor="middle" class="node-text">
+              {{ node.label }}
+            </text>
+            <text :x="node.x" :y="node.y + 12" text-anchor="middle" class="node-text-small">
+              {{ node.subtitle }}
+            </text>
+          </template>
         </svg>
       </div>
     </section>
@@ -218,7 +187,7 @@ const activeSteps = computed(() => messageSteps.slice(0, activeCount.value))
 
 .class-name {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
-  font-size: 0.93rem;
+  font-size: 0.9rem;
   font-weight: 700;
 }
 
@@ -231,18 +200,24 @@ const activeSteps = computed(() => messageSteps.slice(0, activeCount.value))
 .meta {
   display: flex;
   align-items: flex-start;
-  gap: 0.45rem;
-  font-size: 0.75rem;
+  gap: 0.5rem;
+  font-size: 0.72rem;
   color: var(--vp-c-text-3);
 }
 
-.new-tag {
-  background: var(--vp-c-text-1);
-  color: var(--vp-c-bg);
+.line-track {
+  margin-top: 0.5rem;
+  height: 0.3rem;
+  width: 100%;
   border-radius: 999px;
-  padding: 0.02rem 0.45rem;
-  font-size: 0.62rem;
-  font-weight: 700;
+  background: var(--vp-c-bg);
+  overflow: hidden;
+}
+
+.line-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--vp-c-text-1);
 }
 
 .msg-box,
@@ -291,10 +266,7 @@ const activeSteps = computed(() => messageSteps.slice(0, activeCount.value))
   color: var(--vp-c-text-3);
 }
 
-.msg-user { background: #3b82f6; }
-.msg-assistant { background: #52525b; }
-.msg-tool-call { background: #f59e0b; }
-.msg-tool-result { background: #10b981; }
+.pulse-default { background: #334155; }
 
 .flow-svg {
   width: 100%;
@@ -313,30 +285,16 @@ const activeSteps = computed(() => messageSteps.slice(0, activeCount.value))
   stroke-width: 2;
 }
 
-.node-start { stroke: #3b82f6; }
-.node-process { stroke: #10b981; }
-.node-decision { stroke: #f59e0b; }
-.node-subprocess {
-  stroke: #a855f7;
-  stroke-dasharray: 6 4;
-}
-.node-end { stroke: #ef4444; }
-
 .node-text {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 700;
   fill: var(--vp-c-text-1);
 }
 
 .node-text-small {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
-  font-size: 10px;
-  fill: var(--vp-c-text-1);
-}
-
-.label {
-  font-size: 10px;
+  font-size: 9px;
   fill: var(--vp-c-text-2);
 }
 
@@ -363,6 +321,11 @@ const activeSteps = computed(() => messageSteps.slice(0, activeCount.value))
 .layer-collaboration {
   border-color: rgba(239, 68, 68, 0.45);
   background: rgba(239, 68, 68, 0.08);
+}
+
+.layer-appendix {
+  border-color: rgba(100, 116, 139, 0.45);
+  background: rgba(100, 116, 139, 0.08);
 }
 
 @keyframes fade-up {
@@ -395,6 +358,7 @@ const activeSteps = computed(() => messageSteps.slice(0, activeCount.value))
 
   .meta {
     align-items: center;
+    flex-wrap: wrap;
   }
 }
 </style>
