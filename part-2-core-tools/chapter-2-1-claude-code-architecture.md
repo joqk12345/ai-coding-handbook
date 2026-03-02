@@ -27,6 +27,18 @@ Claude Code 主要有三种使用形态：
 
 Claude Code 的优势在于“机制边界更清晰”，更容易抽象为可复用的工程规范。
 
+### 1.3 可视化：版本演进时间线
+
+下面的时间线复刻了从最小 Agent 到多 Agent 协作的能力分层演进，重点展示每个阶段的核心增量与代码体量变化：
+
+<TimelineVisualization />
+
+### 1.4 可视化：架构分层与执行流
+
+下面的架构图复刻了核心类栈演进、`messages[]` 消息流与典型执行流程，便于快速理解 Claude Code 的工程化组织方式：
+
+<ArchitectureVisualization />
+
 ## 二、核心能力深度剖析
 
 ### 2.1 Command - 快捷指令系统
