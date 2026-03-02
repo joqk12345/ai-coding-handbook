@@ -41,6 +41,14 @@ export default defineConfig({
         ]
       },
       {
+        text: '第四部分：实践 - 从零构建 Agent',
+        items: [
+          { text: '第10章: 从零构建 AI Agent', link: '/part-4-practice/chapter-10-building-agent-from-scratch' },
+          { text: '第11章: 高级 Agent 模式', link: '/part-4-practice/chapter-11-advanced-agent-patterns' },
+          { text: '第12章: 多智能体系统', link: '/part-4-practice/chapter-12-multi-agent-systems' }
+        ]
+      },
+      {
         text: '附录',
         items: [
           { text: '附录A: 常用AI工具速查表', link: '/appendix/appendix-a-cheatsheet' },
