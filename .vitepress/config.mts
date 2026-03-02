@@ -50,6 +50,12 @@ export default defineConfig({
         ]
       },
       {
+        text: '第五部分：自主代码库',
+        items: [
+          { text: '第13章: 自主代码库 - 背景智能体与软件交付的下一个时代', link: '/part-5-self-driving-codebase/chapter-13-the-self-driving-codebase' }
+        ]
+      },
+      {
         text: '附录',
         items: [
           { text: '附录A: 常用AI工具速查表', link: '/appendix/appendix-a-cheatsheet' },
