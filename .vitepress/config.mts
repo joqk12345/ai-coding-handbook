@@ -26,6 +26,7 @@ export default defineConfig({
         items: [
           { text: '第2章: Claude 使用手册', link: '/part-2-core-tools/chapter-2-claude-manual' },
           { text: '第2.1章: Claude Code 深度解析', link: '/part-2-core-tools/chapter-2-1-claude-code-architecture' },
+          { text: '第2.2章: Advent of Claude - 31天精通 Claude Code', link: '/part-2-core-tools/chapter-2-2-advent-of-claude' },
           { text: '第3章: OpenAI Codex 深度解析', link: '/part-2-core-tools/chapter-3-codex-deep-dive' },
           { text: '第4章: Gemini 编程实战', link: '/part-2-core-tools/chapter-4-gemini-in-practice' },
           { text: '第5章: 开源模型 (Opencode) 使用手册', link: '/part-2-core-tools/chapter-5-opencode-manual' },
