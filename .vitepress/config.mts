@@ -56,7 +56,8 @@ export default defineConfig({
         items: [
           { text: '第10章: 从零构建 AI Agent', link: '/part-4-practice/chapter-10-building-agent-from-scratch' },
           { text: '第11章: 高级 Agent 模式', link: '/part-4-practice/chapter-11-advanced-agent-patterns' },
-          { text: '第12章: 多智能体系统', link: '/part-4-practice/chapter-12-multi-agent-systems' }
+          { text: '第12章: 多智能体系统', link: '/part-4-practice/chapter-12-multi-agent-systems' },
+          { text: '第13章: 从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践', link: '/part-4-practice/chapter-13-skeptic-to-believer' }
         ]
       },
       {
