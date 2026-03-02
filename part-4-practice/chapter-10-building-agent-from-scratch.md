@@ -2,6 +2,9 @@
 
 > *"One loop & Bash is all you need" -- 一个工具 + 一个循环 = 一个智能体。*
 
+> **参考资源**:
+> - [Learn Claude Code](https://github.com/shareAI-lab/learn-claude-code/blob/main/docs/zh/s01-the-agent-loop.md) - 完整的 Agent 构建教程，从基础循环到高级模式
+
 在本章中，我们将从零开始构建一个完整的 AI Agent 系统。这是一个循序渐进的实战教程，共分为 12 个步骤，每个步骤在前一步的基础上增加新的能力。最终，你将拥有一个支持多智能体协作、任务管理、自治执行的完整系统。
 
 ## 准备工作
