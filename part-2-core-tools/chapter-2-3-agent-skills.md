@@ -1,4 +1,4 @@
-# 第2.3章：Agent Skills（智能体技能）入门
+# 2.3: Agent Skills（智能体技能）入门
 
 > 参考文档：<https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview>
 

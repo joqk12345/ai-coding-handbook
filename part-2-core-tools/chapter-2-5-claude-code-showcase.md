@@ -1,4 +1,4 @@
-# 第2.5章：`claude-code-showcase` 配置拆解（.claude + README）
+# 2.5: `claude-code-showcase` 配置拆解（.claude + README）
 
 > 参考仓库：<https://github.com/ChrisWiles/claude-code-showcase>
 
