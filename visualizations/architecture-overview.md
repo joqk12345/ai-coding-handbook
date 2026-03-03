@@ -64,10 +64,10 @@ graph LR
     Agent --> Ch10
 
     Ch2[第2章: Claude 手册] --> Ch21
-    Ch21[第2.1章: Claude Code] --> Ch22
-    Ch22[第2.2章: Advent] --> Ch23
-    Ch23[第2.3章: Agent Skills] --> Ch24
-    Ch24[第2.4章: 创造者使用] --> Ch25
+    Ch21[2.1: Claude Code] --> Ch22
+    Ch22[2.2: Advent] --> Ch23
+    Ch23[2.3: Agent Skills] --> Ch24
+    Ch24[2.4: 创造者使用] --> Ch25
 
     Ch2 --> Ch3
     Ch2 --> Ch4
