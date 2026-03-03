@@ -11,6 +11,7 @@
 
 *   **第一部分：入门**
     *   [第1章: AI 编程新纪元](part-1-introduction/chapter-1-new-era-of-ai-programming.md)
+    *   [第2章: 什么是代码助手](part-1-introduction/chapter-2-what-is-coding-assistant.md)
     *   [Agent 本质](part-1-introduction/Agent%20本质.md)
 
 *   **第二部分：核心工具详解**
@@ -20,6 +21,7 @@
     *   [第2.3章: Agent Skills（智能体技能）入门](part-2-core-tools/chapter-2-3-agent-skills.md)
     *   [第2.4章: Claude Code 创造者如何使用 Claude Code](part-2-core-tools/chapter-2-4-how-creator-uses-claude-code.md)
     *   [第2.5章: Claude Code Showcase 配置拆解](part-2-core-tools/chapter-2-5-claude-code-showcase.md)
+    *   [第2.6章: 实战中上下文的管理与添加](part-2-core-tools/chapter-2-6-context-management.md)
     *   [第3章: OpenAI Codex 深度解析](part-2-core-tools/chapter-3-codex-deep-dive.md)
     *   [第4章: Gemini 编程实战](part-2-core-tools/chapter-4-gemini-in-practice.md)
     *   [第5章: 开源模型 (Opencode) 使用手册](part-2-core-tools/chapter-5-opencode-manual.md)

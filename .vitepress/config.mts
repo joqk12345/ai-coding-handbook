@@ -31,6 +31,7 @@ export default defineConfig({
         text: '第一部分：入门',
         items: [
           { text: '第1章: AI 编程新纪元', link: '/part-1-introduction/chapter-1-new-era-of-ai-programming' },
+          { text: '第2章: 什么是代码助手', link: '/part-1-introduction/chapter-2-what-is-coding-assistant' },
           { text: 'Agent 本质', link: '/part-1-introduction/Agent%20%E6%9C%AC%E8%B4%A8' }
         ]
       },
@@ -43,6 +44,7 @@ export default defineConfig({
           { text: '第2.3章: Agent Skills（智能体技能）入门', link: '/part-2-core-tools/chapter-2-3-agent-skills' },
           { text: '第2.4章: Claude Code 创造者如何使用 Claude Code', link: '/part-2-core-tools/chapter-2-4-how-creator-uses-claude-code' },
           { text: '第2.5章: Claude Code Showcase 配置拆解', link: '/part-2-core-tools/chapter-2-5-claude-code-showcase' },
+          { text: '第2.6章: 实战中上下文的管理与添加', link: '/part-2-core-tools/chapter-2-6-context-management' },
           { text: '第3章: OpenAI Codex 深度解析', link: '/part-2-core-tools/chapter-3-codex-deep-dive' },
           { text: '第4章: Gemini 编程实战', link: '/part-2-core-tools/chapter-4-gemini-in-practice' },
           { text: '第5章: 开源模型 (Opencode) 使用手册', link: '/part-2-core-tools/chapter-5-opencode-manual' },

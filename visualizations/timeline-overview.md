@@ -1,21 +1,51 @@
-# 时间线总览
+# 学习路径时间线
 
-该页面是面向全书目录的统一时间线入口，数据来源于各分部文件夹下全部 `.md` 文件的自动聚合统计。
+本时间线图展示了从入门到精通的完整学习路径。
 
-## 能力演进时间线
+```mermaid
+timeline
+    title AI 编程手册学习路径
 
-<TimelineVisualization />
+    section 第一部分：入门
+        第1章 : AI 编程新纪元
+              : Vibecoding 大辩论
+              : 三大心态阵营
+        第2章 : 什么是代码助手
+              : 工具使用原理
+              : Claude 的优势
+        Agent本质 : Agent 核心概念
+                  : 与传统工具的区别
 
-## 第二部分新增章节（2.3 - 2.5）
+    section 第二部分：核心工具
+        第2章 : Claude 使用手册
+        第2.1章 : Claude Code 深度解析
+        第2.2章 : Advent of Claude
+        第2.3章 : Agent Skills 入门
+        第2.4章 : 创造者如何使用
+        第2.5章 : Showcase 配置拆解
+        第2.6章 : 上下文管理与添加
+        第3章 : OpenAI Codex 深度解析
+        第4章 : Gemini 编程实战
+        第5章 : 开源模型 (Opencode)
+        第6章 : 其他AI编程工具概览
 
-为和左侧导航保持一致，第二部分新增章节在此同步列出，便于结合时间线回看：
+    section 第三部分：高级技巧
+        第7章 : Prompt Engineering
+        第8章 : AI驱动的测试与调试
+        第9章 : 综合项目实战
 
-- [第2.3章：Agent Skills（智能体技能）入门](/part-2-core-tools/chapter-2-3-agent-skills)
-- [第2.4章：Claude Code 创造者如何使用 Claude Code](/part-2-core-tools/chapter-2-4-how-creator-uses-claude-code)
-- [第2.5章：Claude Code Showcase 配置拆解](/part-2-core-tools/chapter-2-5-claude-code-showcase)
+    section 第四部分：构建Agent
+        第10章 : 从零构建 AI Agent
+        第11章 : 高级 Agent 模式
+        第12章 : 多智能体系统
+        第13章 : 从怀疑者到信徒
 
-## 如何使用
+    section 第五部分：自主代码库
+        第14章 : 背景智能体与软件交付
+```
 
-1. 先看每个分部的文件数、行数、标题数与代码块数，建立整体内容规模感知。
-2. 再看行数体量条，快速定位当前内容重心分布。
-3. 结合章节正文回看细节：总览负责“全局脉络”，章节负责“实现细节”。
+## 学习建议
+
+1. **新手路径**：第一部分 → 第二部分（选择1-2个工具深入学习）→ 第三部分
+2. **进阶路径**：第二部分全部 → 第三部分 → 第四部分
+3. **专家路径**：根据兴趣选择第四部分和第五部分深入研究
