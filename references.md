@@ -11,6 +11,7 @@
 | 资源名称 | 链接 | 描述 |
 |---------|------|------|
 | Advent of Claude 2025 | [adocomplete.com](https://adocomplete.com/advent-of-claude-2025/) | 31天掌握 Claude Code 的完整指南，包含从基础到高级的所有技巧 |
+| Claude Code Showcase | [GitHub](https://github.com/ChrisWiles/claude-code-showcase) | 展示 `.claude` 目录、Skills、Commands、Hooks、MCP 与 GitHub Actions 的工程化配置样例 |
 
 ### Agent 开发教程
 

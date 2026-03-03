@@ -8,6 +8,9 @@ export default defineConfig({
   cleanUrls: true,
   lastUpdated: true,
   themeConfig: {
+    search: {
+      provider: "local"
+    },
     nav: [
       { text: '前言', link: '/' },
       { text: '目录', link: '/SUMMARY' },
