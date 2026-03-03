@@ -18,12 +18,13 @@ timeline
 
     section 第二部分：核心工具
         第2章 : Claude 使用手册
-        第2.1章 : Claude Code 深度解析
-        第2.2章 : Advent of Claude
-        第2.3章 : Agent Skills 入门
-        第2.4章 : 创造者如何使用
-        第2.5章 : Showcase 配置拆解
-        第2.6章 : 上下文管理与添加
+        2.1 : Claude Code 深度解析
+        2.2 : Advent of Claude
+        2.3 : Agent Skills 入门
+        2.4 : 创造者如何使用
+        2.5 : Showcase 配置拆解
+        2.6 : 上下文管理与添加
+        2.7 : 高级功能与使用技巧
         第3章 : OpenAI Codex 深度解析
         第4章 : Gemini 编程实战
         第5章 : 开源模型 (Opencode)
