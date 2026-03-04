@@ -19,6 +19,14 @@
 |---------|------|------|
 | Learn Claude Code | [GitHub](https://github.com/shareAI-lab/learn-claude-code/blob/main/docs/zh/s01-the-agent-loop.md) | 完整的 Agent 构建教程，从基础循环到高级模式 |
 
+
+### OpenAI Codex / Agent Loop
+
+| 资源名称 | 链接 | 描述 |
+|---------|------|------|
+| Harness Engineering | [OpenAI](https://openai.com/index/harness-engineering/) | 介绍如何将模型置于可复现、可评测、可迭代的工程支架中进行交付 |
+| Unrolling the Codex Agent Loop | [OpenAI](https://openai.com/index/unrolling-the-codex-agent-loop/) | 拆解 Codex 式代理循环（观察、规划、执行、检查、迭代）及其工程含义 |
+
 ---
 
 ## 自主代码库与背景智能体
@@ -39,4 +47,4 @@
 
 ---
 
-*最后更新：2026年3月*
+*最后更新：2026年3月（已补充 Codex/Harness 参考）*
