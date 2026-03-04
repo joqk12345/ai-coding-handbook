@@ -1,37 +1,97 @@
 <script setup lang="ts">
-import { computed } from 'vue'
 import { getContentGroups, getGlobalTotals } from './content-analytics'
 
-type Layer = 'tools' | 'planning' | 'memory' | 'concurrency' | 'collaboration' | 'appendix'
+type Layer = 'tools' | 'planning' | 'memory' | 'concurrency' | 'collaboration' | 'strategy' | 'appendix'
+
+interface TimelineStage {
+  id: string
+  title: string
+  subtitle: string
+  chapterRange: string
+  chapterCount: number
+  output: string
+  layer: Layer
+}
 
 const groups = getContentGroups()
 const totals = getGlobalTotals(groups)
 
-const maxLines = Math.max(...groups.map((v) => v.lines), 1)
-
-const layerByIndex: Layer[] = [
-  'tools',
-  'planning',
-  'memory',
-  'concurrency',
-  'collaboration',
-  'appendix'
+const stages: TimelineStage[] = [
+  {
+    id: 'T0',
+    title: '认知校准',
+    subtitle: '建立 AI 编程心智模型',
+    chapterRange: '第1章 + 第2章 + Agent 本质',
+    chapterCount: 3,
+    output: '明确适用/不适用边界',
+    layer: 'tools'
+  },
+  {
+    id: 'T1',
+    title: '工具掌握',
+    subtitle: 'Claude Code 核心能力落地',
+    chapterRange: '第2章 + 2.1-2.11',
+    chapterCount: 8,
+    output: '形成可复用 .claude/ 工作流',
+    layer: 'planning'
+  },
+  {
+    id: 'T2',
+    title: '多工具扩展',
+    subtitle: '建立多模型选型能力',
+    chapterRange: '第3章-第6章',
+    chapterCount: 4,
+    output: '沉淀任务类型到工具映射',
+    layer: 'memory'
+  },
+  {
+    id: 'T3',
+    title: '工程化提效',
+    subtitle: '提示、测试、调试闭环',
+    chapterRange: '第7章-第9章',
+    chapterCount: 3,
+    output: '可验证的端到端交付流程',
+    layer: 'concurrency'
+  },
+  {
+    id: 'T4',
+    title: 'Agent 系统构建',
+    subtitle: '从单 Agent 到多智能体',
+    chapterRange: '第10章-第12章',
+    chapterCount: 3,
+    output: '任务/后台/协作原型系统',
+    layer: 'collaboration'
+  },
+  {
+    id: 'T5',
+    title: '组织级演进',
+    subtitle: '从个人效率到团队速度',
+    chapterRange: '第13章实践 + 第14章自主代码库',
+    chapterCount: 2,
+    output: '团队治理与扩展路线图',
+    layer: 'strategy'
+  },
+  {
+    id: 'T6',
+    title: '持续更新',
+    subtitle: '建立长期学习机制',
+    chapterRange: '附录A + 附录B',
+    chapterCount: 2,
+    output: '工具速查与资源更新基线',
+    layer: 'appendix'
+  }
 ]
 
-const timelineData = computed(() =>
-  groups.map((group, index) => ({
-    ...group,
-    layer: layerByIndex[index] ?? 'appendix'
-  }))
-)
+const maxChapterCount = Math.max(...stages.map((v) => v.chapterCount), 1)
 
 const layerList = [
-  { id: 'tools', label: 'Tools 语义层' },
-  { id: 'planning', label: 'Planning 结构层' },
-  { id: 'memory', label: 'Memory 内容层' },
-  { id: 'concurrency', label: 'Concurrency 实战层' },
-  { id: 'collaboration', label: 'Collaboration 协作层' },
-  { id: 'appendix', label: 'Appendix 支撑层' }
+  { id: 'tools', label: '认知层' },
+  { id: 'planning', label: '工具层' },
+  { id: 'memory', label: '选型层' },
+  { id: 'concurrency', label: '工程层' },
+  { id: 'collaboration', label: '系统层' },
+  { id: 'strategy', label: '组织层' },
+  { id: 'appendix', label: '支撑层' }
 ] as const
 
 const layerDotClass: Record<Layer, string> = {
@@ -40,6 +100,7 @@ const layerDotClass: Record<Layer, string> = {
   memory: 'dot-memory',
   concurrency: 'dot-concurrency',
   collaboration: 'dot-collaboration',
+  strategy: 'dot-strategy',
   appendix: 'dot-appendix'
 }
 
@@ -49,6 +110,7 @@ const layerLineClass: Record<Layer, string> = {
   memory: 'line-memory',
   concurrency: 'line-concurrency',
   collaboration: 'line-collaboration',
+  strategy: 'line-strategy',
   appendix: 'line-appendix'
 }
 
@@ -58,11 +120,12 @@ const layerBarClass: Record<Layer, string> = {
   memory: 'bar-memory',
   concurrency: 'bar-concurrency',
   collaboration: 'bar-collaboration',
+  strategy: 'bar-strategy',
   appendix: 'bar-appendix'
 }
 
-function linesPercent(lines: number): number {
-  return Math.round((lines / maxLines) * 100)
+function chapterPercent(count: number): number {
+  return Math.round((count / maxChapterCount) * 100)
 }
 </script>
 
@@ -92,7 +155,7 @@ function linesPercent(lines: number): number {
     </div>
 
     <div>
-      <h3 class="sub-title">全书能力层图例</h3>
+      <h3 class="sub-title">能力层图例</h3>
       <div class="legend-list">
         <div v-for="layer in layerList" :key="layer.id" class="legend-item">
           <span class="legend-dot" :class="layerDotClass[layer.id]" />
@@ -102,43 +165,44 @@ function linesPercent(lines: number): number {
     </div>
 
     <div class="timeline">
-      <div v-for="(item, index) in timelineData" :key="item.id" class="timeline-row">
+      <div v-for="(item, index) in stages" :key="item.id" class="timeline-row">
         <div class="timeline-axis">
-          <div class="timeline-node" :class="layerDotClass[item.layer]">P{{ index + 1 }}</div>
+          <div class="timeline-node" :class="layerDotClass[item.layer]">{{ item.id }}</div>
           <div
-            v-if="index !== timelineData.length - 1"
+            v-if="index !== stages.length - 1"
             class="timeline-line"
-            :class="layerLineClass[timelineData[index + 1].layer]"
+            :class="layerLineClass[stages[index + 1].layer]"
           />
         </div>
 
         <article class="timeline-card">
           <div class="timeline-meta">
             <span class="version-badge">{{ item.id }}</span>
-            <span class="core-add">{{ item.subtitle }}</span>
+            <span class="core-add">{{ item.chapterRange }}</span>
           </div>
-          <h4 class="timeline-title">{{ item.title }}</h4>
+          <h4 class="timeline-title">
+            {{ item.title }}
+            <span class="timeline-subtitle">{{ item.subtitle }}</span>
+          </h4>
           <div class="stats-row">
-            <span>{{ item.files }} files</span>
-            <span>{{ item.lines }} lines</span>
-            <span>{{ item.headings }} headings</span>
-            <span>{{ item.codeBlocks }} code blocks</span>
+            <span>{{ item.chapterCount }} chapters</span>
           </div>
           <div class="loc-track">
-            <div class="loc-fill" :class="layerBarClass[item.layer]" :style="{ width: `${linesPercent(item.lines)}%` }" />
+            <div class="loc-fill" :class="layerBarClass[item.layer]" :style="{ width: `${chapterPercent(item.chapterCount)}%` }" />
           </div>
+          <p class="insight">“{{ item.output }}”</p>
         </article>
       </div>
     </div>
 
     <div>
-      <h3 class="growth-title">分部内容体量（按行数）</h3>
+      <h3 class="growth-title">阶段覆盖章节数</h3>
       <div class="growth-list">
-        <div v-for="item in timelineData" :key="`growth-${item.id}`" class="growth-row">
+        <div v-for="item in stages" :key="`growth-${item.id}`" class="growth-row">
           <span class="growth-id">{{ item.id }}</span>
           <div class="growth-track">
-            <div class="growth-fill" :class="layerBarClass[item.layer]" :style="{ width: `${Math.max(6, linesPercent(item.lines))}%` }">
-              <span class="growth-value">{{ item.lines }}</span>
+            <div class="growth-fill" :class="layerBarClass[item.layer]" :style="{ width: `${Math.max(8, chapterPercent(item.chapterCount))}%` }">
+              <span class="growth-value">{{ item.chapterCount }}</span>
             </div>
           </div>
         </div>
@@ -278,11 +342,17 @@ function linesPercent(lines: number): number {
   font-weight: 700;
 }
 
+.timeline-subtitle {
+  margin-left: 0.45rem;
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--vp-c-text-2);
+}
+
 .stats-row {
   margin-top: 0.5rem;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 1rem;
   color: var(--vp-c-text-2);
   font-size: 0.78rem;
 }
@@ -306,6 +376,13 @@ function linesPercent(lines: number): number {
   transition: width 0.45s ease;
 }
 
+.insight {
+  margin: 0.65rem 0 0;
+  font-size: 0.82rem;
+  color: var(--vp-c-text-2);
+  font-style: italic;
+}
+
 .growth-list {
   display: flex;
   flex-direction: column;
@@ -319,11 +396,10 @@ function linesPercent(lines: number): number {
 }
 
 .growth-id {
-  width: 8.7rem;
+  width: 2.2rem;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   text-align: right;
-  color: var(--vp-c-text-2);
 }
 
 .growth-track {
@@ -356,6 +432,8 @@ function linesPercent(lines: number): number {
 .bar-concurrency { background: #f59e0b; }
 .dot-collaboration,
 .bar-collaboration { background: #ef4444; }
+.dot-strategy,
+.bar-strategy { background: #ec4899; }
 .dot-appendix,
 .bar-appendix { background: #64748b; }
 
@@ -364,6 +442,7 @@ function linesPercent(lines: number): number {
 .line-memory { background: rgba(168, 85, 247, 0.35); }
 .line-concurrency { background: rgba(245, 158, 11, 0.35); }
 .line-collaboration { background: rgba(239, 68, 68, 0.35); }
+.line-strategy { background: rgba(236, 72, 153, 0.35); }
 .line-appendix { background: rgba(100, 116, 139, 0.35); }
 
 @keyframes card-in {
@@ -389,11 +468,6 @@ function linesPercent(lines: number): number {
 
   .timeline-card {
     padding: 0.8rem;
-  }
-
-  .growth-id {
-    width: 5.8rem;
-    font-size: 0.66rem;
   }
 }
 </style>

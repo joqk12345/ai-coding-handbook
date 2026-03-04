@@ -12,7 +12,7 @@
 *   **第一部分：入门**
     *   [第1章: AI 编程新纪元](part-1-introduction/chapter-1-new-era-of-ai-programming.md)
     *   [第2章: 什么是代码助手](part-1-introduction/chapter-2-what-is-coding-assistant.md)
-    *   [Agent 本质](part-1-introduction/Agent%20本质.md)
+    *   [Agent 本质](part-1-introduction/Agent 本质.md)
 
 *   **第二部分：核心工具详解**
     *   [第2章: Claude 使用手册](part-2-core-tools/chapter-2-claude-manual.md)
@@ -23,6 +23,10 @@
     *   [2.5: Claude Code Showcase 配置拆解](part-2-core-tools/chapter-2-5-claude-code-showcase.md)
     *   [2.6: 实战中上下文的管理与添加](part-2-core-tools/chapter-2-6-context-management.md)
     *   [2.7: Claude Code 高级功能与使用技巧](part-2-core-tools/chapter-2-7-advanced-features.md)
+    *   [2.8: 对话管理与上下文控制](part-2-core-tools/chapter-2-8-conversation-management.md)
+    *   [2.9: 创建自定义命令](part-2-core-tools/chapter-2-9-custom-commands.md)
+    *   [2.10: MCP 服务器扩展](part-2-core-tools/chapter-2-10-mcp-servers.md)
+    *   [2.11: GitHub 集成](part-2-core-tools/chapter-2-11-github-integration.md)
     *   [第3章: OpenAI Codex 深度解析](part-2-core-tools/chapter-3-codex-deep-dive.md)
     *   [3.1: OpenAI Codex 简介与演进脉络](part-2-core-tools/chapter-3-1-codex-introduction-and-evolution.md)
     *   [3.2: Codex 核心能力与技术特点](part-2-core-tools/chapter-3-2-codex-core-capabilities.md)

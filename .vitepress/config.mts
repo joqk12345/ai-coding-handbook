@@ -32,7 +32,7 @@ export default defineConfig({
         items: [
           { text: '第1章: AI 编程新纪元', link: '/part-1-introduction/chapter-1-new-era-of-ai-programming' },
           { text: '第2章: 什么是代码助手', link: '/part-1-introduction/chapter-2-what-is-coding-assistant' },
-          { text: 'Agent 本质', link: '/part-1-introduction/Agent%20%E6%9C%AC%E8%B4%A8' }
+          { text: 'Agent 本质', link: '/part-1-introduction/Agent 本质' }
         ]
       },
       {
@@ -46,6 +46,10 @@ export default defineConfig({
           { text: '2.5: Claude Code Showcase 配置拆解', link: '/part-2-core-tools/chapter-2-5-claude-code-showcase' },
           { text: '2.6: 实战中上下文的管理与添加', link: '/part-2-core-tools/chapter-2-6-context-management' },
           { text: '2.7: Claude Code 高级功能与使用技巧', link: '/part-2-core-tools/chapter-2-7-advanced-features' },
+          { text: '2.8: 对话管理与上下文控制', link: '/part-2-core-tools/chapter-2-8-conversation-management' },
+          { text: '2.9: 创建自定义命令', link: '/part-2-core-tools/chapter-2-9-custom-commands' },
+          { text: '2.10: MCP 服务器扩展', link: '/part-2-core-tools/chapter-2-10-mcp-servers' },
+          { text: '2.11: GitHub 集成', link: '/part-2-core-tools/chapter-2-11-github-integration' },
           { text: '第3章: OpenAI Codex 深度解析', link: '/part-2-core-tools/chapter-3-codex-deep-dive' },
           { text: '第4章: Gemini 编程实战', link: '/part-2-core-tools/chapter-4-gemini-in-practice' },
           { text: '第5章: 开源模型 (Opencode) 使用手册', link: '/part-2-core-tools/chapter-5-opencode-manual' },

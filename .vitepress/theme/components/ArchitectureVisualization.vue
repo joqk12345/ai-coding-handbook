@@ -1,30 +1,101 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
-import { getContentGroups } from './content-analytics'
 
-const groups = getContentGroups()
-const maxLines = Math.max(...groups.map((g) => g.lines), 1)
+type Layer = 'tools' | 'planning' | 'memory' | 'concurrency' | 'collaboration' | 'strategy' | 'appendix'
 
-const layerClassMap: Record<number, string> = {
-  0: 'layer-tools',
-  1: 'layer-planning',
-  2: 'layer-memory',
-  3: 'layer-concurrency',
-  4: 'layer-collaboration',
-  5: 'layer-appendix'
+interface LayerItem {
+  id: string
+  name: string
+  chapterRange: string
+  question: string
+  output: string
+  layer: Layer
 }
 
-const contentFlowSteps = groups.map((g) => ({
-  label: g.title.replace('：', ':'),
-  color: 'pulse-default'
-}))
+const layers: LayerItem[] = [
+  {
+    id: 'L1',
+    name: '认知层',
+    chapterRange: '第1章 + 第2章 + Agent 本质',
+    question: 'AI 编程改变了什么边界？',
+    output: '统一术语与问题定义',
+    layer: 'tools'
+  },
+  {
+    id: 'L2',
+    name: '工具层',
+    chapterRange: '第2章 + 2.1-2.11',
+    question: '如何稳定驱动 Claude Code？',
+    output: '命令、上下文、技能的标准化流程',
+    layer: 'planning'
+  },
+  {
+    id: 'L3',
+    name: '选型层',
+    chapterRange: '第3章-第6章',
+    question: '不同任务如何选择合适模型？',
+    output: '多工具对比与迁移策略',
+    layer: 'memory'
+  },
+  {
+    id: 'L4',
+    name: '工程层',
+    chapterRange: '第7章-第9章',
+    question: '如何形成可验证交付闭环？',
+    output: 'Prompt + Test + Debug 工作流',
+    layer: 'concurrency'
+  },
+  {
+    id: 'L5',
+    name: '系统层',
+    chapterRange: '第10章-第12章',
+    question: '如何构建可扩展 Agent 系统？',
+    output: '任务、后台、多智能体协作架构',
+    layer: 'collaboration'
+  },
+  {
+    id: 'L6',
+    name: '组织层',
+    chapterRange: '第13章 + 第14章',
+    question: '如何把个人速度升级为团队速度？',
+    output: '治理与扩展路线图',
+    layer: 'strategy'
+  },
+  {
+    id: 'L7',
+    name: '支撑层',
+    chapterRange: '附录A + 附录B',
+    question: '如何持续更新工具与知识？',
+    output: '资源体系与长期学习机制',
+    layer: 'appendix'
+  }
+]
+
+const layerClassMap: Record<Layer, string> = {
+  tools: 'layer-tools',
+  planning: 'layer-planning',
+  memory: 'layer-memory',
+  concurrency: 'layer-concurrency',
+  collaboration: 'layer-collaboration',
+  strategy: 'layer-strategy',
+  appendix: 'layer-appendix'
+}
+
+const dependencySteps = [
+  { label: 'L1->L2', color: 'pulse-tools' },
+  { label: 'L2->L4', color: 'pulse-planning' },
+  { label: 'L3<->L4', color: 'pulse-memory' },
+  { label: 'L4->L5', color: 'pulse-concurrency' },
+  { label: 'L5->L6', color: 'pulse-collaboration' },
+  { label: 'L7 across all', color: 'pulse-appendix' }
+]
 
 const pulseCount = ref(0)
 let timer: ReturnType<typeof setInterval> | null = null
 
 onMounted(() => {
   timer = setInterval(() => {
-    if (pulseCount.value >= contentFlowSteps.length) {
+    if (pulseCount.value >= dependencySteps.length) {
       pulseCount.value = 0
       return
     }
@@ -36,60 +107,52 @@ onBeforeUnmount(() => {
   if (timer) clearInterval(timer)
 })
 
-const activeSteps = computed(() => contentFlowSteps.slice(0, pulseCount.value))
+const activeSteps = computed(() => dependencySteps.slice(0, pulseCount.value))
 
 const flowNodes = computed(() => {
   const startY = 48
-  const gap = 56
-  return groups.map((group, index) => ({
-    id: group.id,
-    label: group.title,
-    subtitle: `${group.files} files / ${group.lines} lines`,
+  const gap = 44
+  return layers.map((item, index) => ({
+    id: item.id,
+    label: `${item.id} ${item.name}`,
+    subtitle: item.chapterRange,
     x: 320,
     y: startY + index * gap,
-    cls: layerClassMap[index] ?? 'layer-appendix'
+    cls: layerClassMap[item.layer]
   }))
 })
 
-const svgHeight = computed(() => Math.max(320, 90 + flowNodes.value.length * 56))
-
-function linesPercent(lines: number): number {
-  return Math.max(4, Math.round((lines / maxLines) * 100))
-}
+const svgHeight = computed(() => Math.max(360, 90 + flowNodes.value.length * 44))
 </script>
 
 <template>
   <div class="arch-wrap">
     <section>
-      <h3 class="title">全书目录架构分层</h3>
+      <h3 class="title">分层能力架构（L1-L7）</h3>
       <div class="class-stack">
-        <template v-for="(item, index) in groups" :key="item.id">
+        <template v-for="(item, index) in layers" :key="item.id">
           <div v-if="index !== 0" class="arrow">↓</div>
-          <article class="class-card" :class="layerClassMap[index]">
+          <article class="class-card" :class="layerClassMap[item.layer]">
             <div class="row">
               <div>
-                <div class="class-name">{{ item.title }}</div>
-                <p class="class-desc">{{ item.subtitle }}</p>
+                <div class="class-name">{{ item.id }} · {{ item.name }}</div>
+                <p class="class-desc">{{ item.question }}</p>
               </div>
               <div class="meta">
-                <span>{{ item.files }} files</span>
-                <span>{{ item.headings }} headings</span>
-                <span>{{ item.codeBlocks }} blocks</span>
+                <span>{{ item.chapterRange }}</span>
               </div>
             </div>
-            <div class="line-track">
-              <div class="line-fill" :style="{ width: `${linesPercent(item.lines)}%` }" />
-            </div>
+            <p class="layer-output">{{ item.output }}</p>
           </article>
         </template>
       </div>
     </section>
 
     <section>
-      <h3 class="title">内容流（按分部脉冲）</h3>
+      <h3 class="title">跨层依赖脉冲</h3>
       <div class="msg-box">
         <div class="msg-header">
-          <span>content_flow[]</span>
+          <span>dependencies[]</span>
           <span class="len">len={{ pulseCount }}</span>
         </div>
         <div class="msg-list">
@@ -107,9 +170,9 @@ function linesPercent(lines: number): number {
     </section>
 
     <section>
-      <h3 class="title">分部关系流图</h3>
+      <h3 class="title">主线关系流图</h3>
       <div class="svg-box">
-        <svg :viewBox="`0 0 640 ${svgHeight}`" class="flow-svg" role="img" aria-label="book content flow">
+        <svg :viewBox="`0 0 640 ${svgHeight}`" class="flow-svg" role="img" aria-label="book architecture flow">
           <defs>
             <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
               <polygon points="0 0, 8 3, 0 6" fill="var(--vp-c-text-2)" />
@@ -119,24 +182,24 @@ function linesPercent(lines: number): number {
           <template v-for="(node, index) in flowNodes" :key="node.id">
             <path
               v-if="index !== flowNodes.length - 1"
-              :d="`M ${node.x} ${node.y + 16} L ${node.x} ${flowNodes[index + 1].y - 18}`"
+              :d="`M ${node.x} ${node.y + 12} L ${node.x} ${flowNodes[index + 1].y - 14}`"
               class="edge"
               marker-end="url(#arrow)"
             />
 
             <rect
               :x="node.x - 185"
-              :y="node.y - 18"
+              :y="node.y - 14"
               width="370"
-              height="40"
+              height="32"
               rx="8"
               class="node"
               :class="node.cls"
             />
-            <text :x="node.x" :y="node.y - 2" text-anchor="middle" class="node-text">
+            <text :x="node.x" :y="node.y - 1" text-anchor="middle" class="node-text">
               {{ node.label }}
             </text>
-            <text :x="node.x" :y="node.y + 12" text-anchor="middle" class="node-text-small">
+            <text :x="node.x" :y="node.y + 11" text-anchor="middle" class="node-text-small">
               {{ node.subtitle }}
             </text>
           </template>
@@ -200,24 +263,15 @@ function linesPercent(lines: number): number {
 .meta {
   display: flex;
   align-items: flex-start;
-  gap: 0.5rem;
+  gap: 0.45rem;
   font-size: 0.72rem;
   color: var(--vp-c-text-3);
 }
 
-.line-track {
-  margin-top: 0.5rem;
-  height: 0.3rem;
-  width: 100%;
-  border-radius: 999px;
-  background: var(--vp-c-bg);
-  overflow: hidden;
-}
-
-.line-fill {
-  height: 100%;
-  border-radius: 999px;
-  background: var(--vp-c-text-1);
+.layer-output {
+  margin: 0.4rem 0 0;
+  color: var(--vp-c-text-2);
+  font-size: 0.78rem;
 }
 
 .msg-box,
@@ -266,7 +320,12 @@ function linesPercent(lines: number): number {
   color: var(--vp-c-text-3);
 }
 
-.pulse-default { background: #334155; }
+.pulse-tools { background: #3b82f6; }
+.pulse-planning { background: #10b981; }
+.pulse-memory { background: #a855f7; }
+.pulse-concurrency { background: #f59e0b; }
+.pulse-collaboration { background: #ef4444; }
+.pulse-appendix { background: #64748b; }
 
 .flow-svg {
   width: 100%;
@@ -321,6 +380,11 @@ function linesPercent(lines: number): number {
 .layer-collaboration {
   border-color: rgba(239, 68, 68, 0.45);
   background: rgba(239, 68, 68, 0.08);
+}
+
+.layer-strategy {
+  border-color: rgba(236, 72, 153, 0.45);
+  background: rgba(236, 72, 153, 0.08);
 }
 
 .layer-appendix {
