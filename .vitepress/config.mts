@@ -51,6 +51,8 @@ export default defineConfig({
           { text: '2.10: MCP 服务器扩展', link: '/part-2-core-tools/chapter-2-10-mcp-servers' },
           { text: '2.11: GitHub 集成', link: '/part-2-core-tools/chapter-2-11-github-integration' },
           { text: '第3章: OpenAI Codex 深度解析', link: '/part-2-core-tools/chapter-3-codex-deep-dive' },
+          { text: '3.1: OpenAI Codex 简介与演进脉络', link: '/part-2-core-tools/chapter-3-1-codex-introduction-and-evolution' },
+          { text: '3.2: Codex 核心能力与技术特点', link: '/part-2-core-tools/chapter-3-2-codex-core-capabilities' },
           { text: '第4章: Gemini 编程实战', link: '/part-2-core-tools/chapter-4-gemini-in-practice' },
           { text: '第5章: 开源模型 (Opencode) 使用手册', link: '/part-2-core-tools/chapter-5-opencode-manual' },
           { text: '第6章: 其他AI编程工具概览', link: '/part-2-core-tools/chapter-6-other-tools-overview' }
@@ -76,7 +78,8 @@ export default defineConfig({
       {
         text: '第五部分：自主代码库',
         items: [
-          { text: '第13章: 自主代码库 - 背景智能体与软件交付的下一个时代', link: '/part-5-self-driving-codebase/chapter-13-the-self-driving-codebase' }
+          { text: '第13章: 自主代码库 - 背景智能体与软件交付的下一个时代', link: '/part-5-self-driving-codebase/chapter-13-the-self-driving-codebase' },
+          { text: '第14章: 在 Agent-First 的世界中充分发挥 Codex 的威力', link: '/part-5-self-driving-codebase/chapter-14-leveraging-codex-in-agent-first-world' }
         ]
       },
       {

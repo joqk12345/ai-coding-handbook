@@ -47,4 +47,12 @@
 
 ---
 
-*最后更新：2026年3月（已补充 Codex/Harness 参考）*
+### Agent-First 开发理念
+
+| 资源名称 | 链接 | 描述 |
+|---------|------|------|
+| Leveraging Codex in an Agent-First World | [X/Twitter](https://x.com/systematicls/status/2028814227004395561) | 关于如何在 Agent-First 的世界中充分发挥 Codex 和 Claude 威力的深度见解，强调"少即是多"的哲学 |
+
+---
+
+*最后更新：2026年3月（已补充 Codex/Harness 及 Agent-First 参考）*

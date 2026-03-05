@@ -46,7 +46,8 @@
     *   [第13章: 从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践](part-4-practice/chapter-13-skeptic-to-believer.md)
 
 *   **第五部分：自主代码库**
-    *   [第14章: 自主代码库 - 背景智能体与软件交付的下一个时代](part-5-self-driving-codebase/chapter-13-the-self-driving-codebase.md)
+    *   [第13章: 自主代码库 - 背景智能体与软件交付的下一个时代](part-5-self-driving-codebase/chapter-13-the-self-driving-codebase.md)
+    *   [第14章: 在 Agent-First 的世界中充分发挥 Codex 的威力](part-5-self-driving-codebase/chapter-14-leveraging-codex-in-agent-first-world.md)
 
 *   **附录**
     *   [附录A: 常用AI工具速查表](appendix/appendix-a-cheatsheet.md)
