@@ -79,7 +79,8 @@ export default defineConfig({
         text: '第五部分：自主代码库',
         items: [
           { text: '第13章: 自主代码库 - 背景智能体与软件交付的下一个时代', link: '/part-5-self-driving-codebase/chapter-13-the-self-driving-codebase' },
-          { text: '第14章: 在 Agent-First 的世界中充分发挥 Codex 的威力', link: '/part-5-self-driving-codebase/chapter-14-leveraging-codex-in-agent-first-world' }
+          { text: '第14章: 在 Agent-First 的世界中充分发挥 Codex 的威力', link: '/part-5-self-driving-codebase/chapter-14-leveraging-codex-in-agent-first-world' },
+          { text: '第15章: Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力', link: '/part-5-self-driving-codebase/chapter-15-harness-engineering' }
         ]
       },
       {

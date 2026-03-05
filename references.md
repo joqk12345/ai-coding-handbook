@@ -55,4 +55,13 @@
 
 ---
 
+### Harness Engineering
+
+| 资源名称 | 链接 | 描述 |
+|---------|------|------|
+| Harness Engineering - OpenAI Blog | [OpenAI](https://openai.com/index/harness-engineering/) | OpenAI 团队分享如何用 0 行人工代码构建百万行代码产品的经验，介绍 Harness Engineering 理念 |
+| Unrolling the Codex Agent Loop | [OpenAI](https://openai.com/index/unrolling-the-codex-agent-loop/) | 深入解析 Codex Agent 循环的工作原理 |
+
+---
+
 *最后更新：2026年3月（已补充 Codex/Harness 及 Agent-First 参考）*
