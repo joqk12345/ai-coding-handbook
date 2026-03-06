@@ -51,6 +51,7 @@
 
 | 资源名称 | 链接 | 描述 |
 |---------|------|------|
+| Trellis | [GitHub](https://github.com/mindfold-ai/Trellis) | 为 AI 设置规则的开放框架，支持 10+ AI 编程工具 |
 | Claude Code Workflow | [GitHub](https://github.com/runesleo/claude-code-workflow) | 经过 3 个月每日使用验证的工作流模板，包含分层内存管理和任务路由 |
 | Leveraging Codex in an Agent-First World | [X/Twitter](https://x.com/systematicls/status/2028814227004395561) | 关于如何在 Agent-First 的世界中充分发挥 Codex 和 Claude 威力的深度见解，强调"少即是多"的哲学 |
 

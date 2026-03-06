@@ -73,7 +73,8 @@ export default defineConfig({
           { text: '第11章: 高级 Agent 模式', link: '/part-4-practice/chapter-11-advanced-agent-patterns' },
           { text: '第12章: 多智能体系统', link: '/part-4-practice/chapter-12-multi-agent-systems' },
           { text: '第13章: 从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践', link: '/part-4-practice/chapter-13-skeptic-to-believer' },
-          { text: '第14章: Claude Code Workflow —— 经过实战检验的 Agent 工作流模板', link: '/part-4-practice/chapter-14-claude-code-workflow' }
+          { text: '第14章: Claude Code Workflow —— 经过实战检验的 Agent 工作流模板', link: '/part-4-practice/chapter-14-claude-code-workflow' },
+          { text: '第15章: Trellis —— 为 AI 设置规则的开放框架', link: '/part-4-practice/chapter-15-trellis' }
         ]
       },
       {

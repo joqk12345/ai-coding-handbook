@@ -45,6 +45,7 @@
     *   [第12章: 多智能体系统](part-4-practice/chapter-12-multi-agent-systems.md)
     *   [第13章: 从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践](part-4-practice/chapter-13-skeptic-to-believer.md)
     *   [第14章: Claude Code Workflow —— 经过实战检验的 Agent 工作流模板](part-4-practice/chapter-14-claude-code-workflow.md)
+    *   [第15章: Trellis —— 为 AI 设置规则的开放框架](part-4-practice/chapter-15-trellis.md)
 
 *   **第五部分：自主代码库**
     *   [第17章: 自主代码库 - 背景智能体与软件交付的下一个时代](part-5-self-driving-codebase/chapter-13-the-self-driving-codebase.md)
