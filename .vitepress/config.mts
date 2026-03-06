@@ -50,6 +50,7 @@ export default defineConfig({
           { text: '2.9: 创建自定义命令', link: '/part-2-core-tools/chapter-2-9-custom-commands' },
           { text: '2.10: MCP 服务器扩展', link: '/part-2-core-tools/chapter-2-10-mcp-servers' },
           { text: '2.11: GitHub 集成', link: '/part-2-core-tools/chapter-2-11-github-integration' },
+          { text: '2.12: Git Worktree 模式与 Agent 工具设计艺术', link: '/part-2-core-tools/chapter-2-12-git-worktree-mode' },
           { text: '第3章: OpenAI Codex 深度解析', link: '/part-2-core-tools/chapter-3-codex-deep-dive' },
           { text: '3.1: OpenAI Codex 简介与演进脉络', link: '/part-2-core-tools/chapter-3-1-codex-introduction-and-evolution' },
           { text: '3.2: Codex 核心能力与技术特点', link: '/part-2-core-tools/chapter-3-2-codex-core-capabilities' },
