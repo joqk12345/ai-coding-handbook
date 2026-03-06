@@ -62,6 +62,13 @@
 | Harness Engineering - OpenAI Blog | [OpenAI](https://openai.com/index/harness-engineering/) | OpenAI 团队分享如何用 0 行人工代码构建百万行代码产品的经验，介绍 Harness Engineering 理念 |
 | Unrolling the Codex Agent Loop | [OpenAI](https://openai.com/index/unrolling-the-codex-agent-loop/) | 深入解析 Codex Agent 循环的工作原理 |
 
+### 上下文工程与 AIGNE
+
+| 资源名称 | 链接 | 描述 |
+|---------|------|------|
+| AIGNE Framework | [GitHub](https://github.com/aigne) | 开源 GenAI Agent 开发框架，实现文件系统的上下文工程抽象 |
+| Context Engineering Paper | [arXiv](https://arxiv.org/abs/) | 上下文工程的学术论文，介绍 LLM-as-OS 和文件系统抽象 |
+
 ---
 
 *最后更新：2026年3月（已补充 Codex/Harness 及 Agent-First 参考）*

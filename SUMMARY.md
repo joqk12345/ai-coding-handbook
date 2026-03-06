@@ -49,6 +49,7 @@
     *   [第13章: 自主代码库 - 背景智能体与软件交付的下一个时代](part-5-self-driving-codebase/chapter-13-the-self-driving-codebase.md)
     *   [第14章: 在 Agent-First 的世界中充分发挥 Codex 的威力](part-5-self-driving-codebase/chapter-14-leveraging-codex-in-agent-first-world.md)
     *   [第15章: Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力](part-5-self-driving-codebase/chapter-15-harness-engineering.md)
+    *   [第16章: 上下文工程的文件系统抽象 — AIGNE 框架](part-5-self-driving-codebase/chapter-16-context-engineering-file-system-abstraction.md)
 
 *   **附录**
     *   [附录A: 常用AI工具速查表](appendix/appendix-a-cheatsheet.md)
