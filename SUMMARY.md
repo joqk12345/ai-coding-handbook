@@ -12,6 +12,7 @@
 *   **第一部分：入门**
     *   [第1章: AI 编程新纪元](part-1-introduction/chapter-1-new-era-of-ai-programming.md)
     *   [第2章: 什么是代码助手](part-1-introduction/chapter-2-what-is-coding-assistant.md)
+    *   [第4章: 编码解决后会发生什么？—— AI 优先的软件开发时代](part-1-introduction/chapter-4-ai-first-software-development.md)
     *   [Agent 本质](part-1-introduction/Agent 本质.md)
 
 *   **第二部分：核心工具详解**

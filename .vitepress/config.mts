@@ -32,6 +32,7 @@ export default defineConfig({
         items: [
           { text: '第1章: AI 编程新纪元', link: '/part-1-introduction/chapter-1-new-era-of-ai-programming' },
           { text: '第2章: 什么是代码助手', link: '/part-1-introduction/chapter-2-what-is-coding-assistant' },
+          { text: '第4章: 编码解决后会发生什么？—— AI 优先的软件开发时代', link: '/part-1-introduction/chapter-4-ai-first-software-development' },
           { text: 'Agent 本质', link: '/part-1-introduction/Agent 本质' }
         ]
       },
