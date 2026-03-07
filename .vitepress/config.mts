@@ -53,7 +53,7 @@ export default defineConfig({
           { text: '2.11: GitHub 集成', link: '/part-2-core-tools/chapter-2-11-github-integration' },
           { text: '2.12: Prompt 缓存即一切', link: '/part-2-core-tools/chapter-2-12-prompt-caching' },
           { text: '2.13: 像 Agent 一样思考', link: '/part-2-core-tools/chapter-2-13-agent-tool-design' },
-          { text: '2.14: Git Worktree 模式与 Agent 工具设计艺术', link: '/part-2-core-tools/chapter-2-12-git-worktree-mode' },
+          { text: '2.14: Git Worktree 模式与 Agent 工具设计艺术', link: '/part-2-core-tools/chapter-2-14-git-worktree-mode' },
           { text: '第3章: OpenAI Codex 深度解析', link: '/part-2-core-tools/chapter-3-codex-deep-dive' },
           { text: '3.1: OpenAI Codex 简介与演进脉络', link: '/part-2-core-tools/chapter-3-1-codex-introduction-and-evolution' },
           { text: '3.2: Codex 核心能力与技术特点', link: '/part-2-core-tools/chapter-3-2-codex-core-capabilities' },

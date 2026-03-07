@@ -30,7 +30,7 @@
     *   [2.11: GitHub 集成](part-2-core-tools/chapter-2-11-github-integration.md)
     *   [2.12: Lessons from Building Claude Code - Prompt 缓存即一切](part-2-core-tools/chapter-2-12-prompt-caching.md)
     *   [2.13: Lessons from Building Claude Code - 像 Agent 一样思考](part-2-core-tools/chapter-2-13-agent-tool-design.md)
-    *   [2.14: Git Worktree 模式与 Agent 工具设计艺术](part-2-core-tools/chapter-2-12-git-worktree-mode.md)
+    *   [2.14: Git Worktree 模式与 Agent 工具设计艺术](part-2-core-tools/chapter-2-14-git-worktree-mode.md)
 
     *   [第3章: OpenAI Codex 深度解析](part-2-core-tools/chapter-3-codex-deep-dive.md)
     *   [3.1: OpenAI Codex 简介与演进脉络](part-2-core-tools/chapter-3-1-codex-introduction-and-evolution.md)
