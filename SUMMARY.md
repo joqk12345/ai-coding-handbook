@@ -28,7 +28,10 @@
     *   [2.9: 创建自定义命令](part-2-core-tools/chapter-2-9-custom-commands.md)
     *   [2.10: MCP 服务器扩展](part-2-core-tools/chapter-2-10-mcp-servers.md)
     *   [2.11: GitHub 集成](part-2-core-tools/chapter-2-11-github-integration.md)
-    *   [2.12: Git Worktree 模式与 Agent 工具设计艺术](part-2-core-tools/chapter-2-12-git-worktree-mode.md)
+    *   [2.12: Lessons from Building Claude Code - Prompt 缓存即一切](part-2-core-tools/chapter-2-12-prompt-caching.md)
+    *   [2.13: Lessons from Building Claude Code - 像 Agent 一样思考](part-2-core-tools/chapter-2-13-agent-tool-design.md)
+    *   [2.14: Git Worktree 模式与 Agent 工具设计艺术](part-2-core-tools/chapter-2-12-git-worktree-mode.md)
+
     *   [第3章: OpenAI Codex 深度解析](part-2-core-tools/chapter-3-codex-deep-dive.md)
     *   [3.1: OpenAI Codex 简介与演进脉络](part-2-core-tools/chapter-3-1-codex-introduction-and-evolution.md)
     *   [3.2: Codex 核心能力与技术特点](part-2-core-tools/chapter-3-2-codex-core-capabilities.md)
