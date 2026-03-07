@@ -32,6 +32,7 @@ export default defineConfig({
         items: [
           { text: '第1章: AI 编程新纪元', link: '/part-1-introduction/chapter-1-new-era-of-ai-programming' },
           { text: '第2章: 什么是代码助手', link: '/part-1-introduction/chapter-2-what-is-coding-assistant' },
+          { text: '第4章: 编码解决后会发生什么？—— AI 优先的软件开发时代', link: '/part-1-introduction/chapter-4-ai-first-software-development' },
           { text: 'Agent 本质', link: '/part-1-introduction/Agent 本质' }
         ]
       },
@@ -52,6 +53,7 @@ export default defineConfig({
           { text: '2.11: GitHub 集成', link: '/part-2-core-tools/chapter-2-11-github-integration' },
           { text: '2.12: Prompt 缓存即一切', link: '/part-2-core-tools/chapter-2-12-prompt-caching' },
           { text: '2.13: 像 Agent 一样思考', link: '/part-2-core-tools/chapter-2-13-agent-tool-design' },
+          { text: '2.14: Git Worktree 模式与 Agent 工具设计艺术', link: '/part-2-core-tools/chapter-2-12-git-worktree-mode' },
           { text: '第3章: OpenAI Codex 深度解析', link: '/part-2-core-tools/chapter-3-codex-deep-dive' },
           { text: '3.1: OpenAI Codex 简介与演进脉络', link: '/part-2-core-tools/chapter-3-1-codex-introduction-and-evolution' },
           { text: '3.2: Codex 核心能力与技术特点', link: '/part-2-core-tools/chapter-3-2-codex-core-capabilities' },

@@ -12,6 +12,7 @@
 *   **第一部分：入门**
     *   [第1章: AI 编程新纪元](part-1-introduction/chapter-1-new-era-of-ai-programming.md)
     *   [第2章: 什么是代码助手](part-1-introduction/chapter-2-what-is-coding-assistant.md)
+    *   [第4章: 编码解决后会发生什么？—— AI 优先的软件开发时代](part-1-introduction/chapter-4-ai-first-software-development.md)
     *   [Agent 本质](part-1-introduction/Agent 本质.md)
 
 *   **第二部分：核心工具详解**
@@ -29,6 +30,8 @@
     *   [2.11: GitHub 集成](part-2-core-tools/chapter-2-11-github-integration.md)
     *   [2.12: Lessons from Building Claude Code - Prompt 缓存即一切](part-2-core-tools/chapter-2-12-prompt-caching.md)
     *   [2.13: Lessons from Building Claude Code - 像 Agent 一样思考](part-2-core-tools/chapter-2-13-agent-tool-design.md)
+    *   [2.14: Git Worktree 模式与 Agent 工具设计艺术](part-2-core-tools/chapter-2-12-git-worktree-mode.md)
+
     *   [第3章: OpenAI Codex 深度解析](part-2-core-tools/chapter-3-codex-deep-dive.md)
     *   [3.1: OpenAI Codex 简介与演进脉络](part-2-core-tools/chapter-3-1-codex-introduction-and-evolution.md)
     *   [3.2: Codex 核心能力与技术特点](part-2-core-tools/chapter-3-2-codex-core-capabilities.md)
