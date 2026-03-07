@@ -5,7 +5,7 @@
 ## 在线阅读
 
 - [目录](/SUMMARY)
-- [第一章：AI 编程新纪元](/part-1-introduction/chapter-1-new-era-of-ai-programming)
+- [第1章: AI 编程新纪元](/part-1/chapter-1-ai-programming-new-era)
 
 ## 本地预览（VitePress）
 

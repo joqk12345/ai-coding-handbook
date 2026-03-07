@@ -255,4 +255,4 @@ trellis task status
 
 - [Trellis - GitHub](https://github.com/mindfold-ai/Trellis) - 官方项目仓库
 - [第14章：Claude Code Workflow](./chapter-14-claude-code-workflow.md)
-- [第2.3章：Agent Skills（智能体技能）入门](../part-2-core-tools/chapter-2-3-agent-skills.md)
+- [第4.3章：Agent Skills（智能体技能）入门](../part-2/chapter-4-3-agent-skills.md)

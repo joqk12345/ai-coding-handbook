@@ -35,11 +35,11 @@ npm run docs:sync-check
 ### Directory Structure
 
 ```
-├── part-1-introduction/          # Part 1: Getting Started
-├── part-2-core-tools/            # Part 2: Core Tools (Claude, Codex, Gemini...)
-├── part-3-advanced-techniques/   # Part 3: Advanced Techniques
-├── part-4-practice/              # Part 4: Building Agents from Scratch
-├── part-5-self-driving-codebase/ # Part 5: Self-Driving Codebase
+├── part-1/                      # Part 1: 入门 (第1-3章)
+├── part-2/                      # Part 2: 核心工具详解 (第4-8章)
+├── part-3/                      # Part 3: 高级技巧与实战 (第9-11章)
+├── part-4/                      # Part 4: 从零构建 Agent (第12-17章)
+├── part-5/                      # Part 5: 自主代码库 (第18-21章)
 ├── appendix/                     # Appendices
 ├── visualizations/               # Timeline & architecture overview docs
 ├── .vitepress/                   # VitePress config, theme, components
@@ -89,7 +89,7 @@ outline: [2, 3]  # Heading levels to show in sidebar
 ```
 
 ### Internal Links
-- Use VitePress clean URLs: `/part-2-core-tools/chapter-2-1-claude-code-architecture`
+- Use VitePress clean URLs: `/part-2/chapter-4-1-claude-code-architecture`
 - The `.md` extension is automatically handled
 - Use `%20` for spaces in paths: `Agent%20本质`
 

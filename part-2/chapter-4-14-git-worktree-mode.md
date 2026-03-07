@@ -1,6 +1,100 @@
-# 2.12：Git Worktree 模式与 Agent 工具设计艺术
+# 2.14：Git Worktree 模式与 Agent 工具设计艺术
 
 > *构建 Agent 最大的挑战之一是构建它的动作空间。设计工具是一门艺术，而非科学。*
+
+## NAME
+
+git-worktree - Manage multiple working trees
+
+## SYNOPSIS
+
+```
+git worktree add [-f] [--detach] [--checkout] [--lock [--reason <string>]]
+         [--orphan] [(-b | -B) <new-branch>] <path> [<commit-ish>]
+git worktree list [-v | --porcelain [-z]]
+git worktree lock [--reason <string>] <worktree>
+git worktree move <worktree> <new-path>
+git worktree prune [-n] [-v] [--expire <expire>]
+git worktree remove [-f] <worktree>
+git worktree repair [<path>…​]
+git worktree unlock <worktree>
+```
+
+## DESCRIPTION
+
+Manage multiple working trees attached to the same repository.
+
+A git repository can support multiple working trees, allowing you to check out more than one branch at a time. With git worktree add a new working tree is associated with the repository, along with additional metadata that differentiates that working tree from others in the same repository. The working tree, along with this metadata, is called a "worktree".
+
+This new worktree is called a "linked worktree" as opposed to the "main worktree" prepared by git-init or git-clone. A repository has one main worktree (if it's not a bare repository) and zero or more linked worktrees.
+
+## COMMANDS
+
+### add \<path\> [\<commit-ish\>]
+
+Create a worktree at \<path\> and checkout \<commit-ish\> into it. The new worktree is linked to the current repository, sharing everything except per-worktree files such as HEAD, index, etc.
+
+If \<commit-ish\> is omitted and neither -b nor -B nor --detach used, then the new worktree is associated with a branch named after the final component of \<path\>.
+
+### list
+
+List details of each worktree. The main worktree is listed first, followed by each of the linked worktrees. The output details include whether the worktree is bare, the revision currently checked out, the branch currently checked out, "locked" if the worktree is locked, "prunable" if the worktree can be pruned.
+
+### lock
+
+Lock a worktree to prevent its administrative files from being pruned automatically. This also prevents it from being moved or deleted. Optionally, specify a reason for the lock with --reason.
+
+### move
+
+Move a worktree to a new location. Note that the main worktree or linked worktrees containing submodules cannot be moved with this command.
+
+### prune
+
+Prune worktree information in $GIT_DIR/worktrees.
+
+### remove
+
+Remove a worktree. Only clean worktrees (no untracked files and no modification in tracked files) can be removed. Unclean worktrees or ones with submodules can be removed with --force. The main worktree cannot be removed.
+
+### repair
+
+Repair worktree administrative files, if possible, if they have become corrupted or outdated due to external factors.
+
+### unlock
+
+Unlock a worktree, allowing it to be pruned, moved or deleted.
+
+## OPTIONS
+
+- `-f`, `--force`: Override safeguards when creating worktree, moving locked worktree, or removing unclean worktree.
+- `-b <new-branch>`, `-B <new-branch>`: Create a new branch named \<new-branch\> and check it out into the new worktree.
+- `-d`, `--detach`: Detach HEAD in the new worktree.
+- `--lock`: Keep the worktree locked after creation.
+- `-n`, `--dry-run`: With prune, do not remove anything; just report what it would remove.
+- `-v`, `--verbose`: With prune, report all removals. With list, output additional information.
+- `--reason <string\>`: Specify a reason for locking the worktree.
+- `--orphan`: Make the new worktree and index empty, associating the worktree with a new unborn branch.
+- `--track`: When creating a new branch, mark it as "upstream" from the new branch.
+
+## EXAMPLES
+
+```
+# Create a temporary worktree for an emergency fix
+$ git worktree add -b emergency-fix ../temp master
+$ pushd ../temp
+# ... hack hack hack ...
+$ git commit -a -m 'emergency fix for boss'
+$ popd
+$ git worktree remove ../temp
+```
+
+## Introducing: Built-in Git Worktree Support for Claude Code
+
+Now, agents can run in parallel without interfering with one another. Each agent gets its own worktree and can work independently.
+
+The Claude Code Desktop app has had built-in support for worktrees for a while, and now we're bringing it to CLI too.
+
+---
 
 ## 从构建 Agent 的视角思考
 

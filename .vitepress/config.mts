@@ -28,66 +28,66 @@ export default defineConfig({
         ]
       },
       {
-        text: '第一部分：入门',
+        text: '第一部分：入门 (第1-3章)',
         items: [
-          { text: '第1章: AI 编程新纪元', link: '/part-1-introduction/chapter-1-new-era-of-ai-programming' },
-          { text: '第2章: 什么是代码助手', link: '/part-1-introduction/chapter-2-what-is-coding-assistant' },
-          { text: '第4章: 编码解决后会发生什么？—— AI 优先的软件开发时代', link: '/part-1-introduction/chapter-4-ai-first-software-development' },
-          { text: 'Agent 本质', link: '/part-1-introduction/Agent 本质' }
+          { text: '第1章: AI 编程新纪元', link: '/part-1/chapter-1-ai-programming-new-era' },
+          { text: '第2章: 什么是代码助手', link: '/part-1/chapter-2-coding-assistant' },
+          { text: '第3章: Agent 本质', link: '/part-1/chapter-3-agent-nature' },
+          { text: '第3章(续): AI 优先的软件开发时代', link: '/part-1/chapter-4-ai-first-software-development' }
         ]
       },
       {
-        text: '第二部分：核心工具详解',
+        text: '第二部分：核心工具详解 (第4-8章)',
         items: [
-          { text: '第2章: Claude 使用手册', link: '/part-2-core-tools/chapter-2-claude-manual' },
-          { text: '2.1: Claude Code 深度解析', link: '/part-2-core-tools/chapter-2-1-claude-code-architecture' },
-          { text: '2.2: Advent of Claude - 31天精通 Claude Code', link: '/part-2-core-tools/chapter-2-2-advent-of-claude' },
-          { text: '2.3: Agent Skills（智能体技能）入门', link: '/part-2-core-tools/chapter-2-3-agent-skills' },
-          { text: '2.4: Claude Code 创造者如何使用 Claude Code', link: '/part-2-core-tools/chapter-2-4-how-creator-uses-claude-code' },
-          { text: '2.5: Claude Code Showcase 配置拆解', link: '/part-2-core-tools/chapter-2-5-claude-code-showcase' },
-          { text: '2.6: 实战中上下文的管理与添加', link: '/part-2-core-tools/chapter-2-6-context-management' },
-          { text: '2.7: Claude Code 高级功能与使用技巧', link: '/part-2-core-tools/chapter-2-7-advanced-features' },
-          { text: '2.8: 对话管理与上下文控制', link: '/part-2-core-tools/chapter-2-8-conversation-management' },
-          { text: '2.9: 创建自定义命令', link: '/part-2-core-tools/chapter-2-9-custom-commands' },
-          { text: '2.10: MCP 服务器扩展', link: '/part-2-core-tools/chapter-2-10-mcp-servers' },
-          { text: '2.11: GitHub 集成', link: '/part-2-core-tools/chapter-2-11-github-integration' },
-          { text: '2.12: Prompt 缓存即一切', link: '/part-2-core-tools/chapter-2-12-prompt-caching' },
-          { text: '2.13: 像 Agent 一样思考', link: '/part-2-core-tools/chapter-2-13-agent-tool-design' },
-          { text: '2.14: Git Worktree 模式与 Agent 工具设计艺术', link: '/part-2-core-tools/chapter-2-14-git-worktree-mode' },
-          { text: '第3章: OpenAI Codex 深度解析', link: '/part-2-core-tools/chapter-3-codex-deep-dive' },
-          { text: '3.1: OpenAI Codex 简介与演进脉络', link: '/part-2-core-tools/chapter-3-1-codex-introduction-and-evolution' },
-          { text: '3.2: Codex 核心能力与技术特点', link: '/part-2-core-tools/chapter-3-2-codex-core-capabilities' },
-          { text: '第4章: Gemini 编程实战', link: '/part-2-core-tools/chapter-4-gemini-in-practice' },
-          { text: '第5章: 开源模型 (Opencode) 使用手册', link: '/part-2-core-tools/chapter-5-opencode-manual' },
-          { text: '第6章: 其他AI编程工具概览', link: '/part-2-core-tools/chapter-6-other-tools-overview' }
+          { text: '第4章: Claude 使用手册', link: '/part-2/chapter-4-claude-manual' },
+          { text: '4.1: Claude Code 深度解析', link: '/part-2/chapter-4-1-claude-code-architecture' },
+          { text: '4.2: Advent of Claude - 31天精通 Claude Code', link: '/part-2/chapter-4-2-advent-of-claude' },
+          { text: '4.3: Agent Skills（智能体技能）入门', link: '/part-2/chapter-4-3-agent-skills' },
+          { text: '4.4: Claude Code 创造者如何使用 Claude Code', link: '/part-2/chapter-4-4-how-creator-uses-claude-code' },
+          { text: '4.5: Claude Code Showcase 配置拆解', link: '/part-2/chapter-4-5-claude-code-showcase' },
+          { text: '4.6: 实战中上下文的管理与添加', link: '/part-2/chapter-4-6-context-management' },
+          { text: '4.7: Claude Code 高级功能与使用技巧', link: '/part-2/chapter-4-7-advanced-features' },
+          { text: '4.8: 对话管理与上下文控制', link: '/part-2/chapter-4-8-conversation-management' },
+          { text: '4.9: 创建自定义命令', link: '/part-2/chapter-4-9-custom-commands' },
+          { text: '4.10: MCP 服务器扩展', link: '/part-2/chapter-4-10-mcp-servers' },
+          { text: '4.11: GitHub 集成', link: '/part-2/chapter-4-11-github-integration' },
+          { text: '4.12: Prompt 缓存即一切', link: '/part-2/chapter-4-12-prompt-caching' },
+          { text: '4.13: 像 Agent 一样思考', link: '/part-2/chapter-4-13-agent-tool-design' },
+          { text: '4.14: Git Worktree 模式与 Agent 工具设计艺术', link: '/part-2/chapter-4-14-git-worktree-mode' },
+          { text: '第5章: OpenAI Codex 深度解析', link: '/part-2/chapter-5-codex-deep-dive' },
+          { text: '5.1: OpenAI Codex 简介与演进脉络', link: '/part-2/chapter-5-1-codex-introduction' },
+          { text: '5.2: Codex 核心能力与技术特点', link: '/part-2/chapter-5-2-codex-capabilities' },
+          { text: '第6章: Gemini 编程实战', link: '/part-2/chapter-6-gemini-practice' },
+          { text: '第7章: 开源模型 (Opencode) 使用手册', link: '/part-2/chapter-7-opencode-manual' },
+          { text: '第8章: 其他AI编程工具概览', link: '/part-2/chapter-8-other-tools' }
         ]
       },
       {
-        text: '第三部分：高级技巧与实战',
+        text: '第三部分：高级技巧与实战 (第9-11章)',
         items: [
-          { text: '第7章: Prompt Engineering for Coders', link: '/part-3-advanced-techniques/chapter-7-prompt-engineering-for-coders' },
-          { text: '第8章: AI驱动的测试与调试', link: '/part-3-advanced-techniques/chapter-8-ai-driven-testing' },
-          { text: '第9章: 综合项目实战', link: '/part-3-advanced-techniques/chapter-9-capstone-project' }
+          { text: '第9章: Prompt Engineering for Coders', link: '/part-3/chapter-9-prompt-engineering' },
+          { text: '第10章: AI驱动的测试与调试', link: '/part-3/chapter-10-ai-testing' },
+          { text: '第11章: 综合项目实战', link: '/part-3/chapter-11-capstone' }
         ]
       },
       {
-        text: '第四部分：实践 - 从零构建 Agent',
+        text: '第四部分：实践 - 从零构建 Agent (第12-17章)',
         items: [
-          { text: '第10章: 从零构建 AI Agent', link: '/part-4-practice/chapter-10-building-agent-from-scratch' },
-          { text: '第11章: 高级 Agent 模式', link: '/part-4-practice/chapter-11-advanced-agent-patterns' },
-          { text: '第12章: 多智能体系统', link: '/part-4-practice/chapter-12-multi-agent-systems' },
-          { text: '第13章: 从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践', link: '/part-4-practice/chapter-13-skeptic-to-believer' },
-          { text: '第14章: Claude Code Workflow —— 经过实战检验的 Agent 工作流模板', link: '/part-4-practice/chapter-14-claude-code-workflow' },
-          { text: '第15章: Trellis —— 为 AI 设置规则的开放框架', link: '/part-4-practice/chapter-15-trellis' }
+          { text: '第12章: 从零构建 AI Agent', link: '/part-4/chapter-12-building-agent' },
+          { text: '第13章: 高级 Agent 模式', link: '/part-4/chapter-13-advanced-patterns' },
+          { text: '第14章: 多智能体系统', link: '/part-4/chapter-14-multi-agent' },
+          { text: '第15章: Claude Code Workflow', link: '/part-4/chapter-15-claude-workflow' },
+          { text: '第16章: Trellis 框架', link: '/part-4/chapter-16-trellis' },
+          { text: '第17章: 从怀疑者到信徒', link: '/part-4/chapter-17-skeptic-believer' }
         ]
       },
       {
-        text: '第五部分：自主代码库',
+        text: '第五部分：自主代码库 (第18-21章)',
         items: [
-          { text: '第17章: 自主代码库 - 背景智能体与软件交付的下一个时代', link: '/part-5-self-driving-codebase/chapter-13-the-self-driving-codebase' },
-          { text: '第18章: 在 Agent-First 的世界中充分发挥 Codex 的威力', link: '/part-5-self-driving-codebase/chapter-14-leveraging-codex-in-agent-first-world' },
-          { text: '第19章: Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力', link: '/part-5-self-driving-codebase/chapter-15-harness-engineering' },
-          { text: '第20章: 上下文工程的文件系统抽象 — AIGNE 框架', link: '/part-5-self-driving-codebase/chapter-16-context-engineering-file-system-abstraction' }
+          { text: '第18章: 自主代码库', link: '/part-5/chapter-18-self-driving-codebase' },
+          { text: '第19章: 充分发挥 Codex 的威力', link: '/part-5/chapter-19-leveraging-codex' },
+          { text: '第20章: Harness Engineering', link: '/part-5/chapter-20-harness-engineering' },
+          { text: '第21章: 上下文工程 - AIGNE 框架', link: '/part-5/chapter-21-context-engineering' }
         ]
       },
       {
