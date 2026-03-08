@@ -160,6 +160,6 @@ Boris 说，他从未像今天这样享受编码，因为繁琐的部分——gi
 ## 参考资源
 
 - [Lenny's Podcast with Boris Cherny](https://www.lennyspodcast.com) - 完整播客
-- [第1章：AI 编程新纪元](./chapter-1-new-era-of-ai-programming.md)
-- [第2章：什么是代码助手](./chapter-2-what-is-coding-assistant.md)
-- [Agent 本质](./Agent%20本质.md)
+- [第1章：AI 编程新纪元](./chapter-1-ai-programming-new-era.md)
+- [第2章：什么是代码助手](./chapter-2-coding-assistant.md)
+- [第3章：Agent 本质](./chapter-3-agent-nature.md)
