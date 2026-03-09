@@ -53,11 +53,12 @@
     *   [第17章: 从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践](part-4/chapter-17-skeptic-believer.md)
     *   [第18章: 从怀疑到实践——三个月 AI Coding 实战复盘](part-4/chapter-18-ai-coding-journey.md)
 
-*   **第五部分：自主代码库 (第19-22章)**
+*   **第五部分：自主代码库 (第19-23章)**
     *   [第19章: 自主代码库 - 背景智能体与软件交付的下一个时代](part-5/chapter-18-self-driving-codebase.md)
     *   [第20章: 在 Agent-First 的世界中充分发挥 Codex 的威力](part-5/chapter-19-leveraging-codex.md)
     *   [第21章: Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力](part-5/chapter-20-harness-engineering.md)
     *   [第22章: 上下文工程的文件系统抽象 — AIGNE 框架](part-5/chapter-21-context-engineering.md)
+    *   [第23章: 周末氛围直播复盘——AI Coding 的十倍加速时代](part-5/chapter-23-vibed-coding-indigo.md)
 
 *   **附录**
     *   [附录A: 常用AI工具速查表](appendix/appendix-a-cheatsheet.md)
