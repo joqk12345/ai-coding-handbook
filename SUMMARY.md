@@ -44,19 +44,20 @@
     *   [第10章: AI驱动的测试与调试](part-3/chapter-10-ai-testing.md)
     *   [第11章: 综合项目实战](part-3/chapter-11-capstone.md)
 
-*   **第四部分：实践 - 从零构建 Agent (第12-17章)**
+*   **第四部分：实践 - 从零构建 Agent (第12-18章)**
     *   [第12章: 从零构建 AI Agent](part-4/chapter-12-building-agent.md)
     *   [第13章: 高级 Agent 模式](part-4/chapter-13-advanced-patterns.md)
     *   [第14章: 多智能体系统](part-4/chapter-14-multi-agent.md)
     *   [第15章: Claude Code Workflow —— 经过实战检验的 Agent 工作流模板](part-4/chapter-15-claude-workflow.md)
     *   [第16章: Trellis —— 为 AI 设置规则的开放框架](part-4/chapter-16-trellis.md)
     *   [第17章: 从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践](part-4/chapter-17-skeptic-believer.md)
+    *   [第18章: 从怀疑到实践——三个月 AI Coding 实战复盘](part-4/chapter-18-ai-coding-journey.md)
 
-*   **第五部分：自主代码库 (第18-21章)**
-    *   [第18章: 自主代码库 - 背景智能体与软件交付的下一个时代](part-5/chapter-18-self-driving-codebase.md)
-    *   [第19章: 在 Agent-First 的世界中充分发挥 Codex 的威力](part-5/chapter-19-leveraging-codex.md)
-    *   [第20章: Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力](part-5/chapter-20-harness-engineering.md)
-    *   [第21章: 上下文工程的文件系统抽象 — AIGNE 框架](part-5/chapter-21-context-engineering.md)
+*   **第五部分：自主代码库 (第19-22章)**
+    *   [第19章: 自主代码库 - 背景智能体与软件交付的下一个时代](part-5/chapter-18-self-driving-codebase.md)
+    *   [第20章: 在 Agent-First 的世界中充分发挥 Codex 的威力](part-5/chapter-19-leveraging-codex.md)
+    *   [第21章: Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力](part-5/chapter-20-harness-engineering.md)
+    *   [第22章: 上下文工程的文件系统抽象 — AIGNE 框架](part-5/chapter-21-context-engineering.md)
 
 *   **附录**
     *   [附录A: 常用AI工具速查表](appendix/appendix-a-cheatsheet.md)

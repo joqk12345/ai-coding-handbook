@@ -78,16 +78,17 @@ export default defineConfig({
           { text: '第14章: 多智能体系统', link: '/part-4/chapter-14-multi-agent' },
           { text: '第15章: Claude Code Workflow', link: '/part-4/chapter-15-claude-workflow' },
           { text: '第16章: Trellis 框架', link: '/part-4/chapter-16-trellis' },
-          { text: '第17章: 从怀疑者到信徒', link: '/part-4/chapter-17-skeptic-believer' }
+          { text: '第17章: 从怀疑者到信徒', link: '/part-4/chapter-17-skeptic-believer' },
+          { text: '第18章: 从怀疑到实践——三个月 AI Coding 实战复盘', link: '/part-4/chapter-18-ai-coding-journey' }
         ]
       },
       {
-        text: '第五部分：自主代码库 (第18-21章)',
+        text: '第五部分：自主代码库 (第19-22章)',
         items: [
-          { text: '第18章: 自主代码库', link: '/part-5/chapter-18-self-driving-codebase' },
-          { text: '第19章: 充分发挥 Codex 的威力', link: '/part-5/chapter-19-leveraging-codex' },
-          { text: '第20章: Harness Engineering', link: '/part-5/chapter-20-harness-engineering' },
-          { text: '第21章: 上下文工程 - AIGNE 框架', link: '/part-5/chapter-21-context-engineering' }
+          { text: '第19章: 自主代码库', link: '/part-5/chapter-18-self-driving-codebase' },
+          { text: '第20章: 充分发挥 Codex 的威力', link: '/part-5/chapter-19-leveraging-codex' },
+          { text: '第21章: Harness Engineering', link: '/part-5/chapter-20-harness-engineering' },
+          { text: '第22章: 上下文工程 - AIGNE 框架', link: '/part-5/chapter-21-context-engineering' }
         ]
       },
       {
