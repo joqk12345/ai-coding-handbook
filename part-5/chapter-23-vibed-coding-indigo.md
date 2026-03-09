@@ -229,7 +229,6 @@ Everything is software + AI can write all software = AI can do everything = AGI
 
 ## 参考资源
 
-- [直播回放（YouTube）]()
 - [Pencil 设计工具](https://pencil.dev)
-- [Claude Code 官方文档]()
-- [Reveal 社群]()
+- [Claude Code 官方文档](https://docs.anthropic.com/en/docs/claude-code/overview)
+- [Reveal 社群](https://x.com/i/collections/1841683833448468480)
