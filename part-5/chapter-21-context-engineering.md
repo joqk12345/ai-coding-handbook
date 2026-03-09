@@ -310,6 +310,6 @@ const agent = AIAgent.from({
 - [AIGNE Framework - GitHub](https://github.com/aigne) - 开源 GenAI Agent 开发框架
 - [MemGPT - LLM Operating Systems](https://memgpt.ai/) - 内存层次结构管理系统
 - [AIOS - LLM as OS](https://github.com/agiresearch/AIOS) - LLM 操作系统范式
-- [第15章：Harness Engineering](./chapter-15-harness-engineering.md)
-- [第14章：在 Agent-First 的世界中充分发挥 Codex 的威力](./chapter-14-leveraging-codex-in-agent-first-world.md)
-- [第13章：自主代码库](./chapter-13-the-self-driving-codebase.md)
+- [第20章：Harness Engineering](./chapter-20-harness-engineering.md)
+- [第19章：在 Agent-First 的世界中充分发挥 Codex 的威力](./chapter-19-leveraging-codex.md)
+- [第18章：自主代码库](./chapter-18-self-driving-codebase.md)

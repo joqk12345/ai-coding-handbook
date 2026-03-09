@@ -276,6 +276,6 @@ personality: "..."
 ## 参考资源
 
 - [Claude Code Workflow - GitHub](https://github.com/runesleo/claude-code-workflow) - 官方项目仓库
-- [第13章：从怀疑者到信徒](./chapter-13-skeptic-to-believer.md)
+- [第17章：从怀疑者到信徒](./chapter-17-skeptic-believer.md)
 - [第4.3章：Agent Skills（智能体技能）入门](../part-2/chapter-4-3-agent-skills.md)
 - [第4.6章：实战中上下文的管理与添加](../part-2/chapter-4-6-context-management.md)

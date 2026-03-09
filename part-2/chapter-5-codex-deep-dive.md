@@ -6,8 +6,8 @@
 
 为了与第 2 章（2.1-2.7）保持一致的阅读与维护方式，本章已将 3.1、3.2 拆分为独立文件，并做了更细化扩展：
 
-- [3.1 OpenAI Codex 简介与演进脉络](./chapter-3-1-codex-introduction-and-evolution.md)
-- [3.2 Codex 核心能力与技术特点](./chapter-3-2-codex-core-capabilities.md)
+- [3.1 OpenAI Codex 简介与演进脉络](./chapter-5-1-codex-introduction.md)
+- [3.2 Codex 核心能力与技术特点](./chapter-5-2-codex-capabilities.md)
 
 你可以把本文件视为“第3章后半部分”，重点关注协作实践、案例与局限性。
 
