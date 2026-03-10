@@ -11,7 +11,9 @@ architecture_layer:
   - "systems-and-governance"
 timeline_era: "autonomous-systems"
 related: []
-references: []
+references:
+  - "https://openai.com/index/harness-engineering/"
+  - "https://openai.com/index/unrolling-the-codex-agent-loop/"
 status: "published"
 display_order: 65
 ---

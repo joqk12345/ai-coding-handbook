@@ -11,7 +11,10 @@ architecture_layer:
   - "systems-and-governance"
 timeline_era: "autonomous-systems"
 related: []
-references: []
+references:
+  - "https://background-agents.com/"
+  - "https://www.google.com/search?q=Don%27t+Build+Your+Own+Sandbox+Lou+Bichard+Ona"
+  - "https://www.google.com/search?q=Industrializing+Software+Development+Christian+Weichel+Ona"
 status: "published"
 display_order: 63
 ---

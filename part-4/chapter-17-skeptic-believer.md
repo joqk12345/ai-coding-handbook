@@ -11,7 +11,11 @@ architecture_layer:
   - "workflows-and-practices"
 timeline_era: "autonomous-systems"
 related: []
-references: []
+references:
+  - "https://adocomplete.com/advent-of-claude-2025/"
+  - "https://github.com/shareAI-lab/learn-claude-code"
+  - "https://background-agents.com/"
+  - "https://gist.github.com/gwern/"
 status: "published"
 display_order: 61
 ---

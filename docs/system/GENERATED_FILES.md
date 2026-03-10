@@ -18,6 +18,7 @@ display_order: 12
 # Generated Files
 
 The `generated/` directory is machine-generated and should not be edited manually.
+The auto-generated blocks inside `visualizations/timeline-overview.md` and `visualizations/architecture-overview.md` are also regenerated during build.
 
 Files:
 - `generated/summary.md`
@@ -28,6 +29,10 @@ Files:
 
 Additional generated integration file:
 - `.vitepress/knowledge-nav.json`
+
+Template pages with generated blocks:
+- `visualizations/timeline-overview.md`
+- `visualizations/architecture-overview.md`
 
 Regenerate with:
 

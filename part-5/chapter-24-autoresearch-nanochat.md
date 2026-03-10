@@ -11,7 +11,9 @@ architecture_layer:
   - "systems-and-governance"
 timeline_era: "autonomous-systems"
 related: []
-references: []
+references:
+  - "https://x.com/karpathy/status/2031135152349524125?s=20"
+  - "https://github.com/karpathy/nanochat/commit/6ed7d1d82cee16c2e26f45d559ad3338447a6c1b"
 status: "published"
 display_order: 68
 ---

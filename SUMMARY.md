@@ -33,10 +33,11 @@ display_order: 5
 *   **索引维护约束（新增章节必同步）**
     *   同步更新 `SUMMARY.md`、`visualizations/timeline-overview.md`、`visualizations/architecture-overview.md` 的索引矩阵与章节映射
 
-*   **第一部分：入门 (第1-3章)**
+*   **第一部分：入门 (第1-4章)**
     *   [第1章: AI 编程新纪元](part-1/chapter-1-ai-programming-new-era.md)
     *   [第2章: 什么是代码助手](part-1/chapter-2-coding-assistant.md)
     *   [第3章: Agent 本质](part-1/chapter-3-agent-nature.md)
+    *   [第4章：Coding Agents 如何重塑工程、产品与设计（EPD）](part-1/chapter-4-coding-agents-reshaping-epd.md)
     *   [附章A（第1部分延伸）: AI 优先的软件开发时代](part-1/chapter-4-ai-first-software-development.md)
 
 *   **第二部分：核心工具详解 (第5-9章)**

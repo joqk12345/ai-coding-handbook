@@ -11,7 +11,8 @@ architecture_layer:
   - "workflows-and-practices"
 timeline_era: "autonomous-systems"
 related: []
-references: []
+references:
+  - "https://code.claude.com/docs/en/hooks"
 status: "published"
 display_order: 1
 ---

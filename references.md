@@ -11,7 +11,18 @@ architecture_layer:
   - "workflows-and-practices"
 timeline_era: "autonomous-systems"
 related: []
-references: []
+references:
+  - "https://adocomplete.com/advent-of-claude-2025/"
+  - "https://github.com/ChrisWiles/claude-code-showcase"
+  - "https://github.com/shareAI-lab/learn-claude-code/blob/main/docs/zh/s01-the-agent-loop.md"
+  - "https://openai.com/index/harness-engineering/"
+  - "https://openai.com/index/unrolling-the-codex-agent-loop/"
+  - "https://background-agents.com/"
+  - "https://github.com/mindfold-ai/Trellis"
+  - "https://github.com/runesleo/claude-code-workflow"
+  - "https://x.com/systematicls/status/2028814227004395561"
+  - "https://github.com/aigne"
+  - "https://arxiv.org/abs/"
 status: "published"
 display_order: 70
 ---

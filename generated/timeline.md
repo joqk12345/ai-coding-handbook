@@ -1,80 +1,99 @@
-# Generated Timeline
+# 学习路径时间线（自动生成）
 
-> Auto-generated chronological evolution of topics.
+> 本页与 `/visualizations/timeline-overview` 共享同一份自动生成内容。
 
-## autonomous-systems
-- 2025-01-01 — [CLAUDE.md](/CLAUDE)
-- 2025-01-01 — [贡献指南](/CONTRIBUTING)
-- 2025-01-01 — [AI-Coding 使用手册](/README)
-- 2025-01-01 — [目录](/SUMMARY)
-- 2025-01-01 — [附录A: 常用AI工具速查表](/appendix/appendix-a-cheatsheet)
-- 2025-01-01 — [附录B: 推荐资源与社区](/appendix/appendix-b-resources)
-- 2025-01-01 — [文档结构与章节编号规范](/docs/structure)
-- 2025-01-01 — [Agent Governance](/docs/system/AGENTS)
-- 2025-01-01 — [Knowledge System Architecture](/docs/system/ARCHITECTURE)
-- 2025-01-01 — [Content Schema](/docs/system/CONTENT_SCHEMA)
-- 2025-01-01 — [Generated Files](/docs/system/GENERATED_FILES)
-- 2025-01-01 — [Taxonomy Governance](/docs/system/TAXONOMY)
-- 2025-01-01 — [Knowledge System 使用说明](/docs/system/USAGE)
-- 2025-01-01 — [AI-Coding 使用手册](/index)
-- 2025-01-01 — [第1章: AI 编程新纪元](/part-1/chapter-1-ai-programming-new-era)
-- 2025-01-01 — [第2章：什么是代码助手](/part-1/chapter-2-coding-assistant)
-- 2025-01-01 — [第3章：Agent 本质](/part-1/chapter-3-agent-nature)
-- 2025-01-01 — [4.1: 编码解决后会发生什么？—— AI 优先的软件开发时代](/part-1/chapter-4-ai-first-software-development)
-- 2025-01-01 — [第4章：Coding Agents 如何重塑工程、产品与设计（EPD）](/part-1/chapter-4-coding-agents-reshaping-epd)
-- 2025-01-01 — [2.8: Conversation Management & Context Control](/part-2/chapter-2-8-conversation-management-en)
-- 2025-01-01 — [2.8: 会話管理とコンテキスト制御](/part-2/chapter-2-8-conversation-management-ja)
-- 2025-01-01 — [2.8: 对话管理与上下文控制](/part-2/chapter-2-8-conversation-management-zh)
-- 2025-01-01 — [2.9: Creating Custom Commands](/part-2/chapter-2-9-custom-commands-en)
-- 2025-01-01 — [2.9: カスタムコマンドの作成](/part-2/chapter-2-9-custom-commands-ja)
-- 2025-01-01 — [2.9: 创建自定义命令](/part-2/chapter-2-9-custom-commands-zh)
-- 2025-01-01 — [5.1: Claude Code 深度解析](/part-2/chapter-4-1-claude-code-architecture)
-- 2025-01-01 — [2.10: MCP Server Extensions](/part-2/chapter-4-10-mcp-servers-en)
-- 2025-01-01 — [2.10: MCP サーバー拡張](/part-2/chapter-4-10-mcp-servers-ja)
-- 2025-01-01 — [2.10: MCP 服务器扩展](/part-2/chapter-4-10-mcp-servers-zh)
-- 2025-01-01 — [5.10: MCP 服务器扩展](/part-2/chapter-4-10-mcp-servers)
-- 2025-01-01 — [2.11: GitHub Integration](/part-2/chapter-4-11-github-integration-en)
-- 2025-01-01 — [2.11: GitHub 統合](/part-2/chapter-4-11-github-integration-ja)
-- 2025-01-01 — [2.11: GitHub 集成](/part-2/chapter-4-11-github-integration-zh)
-- 2025-01-01 — [5.11: GitHub 集成](/part-2/chapter-4-11-github-integration)
-- 2025-01-01 — [5.12: Lessons from Building Claude Code - Prompt 缓存即一切](/part-2/chapter-4-12-prompt-caching)
-- 2025-01-01 — [5.13: Lessons from Building Claude Code - 像 Agent 一样思考](/part-2/chapter-4-13-agent-tool-design)
-- 2025-01-01 — [5.14：Git Worktree 模式与 Agent 工具设计艺术](/part-2/chapter-4-14-git-worktree-mode)
-- 2025-01-01 — [5.2: Advent of Claude - 31天掌握 Claude Code](/part-2/chapter-4-2-advent-of-claude)
-- 2025-01-01 — [5.3: Agent Skills（智能体技能）入门](/part-2/chapter-4-3-agent-skills)
-- 2025-01-01 — [5.4: Claude Code 创造者如何使用 Claude Code](/part-2/chapter-4-4-how-creator-uses-claude-code)
-- 2025-01-01 — [5.5: `claude-code-showcase` 配置拆解（.claude + README）](/part-2/chapter-4-5-claude-code-showcase)
-- 2025-01-01 — [5.6: 实战中上下文的管理与添加](/part-2/chapter-4-6-context-management)
-- 2025-01-01 — [5.7: 高级功能与使用技巧](/part-2/chapter-4-7-advanced-features)
-- 2025-01-01 — [5.8: 对话管理与上下文控制](/part-2/chapter-4-8-conversation-management)
-- 2025-01-01 — [5.9: 创建自定义命令](/part-2/chapter-4-9-custom-commands)
-- 2025-01-01 — [第5章: Claude 使用手册](/part-2/chapter-4-claude-manual)
-- 2025-01-01 — [6.1 OpenAI Codex 简介与演进脉络](/part-2/chapter-5-1-codex-introduction)
-- 2025-01-01 — [6.2 Codex 核心能力与技术特点](/part-2/chapter-5-2-codex-capabilities)
-- 2025-01-01 — [第6章: OpenAI Codex 深度解析](/part-2/chapter-5-codex-deep-dive)
-- 2025-01-01 — [第7章: Gemini 编程实战](/part-2/chapter-6-gemini-practice)
-- 2025-01-01 — [第8章: 开源模型 (Opencode) 使用手册](/part-2/chapter-7-opencode-manual)
-- 2025-01-01 — [第9章: 其他AI编程工具概览](/part-2/chapter-8-other-tools)
-- 2025-01-01 — [第11章: AI驱动的测试与调试](/part-3/chapter-10-ai-testing)
-- 2025-01-01 — [第12章: 综合项目实战](/part-3/chapter-11-capstone)
-- 2025-01-01 — [第10章: Prompt Engineering for Coders](/part-3/chapter-9-prompt-engineering)
-- 2025-01-01 — [第13章：从零构建一个 AI Agent](/part-4/chapter-12-building-agent)
-- 2025-01-01 — [第14章：高级 Agent 模式](/part-4/chapter-13-advanced-patterns)
-- 2025-01-01 — [第15章：多智能体系统与自治执行](/part-4/chapter-14-multi-agent)
-- 2025-01-01 — [第16章：Claude Code Workflow —— 经过实战检验的 Agent 工作流模板](/part-4/chapter-15-claude-workflow)
-- 2025-01-01 — [第17章：Trellis —— 为 AI 设置规则的开放框架](/part-4/chapter-16-trellis)
-- 2025-01-01 — [第18章：从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践](/part-4/chapter-17-skeptic-believer)
-- 2025-01-01 — [第19章：从怀疑到实践——三个月 AI Coding 实战复盘](/part-4/chapter-18-ai-coding-journey)
-- 2025-01-01 — [第20章：自主代码库 —— 背景智能体与软件交付的下一个时代](/part-5/chapter-18-self-driving-codebase)
-- 2025-01-01 — [第21章：在 Agent-First 的世界中充分发挥 Codex 的威力](/part-5/chapter-19-leveraging-codex)
-- 2025-01-01 — [第22章：Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力](/part-5/chapter-20-harness-engineering)
-- 2025-01-01 — [第23章：上下文工程的文件系统抽象 —— AIGNE 框架与可验证的 GenAI 系统](/part-5/chapter-21-context-engineering)
-- 2025-01-01 — [第24章：周末氛围直播复盘——AI Coding 的十倍加速时代](/part-5/chapter-23-vibed-coding-indigo)
-- 2025-01-01 — [第25章：Autoresearch 实测提速 11% —— Agent 自主调参正在成为“最终战场”](/part-5/chapter-24-autoresearch-nanochat)
-- 2025-01-01 — [第25章：从“拧阀门”到“掌舵”——Harness Engineering 的控制论转向](/part-5/chapter-25-cybernetic-steering)
-- 2025-01-01 — [参考资源](/references)
-- 2025-01-01 — [内容架构总览](/visualizations/architecture-overview)
-- 2025-01-01 — [可视化总览](/visualizations/index)
-- 2025-01-01 — [学习路径时间线](/visualizations/timeline-overview)
-- 2026-02-02 — [Claude Code Hooks 参考指南](/2026-02-02-claude-code-hooks-reference)
+<TimelineVisualization />
+
+## 全书时间线（按能力跃迁）
+
+| 阶段 | 精确章节清单 | 能力目标 | 建议产出 |
+| --- | --- | --- | --- |
+| 0. 认知校准 | 第1章、第2章、第3章、第4章、附章A | 建立 AI 编程心智模型，理解“助手”与“Agent”的边界 | 一份个人使用边界清单（适用/不适用场景） |
+| 1. 工具掌握 | 第5章、5.1、5.2、5.3、5.4、5.5、5.6、5.7、5.8、5.9、5.10、5.11、5.12、5.13、5.14 | 熟悉 Claude Code 的命令、上下文、技能、GitHub 集成与高级功能 | 一套可复用的 `.claude/` 最小配置 |
+| 2. 多工具横向扩展 | 第6章、6.1、6.2、第7章、第8章、第9章 | 建立多模型/多工具选型能力与迁移能力 | 一张“任务类型 → 推荐工具”映射表 |
+| 3. 工程化提效 | 第10章、第11章、第12章 | 把提示工程、测试、调试流程整合到开发闭环 | 一个端到端小项目（含测试和回归） |
+| 4. Agent 系统构建 | 第13章、第14章、第15章、第16章、第17章、第18章、第19章（从怀疑到实践） | 从单 Agent 走向任务系统、后台执行与多智能体协作 | 一套可运行的 Agent 原型（含任务/后台/协作） |
+| 5. 组织级演进 | 第19章（自主代码库）、第20章、第21章、第22章、第23章、第24章、第25章 | 从个人提效升级到团队级软件交付能力 | 一份团队落地路线图（治理、触发器、扩展策略） |
+| 6. 参考与持续更新 | 附录A、附录B | 建立工具与资源的持续学习机制 | 个人知识库与更新节奏 |
+
+## 章节标签索引（自动推断）
+
+> 标签体系沿用原始可视化页的 `tooling`、`workflow`、`system`、`org`、`research`，当前按章节分层与标题关键词自动推断。
+
+| 章节 | 主标签 |
+| --- | --- |
+| 第1章 | `research` |
+| 第2章 | `research` |
+| 第3章 | `research`, `system` |
+| 第4章 | `research`, `system` |
+| 附章A | `research` |
+| 第5章 | `tooling` |
+| 5.1 | `tooling` |
+| 5.2 | `tooling` |
+| 5.3 | `tooling`, `system` |
+| 5.4 | `tooling` |
+| 5.5 | `tooling` |
+| 5.6 | `tooling`, `workflow` |
+| 5.7 | `tooling` |
+| 5.8 | `tooling`, `workflow` |
+| 5.9 | `tooling` |
+| 5.10 | `tooling` |
+| 5.11 | `tooling` |
+| 5.12 | `tooling`, `workflow` |
+| 5.13 | `tooling`, `system` |
+| 5.14 | `tooling`, `system` |
+| 第6章 | `tooling` |
+| 6.1 | `tooling` |
+| 6.2 | `tooling` |
+| 第7章 | `tooling`, `workflow` |
+| 第8章 | `tooling` |
+| 第9章 | `tooling` |
+| 第10章 | `workflow` |
+| 第11章 | `workflow` |
+| 第12章 | `workflow` |
+| 第13章 | `workflow`, `system` |
+| 第14章 | `workflow`, `system` |
+| 第15章 | `workflow`, `system` |
+| 第16章 | `workflow`, `system` |
+| 第17章 | `workflow`, `system` |
+| 第18章 | `workflow`, `org` |
+| 第19章（从怀疑到实践） | `workflow`, `org` |
+| 第19章（自主代码库） | `system`, `org` |
+| 第20章 | `system`, `org` |
+| 第21章 | `system`, `org` |
+| 第22章 | `system`, `org`, `workflow` |
+| 第23章 | `system`, `org`, `workflow` |
+| 第24章 | `system`, `org` |
+| 第25章 | `system`, `org` |
+| 附录A | `workflow`, `research` |
+| 附录B | `workflow`, `research` |
+
+## 章节索引矩阵（阅读阶段 × 章节号）
+
+> 列为章节号，行为阅读阶段。`●` 表示该章属于该阶段。
+
+| 阅读阶段 \ 章节号 | 第1章 | 第2章 | 第3章 | 第4章 | 附章A | 第5章 | 5.1 | 5.2 | 5.3 | 5.4 | 5.5 | 5.6 | 5.7 | 5.8 | 5.9 | 5.10 | 5.11 | 5.12 | 5.13 | 5.14 | 第6章 | 6.1 | 6.2 | 第7章 | 第8章 | 第9章 | 第10章 | 第11章 | 第12章 | 第13章 | 第14章 | 第15章 | 第16章 | 第17章 | 第18章 | 第19章（从怀疑到实践） | 第19章（自主代码库） | 第20章 | 第21章 | 第22章 | 第23章 | 第24章 | 第25章 | 附录A | 附录B |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0. 认知校准 | ● | ● | ● | ● | ● |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 1. 工具掌握 |  |  |  |  |  | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 2. 多工具横向扩展 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | ● | ● | ● | ● | ● | ● |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 3. 工程化提效 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | ● | ● | ● |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 4. Agent 系统构建 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | ● | ● | ● | ● | ● | ● | ● |  |  |  |  |  |  |  |  |  |
+| 5. 组织级演进 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | ● | ● | ● | ● | ● | ● | ● |  |  |
+| 6. 参考与持续更新 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | ● | ● |
+
+## 角色路径（最短路线）
+
+- 工程师路径：1. 工具掌握 → 3. 工程化提效 → 4. Agent 系统构建。
+- 产品路径：0. 认知校准 → 2. 多工具横向扩展 → 5. 组织级演进。
+- 设计路径：0. 认知校准 → 3. 工程化提效 → 4. Agent 系统构建。
+- 平台路径：1. 工具掌握 → 4. Agent 系统构建 → 5. 组织级演进。
+
+## 维护约束（避免索引失配）
+
+后续新增或调整章节时，必须在同一个 PR 内同步更新以下三处：
+
+1. `SUMMARY.md`（目录与链接）；
+2. `visualizations/timeline-overview.md`（原始展示模式定义）；
+3. `visualizations/architecture-overview.md`（架构模式定义与配套矩阵）。
 

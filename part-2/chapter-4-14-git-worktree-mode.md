@@ -11,7 +11,8 @@ architecture_layer:
   - "models-and-tools"
 timeline_era: "autonomous-systems"
 related: []
-references: []
+references:
+  - "https://x.com/trq212/status/1909886882662789170"
 status: "published"
 display_order: 37
 ---

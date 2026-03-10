@@ -11,7 +11,12 @@ architecture_layer:
   - "workflows-and-practices"
 timeline_era: "autonomous-systems"
 related: []
-references: []
+references:
+  - "https://github.com/ChrisWiles/claude-code-showcase"
+  - "https://github.com/ChrisWiles/claude-code-showcase/tree/main/.claude"
+  - "https://support.claude.com/en/articles/12512198-how-to-create-custom-skills"
+  - "https://github.com/anthropics/skills/tree/main/skills"
+  - "https://github.com/heilcheng/awesome-agent-skills/tree/main"
 status: "published"
 display_order: 7
 ---

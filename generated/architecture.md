@@ -1,86 +1,111 @@
-# Generated Architecture Map
+# 内容架构总览（自动生成）
 
-> Auto-generated layered conceptual map.
+> 本页与 `/visualizations/architecture-overview` 共享同一份自动生成内容。
 
-## workflows-and-practices
-- [AI-Coding 使用手册](/README)
-- [AI-Coding 使用手册](/index)
-- [Claude Code Hooks 参考指南](/2026-02-02-claude-code-hooks-reference)
-- [CLAUDE.md](/CLAUDE)
-- [内容架构总览](/visualizations/architecture-overview)
-- [参考资源](/references)
-- [可视化总览](/visualizations/index)
-- [学习路径时间线](/visualizations/timeline-overview)
-- [目录](/SUMMARY)
-- [第10章: Prompt Engineering for Coders](/part-3/chapter-9-prompt-engineering)
-- [第11章: AI驱动的测试与调试](/part-3/chapter-10-ai-testing)
-- [第12章: 综合项目实战](/part-3/chapter-11-capstone)
-- [第13章：从零构建一个 AI Agent](/part-4/chapter-12-building-agent)
-- [第14章：高级 Agent 模式](/part-4/chapter-13-advanced-patterns)
-- [第15章：多智能体系统与自治执行](/part-4/chapter-14-multi-agent)
-- [第16章：Claude Code Workflow —— 经过实战检验的 Agent 工作流模板](/part-4/chapter-15-claude-workflow)
-- [第17章：Trellis —— 为 AI 设置规则的开放框架](/part-4/chapter-16-trellis)
-- [第18章：从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践](/part-4/chapter-17-skeptic-believer)
-- [第19章：从怀疑到实践——三个月 AI Coding 实战复盘](/part-4/chapter-18-ai-coding-journey)
-- [贡献指南](/CONTRIBUTING)
-- [附录A: 常用AI工具速查表](/appendix/appendix-a-cheatsheet)
-- [附录B: 推荐资源与社区](/appendix/appendix-b-resources)
+<ArchitectureVisualization />
 
-## systems-and-governance
-- [Agent Governance](/docs/system/AGENTS)
-- [Content Schema](/docs/system/CONTENT_SCHEMA)
-- [Generated Files](/docs/system/GENERATED_FILES)
-- [Knowledge System Architecture](/docs/system/ARCHITECTURE)
-- [Knowledge System 使用说明](/docs/system/USAGE)
-- [Taxonomy Governance](/docs/system/TAXONOMY)
-- [文档结构与章节编号规范](/docs/structure)
-- [第20章：自主代码库 —— 背景智能体与软件交付的下一个时代](/part-5/chapter-18-self-driving-codebase)
-- [第21章：在 Agent-First 的世界中充分发挥 Codex 的威力](/part-5/chapter-19-leveraging-codex)
-- [第22章：Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力](/part-5/chapter-20-harness-engineering)
-- [第23章：上下文工程的文件系统抽象 —— AIGNE 框架与可验证的 GenAI 系统](/part-5/chapter-21-context-engineering)
-- [第24章：周末氛围直播复盘——AI Coding 的十倍加速时代](/part-5/chapter-23-vibed-coding-indigo)
-- [第25章：Autoresearch 实测提速 11% —— Agent 自主调参正在成为“最终战场”](/part-5/chapter-24-autoresearch-nanochat)
-- [第25章：从“拧阀门”到“掌舵”——Harness Engineering 的控制论转向](/part-5/chapter-25-cybernetic-steering)
+## 内容架构分层（从知识到系统）
 
-## foundations
-- [4.1: 编码解决后会发生什么？—— AI 优先的软件开发时代](/part-1/chapter-4-ai-first-software-development)
-- [第1章: AI 编程新纪元](/part-1/chapter-1-ai-programming-new-era)
-- [第2章：什么是代码助手](/part-1/chapter-2-coding-assistant)
-- [第3章：Agent 本质](/part-1/chapter-3-agent-nature)
-- [第4章：Coding Agents 如何重塑工程、产品与设计（EPD）](/part-1/chapter-4-coding-agents-reshaping-epd)
+| 架构层 | 对应章节（精确清单） | 核心问题 | 输出物 |
+| --- | --- | --- | --- |
+| L1 认知层 | 第1章、第2章、第3章、第4章、附章A | AI 编程到底改变了什么，Agent 与传统工具有何本质差异 | 统一术语与认知边界 |
+| L2 工具层 | 第5章、5.1、5.2、5.3、5.4、5.5、5.6、5.7、5.8、5.9、5.10、5.11、5.12、5.13、5.14 | 如何稳定使用 Claude Code（命令、上下文、技能、GitHub 集成、工具设计） | 标准化工具使用规范 |
+| L3 选型层 | 第6章、6.1、6.2、第7章、第8章、第9章 | 不同模型和产品在真实任务里如何取舍与组合 | 多工具选型框架 |
+| L4 工程层 | 第10章、第11章、第12章 | 如何把提示工程、测试调试、项目实战连成闭环 | 可验证的交付流程 |
+| L5 系统层 | 第13章、第14章、第15章、第16章、第17章、第18章、第19章（从怀疑到实践） | 如何构建可扩展的 Agent 系统（构建、模式、多智能体、工作流、框架） | Agent 架构原型 |
+| L6 组织层 | 第19章（自主代码库）、第20章、第21章、第22章、第23章、第24章、第25章 | 如何从个人提效走向团队级交付与治理 | 组织级演进路线图 |
+| L7 支撑层 | 附录A、附录B | 如何维持持续学习与外部知识更新 | 资源索引与更新机制 |
 
-## models-and-tools
-- [2.10: MCP Server Extensions](/part-2/chapter-4-10-mcp-servers-en)
-- [2.10: MCP サーバー拡張](/part-2/chapter-4-10-mcp-servers-ja)
-- [2.10: MCP 服务器扩展](/part-2/chapter-4-10-mcp-servers-zh)
-- [2.11: GitHub Integration](/part-2/chapter-4-11-github-integration-en)
-- [2.11: GitHub 統合](/part-2/chapter-4-11-github-integration-ja)
-- [2.11: GitHub 集成](/part-2/chapter-4-11-github-integration-zh)
-- [2.8: Conversation Management & Context Control](/part-2/chapter-2-8-conversation-management-en)
-- [2.8: 会話管理とコンテキスト制御](/part-2/chapter-2-8-conversation-management-ja)
-- [2.8: 对话管理与上下文控制](/part-2/chapter-2-8-conversation-management-zh)
-- [2.9: Creating Custom Commands](/part-2/chapter-2-9-custom-commands-en)
-- [2.9: カスタムコマンドの作成](/part-2/chapter-2-9-custom-commands-ja)
-- [2.9: 创建自定义命令](/part-2/chapter-2-9-custom-commands-zh)
-- [5.1: Claude Code 深度解析](/part-2/chapter-4-1-claude-code-architecture)
-- [5.10: MCP 服务器扩展](/part-2/chapter-4-10-mcp-servers)
-- [5.11: GitHub 集成](/part-2/chapter-4-11-github-integration)
-- [5.12: Lessons from Building Claude Code - Prompt 缓存即一切](/part-2/chapter-4-12-prompt-caching)
-- [5.13: Lessons from Building Claude Code - 像 Agent 一样思考](/part-2/chapter-4-13-agent-tool-design)
-- [5.14：Git Worktree 模式与 Agent 工具设计艺术](/part-2/chapter-4-14-git-worktree-mode)
-- [5.2: Advent of Claude - 31天掌握 Claude Code](/part-2/chapter-4-2-advent-of-claude)
-- [5.3: Agent Skills（智能体技能）入门](/part-2/chapter-4-3-agent-skills)
-- [5.4: Claude Code 创造者如何使用 Claude Code](/part-2/chapter-4-4-how-creator-uses-claude-code)
-- [5.5: `claude-code-showcase` 配置拆解（.claude + README）](/part-2/chapter-4-5-claude-code-showcase)
-- [5.6: 实战中上下文的管理与添加](/part-2/chapter-4-6-context-management)
-- [5.7: 高级功能与使用技巧](/part-2/chapter-4-7-advanced-features)
-- [5.8: 对话管理与上下文控制](/part-2/chapter-4-8-conversation-management)
-- [5.9: 创建自定义命令](/part-2/chapter-4-9-custom-commands)
-- [6.1 OpenAI Codex 简介与演进脉络](/part-2/chapter-5-1-codex-introduction)
-- [6.2 Codex 核心能力与技术特点](/part-2/chapter-5-2-codex-capabilities)
-- [第5章: Claude 使用手册](/part-2/chapter-4-claude-manual)
-- [第6章: OpenAI Codex 深度解析](/part-2/chapter-5-codex-deep-dive)
-- [第7章: Gemini 编程实战](/part-2/chapter-6-gemini-practice)
-- [第8章: 开源模型 (Opencode) 使用手册](/part-2/chapter-7-opencode-manual)
-- [第9章: 其他AI编程工具概览](/part-2/chapter-8-other-tools)
+## 每层精确章节清单（便于增量维护）
+
+- **L1 认知层**：第1章、第2章、第3章、第4章、附章A。
+- **L2 工具层**：第5章、5.1、5.2、5.3、5.4、5.5、5.6、5.7、5.8、5.9、5.10、5.11、5.12、5.13、5.14。
+- **L3 选型层**：第6章、6.1、6.2、第7章、第8章、第9章。
+- **L4 工程层**：第10章、第11章、第12章。
+- **L5 系统层**：第13章、第14章、第15章、第16章、第17章、第18章、第19章（从怀疑到实践）。
+- **L6 组织层**：第19章（自主代码库）、第20章、第21章、第22章、第23章、第24章、第25章。
+- **L7 支撑层**：附录A、附录B。
+
+## 章节标签索引（自动推断）
+
+> 标签体系沿用原始可视化页的 `tooling`、`workflow`、`system`、`org`、`research`，当前按章节分层与标题关键词自动推断。
+
+| 章节 | 主标签 |
+| --- | --- |
+| 第1章 | `research` |
+| 第2章 | `research` |
+| 第3章 | `research`, `system` |
+| 第4章 | `research`, `system` |
+| 附章A | `research` |
+| 第5章 | `tooling` |
+| 5.1 | `tooling` |
+| 5.2 | `tooling` |
+| 5.3 | `tooling`, `system` |
+| 5.4 | `tooling` |
+| 5.5 | `tooling` |
+| 5.6 | `tooling`, `workflow` |
+| 5.7 | `tooling` |
+| 5.8 | `tooling`, `workflow` |
+| 5.9 | `tooling` |
+| 5.10 | `tooling` |
+| 5.11 | `tooling` |
+| 5.12 | `tooling`, `workflow` |
+| 5.13 | `tooling`, `system` |
+| 5.14 | `tooling`, `system` |
+| 第6章 | `tooling` |
+| 6.1 | `tooling` |
+| 6.2 | `tooling` |
+| 第7章 | `tooling`, `workflow` |
+| 第8章 | `tooling` |
+| 第9章 | `tooling` |
+| 第10章 | `workflow` |
+| 第11章 | `workflow` |
+| 第12章 | `workflow` |
+| 第13章 | `workflow`, `system` |
+| 第14章 | `workflow`, `system` |
+| 第15章 | `workflow`, `system` |
+| 第16章 | `workflow`, `system` |
+| 第17章 | `workflow`, `system` |
+| 第18章 | `workflow`, `org` |
+| 第19章（从怀疑到实践） | `workflow`, `org` |
+| 第19章（自主代码库） | `system`, `org` |
+| 第20章 | `system`, `org` |
+| 第21章 | `system`, `org` |
+| 第22章 | `system`, `org`, `workflow` |
+| 第23章 | `system`, `org`, `workflow` |
+| 第24章 | `system`, `org` |
+| 第25章 | `system`, `org` |
+| 附录A | `workflow`, `research` |
+| 附录B | `workflow`, `research` |
+
+## 章节索引矩阵（架构层 × 章节号）
+
+> 列为章节号，行为架构层。`●` 表示该章归属该层。
+
+| 架构层 \ 章节号 | 第1章 | 第2章 | 第3章 | 第4章 | 附章A | 第5章 | 5.1 | 5.2 | 5.3 | 5.4 | 5.5 | 5.6 | 5.7 | 5.8 | 5.9 | 5.10 | 5.11 | 5.12 | 5.13 | 5.14 | 第6章 | 6.1 | 6.2 | 第7章 | 第8章 | 第9章 | 第10章 | 第11章 | 第12章 | 第13章 | 第14章 | 第15章 | 第16章 | 第17章 | 第18章 | 第19章（从怀疑到实践） | 第19章（自主代码库） | 第20章 | 第21章 | 第22章 | 第23章 | 第24章 | 第25章 | 附录A | 附录B |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| L1 认知层 | ● | ● | ● | ● | ● |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| L2 工具层 |  |  |  |  |  | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| L3 选型层 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | ● | ● | ● | ● | ● | ● |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| L4 工程层 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | ● | ● | ● |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| L5 系统层 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | ● | ● | ● | ● | ● | ● | ● |  |  |  |  |  |  |  |  |  |
+| L6 组织层 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | ● | ● | ● | ● | ● | ● | ● |  |  |
+| L7 支撑层 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | ● | ● |
+
+## 跨层依赖关系
+
+1. L1 → L2：没有认知边界，工具实践容易陷入“提示词堆砌”。
+2. L2 → L4：工具熟练度决定工程化实践（测试、调试、实战）的上限。
+3. L3 ↔ L4：选型影响工程效率，工程反馈反过来修正选型策略。
+4. L4 → L5：只有形成交付闭环，才具备构建复杂 Agent 系统的基础。
+5. L5 → L6：系统能力是组织级自动化与自主代码库的前提。
+6. L7 贯穿 L1-L6：附录提供持续更新的参考基线。
+
+## 维护约束（避免索引失配）
+
+后续新增或调整章节时，必须在同一个 PR 内同步更新以下三处：
+
+1. `SUMMARY.md`（目录与链接）；
+2. `visualizations/timeline-overview.md`（原始时间线模式定义）；
+3. `visualizations/architecture-overview.md`（原始架构模式定义）。
 

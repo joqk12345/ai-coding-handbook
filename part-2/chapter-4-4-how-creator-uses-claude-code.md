@@ -11,7 +11,8 @@ architecture_layer:
   - "models-and-tools"
 timeline_era: "autonomous-systems"
 related: []
-references: []
+references:
+  - "https://x.com/bcherny/status/2007179832300581177"
 status: "published"
 display_order: 40
 ---

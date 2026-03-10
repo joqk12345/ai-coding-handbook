@@ -1,36 +1,52 @@
 const fs = require('node:fs');
-const { listMarkdownFiles, parseArticle } = require('./lib.ts');
+const { getCoreSummaryEntries, parseArticle } = require('./lib.ts');
 
-const files = listMarkdownFiles();
+const summaryEntries = getCoreSummaryEntries();
 const nodes = new Map();
 const edges = [];
+const nodeByFile = new Map();
 
-files.forEach((filePath, index) => {
-  const { metadata } = parseArticle(filePath, index + 1);
+summaryEntries.forEach((entry) => {
+  const { metadata } = parseArticle(entry.filePath, entry.order);
+  const normalizedMetadata = {
+    ...metadata,
+    display_order: entry.order,
+    summary_order: entry.order,
+    summary_section: entry.sectionTitle,
+    summary_title: entry.title
+  };
   const nodeType = metadata.type === 'reference' ? 'reference' : 'article';
-  nodes.set(metadata.id, { id: metadata.id, label: metadata.title, type: nodeType, file: filePath, metadata });
+  nodes.set(normalizedMetadata.id, {
+    id: normalizedMetadata.id,
+    label: entry.title,
+    type: nodeType,
+    file: entry.filePath,
+    metadata: normalizedMetadata
+  });
+  nodeByFile.set(entry.filePath, nodes.get(normalizedMetadata.id));
 
-  (metadata.concepts || []).forEach((concept) => {
+  (normalizedMetadata.concepts || []).forEach((concept) => {
     const id = `concept:${concept}`;
     if (!nodes.has(id)) nodes.set(id, { id, label: concept, type: 'concept' });
-    edges.push({ source: metadata.id, target: id, type: 'related' });
+    edges.push({ source: normalizedMetadata.id, target: id, type: 'related' });
   });
 
-  (metadata.tools || []).forEach((tool) => {
+  (normalizedMetadata.tools || []).forEach((tool) => {
     const id = `tool:${tool}`;
     if (!nodes.has(id)) nodes.set(id, { id, label: tool, type: 'tool' });
-    edges.push({ source: metadata.id, target: id, type: 'related' });
+    edges.push({ source: normalizedMetadata.id, target: id, type: 'related' });
   });
 
-  (metadata.related || []).forEach((target) => edges.push({ source: metadata.id, target, type: 'related' }));
-  (metadata.references || []).forEach((target) => edges.push({ source: metadata.id, target, type: 'references' }));
+  (normalizedMetadata.related || []).forEach((target) => edges.push({ source: normalizedMetadata.id, target, type: 'related' }));
+  (normalizedMetadata.references || []).forEach((target) => edges.push({ source: normalizedMetadata.id, target, type: 'references' }));
 });
 
-const chronological = Array.from(nodes.values())
-  .filter((n) => n.file)
-  .sort((a, b) => String(a.metadata.date).localeCompare(String(b.metadata.date)));
-for (let i = 1; i < chronological.length; i += 1) {
-  edges.push({ source: chronological[i - 1].id, target: chronological[i].id, type: 'evolution' });
+const readingPath = summaryEntries
+  .map((entry) => nodeByFile.get(entry.filePath))
+  .filter(Boolean);
+
+for (let i = 1; i < readingPath.length; i += 1) {
+  edges.push({ source: readingPath[i - 1].id, target: readingPath[i].id, type: 'evolution' });
 }
 
 const graph = {

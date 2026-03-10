@@ -11,7 +11,9 @@ architecture_layer:
   - "systems-and-governance"
 timeline_era: "autonomous-systems"
 related: []
-references: []
+references:
+  - "https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview"
+  - "https://github.com/openai/codex"
 status: "published"
 display_order: 64
 ---

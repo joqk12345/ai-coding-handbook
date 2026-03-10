@@ -11,7 +11,10 @@ architecture_layer:
   - "models-and-tools"
 timeline_era: "autonomous-systems"
 related: []
-references: []
+references:
+  - "https://github.com/ChrisWiles/claude-code-showcase"
+  - "https://github.com/ChrisWiles/claude-code-showcase/tree/main/.claude"
+  - "https://github.com/ChrisWiles/claude-code-showcase/blob/main/README.md"
 status: "published"
 display_order: 41
 ---

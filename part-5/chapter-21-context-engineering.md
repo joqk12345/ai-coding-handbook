@@ -11,7 +11,10 @@ architecture_layer:
   - "systems-and-governance"
 timeline_era: "autonomous-systems"
 related: []
-references: []
+references:
+  - "https://github.com/aigne"
+  - "https://memgpt.ai/"
+  - "https://github.com/agiresearch/AIOS"
 status: "published"
 display_order: 66
 ---

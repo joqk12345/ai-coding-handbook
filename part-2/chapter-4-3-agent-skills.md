@@ -11,7 +11,15 @@ architecture_layer:
   - "models-and-tools"
 timeline_era: "autonomous-systems"
 related: []
-references: []
+references:
+  - "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview"
+  - "https://agentskills.io/specification"
+  - "https://support.claude.com/en/articles/12512198-how-to-create-custom-skills"
+  - "https://github.com/heimanba/order-analysis-skill"
+  - "https://github.com/heimanba/order-analysis-skill/blob/main/SKILL.md"
+  - "https://github.com/heimanba/order-analysis-skill/blob/main/README.md"
+  - "https://github.com/anthropics/skills/tree/main/skills"
+  - "https://github.com/heilcheng/awesome-agent-skills/tree/main"
 status: "published"
 display_order: 39
 ---

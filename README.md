@@ -19,11 +19,6 @@ display_order: 4
 
 本项目旨在创建一本关于 AI 辅助编程的综合性使用手册，覆盖 Claude、Codex、Gemini 等主流工具。
 
-## 在线阅读（目录）
-
-- [目录](/SUMMARY)
-- [5.1: Claude Code 深度解析](/part-2/chapter-4-1-claude-code-architecture)
-
 ## 本地预览（VitePress）
 
 ```bash
@@ -61,4 +56,3 @@ npm run knowledge:build
 
 - [贡献指南](./CONTRIBUTING.md)
 - [文档结构与章节编号规范](./docs/structure.md)
-

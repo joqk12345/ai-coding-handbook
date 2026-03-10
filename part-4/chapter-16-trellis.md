@@ -11,7 +11,8 @@ architecture_layer:
   - "workflows-and-practices"
 timeline_era: "autonomous-systems"
 related: []
-references: []
+references:
+  - "https://github.com/mindfold-ai/Trellis"
 status: "published"
 display_order: 60
 ---

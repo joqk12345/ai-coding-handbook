@@ -29,10 +29,10 @@ display_order: 10
 
 ## Build Plane
 1. `scripts/ingest-article.ts` ensures required metadata exists.
-2. `scripts/build-graph.ts` creates `generated/graph.json`.
-3. View generators produce markdown artifacts in `generated/`.
+2. `scripts/build-graph.ts` creates `generated/graph.json` from the core reading path defined in `SUMMARY.md`.
+3. View generators produce markdown artifacts in `generated/`, reusing `SUMMARY.md` for grouping and ordering.
 4. `scripts/lint-structure.ts` enforces integrity checks.
 
 ## VitePress Integration
-- `scripts/generate-vitepress-nav.ts` builds `.vitepress/knowledge-nav.json` from graph metadata.
+- `scripts/generate-vitepress-nav.ts` builds `.vitepress/knowledge-nav.json` from the same `SUMMARY.md` structure used by the generated views.
 - `.vitepress/config.mts` reads that file and mounts auto-generated navigation into sidebar/nav.

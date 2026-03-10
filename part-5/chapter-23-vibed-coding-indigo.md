@@ -11,7 +11,10 @@ architecture_layer:
   - "systems-and-governance"
 timeline_era: "autonomous-systems"
 related: []
-references: []
+references:
+  - "https://pencil.dev"
+  - "https://docs.anthropic.com/en/docs/claude-code/overview"
+  - "https://x.com/i/collections/1841683833448468480"
 status: "published"
 display_order: 67
 ---

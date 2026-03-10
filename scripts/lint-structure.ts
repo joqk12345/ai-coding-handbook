@@ -1,5 +1,13 @@
 const fs = require('node:fs');
-const { listMarkdownFiles, parseArticle } = require('./lib.ts');
+const {
+  extractExternalReferences,
+  getCoreSummaryEntries,
+  getSummaryEntries,
+  isCoreKnowledgeFile,
+  listMarkdownFiles,
+  normalizeSummarySectionTitle,
+  parseArticle
+} = require('./lib.ts');
 
 function parseSimpleYaml(filePath) {
   const lines = fs.readFileSync(filePath, 'utf8').split('\n');
@@ -47,12 +55,43 @@ erasRaw.split('\n').forEach((line) => {
 const errors = [];
 const warnings = [];
 const files = listMarkdownFiles();
+const fileSet = new Set(files);
+const summaryEntries = getSummaryEntries();
+const summaryByFile = new Map();
 const ids = new Map();
 const articles = files.map((f, i) => parseArticle(f, i + 1));
+const rawDisplayOrderByFile = new Map();
 
-articles.forEach(({ filePath, metadata }) => {
+summaryEntries.forEach((entry) => {
+  if (summaryByFile.has(entry.filePath)) {
+    errors.push(`Duplicate SUMMARY link target '${entry.filePath}' in sections '${summaryByFile.get(entry.filePath).sectionTitle}' and '${entry.sectionTitle}'`);
+    return;
+  }
+  summaryByFile.set(entry.filePath, entry);
+  if (!fileSet.has(entry.filePath)) {
+    errors.push(`SUMMARY references missing file '${entry.filePath}'`);
+  }
+});
+
+const summarySections = new Map();
+summaryEntries.forEach((entry) => {
+  if (!summarySections.has(entry.sectionTitle)) {
+    summarySections.set(entry.sectionTitle, []);
+  }
+  summarySections.get(entry.sectionTitle).push(entry);
+});
+
+summarySections.forEach((entries, sectionTitle) => {
+  const expectedTitle = normalizeSummarySectionTitle(sectionTitle, entries);
+  if (expectedTitle !== sectionTitle) {
+    warnings.push(`SUMMARY section title drift: '${sectionTitle}' should be '${expectedTitle}'`);
+  }
+});
+
+articles.forEach(({ filePath, metadata, body }) => {
   if (ids.has(metadata.id)) errors.push(`Duplicate ID '${metadata.id}' in ${filePath} and ${ids.get(metadata.id)}`);
   ids.set(metadata.id, filePath);
+  rawDisplayOrderByFile.set(filePath, metadata.display_order);
 
   ['id','title','slug','date','type','topics','concepts','tools','architecture_layer','timeline_era','related','references','status','display_order']
     .forEach((key) => {
@@ -73,10 +112,34 @@ articles.forEach(({ filePath, metadata }) => {
     }
   }
 
-  if ((metadata.related || []).length === 0 && (metadata.references || []).length === 0) {
-    warnings.push(`Potential orphan article: ${filePath}`);
+  if (isCoreKnowledgeFile(filePath) && !summaryByFile.has(filePath) && !filePath.match(/-(en|ja|zh)\.md$/)) {
+    warnings.push(`Markdown file is outside SUMMARY reading path: ${filePath}`);
+  }
+
+  const detectedReferences = extractExternalReferences(body);
+  const metadataUrls = (metadata.references || []).filter((ref) => String(ref).startsWith('http://') || String(ref).startsWith('https://'));
+  if (JSON.stringify(detectedReferences) !== JSON.stringify(metadataUrls)) {
+    warnings.push(`Reference metadata drift in ${filePath}: run \`npm run knowledge:ingest\``);
   }
 });
+
+const displayOrderOwners = new Map();
+getCoreSummaryEntries().forEach((entry) => {
+  const rawDisplayOrder = rawDisplayOrderByFile.get(entry.filePath);
+  if (rawDisplayOrder === undefined) return;
+
+  if (!displayOrderOwners.has(rawDisplayOrder)) {
+    displayOrderOwners.set(rawDisplayOrder, [entry.filePath]);
+  } else {
+    displayOrderOwners.get(rawDisplayOrder).push(entry.filePath);
+  }
+});
+
+Array.from(displayOrderOwners.entries())
+  .filter(([, owners]) => owners.length > 1)
+  .forEach(([displayOrder, owners]) => {
+    warnings.push(`Duplicate display_order ${displayOrder} across ${owners.join(', ')}`);
+  });
 
 const allIds = new Set(Array.from(ids.keys()));
 articles.forEach(({ filePath, metadata }) => {

@@ -6,10 +6,12 @@
     "docs:build": "npm run knowledge:build && vitepress build .",
     "docs:preview": "vitepress preview .",
     "docs:sync-check": "python .claude/scripts/check_doc_sync.py",
+    "knowledge:adopt": "node scripts/adopt-article.ts",
     "knowledge:ingest": "node scripts/ingest-article.ts",
+    "knowledge:sync-summary": "node scripts/sync-summary.ts",
     "knowledge:graph": "node scripts/build-graph.ts",
     "knowledge:generate": "node scripts/generate-summary.ts && node scripts/generate-timeline.ts && node scripts/generate-architecture.ts && node scripts/generate-references.ts && npm run knowledge:vite-nav",
-    "knowledge:build": "npm run knowledge:graph && npm run knowledge:generate",
+    "knowledge:build": "npm run knowledge:sync-summary && npm run knowledge:graph && npm run knowledge:generate",
     "knowledge:lint": "node scripts/lint-structure.ts",
     "knowledge:vite-nav": "node scripts/generate-vitepress-nav.ts"
   },

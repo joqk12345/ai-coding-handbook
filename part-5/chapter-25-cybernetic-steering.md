@@ -11,7 +11,8 @@ architecture_layer:
   - "systems-and-governance"
 timeline_era: "autonomous-systems"
 related: []
-references: []
+references:
+  - "https://x.com/odysseus0z/status/2030416758138634583"
 status: "published"
 display_order: 69
 ---

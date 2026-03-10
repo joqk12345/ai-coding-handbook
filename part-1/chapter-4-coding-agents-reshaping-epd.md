@@ -11,7 +11,8 @@ architecture_layer:
   - "foundations"
 timeline_era: "autonomous-systems"
 related: []
-references: []
+references:
+  - "https://x.com/hwchase17/status/2031051115169808685"
 status: "published"
 display_order: 19
 ---

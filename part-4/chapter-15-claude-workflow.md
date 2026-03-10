@@ -11,7 +11,9 @@ architecture_layer:
   - "workflows-and-practices"
 timeline_era: "autonomous-systems"
 related: []
-references: []
+references:
+  - "https://github.com/runesleo/claude-code-workflow"
+  - "https://github.com/runesleo/claude-code-workflow.git"
 status: "published"
 display_order: 59
 ---

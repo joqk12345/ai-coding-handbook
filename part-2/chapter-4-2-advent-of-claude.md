@@ -11,7 +11,8 @@ architecture_layer:
   - "models-and-tools"
 timeline_era: "autonomous-systems"
 related: []
-references: []
+references:
+  - "https://adocomplete.com/advent-of-claude-2025/"
 status: "published"
 display_order: 38
 ---

@@ -34,11 +34,12 @@ display_order: 8
 
 当你新增/删除/重排章节时，请按顺序执行：
 
-1. **先改目录**：更新 `SUMMARY.md` 中的顺序和显示编号。
-2. **再改正文标题**：更新对应章节文件 H1 的编号与标题文案。
-3. **再改站点侧边栏**：更新 `.vitepress/config.mts` 的 `sidebar`（如本次变更涉及导航结构）。
-4. **最后改可视化**：检查 `visualizations/` 下时间线与架构图中的编号/章节文案。
-5. 本地自检后提交。
+1. **新增章节优先走自动入库**：运行 `npm run knowledge:adopt -- path/to/article.md`，让脚本自动补 frontmatter、插入 `SUMMARY.md` 并重建自动产物。
+2. **必要时再人工改目录**：若自动插入后的分组标题或显示编号不符合预期，再手工调整 `SUMMARY.md`；章节范围文案会在 `knowledge:build` 前自动同步。
+3. **再改正文标题**：更新对应章节文件 H1 的编号与标题文案。
+4. **再改站点侧边栏**：仅在导航信息架构变化时调整 `.vitepress/config.mts`。
+5. **最后校验**：运行 `npm run knowledge:lint`，检查 `visualizations/` 下时间线与架构图的自动区块是否同步。
+6. 本地自检后提交。
 
 ## 3. 三处同步点（必须检查）
 
@@ -46,7 +47,7 @@ display_order: 8
 
 1. **目录**：`SUMMARY.md`
 2. **正文标题**：各章节文件的 H1
-3. **可视化**：`visualizations/timeline-overview.md`、`visualizations/architecture-overview.md`
+3. **可视化**：`visualizations/timeline-overview.md`、`visualizations/architecture-overview.md`（自动区块）
 
 建议在 PR 描述中显式写明：
 

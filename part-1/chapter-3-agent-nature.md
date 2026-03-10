@@ -11,7 +11,8 @@ architecture_layer:
   - "foundations"
 timeline_era: "autonomous-systems"
 related: []
-references: []
+references:
+  - "https://agents.md/"
 status: "published"
 display_order: 17
 ---
