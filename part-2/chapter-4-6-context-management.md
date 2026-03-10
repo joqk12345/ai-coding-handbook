@@ -1,3 +1,20 @@
+---
+id: "part-2-chapter-4-6-context-management"
+title: "5.6: 实战中上下文的管理与添加"
+slug: "part-2-chapter-4-6-context-management"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "models-and-tools"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 42
+---
 # 5.6: 实战中上下文的管理与添加
 
 在与 Claude 协作编程时，上下文管理至关重要。你的项目可能有数十甚至数百个文件，但 Claude 只需要正确的信息就能有效地帮助你。过多不相关的上下文实际上会降低 Claude 的表现，因此学会引导它关注相关文件和文档是一项必备技能。

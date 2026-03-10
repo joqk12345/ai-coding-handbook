@@ -1,3 +1,20 @@
+---
+id: "part-2-chapter-6-gemini-practice"
+title: "第7章: Gemini 编程实战"
+slug: "part-2-chapter-6-gemini-practice"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "models-and-tools"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 50
+---
 # 第7章: Gemini 编程实战
 
 如果说Codex开创了代码生成，Claude拓宽了上下文的边界，那么Google Gemini则开启了软件开发的多模态时代。它不仅仅能理解文本和代码，更能“看懂”图像、图表甚至视频，为开发者提供了前所未有的交互维度。

@@ -1,3 +1,20 @@
+---
+id: "part-2-chapter-4-4-how-creator-uses-claude-code"
+title: "5.4: Claude Code 创造者如何使用 Claude Code"
+slug: "part-2-chapter-4-4-how-creator-uses-claude-code"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "models-and-tools"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 40
+---
 # 5.4: Claude Code 创造者如何使用 Claude Code
 
 > 参考线索：<https://x.com/bcherny/status/2007179832300581177>

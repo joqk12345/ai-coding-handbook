@@ -1,3 +1,20 @@
+---
+id: "part-4-chapter-17-skeptic-believer"
+title: "第18章：从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践"
+slug: "part-4-chapter-17-skeptic-believer"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "workflows-and-practices"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 61
+---
 # 第18章：从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践
 
 > *"我的职责是交付最好的代码。如果它更好，那就是好代码。"*

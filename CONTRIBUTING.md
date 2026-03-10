@@ -1,3 +1,20 @@
+---
+id: "contributing"
+title: "贡献指南"
+slug: "contributing"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "workflows-and-practices"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 3
+---
 # 贡献指南
 
 感谢你参与《AI-Coding 使用手册》共建！

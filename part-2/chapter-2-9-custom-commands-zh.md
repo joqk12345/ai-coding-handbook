@@ -1,3 +1,20 @@
+---
+id: "part-2-chapter-2-9-custom-commands-zh"
+title: "2.9: 创建自定义命令"
+slug: "part-2-chapter-2-9-custom-commands-zh"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "models-and-tools"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 25
+---
 # 2.9: 创建自定义命令
 
 `2.1 > 2.2 > 2.3 > 2.4 > 2.5 > 2.6 > 2.7 > 2.8 | [ 2.9 ] 2.10 > 2.11`

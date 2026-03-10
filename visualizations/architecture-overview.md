@@ -1,3 +1,20 @@
+---
+id: "visualizations-architecture-overview"
+title: "内容架构总览"
+slug: "visualizations-architecture-overview"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "workflows-and-practices"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 71
+---
 # 内容架构总览
 
 本页基于当前手册全部章节，展示“知识结构”与“能力结构”如何对应，以及各层之间的依赖关系。L1-L7 分层保持不变，并补充每层精确章节清单。

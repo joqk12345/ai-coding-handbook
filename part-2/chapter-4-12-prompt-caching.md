@@ -1,8 +1,20 @@
 ---
+id: "part-2-chapter-4-12-prompt-caching"
 title: "5.12: Lessons from Building Claude Code - Prompt 缓存即一切"
-outline: [2, 3]
+slug: "part-2-chapter-4-12-prompt-caching"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "models-and-tools"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 36
 ---
-
 # 5.12: Lessons from Building Claude Code — Prompt 缓存即一切
 
 > *It is often said in engineering that "Cache Rules Everything Around Me", and the same rule holds for agents.*

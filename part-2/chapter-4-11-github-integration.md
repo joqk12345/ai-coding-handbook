@@ -1,3 +1,20 @@
+---
+id: "part-2-chapter-4-11-github-integration"
+title: "5.11: GitHub 集成"
+slug: "part-2-chapter-4-11-github-integration"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "models-and-tools"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 34
+---
 # 5.11: GitHub 集成
 
 Claude Code 提供官方的 GitHub 集成，允许 Claude 在 GitHub Actions 中运行。这项集成提供了两种主要工作流：问题和拉取请求的提及支持，以及自动拉取请求审查。

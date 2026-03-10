@@ -1,3 +1,20 @@
+---
+id: "part-2-chapter-4-claude-manual"
+title: "第5章: Claude 使用手册"
+slug: "part-2-chapter-4-claude-manual"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "models-and-tools"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 46
+---
 # 第5章: Claude 使用手册
 
 > **关于"claude-code"**: 您可能在社区中听到"claude-code"的说法。需要说明的是，这并非 Anthropic 官方发布的一款独立产品，而是开发者社区对于 Claude 系列模型（如 Claude 3 家族）在代码生成、分析和重构等任务上所展现出的卓越能力的统称。本章将聚焦于此，详细探讨如何将 Claude 作为顶尖的编程工具来使用。

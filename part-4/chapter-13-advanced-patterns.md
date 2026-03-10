@@ -1,3 +1,20 @@
+---
+id: "part-4-chapter-13-advanced-patterns"
+title: "第14章：高级 Agent 模式"
+slug: "part-4-chapter-13-advanced-patterns"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "workflows-and-practices"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 57
+---
 # 第14章：高级 Agent 模式
 
 本章继续第12章的实战内容，深入讲解更高级的 Agent 设计模式，包括子智能体、任务系统、多智能体协作和自治执行等。

@@ -1,3 +1,20 @@
+---
+id: "docs-structure"
+title: "文档结构与章节编号规范"
+slug: "docs-structure"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "systems-and-governance"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 8
+---
 # 文档结构与章节编号规范
 
 本文档用于约定本仓库中“章节编号从哪里来、变更时怎么做、哪些位置必须同步”。

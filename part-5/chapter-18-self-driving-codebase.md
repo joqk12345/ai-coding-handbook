@@ -1,3 +1,20 @@
+---
+id: "part-5-chapter-18-self-driving-codebase"
+title: "第20章：自主代码库 —— 背景智能体与软件交付的下一个时代"
+slug: "part-5-chapter-18-self-driving-codebase"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "systems-and-governance"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 63
+---
 # 第20章：自主代码库 —— 背景智能体与软件交付的下一个时代
 
 > *从"人操作机器"到"机器自主运行"——软件工程的根本范式转变。*

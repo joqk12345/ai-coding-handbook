@@ -1,3 +1,20 @@
+---
+id: "part-2-chapter-4-14-git-worktree-mode"
+title: "5.14：Git Worktree 模式与 Agent 工具设计艺术"
+slug: "part-2-chapter-4-14-git-worktree-mode"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "models-and-tools"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 37
+---
 # 5.14：Git Worktree 模式与 Agent 工具设计艺术
 
 > *构建 Agent 最大的挑战之一是构建它的动作空间。设计工具是一门艺术，而非科学。*

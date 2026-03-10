@@ -1,3 +1,20 @@
+---
+id: "part-4-chapter-16-trellis"
+title: "第17章：Trellis —— 为 AI 设置规则的开放框架"
+slug: "part-4-chapter-16-trellis"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "workflows-and-practices"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 60
+---
 # 第17章：Trellis —— 为 AI 设置规则的开放框架
 
 > *Trellis 补上了 CLAUDE.md/AGENTS.md 之外的结构：分层 Spec、任务上下文、workspace 记忆，以及按平台接入的工作流。*

@@ -1,8 +1,20 @@
 ---
+id: "part-2-chapter-4-13-agent-tool-design"
 title: "5.13: Lessons from Building Claude Code - 像 Agent 一样思考"
-outline: [2, 3]
+slug: "part-2-chapter-4-13-agent-tool-design"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "models-and-tools"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 37
 ---
-
 # 5.13: Lessons from Building Claude Code — 像 Agent 一样思考
 
 > *One of the hardest parts of building an agent harness is constructing its action space.*

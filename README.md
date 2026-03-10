@@ -1,3 +1,20 @@
+---
+id: "readme"
+title: "AI-Coding 使用手册"
+slug: "readme"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "workflows-and-practices"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 4
+---
 # AI-Coding 使用手册
 
 本项目旨在创建一本关于 AI 辅助编程的综合性使用手册，覆盖 Claude、Codex、Gemini 等主流工具。
@@ -24,6 +41,21 @@ npm run docs:preview
 ```
 
 构建输出目录为 `.vitepress/dist`，可直接用于 GitHub Pages 发布。
+
+
+## 知识系统（自动生成）
+
+```bash
+npm run knowledge:ingest
+npm run knowledge:lint
+npm run knowledge:build
+```
+
+- 自动目录：`/generated/summary`
+- 自动时间线：`/generated/timeline`
+- 自动架构图：`/generated/architecture`
+- 自动引用索引：`/generated/references`
+- 使用说明：`/docs/system/USAGE`
 
 ## 参与贡献
 

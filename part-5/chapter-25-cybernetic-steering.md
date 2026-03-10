@@ -1,3 +1,20 @@
+---
+id: "part-5-chapter-25-cybernetic-steering"
+title: "第25章：从“拧阀门”到“掌舵”——Harness Engineering 的控制论转向"
+slug: "part-5-chapter-25-cybernetic-steering"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "systems-and-governance"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 69
+---
 # 第25章：从“拧阀门”到“掌舵”——Harness Engineering 的控制论转向
 
 > 读完 OpenAI 关于 harness engineering 的实践后，一个熟悉的模式浮现出来：这不是第一次工程角色迁移，而是历史上第三次“闭环上移”。

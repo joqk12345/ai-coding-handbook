@@ -1,3 +1,20 @@
+---
+id: "part-2-chapter-4-1-claude-code-architecture"
+title: "5.1: Claude Code 深度解析"
+slug: "part-2-chapter-4-1-claude-code-architecture"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "models-and-tools"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 26
+---
 # 5.1: Claude Code 深度解析
 
 Claude Code 的价值不只是“一个能写代码的 AI 工具”，而是把 Agent 的核心能力工程化为一套可配置、可扩展、可评估的技术范式。本章按“概念 -> 机制 -> 选型 -> 工程落地”的顺序展开。

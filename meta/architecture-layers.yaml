@@ -1,0 +1,9 @@
+layers:
+  - name: foundations
+    description: Core ideas and historical context.
+  - name: models-and-tools
+    description: Tooling ecosystem and model capabilities.
+  - name: workflows-and-practices
+    description: Practical workflows, patterns, and operations.
+  - name: systems-and-governance
+    description: Organizational practices, governance, and automation.

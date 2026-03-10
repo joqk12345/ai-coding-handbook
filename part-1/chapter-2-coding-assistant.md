@@ -1,3 +1,20 @@
+---
+id: "part-1-chapter-2-coding-assistant"
+title: "第2章：什么是代码助手"
+slug: "part-1-chapter-2-coding-assistant"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "foundations"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 16
+---
 # 第2章：什么是代码助手
 
 代码助手不仅仅是一个帮你写代码的工具——它是一个使用语言模型来处理复杂编程任务的复杂系统。理解这些助手背后的工作原理，将帮助你理解是什么造就了一个真正强大的编程伙伴。

@@ -1,3 +1,20 @@
+---
+id: "part-4-chapter-14-multi-agent"
+title: "第15章：多智能体系统与自治执行"
+slug: "part-4-chapter-14-multi-agent"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "workflows-and-practices"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 58
+---
 # 第15章：多智能体系统与自治执行
 
 本章是实战部分的最终章，我们将构建一个完整的多智能体协作系统，包括后台任务执行、智能体团队、自治执行和 Worktree 隔离等高级功能。

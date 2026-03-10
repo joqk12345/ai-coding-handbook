@@ -1,3 +1,20 @@
+---
+id: "part-4-chapter-15-claude-workflow"
+title: "第16章：Claude Code Workflow —— 经过实战检验的 Agent 工作流模板"
+slug: "part-4-chapter-15-claude-workflow"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "workflows-and-practices"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 59
+---
 # 第16章：Claude Code Workflow —— 经过实战检验的 Agent 工作流模板
 
 > *经过 3 个月每日使用验证的工作流模板，将 Claude 转化为持久、自我改进的开发伙伴。*

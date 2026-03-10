@@ -1,3 +1,20 @@
+---
+id: "part-4-chapter-18-ai-coding-journey"
+title: "第19章：从怀疑到实践——三个月 AI Coding 实战复盘"
+slug: "part-4-chapter-18-ai-coding-journey"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "workflows-and-practices"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 62
+---
 # 第19章：从怀疑到实践——三个月 AI Coding 实战复盘
 
 > *从去年12月开始高强度实践 AI coding 到现在三个多月，要歇一下了，这玩意儿快是快，累也是真累，大脑负荷比自己写代码还重。借此告一段落的机会梳理一下成果，记录于此备忘。*

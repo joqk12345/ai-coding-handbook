@@ -1,3 +1,20 @@
+---
+id: "part-2-chapter-5-2-codex-capabilities"
+title: "6.2 Codex 核心能力与技术特点"
+slug: "part-2-chapter-5-2-codex-capabilities"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "models-and-tools"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 48
+---
 # 6.2 Codex 核心能力与技术特点
 
 上一节讲的是“Codex 为什么重要”。本节回答“Codex 到底强在哪、弱在哪、怎么用更稳”。

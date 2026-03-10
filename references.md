@@ -1,3 +1,20 @@
+---
+id: "references"
+title: "参考资源"
+slug: "references"
+date: "2025-01-01"
+type: "reference"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "workflows-and-practices"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 70
+---
 # 参考资源
 
 本文档汇集了本书中引用的所有外部资源链接，按主题分类整理，方便读者查阅。

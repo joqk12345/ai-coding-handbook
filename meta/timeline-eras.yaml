@@ -1,0 +1,13 @@
+eras:
+  - name: early-foundations
+    start: 2022-01-01
+    end: 2023-12-31
+    description: Foundations of AI-assisted programming.
+  - name: agent-adoption
+    start: 2024-01-01
+    end: 2024-12-31
+    description: Broad adoption of coding agents and workflows.
+  - name: autonomous-systems
+    start: 2025-01-01
+    end: 2026-12-31
+    description: System-level integration and autonomous operation.

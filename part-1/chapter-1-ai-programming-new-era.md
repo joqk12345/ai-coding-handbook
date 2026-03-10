@@ -1,3 +1,20 @@
+---
+id: "part-1-chapter-1-ai-programming-new-era"
+title: "第1章: AI 编程新纪元"
+slug: "part-1-chapter-1-ai-programming-new-era"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "foundations"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 15
+---
 # 第1章: AI 编程新纪元
 
 我们正处在一个软件开发的剧变时代。
