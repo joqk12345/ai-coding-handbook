@@ -24,3 +24,9 @@ npm run docs:preview
 ```
 
 构建输出目录为 `.vitepress/dist`，可直接用于 GitHub Pages 发布。
+
+## 参与贡献
+
+- [贡献指南](./CONTRIBUTING.md)
+- [文档结构与章节编号规范](./docs/structure.md)
+

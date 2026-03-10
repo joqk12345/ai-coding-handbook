@@ -9,7 +9,7 @@
 - [3.1 OpenAI Codex 简介与演进脉络](./chapter-5-1-codex-introduction.md)
 - [3.2 Codex 核心能力与技术特点](./chapter-5-2-codex-capabilities.md)
 
-你可以把本文件视为“第3章后半部分”，重点关注协作实践、案例与局限性。
+你可以把本文件视为“第5章后半部分”，重点关注协作实践、案例与局限性。
 
 ## 3.3 与 Codex 协作的最佳实践
 

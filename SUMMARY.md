@@ -5,16 +5,22 @@
 *   **参考资源**
     *   [外部链接汇总](references.md)
 
+*   **协作规范**
+    *   [贡献指南](CONTRIBUTING.md)
+    *   [文档结构与章节编号规范](docs/structure.md)
+
 *   **可视化总览**
     *   [时间线](visualizations/timeline-overview.md)
     *   [架构图](visualizations/architecture-overview.md)
 
-*   **第一部分：入门 (第1-4章)**
+*   **索引维护约束（新增章节必同步）**
+    *   同步更新 `SUMMARY.md`、`visualizations/timeline-overview.md`、`visualizations/architecture-overview.md` 的索引矩阵与章节映射
+
+*   **第一部分：入门 (第1-3章)**
     *   [第1章: AI 编程新纪元](part-1/chapter-1-ai-programming-new-era.md)
     *   [第2章: 什么是代码助手](part-1/chapter-2-coding-assistant.md)
     *   [第3章: Agent 本质](part-1/chapter-3-agent-nature.md)
-    *   [第4章: Coding Agents 如何重塑工程、产品与设计（EPD）](part-1/chapter-4-coding-agents-reshaping-epd.md)
-    *   [4.1: 编码解决后会发生什么？—— AI 优先的软件开发时代](part-1/chapter-4-ai-first-software-development.md)
+    *   [附章A（第1部分延伸）: AI 优先的软件开发时代](part-1/chapter-4-ai-first-software-development.md)
 
 *   **第二部分：核心工具详解 (第5-9章)**
     *   [第5章: Claude 使用手册](part-2/chapter-4-claude-manual.md)
@@ -54,13 +60,14 @@
     *   [第18章: 从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践](part-4/chapter-17-skeptic-believer.md)
     *   [第19章: 从怀疑到实践——三个月 AI Coding 实战复盘](part-4/chapter-18-ai-coding-journey.md)
 
-*   **第五部分：自主代码库 (第20-25章)**
-    *   [第20章: 自主代码库 - 背景智能体与软件交付的下一个时代](part-5/chapter-18-self-driving-codebase.md)
-    *   [第21章: 在 Agent-First 的世界中充分发挥 Codex 的威力](part-5/chapter-19-leveraging-codex.md)
-    *   [第22章: Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力](part-5/chapter-20-harness-engineering.md)
-    *   [第23章: 上下文工程的文件系统抽象 — AIGNE 框架](part-5/chapter-21-context-engineering.md)
-    *   [第24章: 周末氛围直播复盘——AI Coding 的十倍加速时代](part-5/chapter-23-vibed-coding-indigo.md)
-    *   [第25章: Autoresearch 实测提速 11% —— Agent 自主调参正在成为“最终战场”](part-5/chapter-24-autoresearch-nanochat.md)
+*   **第五部分：自主代码库 (第19-25章)**
+    *   [第19章: 自主代码库 - 背景智能体与软件交付的下一个时代](part-5/chapter-18-self-driving-codebase.md)
+    *   [第20章: 在 Agent-First 的世界中充分发挥 Codex 的威力](part-5/chapter-19-leveraging-codex.md)
+    *   [第21章: Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力](part-5/chapter-20-harness-engineering.md)
+    *   [第22章: 上下文工程的文件系统抽象 — AIGNE 框架](part-5/chapter-21-context-engineering.md)
+    *   [第23章: 周末氛围直播复盘——AI Coding 的十倍加速时代](part-5/chapter-23-vibed-coding-indigo.md)
+    *   [第24章: Autoresearch 实测提速 11% —— Agent 自主调参正在成为“最终战场”](part-5/chapter-24-autoresearch-nanochat.md)
+    *   [第25章: 从“拧阀门”到“掌舵”——Harness Engineering 的控制论转向](part-5/chapter-25-cybernetic-steering.md)
 
 *   **附录**
     *   [附录A: 常用AI工具速查表](appendix/appendix-a-cheatsheet.md)
