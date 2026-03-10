@@ -5,6 +5,10 @@
 *   **参考资源**
     *   [外部链接汇总](references.md)
 
+*   **协作规范**
+    *   [贡献指南](CONTRIBUTING.md)
+    *   [文档结构与章节编号规范](docs/structure.md)
+
 *   **可视化总览**
     *   [时间线](visualizations/timeline-overview.md)
     *   [架构图](visualizations/architecture-overview.md)

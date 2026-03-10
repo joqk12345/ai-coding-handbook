@@ -17,9 +17,17 @@ export default defineConfig({
       { text: '时间线', link: '/visualizations/timeline-overview' },
       { text: '架构图', link: '/visualizations/architecture-overview' },
       { text: '参考资源', link: '/references' },
+      { text: '贡献指南', link: '/CONTRIBUTING' },
       { text: 'Hooks 参考', link: '/2026-02-02-claude-code-hooks-reference' }
     ],
     sidebar: [
+      {
+        text: '协作规范',
+        items: [
+          { text: '贡献指南', link: '/CONTRIBUTING' },
+          { text: '文档结构与章节编号规范', link: '/docs/structure' }
+        ]
+      },
       {
         text: '可视化总览',
         items: [
