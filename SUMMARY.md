@@ -13,7 +13,7 @@
     *   [第1章: AI 编程新纪元](part-1/chapter-1-ai-programming-new-era.md)
     *   [第2章: 什么是代码助手](part-1/chapter-2-coding-assistant.md)
     *   [第3章: Agent 本质](part-1/chapter-3-agent-nature.md)
-    *   [第3章(续): AI 优先的软件开发时代](part-1/chapter-4-ai-first-software-development.md)
+    *   [附章A（第1部分延伸）: AI 优先的软件开发时代](part-1/chapter-4-ai-first-software-development.md)
 
 *   **第二部分：核心工具详解 (第4-8章)**
     *   [第4章: Claude 使用手册](part-2/chapter-4-claude-manual.md)
