@@ -1,4 +1,4 @@
-# 2.14：Git Worktree 模式与 Agent 工具设计艺术
+# 5.14：Git Worktree 模式与 Agent 工具设计艺术
 
 > *构建 Agent 最大的挑战之一是构建它的动作空间。设计工具是一门艺术，而非科学。*
 

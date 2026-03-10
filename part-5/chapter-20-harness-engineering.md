@@ -1,4 +1,4 @@
-# 第21章：Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力
+# 第22章：Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力
 
 > *人类掌舵，Agent 执行。*
 

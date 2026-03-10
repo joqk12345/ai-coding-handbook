@@ -1,4 +1,4 @@
-# 2.10: MCP 服务器扩展
+# 5.10: MCP 服务器扩展
 
 你可以通过添加 MCP（Model Context Protocol，模型上下文协议）服务器来扩展 Claude Code 的能力。这些服务器可以在远程或本地机器上运行，为 Claude 提供它原本不具备的新工具和能力。
 

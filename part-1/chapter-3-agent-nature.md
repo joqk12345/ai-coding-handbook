@@ -1,4 +1,4 @@
-# Agent 本质
+# 第3章：Agent 本质
 
 ## 第一部分：先理解 Agent 文件（AGENTS.md）
 

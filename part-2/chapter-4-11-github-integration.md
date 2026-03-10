@@ -1,4 +1,4 @@
-# 2.11: GitHub 集成
+# 5.11: GitHub 集成
 
 Claude Code 提供官方的 GitHub 集成，允许 Claude 在 GitHub Actions 中运行。这项集成提供了两种主要工作流：问题和拉取请求的提及支持，以及自动拉取请求审查。
 

@@ -1,4 +1,4 @@
-# 3.1 OpenAI Codex 简介与演进脉络
+# 6.1 OpenAI Codex 简介与演进脉络
 
 本节聚焦三个问题：
 

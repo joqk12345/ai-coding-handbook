@@ -1,4 +1,4 @@
-# 第12章：从零构建一个 AI Agent
+# 第13章：从零构建一个 AI Agent
 
 > *"One loop & Bash is all you need" -- 一个工具 + 一个循环 = 一个智能体。*
 

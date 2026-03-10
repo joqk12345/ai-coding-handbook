@@ -1,4 +1,4 @@
-# 2.4: Claude Code 创造者如何使用 Claude Code
+# 5.4: Claude Code 创造者如何使用 Claude Code
 
 > 参考线索：<https://x.com/bcherny/status/2007179832300581177>
 >
