@@ -83,13 +83,14 @@ export default defineConfig({
         ]
       },
       {
-        text: '第五部分：自主代码库 (第19-23章)',
+        text: '第五部分：自主代码库 (第19-24章)',
         items: [
           { text: '第19章: 自主代码库', link: '/part-5/chapter-18-self-driving-codebase' },
           { text: '第20章: 充分发挥 Codex 的威力', link: '/part-5/chapter-19-leveraging-codex' },
           { text: '第21章: Harness Engineering', link: '/part-5/chapter-20-harness-engineering' },
           { text: '第22章: 上下文工程 - AIGNE 框架', link: '/part-5/chapter-21-context-engineering' },
-          { text: '第23章: 周末氛围直播复盘——AI Coding 的十倍加速时代', link: '/part-5/chapter-23-vibed-coding-indigo' }
+          { text: '第23章: 周末氛围直播复盘——AI Coding 的十倍加速时代', link: '/part-5/chapter-23-vibed-coding-indigo' },
+          { text: '第24章: Autoresearch 实测提速 11% —— Agent 自主调参正在成为“最终战场”', link: '/part-5/chapter-24-autoresearch-nanochat' }
         ]
       },
       {
