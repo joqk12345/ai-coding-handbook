@@ -1,3 +1,20 @@
+---
+id: "appendix-appendix-b-resources"
+title: "附录B: 推荐资源与社区"
+slug: "appendix-appendix-b-resources"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "workflows-and-practices"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 7
+---
 # 附录B: 推荐资源与社区
 
 ## Claude Code 与 Agent Skills 参考

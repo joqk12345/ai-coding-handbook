@@ -1,3 +1,20 @@
+---
+id: "part-2-chapter-4-9-custom-commands"
+title: "5.9: 创建自定义命令"
+slug: "part-2-chapter-4-9-custom-commands"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "models-and-tools"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 45
+---
 # 5.9: 创建自定义命令
 
 Claude Code 内置了可以通过斜杠访问的命令，但你也可以创建自己的自定义命令来自动化经常执行的重复性任务。

@@ -1,3 +1,20 @@
+---
+id: "part-2-chapter-4-5-claude-code-showcase"
+title: "5.5: `claude-code-showcase` 配置拆解（.claude + README）"
+slug: "part-2-chapter-4-5-claude-code-showcase"
+date: "2025-01-01"
+type: "case-study"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "models-and-tools"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 41
+---
 # 5.5: `claude-code-showcase` 配置拆解（.claude + README）
 
 > 参考仓库：<https://github.com/ChrisWiles/claude-code-showcase>

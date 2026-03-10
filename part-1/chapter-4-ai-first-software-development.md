@@ -1,3 +1,20 @@
+---
+id: "part-1-chapter-4-ai-first-software-development"
+title: "4.1: 编码解决后会发生什么？—— AI 优先的软件开发时代"
+slug: "part-1-chapter-4-ai-first-software-development"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "foundations"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 18
+---
 # 4.1: 编码解决后会发生什么？—— AI 优先的软件开发时代
 
 > *我们就是那些刚看到印刷机的抄写员。繁琐的抄写工作已经结束。艺术才刚刚开始。*

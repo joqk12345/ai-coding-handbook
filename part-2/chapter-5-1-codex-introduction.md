@@ -1,3 +1,20 @@
+---
+id: "part-2-chapter-5-1-codex-introduction"
+title: "6.1 OpenAI Codex 简介与演进脉络"
+slug: "part-2-chapter-5-1-codex-introduction"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "models-and-tools"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 47
+---
 # 6.1 OpenAI Codex 简介与演进脉络
 
 本节聚焦三个问题：

@@ -1,3 +1,20 @@
+---
+id: "part-1-chapter-4-coding-agents-reshaping-epd"
+title: "第4章：Coding Agents 如何重塑工程、产品与设计（EPD）"
+slug: "part-1-chapter-4-coding-agents-reshaping-epd"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "foundations"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 19
+---
 # 第4章：Coding Agents 如何重塑工程、产品与设计（EPD）
 
 ## 导言

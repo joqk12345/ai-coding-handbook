@@ -1,3 +1,20 @@
+---
+id: "part-5-chapter-24-autoresearch-nanochat"
+title: "第25章：Autoresearch 实测提速 11% —— Agent 自主调参正在成为“最终战场”"
+slug: "part-5-chapter-24-autoresearch-nanochat"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "systems-and-governance"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 68
+---
 # 第25章：Autoresearch 实测提速 11% —— Agent 自主调参正在成为“最终战场”
 
 > 三天前，Karpathy 将 autoresearch 挂在 nanochat 的 depth=12 模型上连续跑了约两天。结果找到约 20 项可叠加改动，全部迁移到 depth=24 后依然成立，最终把榜单指标 **Time to GPT-2** 从 **2.02 小时**降到 **1.80 小时**（约 11% 提升）。

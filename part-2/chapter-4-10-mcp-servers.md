@@ -1,3 +1,20 @@
+---
+id: "part-2-chapter-4-10-mcp-servers"
+title: "5.10: MCP 服务器扩展"
+slug: "part-2-chapter-4-10-mcp-servers"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "models-and-tools"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 30
+---
 # 5.10: MCP 服务器扩展
 
 你可以通过添加 MCP（Model Context Protocol，模型上下文协议）服务器来扩展 Claude Code 的能力。这些服务器可以在远程或本地机器上运行，为 Claude 提供它原本不具备的新工具和能力。

@@ -1,3 +1,20 @@
+---
+id: "part-5-chapter-20-harness-engineering"
+title: "第22章：Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力"
+slug: "part-5-chapter-20-harness-engineering"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "systems-and-governance"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 65
+---
 # 第22章：Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力
 
 > *人类掌舵，Agent 执行。*

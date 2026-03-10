@@ -1,3 +1,20 @@
+---
+id: "visualizations-timeline-overview"
+title: "学习路径时间线"
+slug: "visualizations-timeline-overview"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "workflows-and-practices"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 73
+---
 # 学习路径时间线
 
 本页基于当前手册全部章节，给出从认知建立到工程自治的完整学习时间线，并与架构图共用统一标签体系：`tooling`、`workflow`、`system`、`org`、`research`。

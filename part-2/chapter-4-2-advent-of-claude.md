@@ -1,3 +1,20 @@
+---
+id: "part-2-chapter-4-2-advent-of-claude"
+title: "5.2: Advent of Claude - 31天掌握 Claude Code"
+slug: "part-2-chapter-4-2-advent-of-claude"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "models-and-tools"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 38
+---
 # 5.2: Advent of Claude - 31天掌握 Claude Code
 
 > *一份全面的 Claude Code 功能指南，从快捷操作到高级智能体模式。*

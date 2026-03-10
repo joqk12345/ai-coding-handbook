@@ -1,3 +1,20 @@
+---
+id: "index"
+title: "AI-Coding 使用手册"
+slug: "index"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "workflows-and-practices"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 14
+---
 # AI-Coding 使用手册
 
 本项目旨在创建一本关于 AI 辅助编程的综合性使用手册，覆盖 Claude、Codex、Gemini 等主流工具。

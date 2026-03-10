@@ -1,3 +1,20 @@
+---
+id: "part-2-chapter-4-11-github-integration-ja"
+title: "2.11: GitHub 統合"
+slug: "part-2-chapter-4-11-github-integration-ja"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "models-and-tools"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 32
+---
 # 2.11: GitHub 統合
 
 `2.1 > 2.2 > 2.3 > 2.4 > 2.5 > 2.6 > 2.7 > 2.8 > 2.9 > 2.10 | [ 2.11 ]`

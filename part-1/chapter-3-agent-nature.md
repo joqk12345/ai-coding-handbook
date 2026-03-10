@@ -1,3 +1,20 @@
+---
+id: "part-1-chapter-3-agent-nature"
+title: "第3章：Agent 本质"
+slug: "part-1-chapter-3-agent-nature"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "foundations"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 17
+---
 # 第3章：Agent 本质
 
 ## 第一部分：先理解 Agent 文件（AGENTS.md）

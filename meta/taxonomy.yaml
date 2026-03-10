@@ -1,0 +1,29 @@
+types:
+  - article
+  - reference
+  - concept
+  - case-study
+
+topics:
+  - ai-programming
+  - coding-agents
+  - prompt-engineering
+  - context-engineering
+  - testing
+  - architecture
+  - workflow
+  - tools
+  - governance
+
+concepts:
+  - mcp
+  - agent-skills
+  - multi-agent
+  - harness-engineering
+  - context-management
+  - prompt-caching
+  - cybernetic-steering
+
+status:
+  - draft
+  - published

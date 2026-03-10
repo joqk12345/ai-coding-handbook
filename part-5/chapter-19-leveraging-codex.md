@@ -1,3 +1,20 @@
+---
+id: "part-5-chapter-19-leveraging-codex"
+title: "第21章：在 Agent-First 的世界中充分发挥 Codex 的威力"
+slug: "part-5-chapter-19-leveraging-codex"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "systems-and-governance"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 64
+---
 # 第21章：在 Agent-First 的世界中充分发挥 Codex 的威力
 
 > *你不需要复杂的工具链，不需要百万行的配置文件，只需要理解 Agent 工程的基本原则。*

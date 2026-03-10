@@ -1,3 +1,20 @@
+---
+id: "2026-02-02-claude-code-hooks-reference"
+title: "Claude Code Hooks 参考指南"
+slug: "2026-02-02-claude-code-hooks-reference"
+date: "2026-02-02"
+type: "reference"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "workflows-and-practices"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 1
+---
 # Claude Code Hooks 参考指南
 
 ## 概述

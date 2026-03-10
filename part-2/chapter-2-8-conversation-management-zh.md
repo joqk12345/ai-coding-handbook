@@ -1,3 +1,20 @@
+---
+id: "part-2-chapter-2-8-conversation-management-zh"
+title: "2.8: 对话管理与上下文控制"
+slug: "part-2-chapter-2-8-conversation-management-zh"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "models-and-tools"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 22
+---
 # 2.8: 对话管理与上下文控制
 
 `2.1 > 2.2 > 2.3 > 2.4 > 2.5 > 2.6 > 2.7 | [ 2.8 ] 2.9 > 2.10 > 2.11`

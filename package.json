@@ -2,10 +2,16 @@
   "name": "ai-coding-handbook",
   "private": true,
   "scripts": {
-    "docs:dev": "vitepress dev .",
-    "docs:build": "vitepress build .",
+    "docs:dev": "npm run knowledge:build && vitepress dev .",
+    "docs:build": "npm run knowledge:build && vitepress build .",
     "docs:preview": "vitepress preview .",
-    "docs:sync-check": "python .claude/scripts/check_doc_sync.py"
+    "docs:sync-check": "python .claude/scripts/check_doc_sync.py",
+    "knowledge:ingest": "node scripts/ingest-article.ts",
+    "knowledge:graph": "node scripts/build-graph.ts",
+    "knowledge:generate": "node scripts/generate-summary.ts && node scripts/generate-timeline.ts && node scripts/generate-architecture.ts && node scripts/generate-references.ts && npm run knowledge:vite-nav",
+    "knowledge:build": "npm run knowledge:graph && npm run knowledge:generate",
+    "knowledge:lint": "node scripts/lint-structure.ts",
+    "knowledge:vite-nav": "node scripts/generate-vitepress-nav.ts"
   },
   "devDependencies": {
     "vitepress": "^1.6.3"

@@ -1,3 +1,20 @@
+---
+id: "part-2-chapter-4-8-conversation-management"
+title: "5.8: 对话管理与上下文控制"
+slug: "part-2-chapter-4-8-conversation-management"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "models-and-tools"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 44
+---
 # 5.8: 对话管理与上下文控制
 
 在使用 Claude 处理复杂任务时，你通常需要引导对话以保持其专注和高效。有几种技巧可以用来控制对话流程，帮助 Claude 保持正确的方向。

@@ -1,3 +1,20 @@
+---
+id: "part-5-chapter-21-context-engineering"
+title: "第23章：上下文工程的文件系统抽象 —— AIGNE 框架与可验证的 GenAI 系统"
+slug: "part-5-chapter-21-context-engineering"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "systems-and-governance"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 66
+---
 # 第23章：上下文工程的文件系统抽象 —— AIGNE 框架与可验证的 GenAI 系统
 
 > *"一切皆文件"——将 Unix 哲学引入 GenAI 上下文管理。*

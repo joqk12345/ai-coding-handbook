@@ -1,3 +1,20 @@
+---
+id: "part-4-chapter-12-building-agent"
+title: "第13章：从零构建一个 AI Agent"
+slug: "part-4-chapter-12-building-agent"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "workflows-and-practices"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 56
+---
 # 第13章：从零构建一个 AI Agent
 
 > *"One loop & Bash is all you need" -- 一个工具 + 一个循环 = 一个智能体。*

@@ -1,3 +1,20 @@
+---
+id: "part-2-chapter-4-3-agent-skills"
+title: "5.3: Agent Skills（智能体技能）入门"
+slug: "part-2-chapter-4-3-agent-skills"
+date: "2025-01-01"
+type: "article"
+topics: []
+concepts: []
+tools: []
+architecture_layer:
+  - "models-and-tools"
+timeline_era: "autonomous-systems"
+related: []
+references: []
+status: "published"
+display_order: 39
+---
 # 5.3: Agent Skills（智能体技能）入门
 
 > 参考文档：<https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview>

@@ -1,0 +1,2177 @@
+{
+  "generatedAt": "2026-03-10T09:40:53.547Z",
+  "nodeCount": 75,
+  "edgeCount": 76,
+  "nodes": [
+    {
+      "id": "2026-02-02-claude-code-hooks-reference",
+      "label": "Claude Code Hooks 参考指南",
+      "type": "reference",
+      "file": "2026-02-02-claude-code-hooks-reference.md",
+      "metadata": {
+        "id": "2026-02-02-claude-code-hooks-reference",
+        "title": "Claude Code Hooks 参考指南",
+        "slug": "2026-02-02-claude-code-hooks-reference",
+        "date": "2026-02-02",
+        "type": "reference",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 1
+      }
+    },
+    {
+      "id": "claude",
+      "label": "CLAUDE.md",
+      "type": "article",
+      "file": "CLAUDE.md",
+      "metadata": {
+        "id": "claude",
+        "title": "CLAUDE.md",
+        "slug": "claude",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 2
+      }
+    },
+    {
+      "id": "contributing",
+      "label": "贡献指南",
+      "type": "article",
+      "file": "CONTRIBUTING.md",
+      "metadata": {
+        "id": "contributing",
+        "title": "贡献指南",
+        "slug": "contributing",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 3
+      }
+    },
+    {
+      "id": "readme",
+      "label": "AI-Coding 使用手册",
+      "type": "article",
+      "file": "README.md",
+      "metadata": {
+        "id": "readme",
+        "title": "AI-Coding 使用手册",
+        "slug": "readme",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 4
+      }
+    },
+    {
+      "id": "summary",
+      "label": "目录",
+      "type": "article",
+      "file": "SUMMARY.md",
+      "metadata": {
+        "id": "summary",
+        "title": "目录",
+        "slug": "summary",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 5
+      }
+    },
+    {
+      "id": "appendix-appendix-a-cheatsheet",
+      "label": "附录A: 常用AI工具速查表",
+      "type": "article",
+      "file": "appendix/appendix-a-cheatsheet.md",
+      "metadata": {
+        "id": "appendix-appendix-a-cheatsheet",
+        "title": "附录A: 常用AI工具速查表",
+        "slug": "appendix-appendix-a-cheatsheet",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 6
+      }
+    },
+    {
+      "id": "appendix-appendix-b-resources",
+      "label": "附录B: 推荐资源与社区",
+      "type": "article",
+      "file": "appendix/appendix-b-resources.md",
+      "metadata": {
+        "id": "appendix-appendix-b-resources",
+        "title": "附录B: 推荐资源与社区",
+        "slug": "appendix-appendix-b-resources",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 7
+      }
+    },
+    {
+      "id": "docs-structure",
+      "label": "文档结构与章节编号规范",
+      "type": "article",
+      "file": "docs/structure.md",
+      "metadata": {
+        "id": "docs-structure",
+        "title": "文档结构与章节编号规范",
+        "slug": "docs-structure",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "systems-and-governance"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 8
+      }
+    },
+    {
+      "id": "docs-system-agents",
+      "label": "Agent Governance",
+      "type": "article",
+      "file": "docs/system/AGENTS.md",
+      "metadata": {
+        "id": "docs-system-agents",
+        "title": "Agent Governance",
+        "slug": "docs-system-agents",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "systems-and-governance"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 9
+      }
+    },
+    {
+      "id": "docs-system-architecture",
+      "label": "Knowledge System Architecture",
+      "type": "article",
+      "file": "docs/system/ARCHITECTURE.md",
+      "metadata": {
+        "id": "docs-system-architecture",
+        "title": "Knowledge System Architecture",
+        "slug": "docs-system-architecture",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "systems-and-governance"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 10
+      }
+    },
+    {
+      "id": "docs-system-content-schema",
+      "label": "Content Schema",
+      "type": "article",
+      "file": "docs/system/CONTENT_SCHEMA.md",
+      "metadata": {
+        "id": "docs-system-content-schema",
+        "title": "Content Schema",
+        "slug": "docs-system-content-schema",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "systems-and-governance"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 11
+      }
+    },
+    {
+      "id": "docs-system-generated-files",
+      "label": "Generated Files",
+      "type": "article",
+      "file": "docs/system/GENERATED_FILES.md",
+      "metadata": {
+        "id": "docs-system-generated-files",
+        "title": "Generated Files",
+        "slug": "docs-system-generated-files",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "systems-and-governance"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 12
+      }
+    },
+    {
+      "id": "docs-system-taxonomy",
+      "label": "Taxonomy Governance",
+      "type": "article",
+      "file": "docs/system/TAXONOMY.md",
+      "metadata": {
+        "id": "docs-system-taxonomy",
+        "title": "Taxonomy Governance",
+        "slug": "docs-system-taxonomy",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "systems-and-governance"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 13
+      }
+    },
+    {
+      "id": "docs-system-usage",
+      "label": "Knowledge System 使用说明",
+      "type": "article",
+      "file": "docs/system/USAGE.md",
+      "metadata": {
+        "id": "docs-system-usage",
+        "title": "Knowledge System 使用说明",
+        "slug": "docs-system-usage",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [
+          "governance"
+        ],
+        "concepts": [],
+        "tools": [
+          "vitepress"
+        ],
+        "architecture_layer": [
+          "systems-and-governance"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [
+          "docs-system-architecture",
+          "docs-system-generated-files"
+        ],
+        "references": [],
+        "status": "published",
+        "display_order": 99
+      }
+    },
+    {
+      "id": "tool:vitepress",
+      "label": "vitepress",
+      "type": "tool"
+    },
+    {
+      "id": "index",
+      "label": "AI-Coding 使用手册",
+      "type": "article",
+      "file": "index.md",
+      "metadata": {
+        "id": "index",
+        "title": "AI-Coding 使用手册",
+        "slug": "index",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 14
+      }
+    },
+    {
+      "id": "part-1-chapter-1-ai-programming-new-era",
+      "label": "第1章: AI 编程新纪元",
+      "type": "article",
+      "file": "part-1/chapter-1-ai-programming-new-era.md",
+      "metadata": {
+        "id": "part-1-chapter-1-ai-programming-new-era",
+        "title": "第1章: AI 编程新纪元",
+        "slug": "part-1-chapter-1-ai-programming-new-era",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "foundations"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 15
+      }
+    },
+    {
+      "id": "part-1-chapter-2-coding-assistant",
+      "label": "第2章：什么是代码助手",
+      "type": "article",
+      "file": "part-1/chapter-2-coding-assistant.md",
+      "metadata": {
+        "id": "part-1-chapter-2-coding-assistant",
+        "title": "第2章：什么是代码助手",
+        "slug": "part-1-chapter-2-coding-assistant",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "foundations"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 16
+      }
+    },
+    {
+      "id": "part-1-chapter-3-agent-nature",
+      "label": "第3章：Agent 本质",
+      "type": "article",
+      "file": "part-1/chapter-3-agent-nature.md",
+      "metadata": {
+        "id": "part-1-chapter-3-agent-nature",
+        "title": "第3章：Agent 本质",
+        "slug": "part-1-chapter-3-agent-nature",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "foundations"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 17
+      }
+    },
+    {
+      "id": "part-1-chapter-4-ai-first-software-development",
+      "label": "4.1: 编码解决后会发生什么？—— AI 优先的软件开发时代",
+      "type": "article",
+      "file": "part-1/chapter-4-ai-first-software-development.md",
+      "metadata": {
+        "id": "part-1-chapter-4-ai-first-software-development",
+        "title": "4.1: 编码解决后会发生什么？—— AI 优先的软件开发时代",
+        "slug": "part-1-chapter-4-ai-first-software-development",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "foundations"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 18
+      }
+    },
+    {
+      "id": "part-1-chapter-4-coding-agents-reshaping-epd",
+      "label": "第4章：Coding Agents 如何重塑工程、产品与设计（EPD）",
+      "type": "article",
+      "file": "part-1/chapter-4-coding-agents-reshaping-epd.md",
+      "metadata": {
+        "id": "part-1-chapter-4-coding-agents-reshaping-epd",
+        "title": "第4章：Coding Agents 如何重塑工程、产品与设计（EPD）",
+        "slug": "part-1-chapter-4-coding-agents-reshaping-epd",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "foundations"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 19
+      }
+    },
+    {
+      "id": "part-2-chapter-2-8-conversation-management-en",
+      "label": "2.8: Conversation Management & Context Control",
+      "type": "article",
+      "file": "part-2/chapter-2-8-conversation-management-en.md",
+      "metadata": {
+        "id": "part-2-chapter-2-8-conversation-management-en",
+        "title": "2.8: Conversation Management & Context Control",
+        "slug": "part-2-chapter-2-8-conversation-management-en",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 20
+      }
+    },
+    {
+      "id": "part-2-chapter-2-8-conversation-management-ja",
+      "label": "2.8: 会話管理とコンテキスト制御",
+      "type": "article",
+      "file": "part-2/chapter-2-8-conversation-management-ja.md",
+      "metadata": {
+        "id": "part-2-chapter-2-8-conversation-management-ja",
+        "title": "2.8: 会話管理とコンテキスト制御",
+        "slug": "part-2-chapter-2-8-conversation-management-ja",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 21
+      }
+    },
+    {
+      "id": "part-2-chapter-2-8-conversation-management-zh",
+      "label": "2.8: 对话管理与上下文控制",
+      "type": "article",
+      "file": "part-2/chapter-2-8-conversation-management-zh.md",
+      "metadata": {
+        "id": "part-2-chapter-2-8-conversation-management-zh",
+        "title": "2.8: 对话管理与上下文控制",
+        "slug": "part-2-chapter-2-8-conversation-management-zh",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 22
+      }
+    },
+    {
+      "id": "part-2-chapter-2-9-custom-commands-en",
+      "label": "2.9: Creating Custom Commands",
+      "type": "article",
+      "file": "part-2/chapter-2-9-custom-commands-en.md",
+      "metadata": {
+        "id": "part-2-chapter-2-9-custom-commands-en",
+        "title": "2.9: Creating Custom Commands",
+        "slug": "part-2-chapter-2-9-custom-commands-en",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 23
+      }
+    },
+    {
+      "id": "part-2-chapter-2-9-custom-commands-ja",
+      "label": "2.9: カスタムコマンドの作成",
+      "type": "article",
+      "file": "part-2/chapter-2-9-custom-commands-ja.md",
+      "metadata": {
+        "id": "part-2-chapter-2-9-custom-commands-ja",
+        "title": "2.9: カスタムコマンドの作成",
+        "slug": "part-2-chapter-2-9-custom-commands-ja",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 24
+      }
+    },
+    {
+      "id": "part-2-chapter-2-9-custom-commands-zh",
+      "label": "2.9: 创建自定义命令",
+      "type": "article",
+      "file": "part-2/chapter-2-9-custom-commands-zh.md",
+      "metadata": {
+        "id": "part-2-chapter-2-9-custom-commands-zh",
+        "title": "2.9: 创建自定义命令",
+        "slug": "part-2-chapter-2-9-custom-commands-zh",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 25
+      }
+    },
+    {
+      "id": "part-2-chapter-4-1-claude-code-architecture",
+      "label": "5.1: Claude Code 深度解析",
+      "type": "article",
+      "file": "part-2/chapter-4-1-claude-code-architecture.md",
+      "metadata": {
+        "id": "part-2-chapter-4-1-claude-code-architecture",
+        "title": "5.1: Claude Code 深度解析",
+        "slug": "part-2-chapter-4-1-claude-code-architecture",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 26
+      }
+    },
+    {
+      "id": "part-2-chapter-4-10-mcp-servers-en",
+      "label": "2.10: MCP Server Extensions",
+      "type": "article",
+      "file": "part-2/chapter-4-10-mcp-servers-en.md",
+      "metadata": {
+        "id": "part-2-chapter-4-10-mcp-servers-en",
+        "title": "2.10: MCP Server Extensions",
+        "slug": "part-2-chapter-4-10-mcp-servers-en",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 27
+      }
+    },
+    {
+      "id": "part-2-chapter-4-10-mcp-servers-ja",
+      "label": "2.10: MCP サーバー拡張",
+      "type": "article",
+      "file": "part-2/chapter-4-10-mcp-servers-ja.md",
+      "metadata": {
+        "id": "part-2-chapter-4-10-mcp-servers-ja",
+        "title": "2.10: MCP サーバー拡張",
+        "slug": "part-2-chapter-4-10-mcp-servers-ja",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 28
+      }
+    },
+    {
+      "id": "part-2-chapter-4-10-mcp-servers-zh",
+      "label": "2.10: MCP 服务器扩展",
+      "type": "article",
+      "file": "part-2/chapter-4-10-mcp-servers-zh.md",
+      "metadata": {
+        "id": "part-2-chapter-4-10-mcp-servers-zh",
+        "title": "2.10: MCP 服务器扩展",
+        "slug": "part-2-chapter-4-10-mcp-servers-zh",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 29
+      }
+    },
+    {
+      "id": "part-2-chapter-4-10-mcp-servers",
+      "label": "5.10: MCP 服务器扩展",
+      "type": "article",
+      "file": "part-2/chapter-4-10-mcp-servers.md",
+      "metadata": {
+        "id": "part-2-chapter-4-10-mcp-servers",
+        "title": "5.10: MCP 服务器扩展",
+        "slug": "part-2-chapter-4-10-mcp-servers",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 30
+      }
+    },
+    {
+      "id": "part-2-chapter-4-11-github-integration-en",
+      "label": "2.11: GitHub Integration",
+      "type": "article",
+      "file": "part-2/chapter-4-11-github-integration-en.md",
+      "metadata": {
+        "id": "part-2-chapter-4-11-github-integration-en",
+        "title": "2.11: GitHub Integration",
+        "slug": "part-2-chapter-4-11-github-integration-en",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 31
+      }
+    },
+    {
+      "id": "part-2-chapter-4-11-github-integration-ja",
+      "label": "2.11: GitHub 統合",
+      "type": "article",
+      "file": "part-2/chapter-4-11-github-integration-ja.md",
+      "metadata": {
+        "id": "part-2-chapter-4-11-github-integration-ja",
+        "title": "2.11: GitHub 統合",
+        "slug": "part-2-chapter-4-11-github-integration-ja",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 32
+      }
+    },
+    {
+      "id": "part-2-chapter-4-11-github-integration-zh",
+      "label": "2.11: GitHub 集成",
+      "type": "article",
+      "file": "part-2/chapter-4-11-github-integration-zh.md",
+      "metadata": {
+        "id": "part-2-chapter-4-11-github-integration-zh",
+        "title": "2.11: GitHub 集成",
+        "slug": "part-2-chapter-4-11-github-integration-zh",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 33
+      }
+    },
+    {
+      "id": "part-2-chapter-4-11-github-integration",
+      "label": "5.11: GitHub 集成",
+      "type": "article",
+      "file": "part-2/chapter-4-11-github-integration.md",
+      "metadata": {
+        "id": "part-2-chapter-4-11-github-integration",
+        "title": "5.11: GitHub 集成",
+        "slug": "part-2-chapter-4-11-github-integration",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 34
+      }
+    },
+    {
+      "id": "part-2-chapter-4-12-prompt-caching",
+      "label": "5.12: Lessons from Building Claude Code - Prompt 缓存即一切",
+      "type": "article",
+      "file": "part-2/chapter-4-12-prompt-caching.md",
+      "metadata": {
+        "id": "part-2-chapter-4-12-prompt-caching",
+        "title": "5.12: Lessons from Building Claude Code - Prompt 缓存即一切",
+        "slug": "part-2-chapter-4-12-prompt-caching",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 36
+      }
+    },
+    {
+      "id": "part-2-chapter-4-13-agent-tool-design",
+      "label": "5.13: Lessons from Building Claude Code - 像 Agent 一样思考",
+      "type": "article",
+      "file": "part-2/chapter-4-13-agent-tool-design.md",
+      "metadata": {
+        "id": "part-2-chapter-4-13-agent-tool-design",
+        "title": "5.13: Lessons from Building Claude Code - 像 Agent 一样思考",
+        "slug": "part-2-chapter-4-13-agent-tool-design",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 37
+      }
+    },
+    {
+      "id": "part-2-chapter-4-14-git-worktree-mode",
+      "label": "5.14：Git Worktree 模式与 Agent 工具设计艺术",
+      "type": "article",
+      "file": "part-2/chapter-4-14-git-worktree-mode.md",
+      "metadata": {
+        "id": "part-2-chapter-4-14-git-worktree-mode",
+        "title": "5.14：Git Worktree 模式与 Agent 工具设计艺术",
+        "slug": "part-2-chapter-4-14-git-worktree-mode",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 37
+      }
+    },
+    {
+      "id": "part-2-chapter-4-2-advent-of-claude",
+      "label": "5.2: Advent of Claude - 31天掌握 Claude Code",
+      "type": "article",
+      "file": "part-2/chapter-4-2-advent-of-claude.md",
+      "metadata": {
+        "id": "part-2-chapter-4-2-advent-of-claude",
+        "title": "5.2: Advent of Claude - 31天掌握 Claude Code",
+        "slug": "part-2-chapter-4-2-advent-of-claude",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 38
+      }
+    },
+    {
+      "id": "part-2-chapter-4-3-agent-skills",
+      "label": "5.3: Agent Skills（智能体技能）入门",
+      "type": "article",
+      "file": "part-2/chapter-4-3-agent-skills.md",
+      "metadata": {
+        "id": "part-2-chapter-4-3-agent-skills",
+        "title": "5.3: Agent Skills（智能体技能）入门",
+        "slug": "part-2-chapter-4-3-agent-skills",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 39
+      }
+    },
+    {
+      "id": "part-2-chapter-4-4-how-creator-uses-claude-code",
+      "label": "5.4: Claude Code 创造者如何使用 Claude Code",
+      "type": "article",
+      "file": "part-2/chapter-4-4-how-creator-uses-claude-code.md",
+      "metadata": {
+        "id": "part-2-chapter-4-4-how-creator-uses-claude-code",
+        "title": "5.4: Claude Code 创造者如何使用 Claude Code",
+        "slug": "part-2-chapter-4-4-how-creator-uses-claude-code",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 40
+      }
+    },
+    {
+      "id": "part-2-chapter-4-5-claude-code-showcase",
+      "label": "5.5: `claude-code-showcase` 配置拆解（.claude + README）",
+      "type": "article",
+      "file": "part-2/chapter-4-5-claude-code-showcase.md",
+      "metadata": {
+        "id": "part-2-chapter-4-5-claude-code-showcase",
+        "title": "5.5: `claude-code-showcase` 配置拆解（.claude + README）",
+        "slug": "part-2-chapter-4-5-claude-code-showcase",
+        "date": "2025-01-01",
+        "type": "case-study",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 41
+      }
+    },
+    {
+      "id": "part-2-chapter-4-6-context-management",
+      "label": "5.6: 实战中上下文的管理与添加",
+      "type": "article",
+      "file": "part-2/chapter-4-6-context-management.md",
+      "metadata": {
+        "id": "part-2-chapter-4-6-context-management",
+        "title": "5.6: 实战中上下文的管理与添加",
+        "slug": "part-2-chapter-4-6-context-management",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 42
+      }
+    },
+    {
+      "id": "part-2-chapter-4-7-advanced-features",
+      "label": "5.7: 高级功能与使用技巧",
+      "type": "article",
+      "file": "part-2/chapter-4-7-advanced-features.md",
+      "metadata": {
+        "id": "part-2-chapter-4-7-advanced-features",
+        "title": "5.7: 高级功能与使用技巧",
+        "slug": "part-2-chapter-4-7-advanced-features",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 43
+      }
+    },
+    {
+      "id": "part-2-chapter-4-8-conversation-management",
+      "label": "5.8: 对话管理与上下文控制",
+      "type": "article",
+      "file": "part-2/chapter-4-8-conversation-management.md",
+      "metadata": {
+        "id": "part-2-chapter-4-8-conversation-management",
+        "title": "5.8: 对话管理与上下文控制",
+        "slug": "part-2-chapter-4-8-conversation-management",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 44
+      }
+    },
+    {
+      "id": "part-2-chapter-4-9-custom-commands",
+      "label": "5.9: 创建自定义命令",
+      "type": "article",
+      "file": "part-2/chapter-4-9-custom-commands.md",
+      "metadata": {
+        "id": "part-2-chapter-4-9-custom-commands",
+        "title": "5.9: 创建自定义命令",
+        "slug": "part-2-chapter-4-9-custom-commands",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 45
+      }
+    },
+    {
+      "id": "part-2-chapter-4-claude-manual",
+      "label": "第5章: Claude 使用手册",
+      "type": "article",
+      "file": "part-2/chapter-4-claude-manual.md",
+      "metadata": {
+        "id": "part-2-chapter-4-claude-manual",
+        "title": "第5章: Claude 使用手册",
+        "slug": "part-2-chapter-4-claude-manual",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 46
+      }
+    },
+    {
+      "id": "part-2-chapter-5-1-codex-introduction",
+      "label": "6.1 OpenAI Codex 简介与演进脉络",
+      "type": "article",
+      "file": "part-2/chapter-5-1-codex-introduction.md",
+      "metadata": {
+        "id": "part-2-chapter-5-1-codex-introduction",
+        "title": "6.1 OpenAI Codex 简介与演进脉络",
+        "slug": "part-2-chapter-5-1-codex-introduction",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 47
+      }
+    },
+    {
+      "id": "part-2-chapter-5-2-codex-capabilities",
+      "label": "6.2 Codex 核心能力与技术特点",
+      "type": "article",
+      "file": "part-2/chapter-5-2-codex-capabilities.md",
+      "metadata": {
+        "id": "part-2-chapter-5-2-codex-capabilities",
+        "title": "6.2 Codex 核心能力与技术特点",
+        "slug": "part-2-chapter-5-2-codex-capabilities",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 48
+      }
+    },
+    {
+      "id": "part-2-chapter-5-codex-deep-dive",
+      "label": "第6章: OpenAI Codex 深度解析",
+      "type": "article",
+      "file": "part-2/chapter-5-codex-deep-dive.md",
+      "metadata": {
+        "id": "part-2-chapter-5-codex-deep-dive",
+        "title": "第6章: OpenAI Codex 深度解析",
+        "slug": "part-2-chapter-5-codex-deep-dive",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 49
+      }
+    },
+    {
+      "id": "part-2-chapter-6-gemini-practice",
+      "label": "第7章: Gemini 编程实战",
+      "type": "article",
+      "file": "part-2/chapter-6-gemini-practice.md",
+      "metadata": {
+        "id": "part-2-chapter-6-gemini-practice",
+        "title": "第7章: Gemini 编程实战",
+        "slug": "part-2-chapter-6-gemini-practice",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 50
+      }
+    },
+    {
+      "id": "part-2-chapter-7-opencode-manual",
+      "label": "第8章: 开源模型 (Opencode) 使用手册",
+      "type": "article",
+      "file": "part-2/chapter-7-opencode-manual.md",
+      "metadata": {
+        "id": "part-2-chapter-7-opencode-manual",
+        "title": "第8章: 开源模型 (Opencode) 使用手册",
+        "slug": "part-2-chapter-7-opencode-manual",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 51
+      }
+    },
+    {
+      "id": "part-2-chapter-8-other-tools",
+      "label": "第9章: 其他AI编程工具概览",
+      "type": "article",
+      "file": "part-2/chapter-8-other-tools.md",
+      "metadata": {
+        "id": "part-2-chapter-8-other-tools",
+        "title": "第9章: 其他AI编程工具概览",
+        "slug": "part-2-chapter-8-other-tools",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 52
+      }
+    },
+    {
+      "id": "part-3-chapter-10-ai-testing",
+      "label": "第11章: AI驱动的测试与调试",
+      "type": "article",
+      "file": "part-3/chapter-10-ai-testing.md",
+      "metadata": {
+        "id": "part-3-chapter-10-ai-testing",
+        "title": "第11章: AI驱动的测试与调试",
+        "slug": "part-3-chapter-10-ai-testing",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 53
+      }
+    },
+    {
+      "id": "part-3-chapter-11-capstone",
+      "label": "第12章: 综合项目实战",
+      "type": "article",
+      "file": "part-3/chapter-11-capstone.md",
+      "metadata": {
+        "id": "part-3-chapter-11-capstone",
+        "title": "第12章: 综合项目实战",
+        "slug": "part-3-chapter-11-capstone",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 54
+      }
+    },
+    {
+      "id": "part-3-chapter-9-prompt-engineering",
+      "label": "第10章: Prompt Engineering for Coders",
+      "type": "article",
+      "file": "part-3/chapter-9-prompt-engineering.md",
+      "metadata": {
+        "id": "part-3-chapter-9-prompt-engineering",
+        "title": "第10章: Prompt Engineering for Coders",
+        "slug": "part-3-chapter-9-prompt-engineering",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 55
+      }
+    },
+    {
+      "id": "part-4-chapter-12-building-agent",
+      "label": "第13章：从零构建一个 AI Agent",
+      "type": "article",
+      "file": "part-4/chapter-12-building-agent.md",
+      "metadata": {
+        "id": "part-4-chapter-12-building-agent",
+        "title": "第13章：从零构建一个 AI Agent",
+        "slug": "part-4-chapter-12-building-agent",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 56
+      }
+    },
+    {
+      "id": "part-4-chapter-13-advanced-patterns",
+      "label": "第14章：高级 Agent 模式",
+      "type": "article",
+      "file": "part-4/chapter-13-advanced-patterns.md",
+      "metadata": {
+        "id": "part-4-chapter-13-advanced-patterns",
+        "title": "第14章：高级 Agent 模式",
+        "slug": "part-4-chapter-13-advanced-patterns",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 57
+      }
+    },
+    {
+      "id": "part-4-chapter-14-multi-agent",
+      "label": "第15章：多智能体系统与自治执行",
+      "type": "article",
+      "file": "part-4/chapter-14-multi-agent.md",
+      "metadata": {
+        "id": "part-4-chapter-14-multi-agent",
+        "title": "第15章：多智能体系统与自治执行",
+        "slug": "part-4-chapter-14-multi-agent",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 58
+      }
+    },
+    {
+      "id": "part-4-chapter-15-claude-workflow",
+      "label": "第16章：Claude Code Workflow —— 经过实战检验的 Agent 工作流模板",
+      "type": "article",
+      "file": "part-4/chapter-15-claude-workflow.md",
+      "metadata": {
+        "id": "part-4-chapter-15-claude-workflow",
+        "title": "第16章：Claude Code Workflow —— 经过实战检验的 Agent 工作流模板",
+        "slug": "part-4-chapter-15-claude-workflow",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 59
+      }
+    },
+    {
+      "id": "part-4-chapter-16-trellis",
+      "label": "第17章：Trellis —— 为 AI 设置规则的开放框架",
+      "type": "article",
+      "file": "part-4/chapter-16-trellis.md",
+      "metadata": {
+        "id": "part-4-chapter-16-trellis",
+        "title": "第17章：Trellis —— 为 AI 设置规则的开放框架",
+        "slug": "part-4-chapter-16-trellis",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 60
+      }
+    },
+    {
+      "id": "part-4-chapter-17-skeptic-believer",
+      "label": "第18章：从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践",
+      "type": "article",
+      "file": "part-4/chapter-17-skeptic-believer.md",
+      "metadata": {
+        "id": "part-4-chapter-17-skeptic-believer",
+        "title": "第18章：从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践",
+        "slug": "part-4-chapter-17-skeptic-believer",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 61
+      }
+    },
+    {
+      "id": "part-4-chapter-18-ai-coding-journey",
+      "label": "第19章：从怀疑到实践——三个月 AI Coding 实战复盘",
+      "type": "article",
+      "file": "part-4/chapter-18-ai-coding-journey.md",
+      "metadata": {
+        "id": "part-4-chapter-18-ai-coding-journey",
+        "title": "第19章：从怀疑到实践——三个月 AI Coding 实战复盘",
+        "slug": "part-4-chapter-18-ai-coding-journey",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 62
+      }
+    },
+    {
+      "id": "part-5-chapter-18-self-driving-codebase",
+      "label": "第20章：自主代码库 —— 背景智能体与软件交付的下一个时代",
+      "type": "article",
+      "file": "part-5/chapter-18-self-driving-codebase.md",
+      "metadata": {
+        "id": "part-5-chapter-18-self-driving-codebase",
+        "title": "第20章：自主代码库 —— 背景智能体与软件交付的下一个时代",
+        "slug": "part-5-chapter-18-self-driving-codebase",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "systems-and-governance"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 63
+      }
+    },
+    {
+      "id": "part-5-chapter-19-leveraging-codex",
+      "label": "第21章：在 Agent-First 的世界中充分发挥 Codex 的威力",
+      "type": "article",
+      "file": "part-5/chapter-19-leveraging-codex.md",
+      "metadata": {
+        "id": "part-5-chapter-19-leveraging-codex",
+        "title": "第21章：在 Agent-First 的世界中充分发挥 Codex 的威力",
+        "slug": "part-5-chapter-19-leveraging-codex",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "systems-and-governance"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 64
+      }
+    },
+    {
+      "id": "part-5-chapter-20-harness-engineering",
+      "label": "第22章：Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力",
+      "type": "article",
+      "file": "part-5/chapter-20-harness-engineering.md",
+      "metadata": {
+        "id": "part-5-chapter-20-harness-engineering",
+        "title": "第22章：Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力",
+        "slug": "part-5-chapter-20-harness-engineering",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "systems-and-governance"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 65
+      }
+    },
+    {
+      "id": "part-5-chapter-21-context-engineering",
+      "label": "第23章：上下文工程的文件系统抽象 —— AIGNE 框架与可验证的 GenAI 系统",
+      "type": "article",
+      "file": "part-5/chapter-21-context-engineering.md",
+      "metadata": {
+        "id": "part-5-chapter-21-context-engineering",
+        "title": "第23章：上下文工程的文件系统抽象 —— AIGNE 框架与可验证的 GenAI 系统",
+        "slug": "part-5-chapter-21-context-engineering",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "systems-and-governance"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 66
+      }
+    },
+    {
+      "id": "part-5-chapter-23-vibed-coding-indigo",
+      "label": "第24章：周末氛围直播复盘——AI Coding 的十倍加速时代",
+      "type": "article",
+      "file": "part-5/chapter-23-vibed-coding-indigo.md",
+      "metadata": {
+        "id": "part-5-chapter-23-vibed-coding-indigo",
+        "title": "第24章：周末氛围直播复盘——AI Coding 的十倍加速时代",
+        "slug": "part-5-chapter-23-vibed-coding-indigo",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "systems-and-governance"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 67
+      }
+    },
+    {
+      "id": "part-5-chapter-24-autoresearch-nanochat",
+      "label": "第25章：Autoresearch 实测提速 11% —— Agent 自主调参正在成为“最终战场”",
+      "type": "article",
+      "file": "part-5/chapter-24-autoresearch-nanochat.md",
+      "metadata": {
+        "id": "part-5-chapter-24-autoresearch-nanochat",
+        "title": "第25章：Autoresearch 实测提速 11% —— Agent 自主调参正在成为“最终战场”",
+        "slug": "part-5-chapter-24-autoresearch-nanochat",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "systems-and-governance"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 68
+      }
+    },
+    {
+      "id": "part-5-chapter-25-cybernetic-steering",
+      "label": "第25章：从“拧阀门”到“掌舵”——Harness Engineering 的控制论转向",
+      "type": "article",
+      "file": "part-5/chapter-25-cybernetic-steering.md",
+      "metadata": {
+        "id": "part-5-chapter-25-cybernetic-steering",
+        "title": "第25章：从“拧阀门”到“掌舵”——Harness Engineering 的控制论转向",
+        "slug": "part-5-chapter-25-cybernetic-steering",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "systems-and-governance"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 69
+      }
+    },
+    {
+      "id": "references",
+      "label": "参考资源",
+      "type": "reference",
+      "file": "references.md",
+      "metadata": {
+        "id": "references",
+        "title": "参考资源",
+        "slug": "references",
+        "date": "2025-01-01",
+        "type": "reference",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 70
+      }
+    },
+    {
+      "id": "visualizations-architecture-overview",
+      "label": "内容架构总览",
+      "type": "article",
+      "file": "visualizations/architecture-overview.md",
+      "metadata": {
+        "id": "visualizations-architecture-overview",
+        "title": "内容架构总览",
+        "slug": "visualizations-architecture-overview",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 71
+      }
+    },
+    {
+      "id": "visualizations-index",
+      "label": "可视化总览",
+      "type": "article",
+      "file": "visualizations/index.md",
+      "metadata": {
+        "id": "visualizations-index",
+        "title": "可视化总览",
+        "slug": "visualizations-index",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 72
+      }
+    },
+    {
+      "id": "visualizations-timeline-overview",
+      "label": "学习路径时间线",
+      "type": "article",
+      "file": "visualizations/timeline-overview.md",
+      "metadata": {
+        "id": "visualizations-timeline-overview",
+        "title": "学习路径时间线",
+        "slug": "visualizations-timeline-overview",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 73
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs-system-usage",
+      "target": "tool:vitepress",
+      "type": "related"
+    },
+    {
+      "source": "docs-system-usage",
+      "target": "docs-system-architecture",
+      "type": "related"
+    },
+    {
+      "source": "docs-system-usage",
+      "target": "docs-system-generated-files",
+      "type": "related"
+    },
+    {
+      "source": "claude",
+      "target": "contributing",
+      "type": "evolution"
+    },
+    {
+      "source": "contributing",
+      "target": "readme",
+      "type": "evolution"
+    },
+    {
+      "source": "readme",
+      "target": "summary",
+      "type": "evolution"
+    },
+    {
+      "source": "summary",
+      "target": "appendix-appendix-a-cheatsheet",
+      "type": "evolution"
+    },
+    {
+      "source": "appendix-appendix-a-cheatsheet",
+      "target": "appendix-appendix-b-resources",
+      "type": "evolution"
+    },
+    {
+      "source": "appendix-appendix-b-resources",
+      "target": "docs-structure",
+      "type": "evolution"
+    },
+    {
+      "source": "docs-structure",
+      "target": "docs-system-agents",
+      "type": "evolution"
+    },
+    {
+      "source": "docs-system-agents",
+      "target": "docs-system-architecture",
+      "type": "evolution"
+    },
+    {
+      "source": "docs-system-architecture",
+      "target": "docs-system-content-schema",
+      "type": "evolution"
+    },
+    {
+      "source": "docs-system-content-schema",
+      "target": "docs-system-generated-files",
+      "type": "evolution"
+    },
+    {
+      "source": "docs-system-generated-files",
+      "target": "docs-system-taxonomy",
+      "type": "evolution"
+    },
+    {
+      "source": "docs-system-taxonomy",
+      "target": "docs-system-usage",
+      "type": "evolution"
+    },
+    {
+      "source": "docs-system-usage",
+      "target": "index",
+      "type": "evolution"
+    },
+    {
+      "source": "index",
+      "target": "part-1-chapter-1-ai-programming-new-era",
+      "type": "evolution"
+    },
+    {
+      "source": "part-1-chapter-1-ai-programming-new-era",
+      "target": "part-1-chapter-2-coding-assistant",
+      "type": "evolution"
+    },
+    {
+      "source": "part-1-chapter-2-coding-assistant",
+      "target": "part-1-chapter-3-agent-nature",
+      "type": "evolution"
+    },
+    {
+      "source": "part-1-chapter-3-agent-nature",
+      "target": "part-1-chapter-4-ai-first-software-development",
+      "type": "evolution"
+    },
+    {
+      "source": "part-1-chapter-4-ai-first-software-development",
+      "target": "part-1-chapter-4-coding-agents-reshaping-epd",
+      "type": "evolution"
+    },
+    {
+      "source": "part-1-chapter-4-coding-agents-reshaping-epd",
+      "target": "part-2-chapter-2-8-conversation-management-en",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-2-8-conversation-management-en",
+      "target": "part-2-chapter-2-8-conversation-management-ja",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-2-8-conversation-management-ja",
+      "target": "part-2-chapter-2-8-conversation-management-zh",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-2-8-conversation-management-zh",
+      "target": "part-2-chapter-2-9-custom-commands-en",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-2-9-custom-commands-en",
+      "target": "part-2-chapter-2-9-custom-commands-ja",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-2-9-custom-commands-ja",
+      "target": "part-2-chapter-2-9-custom-commands-zh",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-2-9-custom-commands-zh",
+      "target": "part-2-chapter-4-1-claude-code-architecture",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-4-1-claude-code-architecture",
+      "target": "part-2-chapter-4-10-mcp-servers-en",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-4-10-mcp-servers-en",
+      "target": "part-2-chapter-4-10-mcp-servers-ja",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-4-10-mcp-servers-ja",
+      "target": "part-2-chapter-4-10-mcp-servers-zh",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-4-10-mcp-servers-zh",
+      "target": "part-2-chapter-4-10-mcp-servers",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-4-10-mcp-servers",
+      "target": "part-2-chapter-4-11-github-integration-en",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-4-11-github-integration-en",
+      "target": "part-2-chapter-4-11-github-integration-ja",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-4-11-github-integration-ja",
+      "target": "part-2-chapter-4-11-github-integration-zh",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-4-11-github-integration-zh",
+      "target": "part-2-chapter-4-11-github-integration",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-4-11-github-integration",
+      "target": "part-2-chapter-4-12-prompt-caching",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-4-12-prompt-caching",
+      "target": "part-2-chapter-4-13-agent-tool-design",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-4-13-agent-tool-design",
+      "target": "part-2-chapter-4-14-git-worktree-mode",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-4-14-git-worktree-mode",
+      "target": "part-2-chapter-4-2-advent-of-claude",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-4-2-advent-of-claude",
+      "target": "part-2-chapter-4-3-agent-skills",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-4-3-agent-skills",
+      "target": "part-2-chapter-4-4-how-creator-uses-claude-code",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-4-4-how-creator-uses-claude-code",
+      "target": "part-2-chapter-4-5-claude-code-showcase",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-4-5-claude-code-showcase",
+      "target": "part-2-chapter-4-6-context-management",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-4-6-context-management",
+      "target": "part-2-chapter-4-7-advanced-features",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-4-7-advanced-features",
+      "target": "part-2-chapter-4-8-conversation-management",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-4-8-conversation-management",
+      "target": "part-2-chapter-4-9-custom-commands",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-4-9-custom-commands",
+      "target": "part-2-chapter-4-claude-manual",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-4-claude-manual",
+      "target": "part-2-chapter-5-1-codex-introduction",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-5-1-codex-introduction",
+      "target": "part-2-chapter-5-2-codex-capabilities",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-5-2-codex-capabilities",
+      "target": "part-2-chapter-5-codex-deep-dive",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-5-codex-deep-dive",
+      "target": "part-2-chapter-6-gemini-practice",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-6-gemini-practice",
+      "target": "part-2-chapter-7-opencode-manual",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-7-opencode-manual",
+      "target": "part-2-chapter-8-other-tools",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-8-other-tools",
+      "target": "part-3-chapter-10-ai-testing",
+      "type": "evolution"
+    },
+    {
+      "source": "part-3-chapter-10-ai-testing",
+      "target": "part-3-chapter-11-capstone",
+      "type": "evolution"
+    },
+    {
+      "source": "part-3-chapter-11-capstone",
+      "target": "part-3-chapter-9-prompt-engineering",
+      "type": "evolution"
+    },
+    {
+      "source": "part-3-chapter-9-prompt-engineering",
+      "target": "part-4-chapter-12-building-agent",
+      "type": "evolution"
+    },
+    {
+      "source": "part-4-chapter-12-building-agent",
+      "target": "part-4-chapter-13-advanced-patterns",
+      "type": "evolution"
+    },
+    {
+      "source": "part-4-chapter-13-advanced-patterns",
+      "target": "part-4-chapter-14-multi-agent",
+      "type": "evolution"
+    },
+    {
+      "source": "part-4-chapter-14-multi-agent",
+      "target": "part-4-chapter-15-claude-workflow",
+      "type": "evolution"
+    },
+    {
+      "source": "part-4-chapter-15-claude-workflow",
+      "target": "part-4-chapter-16-trellis",
+      "type": "evolution"
+    },
+    {
+      "source": "part-4-chapter-16-trellis",
+      "target": "part-4-chapter-17-skeptic-believer",
+      "type": "evolution"
+    },
+    {
+      "source": "part-4-chapter-17-skeptic-believer",
+      "target": "part-4-chapter-18-ai-coding-journey",
+      "type": "evolution"
+    },
+    {
+      "source": "part-4-chapter-18-ai-coding-journey",
+      "target": "part-5-chapter-18-self-driving-codebase",
+      "type": "evolution"
+    },
+    {
+      "source": "part-5-chapter-18-self-driving-codebase",
+      "target": "part-5-chapter-19-leveraging-codex",
+      "type": "evolution"
+    },
+    {
+      "source": "part-5-chapter-19-leveraging-codex",
+      "target": "part-5-chapter-20-harness-engineering",
+      "type": "evolution"
+    },
+    {
+      "source": "part-5-chapter-20-harness-engineering",
+      "target": "part-5-chapter-21-context-engineering",
+      "type": "evolution"
+    },
+    {
+      "source": "part-5-chapter-21-context-engineering",
+      "target": "part-5-chapter-23-vibed-coding-indigo",
+      "type": "evolution"
+    },
+    {
+      "source": "part-5-chapter-23-vibed-coding-indigo",
+      "target": "part-5-chapter-24-autoresearch-nanochat",
+      "type": "evolution"
+    },
+    {
+      "source": "part-5-chapter-24-autoresearch-nanochat",
+      "target": "part-5-chapter-25-cybernetic-steering",
+      "type": "evolution"
+    },
+    {
+      "source": "part-5-chapter-25-cybernetic-steering",
+      "target": "references",
+      "type": "evolution"
+    },
+    {
+      "source": "references",
+      "target": "visualizations-architecture-overview",
+      "type": "evolution"
+    },
+    {
+      "source": "visualizations-architecture-overview",
+      "target": "visualizations-index",
+      "type": "evolution"
+    },
+    {
+      "source": "visualizations-index",
+      "target": "visualizations-timeline-overview",
+      "type": "evolution"
+    },
+    {
+      "source": "visualizations-timeline-overview",
+      "target": "2026-02-02-claude-code-hooks-reference",
+      "type": "evolution"
+    }
+  ]
+}
