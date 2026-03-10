@@ -1,4 +1,4 @@
-# 第16章：上下文工程的文件系统抽象 —— AIGNE 框架与可验证的 GenAI 系统
+# 第22章：上下文工程的文件系统抽象 —— AIGNE 框架与可验证的 GenAI 系统
 
 > *"一切皆文件"——将 Unix 哲学引入 GenAI 上下文管理。*
 
@@ -310,6 +310,6 @@ const agent = AIAgent.from({
 - [AIGNE Framework - GitHub](https://github.com/aigne) - 开源 GenAI Agent 开发框架
 - [MemGPT - LLM Operating Systems](https://memgpt.ai/) - 内存层次结构管理系统
 - [AIOS - LLM as OS](https://github.com/agiresearch/AIOS) - LLM 操作系统范式
-- [第20章：Harness Engineering](./chapter-20-harness-engineering.md)
-- [第19章：在 Agent-First 的世界中充分发挥 Codex 的威力](./chapter-19-leveraging-codex.md)
-- [第18章：自主代码库](./chapter-18-self-driving-codebase.md)
+- [第21章：Harness Engineering](./chapter-20-harness-engineering.md)
+- [第20章：在 Agent-First 的世界中充分发挥 Codex 的威力](./chapter-19-leveraging-codex.md)
+- [第19章：自主代码库](./chapter-18-self-driving-codebase.md)

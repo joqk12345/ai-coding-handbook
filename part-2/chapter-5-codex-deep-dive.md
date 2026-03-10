@@ -1,4 +1,4 @@
-# 第3章: OpenAI Codex 深度解析
+# 第5章: OpenAI Codex 深度解析
 
 在Claude展现出其作为代理工具的强大能力之后，我们回溯到AI编程领域的另一位奠基者——OpenAI Codex。尽管Codex本身已经演进并融入到OpenAI更大型的模型（如GPT-3.5和GPT-4）中，但其在代码生成领域的开创性贡献和影响力是不可磨灭的。
 
@@ -9,7 +9,7 @@
 - [3.1 OpenAI Codex 简介与演进脉络](./chapter-5-1-codex-introduction.md)
 - [3.2 Codex 核心能力与技术特点](./chapter-5-2-codex-capabilities.md)
 
-你可以把本文件视为“第3章后半部分”，重点关注协作实践、案例与局限性。
+你可以把本文件视为“第5章后半部分”，重点关注协作实践、案例与局限性。
 
 ## 3.3 与 Codex 协作的最佳实践
 
