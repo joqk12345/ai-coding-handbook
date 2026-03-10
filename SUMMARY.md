@@ -9,6 +9,9 @@
     *   [时间线](visualizations/timeline-overview.md)
     *   [架构图](visualizations/architecture-overview.md)
 
+*   **索引维护约束（新增章节必同步）**
+    *   同步更新 `SUMMARY.md`、`visualizations/timeline-overview.md`、`visualizations/architecture-overview.md` 的索引矩阵与章节映射
+
 *   **第一部分：入门 (第1-3章)**
     *   [第1章: AI 编程新纪元](part-1/chapter-1-ai-programming-new-era.md)
     *   [第2章: 什么是代码助手](part-1/chapter-2-coding-assistant.md)
