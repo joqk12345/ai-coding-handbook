@@ -5,7 +5,7 @@
 ## 在线阅读（目录）
 
 - [目录](/SUMMARY)
-- [4.1: Claude Code 深度解析](/part-2/chapter-4-1-claude-code-architecture)
+- [5.1: Claude Code 深度解析](/part-2/chapter-4-1-claude-code-architecture)
 
 ## 本地预览（VitePress）
 

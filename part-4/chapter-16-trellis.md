@@ -1,4 +1,4 @@
-# 第15章：Trellis —— 为 AI 设置规则的开放框架
+# 第17章：Trellis —— 为 AI 设置规则的开放框架
 
 > *Trellis 补上了 CLAUDE.md/AGENTS.md 之外的结构：分层 Spec、任务上下文、workspace 记忆，以及按平台接入的工作流。*
 

@@ -1,9 +1,9 @@
 ---
-title: "2.13: Lessons from Building Claude Code - 像 Agent 一样思考"
+title: "5.13: Lessons from Building Claude Code - 像 Agent 一样思考"
 outline: [2, 3]
 ---
 
-# 2.13: Lessons from Building Claude Code — 像 Agent 一样思考
+# 5.13: Lessons from Building Claude Code — 像 Agent 一样思考
 
 > *One of the hardest parts of building an agent harness is constructing its action space.*
 

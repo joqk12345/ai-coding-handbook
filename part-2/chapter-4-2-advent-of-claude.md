@@ -1,4 +1,4 @@
-# 2.2: Advent of Claude - 31天掌握 Claude Code
+# 5.2: Advent of Claude - 31天掌握 Claude Code
 
 > *一份全面的 Claude Code 功能指南，从快捷操作到高级智能体模式。*
 
