@@ -78,7 +78,7 @@ display_order: 5
     *   [第18章: 从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践](part-4/chapter-17-skeptic-believer.md)
     *   [第19章: 从怀疑到实践——三个月 AI Coding 实战复盘](part-4/chapter-18-ai-coding-journey.md)
 
-*   **第五部分：自主代码库 (第19-25章)**
+*   **第五部分：自主代码库 (第19-26章)**
     *   [第19章: 自主代码库 - 背景智能体与软件交付的下一个时代](part-5/chapter-18-self-driving-codebase.md)
     *   [第20章: 在 Agent-First 的世界中充分发挥 Codex 的威力](part-5/chapter-19-leveraging-codex.md)
     *   [第21章: Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力](part-5/chapter-20-harness-engineering.md)
@@ -87,6 +87,7 @@ display_order: 5
     *   [第24章: Autoresearch 实测提速 11% —— Agent 自主调参正在成为“最终战场”](part-5/chapter-24-autoresearch-nanochat.md)
     *   [第25章: 从“拧阀门”到“掌舵”——Harness Engineering 的控制论转向](part-5/chapter-25-cybernetic-steering.md)
 
+    *   [第26章：简历之外的躁动——当 AI 重写知识工作的价值坐标](part-5/chapter-26-restlessness-over-resume.md)
 *   **附录**
     *   [附录A: 常用AI工具速查表](appendix/appendix-a-cheatsheet.md)
     *   [附录B: 推荐资源与社区](appendix/appendix-b-resources.md)
