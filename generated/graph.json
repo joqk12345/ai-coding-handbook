@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-11T07:48:35.352Z",
+  "generatedAt": "2026-03-11T07:56:45.405Z",
   "nodeCount": 47,
   "edgeCount": 92,
   "nodes": [
@@ -1163,7 +1163,7 @@
     },
     {
       "id": "part-5-chapter-23-vibed-coding-indigo",
-      "label": "第23章: 周末氛围直播复盘——AI Coding 的十倍加速时代",
+      "label": "第23章：周末氛围直播收官总结——软件未死，只是正在被 Agent 重写",
       "type": "article",
       "file": "part-5/chapter-23-vibed-coding-indigo.md",
       "metadata": {
@@ -1189,7 +1189,7 @@
         "display_order": 42,
         "summary_order": 42,
         "summary_section": "第五部分：自主代码库 (第19-26章)",
-        "summary_title": "第23章: 周末氛围直播复盘——AI Coding 的十倍加速时代"
+        "summary_title": "第23章：周末氛围直播收官总结——软件未死，只是正在被 Agent 重写"
       }
     },
     {

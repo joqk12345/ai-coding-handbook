@@ -90,7 +90,7 @@ display_order: 71
 | 第20章 | `system`, `org` |
 | 第21章 | `system`, `org` |
 | 第22章 | `system`, `org`, `workflow` |
-| 第23章 | `system`, `org`, `workflow` |
+| 第23章 | `system`, `org` |
 | 第24章 | `system`, `org` |
 | 第25章 | `system`, `org` |
 | 第26章 | `system`, `org` |
