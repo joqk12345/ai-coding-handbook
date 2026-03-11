@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-03-11T15:33:16.137Z",
-  "nodeCount": 57,
-  "edgeCount": 107,
+  "generatedAt": "2026-03-11T15:43:24.999Z",
+  "nodeCount": 64,
+  "edgeCount": 118,
   "nodes": [
     {
       "id": "readme",
@@ -1167,7 +1167,7 @@
         "status": "published",
         "display_order": 39,
         "summary_order": 39,
-        "summary_section": "第五部分：自主代码库 (第19-25章)",
+        "summary_section": "第五部分：自主代码库 (第19-27章)",
         "summary_title": "第19章: 自主代码库 - 背景智能体与软件交付的下一个时代"
       }
     },
@@ -1197,7 +1197,7 @@
         "status": "published",
         "display_order": 40,
         "summary_order": 40,
-        "summary_section": "第五部分：自主代码库 (第19-25章)",
+        "summary_section": "第五部分：自主代码库 (第19-27章)",
         "summary_title": "第20章: 在 Agent-First 的世界中充分发挥 Codex 的威力"
       }
     },
@@ -1227,7 +1227,7 @@
         "status": "published",
         "display_order": 41,
         "summary_order": 41,
-        "summary_section": "第五部分：自主代码库 (第19-25章)",
+        "summary_section": "第五部分：自主代码库 (第19-27章)",
         "summary_title": "第21章: Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力"
       }
     },
@@ -1258,7 +1258,7 @@
         "status": "published",
         "display_order": 42,
         "summary_order": 42,
-        "summary_section": "第五部分：自主代码库 (第19-25章)",
+        "summary_section": "第五部分：自主代码库 (第19-27章)",
         "summary_title": "第22章: 上下文工程的文件系统抽象 — AIGNE 框架"
       }
     },
@@ -1289,7 +1289,7 @@
         "status": "published",
         "display_order": 43,
         "summary_order": 43,
-        "summary_section": "第五部分：自主代码库 (第19-25章)",
+        "summary_section": "第五部分：自主代码库 (第19-27章)",
         "summary_title": "第23章: 周末氛围直播复盘——AI Coding 的十倍加速时代"
       }
     },
@@ -1319,13 +1319,13 @@
         "status": "published",
         "display_order": 44,
         "summary_order": 44,
-        "summary_section": "第五部分：自主代码库 (第19-25章)",
+        "summary_section": "第五部分：自主代码库 (第19-27章)",
         "summary_title": "第24章: Autoresearch 实测提速 11% —— Agent 自主调参正在成为“最终战场”"
       }
     },
     {
       "id": "part-5-chapter-25-cybernetic-steering",
-      "label": "第25章: 从“拧阀门”到“掌舵”——Harness Engineering 的控制论转向",
+      "label": "第25章: 从”拧阀门”到”掌舵”——Harness Engineering 的控制论转向",
       "type": "article",
       "file": "part-5/chapter-25-cybernetic-steering.md",
       "metadata": {
@@ -1348,9 +1348,83 @@
         "status": "published",
         "display_order": 45,
         "summary_order": 45,
-        "summary_section": "第五部分：自主代码库 (第19-25章)",
-        "summary_title": "第25章: 从“拧阀门”到“掌舵”——Harness Engineering 的控制论转向"
+        "summary_section": "第五部分：自主代码库 (第19-27章)",
+        "summary_title": "第25章: 从”拧阀门”到”掌舵”——Harness Engineering 的控制论转向"
       }
+    },
+    {
+      "id": "part-5-chapter-27-harness-engineering-framework",
+      "label": "第27章: Harness Engineering 框架——从漂移的 Agent 到复合的系统",
+      "type": "article",
+      "file": "part-5/chapter-27-harness-engineering-framework.md",
+      "metadata": {
+        "id": "part-5-chapter-27-harness-engineering-framework",
+        "title": "第27章：Harness Engineering 框架——从漂移的 Agent 到复合的系统",
+        "slug": "part-5-chapter-27-harness-engineering-framework",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [
+          "Agent Harness",
+          "System Architecture",
+          "AI Engineering"
+        ],
+        "concepts": [
+          "Context Architecture",
+          "Agent Specialization",
+          "Persistent Memory",
+          "Structured Execution",
+          "Guardrail Hierarchy"
+        ],
+        "tools": [
+          "LangChain",
+          "OpenAI Codex",
+          "Claude Code"
+        ],
+        "architecture_layer": [
+          "systems-and-governance"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [
+          "part-5-chapter-20-harness-engineering",
+          "part-2-chapter-4-14-git-worktree-mode"
+        ],
+        "references": [],
+        "status": "published",
+        "display_order": 46,
+        "summary_order": 46,
+        "summary_section": "第五部分：自主代码库 (第19-27章)",
+        "summary_title": "第27章: Harness Engineering 框架——从漂移的 Agent 到复合的系统"
+      }
+    },
+    {
+      "id": "concept:Context Architecture",
+      "label": "Context Architecture",
+      "type": "concept"
+    },
+    {
+      "id": "concept:Agent Specialization",
+      "label": "Agent Specialization",
+      "type": "concept"
+    },
+    {
+      "id": "concept:Persistent Memory",
+      "label": "Persistent Memory",
+      "type": "concept"
+    },
+    {
+      "id": "concept:Structured Execution",
+      "label": "Structured Execution",
+      "type": "concept"
+    },
+    {
+      "id": "concept:Guardrail Hierarchy",
+      "label": "Guardrail Hierarchy",
+      "type": "concept"
+    },
+    {
+      "id": "tool:LangChain",
+      "label": "LangChain",
+      "type": "tool"
     },
     {
       "id": "appendix-appendix-a-cheatsheet",
@@ -1373,8 +1447,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 46,
-        "summary_order": 46,
+        "display_order": 47,
+        "summary_order": 47,
         "summary_section": "附录",
         "summary_title": "附录A: 常用AI工具速查表"
       }
@@ -1406,8 +1480,8 @@
           "https://github.com/heilcheng/awesome-agent-skills/tree/main"
         ],
         "status": "published",
-        "display_order": 47,
-        "summary_order": 47,
+        "display_order": 48,
+        "summary_order": 48,
         "summary_section": "附录",
         "summary_title": "附录B: 推荐资源与社区"
       }
@@ -1695,6 +1769,56 @@
       "type": "references"
     },
     {
+      "source": "part-5-chapter-27-harness-engineering-framework",
+      "target": "concept:Context Architecture",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-27-harness-engineering-framework",
+      "target": "concept:Agent Specialization",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-27-harness-engineering-framework",
+      "target": "concept:Persistent Memory",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-27-harness-engineering-framework",
+      "target": "concept:Structured Execution",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-27-harness-engineering-framework",
+      "target": "concept:Guardrail Hierarchy",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-27-harness-engineering-framework",
+      "target": "tool:LangChain",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-27-harness-engineering-framework",
+      "target": "tool:OpenAI Codex",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-27-harness-engineering-framework",
+      "target": "tool:Claude Code",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-27-harness-engineering-framework",
+      "target": "part-5-chapter-20-harness-engineering",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-27-harness-engineering-framework",
+      "target": "part-2-chapter-4-14-git-worktree-mode",
+      "type": "related"
+    },
+    {
       "source": "appendix-appendix-b-resources",
       "target": "https://github.com/ChrisWiles/claude-code-showcase",
       "type": "references"
@@ -1941,6 +2065,11 @@
     },
     {
       "source": "part-5-chapter-25-cybernetic-steering",
+      "target": "part-5-chapter-27-harness-engineering-framework",
+      "type": "evolution"
+    },
+    {
+      "source": "part-5-chapter-27-harness-engineering-framework",
       "target": "appendix-appendix-a-cheatsheet",
       "type": "evolution"
     },
