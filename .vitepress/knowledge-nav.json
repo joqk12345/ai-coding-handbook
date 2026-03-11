@@ -164,7 +164,7 @@
     ]
   },
   {
-    "text": "知识系统（自动）：第五部分：自主代码库 (第19-25章)",
+    "text": "知识系统（自动）：第五部分：自主代码库 (第19-26章)",
     "items": [
       {
         "text": "第19章: 自主代码库 - 背景智能体与软件交付的下一个时代",
@@ -193,6 +193,10 @@
       {
         "text": "第25章: 从“拧阀门”到“掌舵”——Harness Engineering 的控制论转向",
         "link": "/part-5/chapter-25-cybernetic-steering"
+      },
+      {
+        "text": "第26章：简历之外的躁动——当 AI 重写知识工作的价值坐标",
+        "link": "/part-5/chapter-26-restlessness-over-resume"
       }
     ]
   },
