@@ -26,6 +26,12 @@
 | --- | --- | --- |
 | [background-agents.com](https://background-agents.com/) | [第18章: 从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践](/part-4/chapter-17-skeptic-believer)<br>[第19章: 自主代码库 - 背景智能体与软件交付的下一个时代](/part-5/chapter-18-self-driving-codebase) | 2 |
 
+## bloombergbeta.com
+
+| 参考链接 | 被引用章节 | 次数 |
+| --- | --- | --- |
+| [bloombergbeta.com](https://www.bloombergbeta.com/) | [第28章: 研究品味——当 AI 让工程师商品化，什么变得稀缺](/part-5/chapter-28-research-taste) | 1 |
+
 ## docs.anthropic.com
 
 | 参考链接 | 被引用章节 | 次数 |
@@ -105,6 +111,12 @@
 | 参考链接 | 被引用章节 | 次数 |
 | --- | --- | --- |
 | [platform.claude.com/docs/en/agents-and-tools/agent-s...](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) | [5.3: Agent Skills（智能体技能）入门](/part-2/chapter-4-3-agent-skills) | 1 |
+
+## quadrillion.co
+
+| 参考链接 | 被引用章节 | 次数 |
+| --- | --- | --- |
+| [quadrillion.co](https://www.quadrillion.co/) | [第28章: 研究品味——当 AI 让工程师商品化，什么变得稀缺](/part-5/chapter-28-research-taste) | 1 |
 
 ## support.claude.com
 

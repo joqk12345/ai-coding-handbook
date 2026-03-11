@@ -168,7 +168,7 @@
     ]
   },
   {
-    "text": "知识系统（自动）：第五部分：自主代码库 (第19-27章)",
+    "text": "知识系统（自动）：第五部分：自主代码库 (第19-28章)",
     "items": [
       {
         "text": "第19章: 自主代码库 - 背景智能体与软件交付的下一个时代",
@@ -201,6 +201,10 @@
       {
         "text": "第27章: Harness Engineering 框架——从漂移的 Agent 到复合的系统",
         "link": "/part-5/chapter-27-harness-engineering-framework"
+      },
+      {
+        "text": "第28章: 研究品味——当 AI 让工程师商品化，什么变得稀缺",
+        "link": "/part-5/chapter-28-research-taste"
       }
     ]
   },
