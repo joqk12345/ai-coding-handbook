@@ -14,7 +14,7 @@ related: []
 references:
   - "https://x.com/trq212/status/1909886882662789170"
 status: "published"
-display_order: 37
+display_order: 55
 ---
 # 5.14：Git Worktree 模式与 Agent 工具设计艺术
 

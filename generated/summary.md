@@ -42,6 +42,7 @@
 - [第6章: OpenAI Codex 深度解析](/part-2/chapter-5-codex-deep-dive)
     - [6.1: OpenAI Codex 简介与演进脉络](/part-2/chapter-5-1-codex-introduction)
     - [6.2: Codex 核心能力与技术特点](/part-2/chapter-5-2-codex-capabilities)
+    - [6.3: Claude Code vs Codex: 权威对比指南](/part-2/chapter-5-3-claude-code-vs-codex)
 - [第7章: Gemini 编程实战](/part-2/chapter-6-gemini-practice)
 - [第8章: 开源模型 (Opencode) 使用手册](/part-2/chapter-7-opencode-manual)
 - [第9章: 其他AI编程工具概览](/part-2/chapter-8-other-tools)

@@ -80,6 +80,13 @@
 | --- | --- | --- |
 | [memgpt.ai](https://memgpt.ai/) | [第22章: 上下文工程的文件系统抽象 — AIGNE 框架](/part-5/chapter-21-context-engineering) | 1 |
 
+## newsletter.pragmaticengineer.com
+
+| 参考链接 | 被引用章节 | 次数 |
+| --- | --- | --- |
+| [newsletter.pragmaticengineer.com/p/how-claude-code-is-built](https://newsletter.pragmaticengineer.com/p/how-claude-code-is-built) | [6.3: Claude Code vs Codex: 权威对比指南](/part-2/chapter-5-3-claude-code-vs-codex) | 1 |
+| [newsletter.pragmaticengineer.com/p/how-codex-is-built](https://newsletter.pragmaticengineer.com/p/how-codex-is-built) | [6.3: Claude Code vs Codex: 权威对比指南](/part-2/chapter-5-3-claude-code-vs-codex) | 1 |
+
 ## openai.com
 
 | 参考链接 | 被引用章节 | 次数 |

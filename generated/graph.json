@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-03-10T16:02:42.259Z",
-  "nodeCount": 46,
-  "edgeCount": 91,
+  "generatedAt": "2026-03-11T00:45:37.769Z",
+  "nodeCount": 57,
+  "edgeCount": 107,
   "nodes": [
     {
       "id": "readme",
@@ -677,6 +677,107 @@
       }
     },
     {
+      "id": "part-2-chapter-5-3-claude-code-vs-codex",
+      "label": "6.3: Claude Code vs Codex: 权威对比指南",
+      "type": "article",
+      "file": "part-2/chapter-5-3-claude-code-vs-codex.md",
+      "metadata": {
+        "id": "part-2-chapter-5-3-claude-code-vs-codex",
+        "title": "6.3 Claude Code vs Codex: 权威对比指南",
+        "slug": "part-2-chapter-5-3-claude-code-vs-codex",
+        "date": "2026-03-11",
+        "type": "article",
+        "topics": [
+          "Claude Code",
+          "OpenAI Codex",
+          "AI Coding Agents",
+          "Model Comparison"
+        ],
+        "concepts": [
+          "Task Completion Time Horizon",
+          "Token Efficiency",
+          "Agent Scaffolding",
+          "RAG Pipeline Implementation"
+        ],
+        "tools": [
+          "Claude Code",
+          "OpenAI Codex",
+          "Opus 4.6",
+          "GPT-5.3-Codex",
+          "ChromaDB",
+          "FAISS"
+        ],
+        "architecture_layer": [
+          "models-and-tools"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [
+          "part-2-chapter-4-claude-manual",
+          "part-2-chapter-5-codex-deep-dive",
+          "part-2-chapter-4-1-claude-code-architecture"
+        ],
+        "references": [
+          "https://newsletter.pragmaticengineer.com/p/how-codex-is-built",
+          "https://newsletter.pragmaticengineer.com/p/how-claude-code-is-built"
+        ],
+        "status": "published",
+        "display_order": 25,
+        "summary_order": 25,
+        "summary_section": "第二部分：核心工具详解 (第5-9章)",
+        "summary_title": "6.3: Claude Code vs Codex: 权威对比指南"
+      }
+    },
+    {
+      "id": "concept:Task Completion Time Horizon",
+      "label": "Task Completion Time Horizon",
+      "type": "concept"
+    },
+    {
+      "id": "concept:Token Efficiency",
+      "label": "Token Efficiency",
+      "type": "concept"
+    },
+    {
+      "id": "concept:Agent Scaffolding",
+      "label": "Agent Scaffolding",
+      "type": "concept"
+    },
+    {
+      "id": "concept:RAG Pipeline Implementation",
+      "label": "RAG Pipeline Implementation",
+      "type": "concept"
+    },
+    {
+      "id": "tool:Claude Code",
+      "label": "Claude Code",
+      "type": "tool"
+    },
+    {
+      "id": "tool:OpenAI Codex",
+      "label": "OpenAI Codex",
+      "type": "tool"
+    },
+    {
+      "id": "tool:Opus 4.6",
+      "label": "Opus 4.6",
+      "type": "tool"
+    },
+    {
+      "id": "tool:GPT-5.3-Codex",
+      "label": "GPT-5.3-Codex",
+      "type": "tool"
+    },
+    {
+      "id": "tool:ChromaDB",
+      "label": "ChromaDB",
+      "type": "tool"
+    },
+    {
+      "id": "tool:FAISS",
+      "label": "FAISS",
+      "type": "tool"
+    },
+    {
       "id": "part-2-chapter-6-gemini-practice",
       "label": "第7章: Gemini 编程实战",
       "type": "article",
@@ -697,8 +798,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 25,
-        "summary_order": 25,
+        "display_order": 26,
+        "summary_order": 26,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "第7章: Gemini 编程实战"
       }
@@ -724,8 +825,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 26,
-        "summary_order": 26,
+        "display_order": 27,
+        "summary_order": 27,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "第8章: 开源模型 (Opencode) 使用手册"
       }
@@ -751,8 +852,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 27,
-        "summary_order": 27,
+        "display_order": 28,
+        "summary_order": 28,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "第9章: 其他AI编程工具概览"
       }
@@ -778,8 +879,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 28,
-        "summary_order": 28,
+        "display_order": 29,
+        "summary_order": 29,
         "summary_section": "第三部分：高级技巧与实战 (第10-12章)",
         "summary_title": "第10章: Prompt Engineering for Coders"
       }
@@ -805,8 +906,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 29,
-        "summary_order": 29,
+        "display_order": 30,
+        "summary_order": 30,
         "summary_section": "第三部分：高级技巧与实战 (第10-12章)",
         "summary_title": "第11章: AI驱动的测试与调试"
       }
@@ -832,8 +933,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 30,
-        "summary_order": 30,
+        "display_order": 31,
+        "summary_order": 31,
         "summary_section": "第三部分：高级技巧与实战 (第10-12章)",
         "summary_title": "第12章: 综合项目实战"
       }
@@ -861,8 +962,8 @@
           "https://github.com/shareAI-lab/learn-claude-code/blob/main/docs/zh/s01-the-agent-loop.md"
         ],
         "status": "published",
-        "display_order": 31,
-        "summary_order": 31,
+        "display_order": 32,
+        "summary_order": 32,
         "summary_section": "第四部分：实践 - 从零构建 Agent (第13-19章)",
         "summary_title": "第13章: 从零构建 AI Agent"
       }
@@ -888,8 +989,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 32,
-        "summary_order": 32,
+        "display_order": 33,
+        "summary_order": 33,
         "summary_section": "第四部分：实践 - 从零构建 Agent (第13-19章)",
         "summary_title": "第14章: 高级 Agent 模式"
       }
@@ -915,8 +1016,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 33,
-        "summary_order": 33,
+        "display_order": 34,
+        "summary_order": 34,
         "summary_section": "第四部分：实践 - 从零构建 Agent (第13-19章)",
         "summary_title": "第15章: 多智能体系统"
       }
@@ -945,8 +1046,8 @@
           "https://github.com/runesleo/claude-code-workflow.git"
         ],
         "status": "published",
-        "display_order": 34,
-        "summary_order": 34,
+        "display_order": 35,
+        "summary_order": 35,
         "summary_section": "第四部分：实践 - 从零构建 Agent (第13-19章)",
         "summary_title": "第16章: Claude Code Workflow —— 经过实战检验的 Agent 工作流模板"
       }
@@ -974,8 +1075,8 @@
           "https://github.com/mindfold-ai/Trellis"
         ],
         "status": "published",
-        "display_order": 35,
-        "summary_order": 35,
+        "display_order": 36,
+        "summary_order": 36,
         "summary_section": "第四部分：实践 - 从零构建 Agent (第13-19章)",
         "summary_title": "第17章: Trellis —— 为 AI 设置规则的开放框架"
       }
@@ -1006,8 +1107,8 @@
           "https://gist.github.com/gwern/"
         ],
         "status": "published",
-        "display_order": 36,
-        "summary_order": 36,
+        "display_order": 37,
+        "summary_order": 37,
         "summary_section": "第四部分：实践 - 从零构建 Agent (第13-19章)",
         "summary_title": "第18章: 从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践"
       }
@@ -1033,8 +1134,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 37,
-        "summary_order": 37,
+        "display_order": 38,
+        "summary_order": 38,
         "summary_section": "第四部分：实践 - 从零构建 Agent (第13-19章)",
         "summary_title": "第19章: 从怀疑到实践——三个月 AI Coding 实战复盘"
       }
@@ -1064,8 +1165,8 @@
           "https://www.google.com/search?q=Industrializing+Software+Development+Christian+Weichel+Ona"
         ],
         "status": "published",
-        "display_order": 38,
-        "summary_order": 38,
+        "display_order": 39,
+        "summary_order": 39,
         "summary_section": "第五部分：自主代码库 (第19-25章)",
         "summary_title": "第19章: 自主代码库 - 背景智能体与软件交付的下一个时代"
       }
@@ -1094,8 +1195,8 @@
           "https://github.com/openai/codex"
         ],
         "status": "published",
-        "display_order": 39,
-        "summary_order": 39,
+        "display_order": 40,
+        "summary_order": 40,
         "summary_section": "第五部分：自主代码库 (第19-25章)",
         "summary_title": "第20章: 在 Agent-First 的世界中充分发挥 Codex 的威力"
       }
@@ -1124,8 +1225,8 @@
           "https://openai.com/index/unrolling-the-codex-agent-loop/"
         ],
         "status": "published",
-        "display_order": 40,
-        "summary_order": 40,
+        "display_order": 41,
+        "summary_order": 41,
         "summary_section": "第五部分：自主代码库 (第19-25章)",
         "summary_title": "第21章: Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力"
       }
@@ -1155,8 +1256,8 @@
           "https://github.com/agiresearch/AIOS"
         ],
         "status": "published",
-        "display_order": 41,
-        "summary_order": 41,
+        "display_order": 42,
+        "summary_order": 42,
         "summary_section": "第五部分：自主代码库 (第19-25章)",
         "summary_title": "第22章: 上下文工程的文件系统抽象 — AIGNE 框架"
       }
@@ -1186,8 +1287,8 @@
           "https://x.com/i/collections/1841683833448468480"
         ],
         "status": "published",
-        "display_order": 42,
-        "summary_order": 42,
+        "display_order": 43,
+        "summary_order": 43,
         "summary_section": "第五部分：自主代码库 (第19-25章)",
         "summary_title": "第23章: 周末氛围直播复盘——AI Coding 的十倍加速时代"
       }
@@ -1216,8 +1317,8 @@
           "https://github.com/karpathy/nanochat/commit/6ed7d1d82cee16c2e26f45d559ad3338447a6c1b"
         ],
         "status": "published",
-        "display_order": 43,
-        "summary_order": 43,
+        "display_order": 44,
+        "summary_order": 44,
         "summary_section": "第五部分：自主代码库 (第19-25章)",
         "summary_title": "第24章: Autoresearch 实测提速 11% —— Agent 自主调参正在成为“最终战场”"
       }
@@ -1245,8 +1346,8 @@
           "https://x.com/odysseus0z/status/2030416758138634583"
         ],
         "status": "published",
-        "display_order": 44,
-        "summary_order": 44,
+        "display_order": 45,
+        "summary_order": 45,
         "summary_section": "第五部分：自主代码库 (第19-25章)",
         "summary_title": "第25章: 从“拧阀门”到“掌舵”——Harness Engineering 的控制论转向"
       }
@@ -1272,8 +1373,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 45,
-        "summary_order": 45,
+        "display_order": 46,
+        "summary_order": 46,
         "summary_section": "附录",
         "summary_title": "附录A: 常用AI工具速查表"
       }
@@ -1305,8 +1406,8 @@
           "https://github.com/heilcheng/awesome-agent-skills/tree/main"
         ],
         "status": "published",
-        "display_order": 46,
-        "summary_order": 46,
+        "display_order": 47,
+        "summary_order": 47,
         "summary_section": "附录",
         "summary_title": "附录B: 推荐资源与社区"
       }
@@ -1396,6 +1497,81 @@
     {
       "source": "part-2-chapter-4-14-git-worktree-mode",
       "target": "https://x.com/trq212/status/1909886882662789170",
+      "type": "references"
+    },
+    {
+      "source": "part-2-chapter-5-3-claude-code-vs-codex",
+      "target": "concept:Task Completion Time Horizon",
+      "type": "related"
+    },
+    {
+      "source": "part-2-chapter-5-3-claude-code-vs-codex",
+      "target": "concept:Token Efficiency",
+      "type": "related"
+    },
+    {
+      "source": "part-2-chapter-5-3-claude-code-vs-codex",
+      "target": "concept:Agent Scaffolding",
+      "type": "related"
+    },
+    {
+      "source": "part-2-chapter-5-3-claude-code-vs-codex",
+      "target": "concept:RAG Pipeline Implementation",
+      "type": "related"
+    },
+    {
+      "source": "part-2-chapter-5-3-claude-code-vs-codex",
+      "target": "tool:Claude Code",
+      "type": "related"
+    },
+    {
+      "source": "part-2-chapter-5-3-claude-code-vs-codex",
+      "target": "tool:OpenAI Codex",
+      "type": "related"
+    },
+    {
+      "source": "part-2-chapter-5-3-claude-code-vs-codex",
+      "target": "tool:Opus 4.6",
+      "type": "related"
+    },
+    {
+      "source": "part-2-chapter-5-3-claude-code-vs-codex",
+      "target": "tool:GPT-5.3-Codex",
+      "type": "related"
+    },
+    {
+      "source": "part-2-chapter-5-3-claude-code-vs-codex",
+      "target": "tool:ChromaDB",
+      "type": "related"
+    },
+    {
+      "source": "part-2-chapter-5-3-claude-code-vs-codex",
+      "target": "tool:FAISS",
+      "type": "related"
+    },
+    {
+      "source": "part-2-chapter-5-3-claude-code-vs-codex",
+      "target": "part-2-chapter-4-claude-manual",
+      "type": "related"
+    },
+    {
+      "source": "part-2-chapter-5-3-claude-code-vs-codex",
+      "target": "part-2-chapter-5-codex-deep-dive",
+      "type": "related"
+    },
+    {
+      "source": "part-2-chapter-5-3-claude-code-vs-codex",
+      "target": "part-2-chapter-4-1-claude-code-architecture",
+      "type": "related"
+    },
+    {
+      "source": "part-2-chapter-5-3-claude-code-vs-codex",
+      "target": "https://newsletter.pragmaticengineer.com/p/how-codex-is-built",
+      "type": "references"
+    },
+    {
+      "source": "part-2-chapter-5-3-claude-code-vs-codex",
+      "target": "https://newsletter.pragmaticengineer.com/p/how-claude-code-is-built",
       "type": "references"
     },
     {
@@ -1660,6 +1836,11 @@
     },
     {
       "source": "part-2-chapter-5-2-codex-capabilities",
+      "target": "part-2-chapter-5-3-claude-code-vs-codex",
+      "type": "evolution"
+    },
+    {
+      "source": "part-2-chapter-5-3-claude-code-vs-codex",
       "target": "part-2-chapter-6-gemini-practice",
       "type": "evolution"
     },
