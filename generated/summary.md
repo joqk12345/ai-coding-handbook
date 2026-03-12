@@ -70,6 +70,7 @@
 - [第24章: Autoresearch 实测提速 11% —— Agent 自主调参正在成为“最终战场”](/part-5/chapter-24-autoresearch-nanochat)
 - [第25章: 从”拧阀门”到”掌舵”——Harness Engineering 的控制论转向](/part-5/chapter-25-cybernetic-steering)
 - [第27章: Harness Engineering 框架——从漂移的 Agent 到复合的系统](/part-5/chapter-27-harness-engineering-framework)
+    - [27.1: Why AI Agents Need a Harness：Lessons from Utah](/part-5/chapter-27-1-why-ai-agents-need-a-harness-lessons-from-utah)
 - [第28章: 研究品味——当 AI 让工程师商品化，什么变得稀缺](/part-5/chapter-28-research-taste)
 
 ## 附录
