@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-11T15:47:28.410Z",
-  "nodeCount": 71,
+  "generatedAt": "2026-03-12T03:16:48.498Z",
+  "nodeCount": 72,
   "edgeCount": 129,
   "nodes": [
     {
@@ -1427,6 +1427,35 @@
       "type": "tool"
     },
     {
+      "id": "part-5-chapter-27-1-why-ai-agents-need-a-harness-lessons-from-utah",
+      "label": "27.1: Why AI Agents Need a Harness：Lessons from Utah",
+      "type": "article",
+      "file": "part-5/chapter-27-1-why-ai-agents-need-a-harness-lessons-from-utah.md",
+      "metadata": {
+        "id": "part-5-chapter-27-1-why-ai-agents-need-a-harness-lessons-from-utah",
+        "title": "27.1 Why AI Agents Need a Harness：Lessons from Utah",
+        "slug": "part-5-chapter-27-1-why-ai-agents-need-a-harness-lessons-from-utah",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "systems-and-governance"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [
+          "part-5-chapter-27-harness-engineering-framework"
+        ],
+        "references": [],
+        "status": "published",
+        "display_order": 47,
+        "summary_order": 47,
+        "summary_section": "第五部分：自主代码库 (第19-28章)",
+        "summary_title": "27.1: Why AI Agents Need a Harness：Lessons from Utah"
+      }
+    },
+    {
       "id": "part-5-chapter-28-research-taste",
       "label": "第28章: 研究品味——当 AI 让工程师商品化，什么变得稀缺",
       "type": "article",
@@ -1460,13 +1489,10 @@
           "part-5-chapter-27-harness-engineering-framework",
           "part-5-chapter-20-harness-engineering"
         ],
-        "references": [
-          "https://www.quadrillion.co/",
-          "https://www.bloombergbeta.com/"
-        ],
+        "references": [],
         "status": "published",
-        "display_order": 47,
-        "summary_order": 47,
+        "display_order": 48,
+        "summary_order": 48,
         "summary_section": "第五部分：自主代码库 (第19-28章)",
         "summary_title": "第28章: 研究品味——当 AI 让工程师商品化，什么变得稀缺"
       }
@@ -1522,8 +1548,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 48,
-        "summary_order": 48,
+        "display_order": 49,
+        "summary_order": 49,
         "summary_section": "附录",
         "summary_title": "附录A: 常用AI工具速查表"
       }
@@ -1555,8 +1581,8 @@
           "https://github.com/heilcheng/awesome-agent-skills/tree/main"
         ],
         "status": "published",
-        "display_order": 49,
-        "summary_order": 49,
+        "display_order": 50,
+        "summary_order": 50,
         "summary_section": "附录",
         "summary_title": "附录B: 推荐资源与社区"
       }
@@ -1894,6 +1920,11 @@
       "type": "related"
     },
     {
+      "source": "part-5-chapter-27-1-why-ai-agents-need-a-harness-lessons-from-utah",
+      "target": "part-5-chapter-27-harness-engineering-framework",
+      "type": "related"
+    },
+    {
       "source": "part-5-chapter-28-research-taste",
       "target": "concept:Research vs Engineering",
       "type": "related"
@@ -1932,16 +1963,6 @@
       "source": "part-5-chapter-28-research-taste",
       "target": "part-5-chapter-20-harness-engineering",
       "type": "related"
-    },
-    {
-      "source": "part-5-chapter-28-research-taste",
-      "target": "https://www.quadrillion.co/",
-      "type": "references"
-    },
-    {
-      "source": "part-5-chapter-28-research-taste",
-      "target": "https://www.bloombergbeta.com/",
-      "type": "references"
     },
     {
       "source": "appendix-appendix-b-resources",
@@ -2195,6 +2216,11 @@
     },
     {
       "source": "part-5-chapter-27-harness-engineering-framework",
+      "target": "part-5-chapter-27-1-why-ai-agents-need-a-harness-lessons-from-utah",
+      "type": "evolution"
+    },
+    {
+      "source": "part-5-chapter-27-1-why-ai-agents-need-a-harness-lessons-from-utah",
       "target": "part-5-chapter-28-research-taste",
       "type": "evolution"
     },

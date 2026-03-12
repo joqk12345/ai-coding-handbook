@@ -22,13 +22,10 @@ timeline_era: "autonomous-systems"
 related:
   - "part-5-chapter-27-harness-engineering-framework"
   - "part-5-chapter-20-harness-engineering"
-references:
-  - "https://www.quadrillion.co/"
-  - "https://www.bloombergbeta.com/"
+references: []
 status: "published"
 display_order: 98
 ---
-
 # 第28章：研究品味——当 AI 让工程师 commoditize，什么变得稀缺
 
 > 这个时代最重要的人不会是工程师；他们会是研究人员。当任何人都能免费构建时，差异化在于知道什么值得构建，以及它是否可构建。这就是研究人员所做的：他们处理那些可能没有解决方案的问题，并决定它们是否值得下注。
