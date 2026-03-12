@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-03-12T03:16:48.498Z",
-  "nodeCount": 72,
-  "edgeCount": 129,
+  "generatedAt": "2026-03-12T03:43:25.923Z",
+  "nodeCount": 73,
+  "edgeCount": 133,
   "nodes": [
     {
       "id": "readme",
@@ -1167,7 +1167,7 @@
         "status": "published",
         "display_order": 39,
         "summary_order": 39,
-        "summary_section": "第五部分：自主代码库 (第19-28章)",
+        "summary_section": "第五部分：自主代码库 (第19-29章)",
         "summary_title": "第19章: 自主代码库 - 背景智能体与软件交付的下一个时代"
       }
     },
@@ -1197,7 +1197,7 @@
         "status": "published",
         "display_order": 40,
         "summary_order": 40,
-        "summary_section": "第五部分：自主代码库 (第19-28章)",
+        "summary_section": "第五部分：自主代码库 (第19-29章)",
         "summary_title": "第20章: 在 Agent-First 的世界中充分发挥 Codex 的威力"
       }
     },
@@ -1227,7 +1227,7 @@
         "status": "published",
         "display_order": 41,
         "summary_order": 41,
-        "summary_section": "第五部分：自主代码库 (第19-28章)",
+        "summary_section": "第五部分：自主代码库 (第19-29章)",
         "summary_title": "第21章: Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力"
       }
     },
@@ -1258,7 +1258,7 @@
         "status": "published",
         "display_order": 42,
         "summary_order": 42,
-        "summary_section": "第五部分：自主代码库 (第19-28章)",
+        "summary_section": "第五部分：自主代码库 (第19-29章)",
         "summary_title": "第22章: 上下文工程的文件系统抽象 — AIGNE 框架"
       }
     },
@@ -1289,7 +1289,7 @@
         "status": "published",
         "display_order": 43,
         "summary_order": 43,
-        "summary_section": "第五部分：自主代码库 (第19-28章)",
+        "summary_section": "第五部分：自主代码库 (第19-29章)",
         "summary_title": "第23章: 周末氛围直播复盘——AI Coding 的十倍加速时代"
       }
     },
@@ -1319,7 +1319,7 @@
         "status": "published",
         "display_order": 44,
         "summary_order": 44,
-        "summary_section": "第五部分：自主代码库 (第19-28章)",
+        "summary_section": "第五部分：自主代码库 (第19-29章)",
         "summary_title": "第24章: Autoresearch 实测提速 11% —— Agent 自主调参正在成为“最终战场”"
       }
     },
@@ -1348,7 +1348,7 @@
         "status": "published",
         "display_order": 45,
         "summary_order": 45,
-        "summary_section": "第五部分：自主代码库 (第19-28章)",
+        "summary_section": "第五部分：自主代码库 (第19-29章)",
         "summary_title": "第25章: 从”拧阀门”到”掌舵”——Harness Engineering 的控制论转向"
       }
     },
@@ -1392,7 +1392,7 @@
         "status": "published",
         "display_order": 46,
         "summary_order": 46,
-        "summary_section": "第五部分：自主代码库 (第19-28章)",
+        "summary_section": "第五部分：自主代码库 (第19-29章)",
         "summary_title": "第27章: Harness Engineering 框架——从漂移的 Agent 到复合的系统"
       }
     },
@@ -1451,7 +1451,7 @@
         "status": "published",
         "display_order": 47,
         "summary_order": 47,
-        "summary_section": "第五部分：自主代码库 (第19-28章)",
+        "summary_section": "第五部分：自主代码库 (第19-29章)",
         "summary_title": "27.1: Why AI Agents Need a Harness：Lessons from Utah"
       }
     },
@@ -1493,7 +1493,7 @@
         "status": "published",
         "display_order": 48,
         "summary_order": 48,
-        "summary_section": "第五部分：自主代码库 (第19-28章)",
+        "summary_section": "第五部分：自主代码库 (第19-29章)",
         "summary_title": "第28章: 研究品味——当 AI 让工程师商品化，什么变得稀缺"
       }
     },
@@ -1528,6 +1528,38 @@
       "type": "tool"
     },
     {
+      "id": "part-5-chapter-29-agentos-from-silos-to-nui",
+      "label": "第29章: AgentOS——从应用孤岛到自然语言驱动的数据生态",
+      "type": "article",
+      "file": "part-5/chapter-29-agentos-from-silos-to-nui.md",
+      "metadata": {
+        "id": "part-5-chapter-29-agentos-from-silos-to-nui",
+        "title": "第29章：AgentOS——从应用孤岛到自然语言驱动的数据生态",
+        "slug": "part-5-chapter-29-agentos-from-silos-to-nui",
+        "date": "2026-03-12",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "systems-and-governance"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [
+          "part-4-chapter-14-multi-agent",
+          "part-5-chapter-27-harness-engineering-framework"
+        ],
+        "references": [
+          "https://arxiv.org/html/2603.08938v1"
+        ],
+        "status": "published",
+        "display_order": 49,
+        "summary_order": 49,
+        "summary_section": "第五部分：自主代码库 (第19-29章)",
+        "summary_title": "第29章: AgentOS——从应用孤岛到自然语言驱动的数据生态"
+      }
+    },
+    {
       "id": "appendix-appendix-a-cheatsheet",
       "label": "附录A: 常用AI工具速查表",
       "type": "article",
@@ -1548,8 +1580,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 49,
-        "summary_order": 49,
+        "display_order": 50,
+        "summary_order": 50,
         "summary_section": "附录",
         "summary_title": "附录A: 常用AI工具速查表"
       }
@@ -1581,8 +1613,8 @@
           "https://github.com/heilcheng/awesome-agent-skills/tree/main"
         ],
         "status": "published",
-        "display_order": 50,
-        "summary_order": 50,
+        "display_order": 51,
+        "summary_order": 51,
         "summary_section": "附录",
         "summary_title": "附录B: 推荐资源与社区"
       }
@@ -1965,6 +1997,21 @@
       "type": "related"
     },
     {
+      "source": "part-5-chapter-29-agentos-from-silos-to-nui",
+      "target": "part-4-chapter-14-multi-agent",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-29-agentos-from-silos-to-nui",
+      "target": "part-5-chapter-27-harness-engineering-framework",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-29-agentos-from-silos-to-nui",
+      "target": "https://arxiv.org/html/2603.08938v1",
+      "type": "references"
+    },
+    {
       "source": "appendix-appendix-b-resources",
       "target": "https://github.com/ChrisWiles/claude-code-showcase",
       "type": "references"
@@ -2226,6 +2273,11 @@
     },
     {
       "source": "part-5-chapter-28-research-taste",
+      "target": "part-5-chapter-29-agentos-from-silos-to-nui",
+      "type": "evolution"
+    },
+    {
+      "source": "part-5-chapter-29-agentos-from-silos-to-nui",
       "target": "appendix-appendix-a-cheatsheet",
       "type": "evolution"
     },
