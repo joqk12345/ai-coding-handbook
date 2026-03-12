@@ -5,10 +5,9 @@ slug: "part-2-chapter-5-3-claude-code-vs-codex"
 date: "2026-03-11"
 type: "article"
 topics:
-  - "Claude Code"
-  - "OpenAI Codex"
-  - "AI Coding Agents"
-  - "Model Comparison"
+  - "tools"
+  - "coding-agents"
+  - "workflow"
 concepts:
   - "Task Completion Time Horizon"
   - "Token Efficiency"

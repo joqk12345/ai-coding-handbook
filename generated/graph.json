@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-03-12T03:43:25.923Z",
-  "nodeCount": 73,
-  "edgeCount": 133,
+  "generatedAt": "2026-03-12T14:58:24.052Z",
+  "nodeCount": 82,
+  "edgeCount": 144,
   "nodes": [
     {
       "id": "readme",
@@ -688,10 +688,9 @@
         "date": "2026-03-11",
         "type": "article",
         "topics": [
-          "Claude Code",
-          "OpenAI Codex",
-          "AI Coding Agents",
-          "Model Comparison"
+          "tools",
+          "coding-agents",
+          "workflow"
         ],
         "concepts": [
           "Task Completion Time Horizon",
@@ -940,6 +939,168 @@
       }
     },
     {
+      "id": "part-3-chapter-12-1-terminal-ai-coding-agents",
+      "label": "12.1: 构建终端原生 AI 编码智能体：脚手架、运行框架（Harness）、上下文工程与经验教训",
+      "type": "article",
+      "file": "part-3/chapter-12-1-terminal-ai-coding-agents.md",
+      "metadata": {
+        "id": "part-3-chapter-12-1-terminal-ai-coding-agents",
+        "title": "12.1: 构建终端原生 AI 编码智能体：脚手架、运行框架（Harness）、上下文工程与经验教训",
+        "slug": "part-3-chapter-12-1-terminal-ai-coding-agents",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 32,
+        "summary_order": 32,
+        "summary_section": "第三部分：高级技巧与实战 (第10-12章)",
+        "summary_title": "12.1: 构建终端原生 AI 编码智能体：脚手架、运行框架（Harness）、上下文工程与经验教训"
+      }
+    },
+    {
+      "id": "part-3-chapter-12-2-opendev-architecture",
+      "label": "12.2: OpenDev 架构总览：分层体系、智能体核心与运行时机制",
+      "type": "article",
+      "file": "part-3/chapter-12-2-opendev-architecture.md",
+      "metadata": {
+        "id": "part-3-chapter-12-2-opendev-architecture",
+        "title": "12.2: OpenDev 架构总览：分层体系、智能体核心与运行时机制",
+        "slug": "part-3-chapter-12-2-opendev-architecture",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 33,
+        "summary_order": 33,
+        "summary_section": "第三部分：高级技巧与实战 (第10-12章)",
+        "summary_title": "12.2: OpenDev 架构总览：分层体系、智能体核心与运行时机制"
+      }
+    },
+    {
+      "id": "part-3-chapter-12-3-context-engineering-layer",
+      "label": "12.3: OpenDev 的上下文工程层：提示词、记忆、压缩与检索组装",
+      "type": "article",
+      "file": "part-3/chapter-12-3-context-engineering-layer.md",
+      "metadata": {
+        "id": "part-3-chapter-12-3-context-engineering-layer",
+        "title": "12.3: OpenDev 的上下文工程层：提示词、记忆、压缩与检索组装",
+        "slug": "part-3-chapter-12-3-context-engineering-layer",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 34,
+        "summary_order": 34,
+        "summary_section": "第三部分：高级技巧与实战 (第10-12章)",
+        "summary_title": "12.3: OpenDev 的上下文工程层：提示词、记忆、压缩与检索组装"
+      }
+    },
+    {
+      "id": "part-3-chapter-12-4-tool-system",
+      "label": "12.4: OpenDev 的工具系统：注册表架构、文件操作与可扩展能力",
+      "type": "article",
+      "file": "part-3/chapter-12-4-tool-system.md",
+      "metadata": {
+        "id": "part-3-chapter-12-4-tool-system",
+        "title": "12.4: OpenDev 的工具系统：注册表架构、文件操作与可扩展能力",
+        "slug": "part-3-chapter-12-4-tool-system",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 35,
+        "summary_order": 35,
+        "summary_section": "第三部分：高级技巧与实战 (第10-12章)",
+        "summary_title": "12.4: OpenDev 的工具系统：注册表架构、文件操作与可扩展能力"
+      }
+    },
+    {
+      "id": "part-3-chapter-12-5-persistence-layer",
+      "label": "12.5: OpenDev 的持久化层：会话、撤销、配置与模型缓存系统",
+      "type": "article",
+      "file": "part-3/chapter-12-5-persistence-layer.md",
+      "metadata": {
+        "id": "part-3-chapter-12-5-persistence-layer",
+        "title": "12.5: OpenDev 的持久化层：会话、撤销、配置与模型缓存系统",
+        "slug": "part-3-chapter-12-5-persistence-layer",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 36,
+        "summary_order": 36,
+        "summary_section": "第三部分：高级技巧与实战 (第10-12章)",
+        "summary_title": "12.5: OpenDev 的持久化层：会话、撤销、配置与模型缓存系统"
+      }
+    },
+    {
+      "id": "part-3-chapter-12-6-design-tensions-lessons",
+      "label": "12.6: OpenDev 的五个核心设计张力与可迁移经验",
+      "type": "article",
+      "file": "part-3/chapter-12-6-design-tensions-lessons.md",
+      "metadata": {
+        "id": "part-3-chapter-12-6-design-tensions-lessons",
+        "title": "12.6: OpenDev 的五个核心设计张力与可迁移经验",
+        "slug": "part-3-chapter-12-6-design-tensions-lessons",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 37,
+        "summary_order": 37,
+        "summary_section": "第三部分：高级技巧与实战 (第10-12章)",
+        "summary_title": "12.6: OpenDev 的五个核心设计张力与可迁移经验"
+      }
+    },
+    {
       "id": "part-4-chapter-12-building-agent",
       "label": "第13章: 从零构建 AI Agent",
       "type": "article",
@@ -962,8 +1123,8 @@
           "https://github.com/shareAI-lab/learn-claude-code/blob/main/docs/zh/s01-the-agent-loop.md"
         ],
         "status": "published",
-        "display_order": 32,
-        "summary_order": 32,
+        "display_order": 38,
+        "summary_order": 38,
         "summary_section": "第四部分：实践 - 从零构建 Agent (第13-19章)",
         "summary_title": "第13章: 从零构建 AI Agent"
       }
@@ -989,8 +1150,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 33,
-        "summary_order": 33,
+        "display_order": 39,
+        "summary_order": 39,
         "summary_section": "第四部分：实践 - 从零构建 Agent (第13-19章)",
         "summary_title": "第14章: 高级 Agent 模式"
       }
@@ -1016,8 +1177,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 34,
-        "summary_order": 34,
+        "display_order": 40,
+        "summary_order": 40,
         "summary_section": "第四部分：实践 - 从零构建 Agent (第13-19章)",
         "summary_title": "第15章: 多智能体系统"
       }
@@ -1046,8 +1207,8 @@
           "https://github.com/runesleo/claude-code-workflow.git"
         ],
         "status": "published",
-        "display_order": 35,
-        "summary_order": 35,
+        "display_order": 41,
+        "summary_order": 41,
         "summary_section": "第四部分：实践 - 从零构建 Agent (第13-19章)",
         "summary_title": "第16章: Claude Code Workflow —— 经过实战检验的 Agent 工作流模板"
       }
@@ -1075,8 +1236,8 @@
           "https://github.com/mindfold-ai/Trellis"
         ],
         "status": "published",
-        "display_order": 36,
-        "summary_order": 36,
+        "display_order": 42,
+        "summary_order": 42,
         "summary_section": "第四部分：实践 - 从零构建 Agent (第13-19章)",
         "summary_title": "第17章: Trellis —— 为 AI 设置规则的开放框架"
       }
@@ -1107,8 +1268,8 @@
           "https://gist.github.com/gwern/"
         ],
         "status": "published",
-        "display_order": 37,
-        "summary_order": 37,
+        "display_order": 43,
+        "summary_order": 43,
         "summary_section": "第四部分：实践 - 从零构建 Agent (第13-19章)",
         "summary_title": "第18章: 从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践"
       }
@@ -1134,8 +1295,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 38,
-        "summary_order": 38,
+        "display_order": 44,
+        "summary_order": 44,
         "summary_section": "第四部分：实践 - 从零构建 Agent (第13-19章)",
         "summary_title": "第19章: 从怀疑到实践——三个月 AI Coding 实战复盘"
       }
@@ -1165,9 +1326,9 @@
           "https://www.google.com/search?q=Industrializing+Software+Development+Christian+Weichel+Ona"
         ],
         "status": "published",
-        "display_order": 39,
-        "summary_order": 39,
-        "summary_section": "第五部分：自主代码库 (第19-29章)",
+        "display_order": 45,
+        "summary_order": 45,
+        "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第19章: 自主代码库 - 背景智能体与软件交付的下一个时代"
       }
     },
@@ -1195,9 +1356,9 @@
           "https://github.com/openai/codex"
         ],
         "status": "published",
-        "display_order": 40,
-        "summary_order": 40,
-        "summary_section": "第五部分：自主代码库 (第19-29章)",
+        "display_order": 46,
+        "summary_order": 46,
+        "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第20章: 在 Agent-First 的世界中充分发挥 Codex 的威力"
       }
     },
@@ -1225,9 +1386,9 @@
           "https://openai.com/index/unrolling-the-codex-agent-loop/"
         ],
         "status": "published",
-        "display_order": 41,
-        "summary_order": 41,
-        "summary_section": "第五部分：自主代码库 (第19-29章)",
+        "display_order": 47,
+        "summary_order": 47,
+        "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第21章: Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力"
       }
     },
@@ -1256,9 +1417,9 @@
           "https://github.com/agiresearch/AIOS"
         ],
         "status": "published",
-        "display_order": 42,
-        "summary_order": 42,
-        "summary_section": "第五部分：自主代码库 (第19-29章)",
+        "display_order": 48,
+        "summary_order": 48,
+        "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第22章: 上下文工程的文件系统抽象 — AIGNE 框架"
       }
     },
@@ -1287,15 +1448,15 @@
           "https://x.com/i/collections/1841683833448468480"
         ],
         "status": "published",
-        "display_order": 43,
-        "summary_order": 43,
-        "summary_section": "第五部分：自主代码库 (第19-29章)",
+        "display_order": 49,
+        "summary_order": 49,
+        "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第23章: 周末氛围直播复盘——AI Coding 的十倍加速时代"
       }
     },
     {
       "id": "part-5-chapter-24-autoresearch-nanochat",
-      "label": "第24章: Autoresearch 实测提速 11% —— Agent 自主调参正在成为“最终战场”",
+      "label": "第24章: Autoresearch 实测提速 11% —— Agent 自主调参正在成为”最终战场”",
       "type": "article",
       "file": "part-5/chapter-24-autoresearch-nanochat.md",
       "metadata": {
@@ -1317,10 +1478,10 @@
           "https://github.com/karpathy/nanochat/commit/6ed7d1d82cee16c2e26f45d559ad3338447a6c1b"
         ],
         "status": "published",
-        "display_order": 44,
-        "summary_order": 44,
-        "summary_section": "第五部分：自主代码库 (第19-29章)",
-        "summary_title": "第24章: Autoresearch 实测提速 11% —— Agent 自主调参正在成为“最终战场”"
+        "display_order": 50,
+        "summary_order": 50,
+        "summary_section": "第五部分：自主代码库 (第19-30章)",
+        "summary_title": "第24章: Autoresearch 实测提速 11% —— Agent 自主调参正在成为”最终战场”"
       }
     },
     {
@@ -1346,10 +1507,37 @@
           "https://x.com/odysseus0z/status/2030416758138634583"
         ],
         "status": "published",
-        "display_order": 45,
-        "summary_order": 45,
-        "summary_section": "第五部分：自主代码库 (第19-29章)",
+        "display_order": 51,
+        "summary_order": 51,
+        "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第25章: 从”拧阀门”到”掌舵”——Harness Engineering 的控制论转向"
+      }
+    },
+    {
+      "id": "part-5-chapter-26-restlessness-over-resume",
+      "label": "第26章：简历之外的躁动——当 AI 重写知识工作的价值坐标",
+      "type": "article",
+      "file": "part-5/chapter-26-restlessness-over-resume.md",
+      "metadata": {
+        "id": "part-5-chapter-26-restlessness-over-resume",
+        "title": "第26章：简历之外的躁动——当 AI 重写知识工作的价值坐标",
+        "slug": "part-5-chapter-26-restlessness-over-resume",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "systems-and-governance"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 52,
+        "summary_order": 52,
+        "summary_section": "第五部分：自主代码库 (第19-30章)",
+        "summary_title": "第26章：简历之外的躁动——当 AI 重写知识工作的价值坐标"
       }
     },
     {
@@ -1364,9 +1552,9 @@
         "date": "2025-01-01",
         "type": "article",
         "topics": [
-          "Agent Harness",
-          "System Architecture",
-          "AI Engineering"
+          "coding-agents",
+          "architecture",
+          "governance"
         ],
         "concepts": [
           "Context Architecture",
@@ -1390,9 +1578,9 @@
         ],
         "references": [],
         "status": "published",
-        "display_order": 46,
-        "summary_order": 46,
-        "summary_section": "第五部分：自主代码库 (第19-29章)",
+        "display_order": 53,
+        "summary_order": 53,
+        "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第27章: Harness Engineering 框架——从漂移的 Agent 到复合的系统"
       }
     },
@@ -1449,10 +1637,40 @@
         ],
         "references": [],
         "status": "published",
-        "display_order": 47,
-        "summary_order": 47,
-        "summary_section": "第五部分：自主代码库 (第19-29章)",
+        "display_order": 54,
+        "summary_order": 54,
+        "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "27.1: Why AI Agents Need a Harness：Lessons from Utah"
+      }
+    },
+    {
+      "id": "part-5-chapter-27-2-the-anatomy-of-an-agent-harness",
+      "label": "27.2: The Anatomy of an Agent Harness",
+      "type": "article",
+      "file": "part-5/chapter-27-2-the-anatomy-of-an-agent-harness.md",
+      "metadata": {
+        "id": "part-5-chapter-27-2-the-anatomy-of-an-agent-harness",
+        "title": "27.2 The Anatomy of an Agent Harness",
+        "slug": "part-5-chapter-27-2-the-anatomy-of-an-agent-harness",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "systems-and-governance"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [
+          "part-5-chapter-27-harness-engineering-framework",
+          "part-5-chapter-27-1-why-ai-agents-need-a-harness-lessons-from-utah"
+        ],
+        "references": [],
+        "status": "published",
+        "display_order": 55,
+        "summary_order": 55,
+        "summary_section": "第五部分：自主代码库 (第19-30章)",
+        "summary_title": "27.2: The Anatomy of an Agent Harness"
       }
     },
     {
@@ -1467,9 +1685,8 @@
         "date": "2025-01-01",
         "type": "article",
         "topics": [
-          "Research Taste",
-          "AI Research",
-          "Decision Making"
+          "ai-programming",
+          "workflow"
         ],
         "concepts": [
           "Research vs Engineering",
@@ -1491,9 +1708,9 @@
         ],
         "references": [],
         "status": "published",
-        "display_order": 48,
-        "summary_order": 48,
-        "summary_section": "第五部分：自主代码库 (第19-29章)",
+        "display_order": 56,
+        "summary_order": 56,
+        "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第28章: 研究品味——当 AI 让工程师商品化，什么变得稀缺"
       }
     },
@@ -1528,13 +1745,40 @@
       "type": "tool"
     },
     {
+      "id": "part-5-chapter-29-autonomous-context-compression",
+      "label": "第29章: 自主上下文压缩——让 Agent 掌控自己的记忆",
+      "type": "article",
+      "file": "part-5/chapter-29-autonomous-context-compression.md",
+      "metadata": {
+        "id": "part-5-chapter-29-autonomous-context-compression",
+        "title": "第29章：自主上下文压缩——让 Agent 掌控自己的记忆",
+        "slug": "part-5-chapter-29-autonomous-context-compression",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "workflows-and-practices"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 57,
+        "summary_order": 57,
+        "summary_section": "第五部分：自主代码库 (第19-30章)",
+        "summary_title": "第29章: 自主上下文压缩——让 Agent 掌控自己的记忆"
+      }
+    },
+    {
       "id": "part-5-chapter-29-agentos-from-silos-to-nui",
-      "label": "第29章: AgentOS——从应用孤岛到自然语言驱动的数据生态",
+      "label": "第30章: AgentOS——从应用孤岛到自然语言驱动的数据生态",
       "type": "article",
       "file": "part-5/chapter-29-agentos-from-silos-to-nui.md",
       "metadata": {
         "id": "part-5-chapter-29-agentos-from-silos-to-nui",
-        "title": "第29章：AgentOS——从应用孤岛到自然语言驱动的数据生态",
+        "title": "第30章：AgentOS——从应用孤岛到自然语言驱动的数据生态",
         "slug": "part-5-chapter-29-agentos-from-silos-to-nui",
         "date": "2026-03-12",
         "type": "article",
@@ -1553,10 +1797,10 @@
           "https://arxiv.org/html/2603.08938v1"
         ],
         "status": "published",
-        "display_order": 49,
-        "summary_order": 49,
-        "summary_section": "第五部分：自主代码库 (第19-29章)",
-        "summary_title": "第29章: AgentOS——从应用孤岛到自然语言驱动的数据生态"
+        "display_order": 58,
+        "summary_order": 58,
+        "summary_section": "第五部分：自主代码库 (第19-30章)",
+        "summary_title": "第30章: AgentOS——从应用孤岛到自然语言驱动的数据生态"
       }
     },
     {
@@ -1580,8 +1824,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 50,
-        "summary_order": 50,
+        "display_order": 59,
+        "summary_order": 59,
         "summary_section": "附录",
         "summary_title": "附录A: 常用AI工具速查表"
       }
@@ -1613,8 +1857,8 @@
           "https://github.com/heilcheng/awesome-agent-skills/tree/main"
         ],
         "status": "published",
-        "display_order": 51,
-        "summary_order": 51,
+        "display_order": 60,
+        "summary_order": 60,
         "summary_section": "附录",
         "summary_title": "附录B: 推荐资源与社区"
       }
@@ -1957,6 +2201,16 @@
       "type": "related"
     },
     {
+      "source": "part-5-chapter-27-2-the-anatomy-of-an-agent-harness",
+      "target": "part-5-chapter-27-harness-engineering-framework",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-27-2-the-anatomy-of-an-agent-harness",
+      "target": "part-5-chapter-27-1-why-ai-agents-need-a-harness-lessons-from-utah",
+      "type": "related"
+    },
+    {
       "source": "part-5-chapter-28-research-taste",
       "target": "concept:Research vs Engineering",
       "type": "related"
@@ -2188,6 +2442,36 @@
     },
     {
       "source": "part-3-chapter-11-capstone",
+      "target": "part-3-chapter-12-1-terminal-ai-coding-agents",
+      "type": "evolution"
+    },
+    {
+      "source": "part-3-chapter-12-1-terminal-ai-coding-agents",
+      "target": "part-3-chapter-12-2-opendev-architecture",
+      "type": "evolution"
+    },
+    {
+      "source": "part-3-chapter-12-2-opendev-architecture",
+      "target": "part-3-chapter-12-3-context-engineering-layer",
+      "type": "evolution"
+    },
+    {
+      "source": "part-3-chapter-12-3-context-engineering-layer",
+      "target": "part-3-chapter-12-4-tool-system",
+      "type": "evolution"
+    },
+    {
+      "source": "part-3-chapter-12-4-tool-system",
+      "target": "part-3-chapter-12-5-persistence-layer",
+      "type": "evolution"
+    },
+    {
+      "source": "part-3-chapter-12-5-persistence-layer",
+      "target": "part-3-chapter-12-6-design-tensions-lessons",
+      "type": "evolution"
+    },
+    {
+      "source": "part-3-chapter-12-6-design-tensions-lessons",
       "target": "part-4-chapter-12-building-agent",
       "type": "evolution"
     },
@@ -2258,6 +2542,11 @@
     },
     {
       "source": "part-5-chapter-25-cybernetic-steering",
+      "target": "part-5-chapter-26-restlessness-over-resume",
+      "type": "evolution"
+    },
+    {
+      "source": "part-5-chapter-26-restlessness-over-resume",
       "target": "part-5-chapter-27-harness-engineering-framework",
       "type": "evolution"
     },
@@ -2268,11 +2557,21 @@
     },
     {
       "source": "part-5-chapter-27-1-why-ai-agents-need-a-harness-lessons-from-utah",
+      "target": "part-5-chapter-27-2-the-anatomy-of-an-agent-harness",
+      "type": "evolution"
+    },
+    {
+      "source": "part-5-chapter-27-2-the-anatomy-of-an-agent-harness",
       "target": "part-5-chapter-28-research-taste",
       "type": "evolution"
     },
     {
       "source": "part-5-chapter-28-research-taste",
+      "target": "part-5-chapter-29-autonomous-context-compression",
+      "type": "evolution"
+    },
+    {
+      "source": "part-5-chapter-29-autonomous-context-compression",
       "target": "part-5-chapter-29-agentos-from-silos-to-nui",
       "type": "evolution"
     },

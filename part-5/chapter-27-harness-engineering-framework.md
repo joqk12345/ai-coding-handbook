@@ -5,9 +5,9 @@ slug: "part-5-chapter-27-harness-engineering-framework"
 date: "2025-01-01"
 type: "article"
 topics:
-  - "Agent Harness"
-  - "System Architecture"
-  - "AI Engineering"
+  - "coding-agents"
+  - "architecture"
+  - "governance"
 concepts:
   - "Context Architecture"
   - "Agent Specialization"

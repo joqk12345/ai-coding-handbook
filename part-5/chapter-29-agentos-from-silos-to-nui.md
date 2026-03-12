@@ -1,6 +1,6 @@
 ---
 id: "part-5-chapter-29-agentos-from-silos-to-nui"
-title: "第29章：AgentOS——从应用孤岛到自然语言驱动的数据生态"
+title: "第30章：AgentOS——从应用孤岛到自然语言驱动的数据生态"
 slug: "part-5-chapter-29-agentos-from-silos-to-nui"
 date: "2026-03-12"
 type: "article"
@@ -16,14 +16,14 @@ related:
 references:
   - "https://arxiv.org/html/2603.08938v1"
 status: "published"
-display_order: 99
+display_order: 100
 ---
-# 第29章：AgentOS——从应用孤岛到自然语言驱动的数据生态
+# 第30章：AgentOS——从应用孤岛到自然语言驱动的数据生态
 
 > 原文：**AgentOS: From Application Silos to a Natural Language-Driven Data Ecosystem**（Rui Liu 等，2026）  
 > 链接：<https://arxiv.org/html/2603.08938v1>
 
-## 29.1 为什么这篇论文值得单列一章
+## 30.1 为什么这篇论文值得单列一章
 
 这篇论文提出了一个非常明确的判断：
 
@@ -33,7 +33,7 @@ display_order: 99
 
 论文因此提出：与其把 Agent 当 App，不如把操作系统重构为 **Personal Agent Operating System（AgentOS）**。
 
-## 29.2 从 GUI 到 NUI：Single Port 的交互范式
+## 30.2 从 GUI 到 NUI：Single Port 的交互范式
 
 AgentOS 的用户侧核心是 **Single Port（单一入口）**：
 
@@ -46,7 +46,7 @@ AgentOS 的用户侧核心是 **Single Port（单一入口）**：
 - GUI 负责呈现；
 - NUI 负责理解、编排与执行。
 
-## 29.3 Agent Kernel：把“进程调度”升级为“意图调度”
+## 30.3 Agent Kernel：把“进程调度”升级为“意图调度”
 
 论文把 AgentOS 的系统核心定义为 **Agent Kernel**，对应两类接口：
 
@@ -59,7 +59,7 @@ AgentOS 的用户侧核心是 **Single Port（单一入口）**：
 - token 预算如何限流；
 - 并发 agent 线程如何避免“上下文挤爆”与吞吐崩溃。
 
-## 29.4 Skills-as-Modules：应用商店逻辑被重写
+## 30.4 Skills-as-Modules：应用商店逻辑被重写
 
 论文提出“技能模块化”替代“单体应用安装”：
 
@@ -71,7 +71,7 @@ AgentOS 的用户侧核心是 **Single Port（单一入口）**：
 
 - 未来竞争不只是“谁模型更强”，而是“谁的技能生态可组合、可治理、可评估”。
 
-## 29.5 为什么 AgentOS 本质是 KDD 问题
+## 30.5 为什么 AgentOS 本质是 KDD 问题
 
 论文的核心贡献之一，是把“下一代操作系统”直接重述为 **数据挖掘与知识发现（KDD）问题**。它给出四个技术支柱：
 
@@ -82,7 +82,7 @@ AgentOS 的用户侧核心是 **Single Port（单一入口）**：
 
 换句话说，AgentOS 不是“再造一个桌面系统”，而是把 OS 变成一个持续在线的“意图理解 + 知识更新 + 策略执行”引擎。
 
-## 29.6 风险与治理：语义防火墙 + 状态回滚
+## 30.6 风险与治理：语义防火墙 + 状态回滚
 
 论文也明确指出，概率式系统一旦接管系统级能力，治理必须前置：
 
@@ -92,7 +92,7 @@ AgentOS 的用户侧核心是 **Single Port（单一入口）**：
 
 这套机制实际上把“安全策略”从 ACL 的静态授权，升级为“基于语义与上下文的动态授权”。
 
-## 29.7 对本书路线图的直接启发
+## 30.7 对本书路线图的直接启发
 
 这篇工作对本书后续实践有三条直接启发：
 

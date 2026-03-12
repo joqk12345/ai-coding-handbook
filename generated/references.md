@@ -24,7 +24,7 @@
 
 | 参考链接 | 被引用章节 | 次数 |
 | --- | --- | --- |
-| [arxiv.org/html/2603.08938v1](https://arxiv.org/html/2603.08938v1) | [第29章: AgentOS——从应用孤岛到自然语言驱动的数据生态](/part-5/chapter-29-agentos-from-silos-to-nui) | 1 |
+| [arxiv.org/html/2603.08938v1](https://arxiv.org/html/2603.08938v1) | [第30章: AgentOS——从应用孤岛到自然语言驱动的数据生态](/part-5/chapter-29-agentos-from-silos-to-nui) | 1 |
 
 ## background-agents.com
 
@@ -59,7 +59,7 @@
 | [github.com/heimanba/order-analysis-skill](https://github.com/heimanba/order-analysis-skill) | [5.3: Agent Skills（智能体技能）入门](/part-2/chapter-4-3-agent-skills) | 1 |
 | [github.com/heimanba/order-analysis-skill/bl...](https://github.com/heimanba/order-analysis-skill/blob/main/README.md) | [5.3: Agent Skills（智能体技能）入门](/part-2/chapter-4-3-agent-skills) | 1 |
 | [github.com/heimanba/order-analysis-skill/bl...](https://github.com/heimanba/order-analysis-skill/blob/main/SKILL.md) | [5.3: Agent Skills（智能体技能）入门](/part-2/chapter-4-3-agent-skills) | 1 |
-| [github.com/karpathy/nanochat/commit/6ed7d1d...](https://github.com/karpathy/nanochat/commit/6ed7d1d82cee16c2e26f45d559ad3338447a6c1b) | [第24章: Autoresearch 实测提速 11% —— Agent 自主调参正在成为“最终战场”](/part-5/chapter-24-autoresearch-nanochat) | 1 |
+| [github.com/karpathy/nanochat/commit/6ed7d1d...](https://github.com/karpathy/nanochat/commit/6ed7d1d82cee16c2e26f45d559ad3338447a6c1b) | [第24章: Autoresearch 实测提速 11% —— Agent 自主调参正在成为”最终战场”](/part-5/chapter-24-autoresearch-nanochat) | 1 |
 | [github.com/mindfold-ai/Trellis](https://github.com/mindfold-ai/Trellis) | [第17章: Trellis —— 为 AI 设置规则的开放框架](/part-4/chapter-16-trellis) | 1 |
 | [github.com/openai/codex](https://github.com/openai/codex) | [第20章: 在 Agent-First 的世界中充分发挥 Codex 的威力](/part-5/chapter-19-leveraging-codex) | 1 |
 | [github.com/runesleo/claude-code-workflow](https://github.com/runesleo/claude-code-workflow) | [第16章: Claude Code Workflow —— 经过实战检验的 Agent 工作流模板](/part-4/chapter-15-claude-workflow) | 1 |
@@ -125,7 +125,7 @@
 | [x.com/bcherny/status/2007179832300581177](https://x.com/bcherny/status/2007179832300581177) | [5.4: Claude Code 创造者如何使用 Claude Code](/part-2/chapter-4-4-how-creator-uses-claude-code) | 1 |
 | [x.com/hwchase17/status/203105111516980...](https://x.com/hwchase17/status/2031051115169808685) | [第4章：Coding Agents 如何重塑工程、产品与设计（EPD）](/part-1/chapter-4-coding-agents-reshaping-epd) | 1 |
 | [x.com/i/collections/1841683833448468480](https://x.com/i/collections/1841683833448468480) | [第23章: 周末氛围直播复盘——AI Coding 的十倍加速时代](/part-5/chapter-23-vibed-coding-indigo) | 1 |
-| [x.com/karpathy/status/2031135152349524125](https://x.com/karpathy/status/2031135152349524125?s=20) | [第24章: Autoresearch 实测提速 11% —— Agent 自主调参正在成为“最终战场”](/part-5/chapter-24-autoresearch-nanochat) | 1 |
+| [x.com/karpathy/status/2031135152349524125](https://x.com/karpathy/status/2031135152349524125?s=20) | [第24章: Autoresearch 实测提速 11% —— Agent 自主调参正在成为”最终战场”](/part-5/chapter-24-autoresearch-nanochat) | 1 |
 | [x.com/odysseus0z/status/20304167581386...](https://x.com/odysseus0z/status/2030416758138634583) | [第25章: 从”拧阀门”到”掌舵”——Harness Engineering 的控制论转向](/part-5/chapter-25-cybernetic-steering) | 1 |
 | [x.com/trq212/status/1909886882662789170](https://x.com/trq212/status/1909886882662789170) | [5.14: Git Worktree 模式与 Agent 工具设计艺术](/part-2/chapter-4-14-git-worktree-mode) | 1 |
 

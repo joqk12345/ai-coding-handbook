@@ -70,6 +70,12 @@ display_order: 5
     *   [第11章: AI驱动的测试与调试](part-3/chapter-10-ai-testing.md)
     *   [第12章: 综合项目实战](part-3/chapter-11-capstone.md)
 
+    *   [12.1: 构建终端原生 AI 编码智能体：脚手架、运行框架（Harness）、上下文工程与经验教训](part-3/chapter-12-1-terminal-ai-coding-agents.md)
+    *   [12.2: OpenDev 架构总览：分层体系、智能体核心与运行时机制](part-3/chapter-12-2-opendev-architecture.md)
+    *   [12.3: OpenDev 的上下文工程层：提示词、记忆、压缩与检索组装](part-3/chapter-12-3-context-engineering-layer.md)
+    *   [12.4: OpenDev 的工具系统：注册表架构、文件操作与可扩展能力](part-3/chapter-12-4-tool-system.md)
+    *   [12.5: OpenDev 的持久化层：会话、撤销、配置与模型缓存系统](part-3/chapter-12-5-persistence-layer.md)
+    *   [12.6: OpenDev 的五个核心设计张力与可迁移经验](part-3/chapter-12-6-design-tensions-lessons.md)
 *   **第四部分：实践 - 从零构建 Agent (第13-19章)**
     *   [第13章: 从零构建 AI Agent](part-4/chapter-12-building-agent.md)
     *   [第14章: 高级 Agent 模式](part-4/chapter-13-advanced-patterns.md)
@@ -79,7 +85,7 @@ display_order: 5
     *   [第18章: 从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践](part-4/chapter-17-skeptic-believer.md)
     *   [第19章: 从怀疑到实践——三个月 AI Coding 实战复盘](part-4/chapter-18-ai-coding-journey.md)
 
-*   **第五部分：自主代码库 (第19-29章)**
+*   **第五部分：自主代码库 (第19-30章)**
     *   [第19章: 自主代码库 - 背景智能体与软件交付的下一个时代](part-5/chapter-18-self-driving-codebase.md)
     *   [第20章: 在 Agent-First 的世界中充分发挥 Codex 的威力](part-5/chapter-19-leveraging-codex.md)
     *   [第21章: Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力](part-5/chapter-20-harness-engineering.md)
@@ -87,11 +93,13 @@ display_order: 5
     *   [第23章: 周末氛围直播复盘——AI Coding 的十倍加速时代](part-5/chapter-23-vibed-coding-indigo.md)
     *   [第24章: Autoresearch 实测提速 11% —— Agent 自主调参正在成为”最终战场”](part-5/chapter-24-autoresearch-nanochat.md)
     *   [第25章: 从”拧阀门”到”掌舵”——Harness Engineering 的控制论转向](part-5/chapter-25-cybernetic-steering.md)
+    *   [第26章：简历之外的躁动——当 AI 重写知识工作的价值坐标](part-5/chapter-26-restlessness-over-resume.md)
     *   [第27章: Harness Engineering 框架——从漂移的 Agent 到复合的系统](part-5/chapter-27-harness-engineering-framework.md)
         *   [27.1: Why AI Agents Need a Harness：Lessons from Utah](part-5/chapter-27-1-why-ai-agents-need-a-harness-lessons-from-utah.md)
         *   [27.2: The Anatomy of an Agent Harness](part-5/chapter-27-2-the-anatomy-of-an-agent-harness.md)
     *   [第28章: 研究品味——当 AI 让工程师商品化，什么变得稀缺](part-5/chapter-28-research-taste.md)
     *   [第29章: 自主上下文压缩——让 Agent 掌控自己的记忆](part-5/chapter-29-autonomous-context-compression.md)
+    *   [第30章: AgentOS——从应用孤岛到自然语言驱动的数据生态](part-5/chapter-29-agentos-from-silos-to-nui.md)
 
 *   **附录**
     *   [附录A: 常用AI工具速查表](appendix/appendix-a-cheatsheet.md)

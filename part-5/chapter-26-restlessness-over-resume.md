@@ -13,7 +13,7 @@ timeline_era: "autonomous-systems"
 related: []
 references: []
 status: "published"
-display_order: 0
+display_order: 96
 ---
 # 第26章：简历之外的躁动——当 AI 重写知识工作的价值坐标
 

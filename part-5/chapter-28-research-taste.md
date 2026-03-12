@@ -5,9 +5,8 @@ slug: "part-5-chapter-28-research-taste"
 date: "2025-01-01"
 type: "article"
 topics:
-  - "Research Taste"
-  - "AI Research"
-  - "Decision Making"
+  - "ai-programming"
+  - "workflow"
 concepts:
   - "Research vs Engineering"
   - "Taste Development"

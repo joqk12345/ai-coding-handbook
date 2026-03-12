@@ -131,6 +131,30 @@
       {
         "text": "第12章: 综合项目实战",
         "link": "/part-3/chapter-11-capstone"
+      },
+      {
+        "text": "12.1: 构建终端原生 AI 编码智能体：脚手架、运行框架（Harness）、上下文工程与经验教训",
+        "link": "/part-3/chapter-12-1-terminal-ai-coding-agents"
+      },
+      {
+        "text": "12.2: OpenDev 架构总览：分层体系、智能体核心与运行时机制",
+        "link": "/part-3/chapter-12-2-opendev-architecture"
+      },
+      {
+        "text": "12.3: OpenDev 的上下文工程层：提示词、记忆、压缩与检索组装",
+        "link": "/part-3/chapter-12-3-context-engineering-layer"
+      },
+      {
+        "text": "12.4: OpenDev 的工具系统：注册表架构、文件操作与可扩展能力",
+        "link": "/part-3/chapter-12-4-tool-system"
+      },
+      {
+        "text": "12.5: OpenDev 的持久化层：会话、撤销、配置与模型缓存系统",
+        "link": "/part-3/chapter-12-5-persistence-layer"
+      },
+      {
+        "text": "12.6: OpenDev 的五个核心设计张力与可迁移经验",
+        "link": "/part-3/chapter-12-6-design-tensions-lessons"
       }
     ]
   },
@@ -168,7 +192,7 @@
     ]
   },
   {
-    "text": "知识系统（自动）：第五部分：自主代码库 (第19-29章)",
+    "text": "知识系统（自动）：第五部分：自主代码库 (第19-30章)",
     "items": [
       {
         "text": "第19章: 自主代码库 - 背景智能体与软件交付的下一个时代",
@@ -191,12 +215,16 @@
         "link": "/part-5/chapter-23-vibed-coding-indigo"
       },
       {
-        "text": "第24章: Autoresearch 实测提速 11% —— Agent 自主调参正在成为“最终战场”",
+        "text": "第24章: Autoresearch 实测提速 11% —— Agent 自主调参正在成为”最终战场”",
         "link": "/part-5/chapter-24-autoresearch-nanochat"
       },
       {
         "text": "第25章: 从”拧阀门”到”掌舵”——Harness Engineering 的控制论转向",
         "link": "/part-5/chapter-25-cybernetic-steering"
+      },
+      {
+        "text": "第26章：简历之外的躁动——当 AI 重写知识工作的价值坐标",
+        "link": "/part-5/chapter-26-restlessness-over-resume"
       },
       {
         "text": "第27章: Harness Engineering 框架——从漂移的 Agent 到复合的系统",
@@ -217,6 +245,10 @@
       {
         "text": "第29章: 自主上下文压缩——让 Agent 掌控自己的记忆",
         "link": "/part-5/chapter-29-autonomous-context-compression"
+      },
+      {
+        "text": "第30章: AgentOS——从应用孤岛到自然语言驱动的数据生态",
+        "link": "/part-5/chapter-29-agentos-from-silos-to-nui"
       }
     ]
   },

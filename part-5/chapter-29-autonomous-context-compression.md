@@ -13,7 +13,7 @@ timeline_era: "autonomous-systems"
 related: []
 references: []
 status: "published"
-display_order: 0
+display_order: 99
 ---
 
 # 第29章：自主上下文压缩——让 Agent 掌控自己的记忆
