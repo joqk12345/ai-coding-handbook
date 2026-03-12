@@ -12,6 +12,23 @@ export default defineConfig({
   description: 'AI 辅助编程综合使用手册',
   cleanUrls: true,
   lastUpdated: true,
+  markdown: {
+    config(md) {
+      const defaultFence = md.renderer.rules.fence
+
+      md.renderer.rules.fence = (tokens, idx, options, env, self) => {
+        const token = tokens[idx]
+        if (token.info.trim() === 'mermaid') {
+          const encoded = Buffer.from(token.content, 'utf8').toString('base64')
+          return `<MermaidBlock encoded="${encoded}" />`
+        }
+
+        return defaultFence
+          ? defaultFence(tokens, idx, options, env, self)
+          : self.renderToken(tokens, idx, options)
+      }
+    }
+  },
   themeConfig: {
     search: {
       provider: 'local'
@@ -26,12 +43,12 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: '知识系统（自动生成）',
+        text: '系统总览',
         items: [
-          { text: '自动目录', link: '/generated/summary' },
-          { text: '自动时间线', link: '/generated/timeline' },
-          { text: '自动架构图', link: '/generated/architecture' },
-          { text: '自动引用索引', link: '/generated/references' }
+          { text: '目录总览', link: '/generated/summary' },
+          { text: '学习时间线', link: '/generated/timeline' },
+          { text: '内容架构', link: '/generated/architecture' },
+          { text: '引用索引', link: '/generated/references' }
         ]
       },
       ...knowledgeSidebar,
