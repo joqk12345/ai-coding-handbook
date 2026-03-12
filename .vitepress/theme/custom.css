@@ -7,6 +7,8 @@
   --sidebar-item-active-text: #2a3040;
   --sidebar-item-border: rgba(15, 23, 42, 0.04);
   --sidebar-shadow: none;
+  --nav-item-text: #626978;
+  --nav-item-active-text: var(--sidebar-item-active-text);
 }
 
 .VPSidebar {
@@ -150,6 +152,38 @@
 .VPSidebarItem.level-2 .VPLink.link.active .text {
   color: #394052;
   font-weight: 650;
+}
+
+.VPNavBar .VPNavBarMenu {
+  align-items: center;
+  gap: 4px;
+}
+
+.VPNavBar .VPNavBarMenuLink {
+  align-self: center;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 6px 8px;
+  line-height: 1.32;
+  font-size: 13.25px;
+  font-weight: 650;
+  color: var(--nav-item-text);
+  transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease;
+}
+
+.VPNavBar .VPNavBarMenuLink:hover {
+  background: var(--sidebar-item-hover-bg);
+  color: var(--nav-item-active-text);
+}
+
+.VPNavBar .VPNavBarMenuLink.active {
+  background: var(--sidebar-item-active-bg);
+  border-color: var(--sidebar-item-border);
+  color: var(--nav-item-active-text);
+}
+
+.VPNavBar .VPNavBarMenuLink.active:hover {
+  border-color: var(--sidebar-item-border);
 }
 
 .VPSidebar::-webkit-scrollbar {
