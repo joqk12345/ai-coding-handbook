@@ -79,7 +79,7 @@ display_order: 5
     *   [第18章: 从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践](part-4/chapter-17-skeptic-believer.md)
     *   [第19章: 从怀疑到实践——三个月 AI Coding 实战复盘](part-4/chapter-18-ai-coding-journey.md)
 
-*   **第五部分：自主代码库 (第19-28章)**
+*   **第五部分：自主代码库 (第19-29章)**
     *   [第19章: 自主代码库 - 背景智能体与软件交付的下一个时代](part-5/chapter-18-self-driving-codebase.md)
     *   [第20章: 在 Agent-First 的世界中充分发挥 Codex 的威力](part-5/chapter-19-leveraging-codex.md)
     *   [第21章: Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力](part-5/chapter-20-harness-engineering.md)
@@ -90,6 +90,7 @@ display_order: 5
     *   [第27章: Harness Engineering 框架——从漂移的 Agent 到复合的系统](part-5/chapter-27-harness-engineering-framework.md)
         *   [27.1: Why AI Agents Need a Harness：Lessons from Utah](part-5/chapter-27-1-why-ai-agents-need-a-harness-lessons-from-utah.md)
     *   [第28章: 研究品味——当 AI 让工程师商品化，什么变得稀缺](part-5/chapter-28-research-taste.md)
+    *   [第29章: AgentOS——从应用孤岛到自然语言驱动的数据生态](part-5/chapter-29-agentos-from-silos-to-nui.md)
 
 *   **附录**
     *   [附录A: 常用AI工具速查表](appendix/appendix-a-cheatsheet.md)

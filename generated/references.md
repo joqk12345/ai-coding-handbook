@@ -20,6 +20,12 @@
 | --- | --- | --- |
 | [agentskills.io/specification](https://agentskills.io/specification) | [5.3: Agent Skills（智能体技能）入门](/part-2/chapter-4-3-agent-skills) | 1 |
 
+## arxiv.org
+
+| 参考链接 | 被引用章节 | 次数 |
+| --- | --- | --- |
+| [arxiv.org/html/2603.08938v1](https://arxiv.org/html/2603.08938v1) | [第29章: AgentOS——从应用孤岛到自然语言驱动的数据生态](/part-5/chapter-29-agentos-from-silos-to-nui) | 1 |
+
 ## background-agents.com
 
 | 参考链接 | 被引用章节 | 次数 |
