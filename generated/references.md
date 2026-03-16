@@ -78,7 +78,7 @@
 
 | 参考链接 | 被引用章节 | 次数 |
 | --- | --- | --- |
-| [lennyspodcast.com](https://www.lennyspodcast.com) | [附章A（第1部分延伸）: AI 优先的软件开发时代](/part-1/chapter-4-ai-first-software-development) | 1 |
+| [lennyspodcast.com](https://www.lennyspodcast.com) | [4.1（第1部分延伸）: AI 优先的软件开发时代](/part-1/chapter-4-ai-first-software-development) | 1 |
 
 ## memgpt.ai
 

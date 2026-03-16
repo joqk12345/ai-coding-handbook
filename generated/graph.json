@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-03-12T23:23:46.798Z",
-  "nodeCount": 82,
-  "edgeCount": 144,
+  "generatedAt": "2026-03-16T04:04:10.444Z",
+  "nodeCount": 83,
+  "edgeCount": 145,
   "nodes": [
     {
       "id": "readme",
@@ -144,7 +144,7 @@
     },
     {
       "id": "part-1-chapter-4-ai-first-software-development",
-      "label": "附章A（第1部分延伸）: AI 优先的软件开发时代",
+      "label": "4.1（第1部分延伸）: AI 优先的软件开发时代",
       "type": "article",
       "file": "part-1/chapter-4-ai-first-software-development.md",
       "metadata": {
@@ -168,7 +168,34 @@
         "display_order": 6,
         "summary_order": 6,
         "summary_section": "第一部分：入门 (第1-4章)",
-        "summary_title": "附章A（第1部分延伸）: AI 优先的软件开发时代"
+        "summary_title": "4.1（第1部分延伸）: AI 优先的软件开发时代"
+      }
+    },
+    {
+      "id": "part-1-chapter-4-2-ai-cognition-and-agent-evolution",
+      "label": "4.2（第1部分延伸）: 对 AI 的认识与智能体（AI Agent）的演进方向",
+      "type": "article",
+      "file": "part-1/chapter-4-2-ai-cognition-and-agent-evolution.md",
+      "metadata": {
+        "id": "part-1-chapter-4-2-ai-cognition-and-agent-evolution",
+        "title": "4.2: 对 AI 的认识与智能体（AI Agent）的演进方向",
+        "slug": "part-1-chapter-4-2-ai-cognition-and-agent-evolution",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [],
+        "concepts": [],
+        "tools": [],
+        "architecture_layer": [
+          "foundations"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [],
+        "references": [],
+        "status": "published",
+        "display_order": 7,
+        "summary_order": 7,
+        "summary_section": "第一部分：入门 (第1-4章)",
+        "summary_title": "4.2（第1部分延伸）: 对 AI 的认识与智能体（AI Agent）的演进方向"
       }
     },
     {
@@ -192,8 +219,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 7,
-        "summary_order": 7,
+        "display_order": 8,
+        "summary_order": 8,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "第5章: Claude 使用手册"
       }
@@ -219,8 +246,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 8,
-        "summary_order": 8,
+        "display_order": 9,
+        "summary_order": 9,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "5.1: Claude Code 深度解析"
       }
@@ -248,8 +275,8 @@
           "https://adocomplete.com/advent-of-claude-2025/"
         ],
         "status": "published",
-        "display_order": 9,
-        "summary_order": 9,
+        "display_order": 10,
+        "summary_order": 10,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "5.2: Advent of Claude - 31天精通 Claude Code"
       }
@@ -284,8 +311,8 @@
           "https://github.com/heilcheng/awesome-agent-skills/tree/main"
         ],
         "status": "published",
-        "display_order": 10,
-        "summary_order": 10,
+        "display_order": 11,
+        "summary_order": 11,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "5.3: Agent Skills（智能体技能）入门"
       }
@@ -313,8 +340,8 @@
           "https://x.com/bcherny/status/2007179832300581177"
         ],
         "status": "published",
-        "display_order": 11,
-        "summary_order": 11,
+        "display_order": 12,
+        "summary_order": 12,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "5.4: Claude Code 创造者如何使用 Claude Code"
       }
@@ -344,8 +371,8 @@
           "https://github.com/ChrisWiles/claude-code-showcase/blob/main/README.md"
         ],
         "status": "published",
-        "display_order": 12,
-        "summary_order": 12,
+        "display_order": 13,
+        "summary_order": 13,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "5.5: Claude Code Showcase 配置拆解"
       }
@@ -371,8 +398,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 13,
-        "summary_order": 13,
+        "display_order": 14,
+        "summary_order": 14,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "5.6: 实战中上下文的管理与添加"
       }
@@ -398,8 +425,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 14,
-        "summary_order": 14,
+        "display_order": 15,
+        "summary_order": 15,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "5.7: Claude Code 高级功能与使用技巧"
       }
@@ -425,8 +452,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 15,
-        "summary_order": 15,
+        "display_order": 16,
+        "summary_order": 16,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "5.8: 对话管理与上下文控制"
       }
@@ -452,8 +479,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 16,
-        "summary_order": 16,
+        "display_order": 17,
+        "summary_order": 17,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "5.9: 创建自定义命令"
       }
@@ -479,8 +506,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 17,
-        "summary_order": 17,
+        "display_order": 18,
+        "summary_order": 18,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "5.10: MCP 服务器扩展"
       }
@@ -506,8 +533,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 18,
-        "summary_order": 18,
+        "display_order": 19,
+        "summary_order": 19,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "5.11: GitHub 集成"
       }
@@ -533,8 +560,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 19,
-        "summary_order": 19,
+        "display_order": 20,
+        "summary_order": 20,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "5.12: Lessons from Building Claude Code - Prompt 缓存即一切"
       }
@@ -560,8 +587,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 20,
-        "summary_order": 20,
+        "display_order": 21,
+        "summary_order": 21,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "5.13: Lessons from Building Claude Code - 像 Agent 一样思考"
       }
@@ -589,8 +616,8 @@
           "https://x.com/trq212/status/1909886882662789170"
         ],
         "status": "published",
-        "display_order": 21,
-        "summary_order": 21,
+        "display_order": 22,
+        "summary_order": 22,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "5.14: Git Worktree 模式与 Agent 工具设计艺术"
       }
@@ -616,8 +643,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 22,
-        "summary_order": 22,
+        "display_order": 23,
+        "summary_order": 23,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "第6章: OpenAI Codex 深度解析"
       }
@@ -643,8 +670,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 23,
-        "summary_order": 23,
+        "display_order": 24,
+        "summary_order": 24,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "6.1: OpenAI Codex 简介与演进脉络"
       }
@@ -670,8 +697,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 24,
-        "summary_order": 24,
+        "display_order": 25,
+        "summary_order": 25,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "6.2: Codex 核心能力与技术特点"
       }
@@ -720,8 +747,8 @@
           "https://newsletter.pragmaticengineer.com/p/how-claude-code-is-built"
         ],
         "status": "published",
-        "display_order": 25,
-        "summary_order": 25,
+        "display_order": 26,
+        "summary_order": 26,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "6.3: Claude Code vs Codex: 权威对比指南"
       }
@@ -797,8 +824,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 26,
-        "summary_order": 26,
+        "display_order": 27,
+        "summary_order": 27,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "第7章: Gemini 编程实战"
       }
@@ -824,8 +851,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 27,
-        "summary_order": 27,
+        "display_order": 28,
+        "summary_order": 28,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "第8章: 开源模型 (Opencode) 使用手册"
       }
@@ -851,8 +878,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 28,
-        "summary_order": 28,
+        "display_order": 29,
+        "summary_order": 29,
         "summary_section": "第二部分：核心工具详解 (第5-9章)",
         "summary_title": "第9章: 其他AI编程工具概览"
       }
@@ -878,8 +905,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 29,
-        "summary_order": 29,
+        "display_order": 30,
+        "summary_order": 30,
         "summary_section": "第三部分：高级技巧与实战 (第10-12章)",
         "summary_title": "第10章: Prompt Engineering for Coders"
       }
@@ -905,8 +932,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 30,
-        "summary_order": 30,
+        "display_order": 31,
+        "summary_order": 31,
         "summary_section": "第三部分：高级技巧与实战 (第10-12章)",
         "summary_title": "第11章: AI驱动的测试与调试"
       }
@@ -932,8 +959,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 31,
-        "summary_order": 31,
+        "display_order": 32,
+        "summary_order": 32,
         "summary_section": "第三部分：高级技巧与实战 (第10-12章)",
         "summary_title": "第12章: 综合项目实战"
       }
@@ -959,8 +986,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 32,
-        "summary_order": 32,
+        "display_order": 33,
+        "summary_order": 33,
         "summary_section": "第三部分：高级技巧与实战 (第10-12章)",
         "summary_title": "12.1: 构建终端原生 AI 编码智能体：脚手架、运行框架（Harness）、上下文工程与经验教训"
       }
@@ -986,8 +1013,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 33,
-        "summary_order": 33,
+        "display_order": 34,
+        "summary_order": 34,
         "summary_section": "第三部分：高级技巧与实战 (第10-12章)",
         "summary_title": "12.2: OpenDev 架构总览：分层体系、智能体核心与运行时机制"
       }
@@ -1013,8 +1040,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 34,
-        "summary_order": 34,
+        "display_order": 35,
+        "summary_order": 35,
         "summary_section": "第三部分：高级技巧与实战 (第10-12章)",
         "summary_title": "12.3: OpenDev 的上下文工程层：提示词、记忆、压缩与检索组装"
       }
@@ -1040,8 +1067,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 35,
-        "summary_order": 35,
+        "display_order": 36,
+        "summary_order": 36,
         "summary_section": "第三部分：高级技巧与实战 (第10-12章)",
         "summary_title": "12.4: OpenDev 的工具系统：注册表架构、文件操作与可扩展能力"
       }
@@ -1067,8 +1094,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 36,
-        "summary_order": 36,
+        "display_order": 37,
+        "summary_order": 37,
         "summary_section": "第三部分：高级技巧与实战 (第10-12章)",
         "summary_title": "12.5: OpenDev 的持久化层：会话、撤销、配置与模型缓存系统"
       }
@@ -1094,8 +1121,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 37,
-        "summary_order": 37,
+        "display_order": 38,
+        "summary_order": 38,
         "summary_section": "第三部分：高级技巧与实战 (第10-12章)",
         "summary_title": "12.6: OpenDev 的五个核心设计张力与可迁移经验"
       }
@@ -1123,8 +1150,8 @@
           "https://github.com/shareAI-lab/learn-claude-code/blob/main/docs/zh/s01-the-agent-loop.md"
         ],
         "status": "published",
-        "display_order": 38,
-        "summary_order": 38,
+        "display_order": 39,
+        "summary_order": 39,
         "summary_section": "第四部分：实践 - 从零构建 Agent (第13-19章)",
         "summary_title": "第13章: 从零构建 AI Agent"
       }
@@ -1150,8 +1177,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 39,
-        "summary_order": 39,
+        "display_order": 40,
+        "summary_order": 40,
         "summary_section": "第四部分：实践 - 从零构建 Agent (第13-19章)",
         "summary_title": "第14章: 高级 Agent 模式"
       }
@@ -1177,8 +1204,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 40,
-        "summary_order": 40,
+        "display_order": 41,
+        "summary_order": 41,
         "summary_section": "第四部分：实践 - 从零构建 Agent (第13-19章)",
         "summary_title": "第15章: 多智能体系统"
       }
@@ -1207,8 +1234,8 @@
           "https://github.com/runesleo/claude-code-workflow.git"
         ],
         "status": "published",
-        "display_order": 41,
-        "summary_order": 41,
+        "display_order": 42,
+        "summary_order": 42,
         "summary_section": "第四部分：实践 - 从零构建 Agent (第13-19章)",
         "summary_title": "第16章: Claude Code Workflow —— 经过实战检验的 Agent 工作流模板"
       }
@@ -1236,8 +1263,8 @@
           "https://github.com/mindfold-ai/Trellis"
         ],
         "status": "published",
-        "display_order": 42,
-        "summary_order": 42,
+        "display_order": 43,
+        "summary_order": 43,
         "summary_section": "第四部分：实践 - 从零构建 Agent (第13-19章)",
         "summary_title": "第17章: Trellis —— 为 AI 设置规则的开放框架"
       }
@@ -1268,8 +1295,8 @@
           "https://gist.github.com/gwern/"
         ],
         "status": "published",
-        "display_order": 43,
-        "summary_order": 43,
+        "display_order": 44,
+        "summary_order": 44,
         "summary_section": "第四部分：实践 - 从零构建 Agent (第13-19章)",
         "summary_title": "第18章: 从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践"
       }
@@ -1295,8 +1322,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 44,
-        "summary_order": 44,
+        "display_order": 45,
+        "summary_order": 45,
         "summary_section": "第四部分：实践 - 从零构建 Agent (第13-19章)",
         "summary_title": "第19章: 从怀疑到实践——三个月 AI Coding 实战复盘"
       }
@@ -1326,8 +1353,8 @@
           "https://www.google.com/search?q=Industrializing+Software+Development+Christian+Weichel+Ona"
         ],
         "status": "published",
-        "display_order": 45,
-        "summary_order": 45,
+        "display_order": 46,
+        "summary_order": 46,
         "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第19章: 自主代码库 - 背景智能体与软件交付的下一个时代"
       }
@@ -1356,8 +1383,8 @@
           "https://github.com/openai/codex"
         ],
         "status": "published",
-        "display_order": 46,
-        "summary_order": 46,
+        "display_order": 47,
+        "summary_order": 47,
         "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第20章: 在 Agent-First 的世界中充分发挥 Codex 的威力"
       }
@@ -1386,8 +1413,8 @@
           "https://openai.com/index/unrolling-the-codex-agent-loop/"
         ],
         "status": "published",
-        "display_order": 47,
-        "summary_order": 47,
+        "display_order": 48,
+        "summary_order": 48,
         "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第21章: Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力"
       }
@@ -1417,8 +1444,8 @@
           "https://github.com/agiresearch/AIOS"
         ],
         "status": "published",
-        "display_order": 48,
-        "summary_order": 48,
+        "display_order": 49,
+        "summary_order": 49,
         "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第22章: 上下文工程的文件系统抽象 — AIGNE 框架"
       }
@@ -1448,8 +1475,8 @@
           "https://x.com/i/collections/1841683833448468480"
         ],
         "status": "published",
-        "display_order": 49,
-        "summary_order": 49,
+        "display_order": 50,
+        "summary_order": 50,
         "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第23章: 周末氛围直播复盘——AI Coding 的十倍加速时代"
       }
@@ -1478,8 +1505,8 @@
           "https://github.com/karpathy/nanochat/commit/6ed7d1d82cee16c2e26f45d559ad3338447a6c1b"
         ],
         "status": "published",
-        "display_order": 50,
-        "summary_order": 50,
+        "display_order": 51,
+        "summary_order": 51,
         "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第24章: Autoresearch 实测提速 11% —— Agent 自主调参正在成为”最终战场”"
       }
@@ -1507,8 +1534,8 @@
           "https://x.com/odysseus0z/status/2030416758138634583"
         ],
         "status": "published",
-        "display_order": 51,
-        "summary_order": 51,
+        "display_order": 52,
+        "summary_order": 52,
         "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第25章: 从”拧阀门”到”掌舵”——Harness Engineering 的控制论转向"
       }
@@ -1534,8 +1561,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 52,
-        "summary_order": 52,
+        "display_order": 53,
+        "summary_order": 53,
         "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第26章：简历之外的躁动——当 AI 重写知识工作的价值坐标"
       }
@@ -1578,8 +1605,8 @@
         ],
         "references": [],
         "status": "published",
-        "display_order": 53,
-        "summary_order": 53,
+        "display_order": 54,
+        "summary_order": 54,
         "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第27章: Harness Engineering 框架——从漂移的 Agent 到复合的系统"
       }
@@ -1637,8 +1664,8 @@
         ],
         "references": [],
         "status": "published",
-        "display_order": 54,
-        "summary_order": 54,
+        "display_order": 55,
+        "summary_order": 55,
         "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "27.1: Why AI Agents Need a Harness：Lessons from Utah"
       }
@@ -1667,8 +1694,8 @@
         ],
         "references": [],
         "status": "published",
-        "display_order": 55,
-        "summary_order": 55,
+        "display_order": 56,
+        "summary_order": 56,
         "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "27.2: The Anatomy of an Agent Harness"
       }
@@ -1708,8 +1735,8 @@
         ],
         "references": [],
         "status": "published",
-        "display_order": 56,
-        "summary_order": 56,
+        "display_order": 57,
+        "summary_order": 57,
         "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第28章: 研究品味——当 AI 让工程师商品化，什么变得稀缺"
       }
@@ -1765,8 +1792,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 57,
-        "summary_order": 57,
+        "display_order": 58,
+        "summary_order": 58,
         "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第29章: 自主上下文压缩——让 Agent 掌控自己的记忆"
       }
@@ -1797,8 +1824,8 @@
           "https://arxiv.org/html/2603.08938v1"
         ],
         "status": "published",
-        "display_order": 58,
-        "summary_order": 58,
+        "display_order": 59,
+        "summary_order": 59,
         "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第30章: AgentOS——从应用孤岛到自然语言驱动的数据生态"
       }
@@ -1824,8 +1851,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 59,
-        "summary_order": 59,
+        "display_order": 60,
+        "summary_order": 60,
         "summary_section": "附录",
         "summary_title": "附录A: 常用AI工具速查表"
       }
@@ -1857,8 +1884,8 @@
           "https://github.com/heilcheng/awesome-agent-skills/tree/main"
         ],
         "status": "published",
-        "display_order": 60,
-        "summary_order": 60,
+        "display_order": 61,
+        "summary_order": 61,
         "summary_section": "附录",
         "summary_title": "附录B: 推荐资源与社区"
       }
@@ -2317,6 +2344,11 @@
     },
     {
       "source": "part-1-chapter-4-ai-first-software-development",
+      "target": "part-1-chapter-4-2-ai-cognition-and-agent-evolution",
+      "type": "evolution"
+    },
+    {
+      "source": "part-1-chapter-4-2-ai-cognition-and-agent-evolution",
       "target": "part-2-chapter-4-claude-manual",
       "type": "evolution"
     },
