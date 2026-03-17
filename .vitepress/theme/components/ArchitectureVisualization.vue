@@ -16,7 +16,7 @@ const layers: LayerItem[] = [
   {
     id: 'L1',
     name: '认知层',
-    chapterRange: '第1章 + 第2章 + Agent 本质',
+    chapterRange: '第1章-第4章 + 附章A',
     question: 'AI 编程改变了什么边界？',
     output: '统一术语与问题定义',
     layer: 'tools'
@@ -24,7 +24,7 @@ const layers: LayerItem[] = [
   {
     id: 'L2',
     name: '工具层',
-    chapterRange: '第2章 + 2.1-2.11',
+    chapterRange: '第5章 + 5.1-5.14',
     question: '如何稳定驱动 Claude Code？',
     output: '命令、上下文、技能的标准化流程',
     layer: 'planning'
@@ -32,7 +32,7 @@ const layers: LayerItem[] = [
   {
     id: 'L3',
     name: '选型层',
-    chapterRange: '第3章-第6章',
+    chapterRange: '第6章-第9章（含 6.1-6.3）',
     question: '不同任务如何选择合适模型？',
     output: '多工具对比与迁移策略',
     layer: 'memory'
@@ -40,7 +40,7 @@ const layers: LayerItem[] = [
   {
     id: 'L4',
     name: '工程层',
-    chapterRange: '第7章-第9章',
+    chapterRange: '第10章-第12章（含 12.1-12.6）',
     question: '如何形成可验证交付闭环？',
     output: 'Prompt + Test + Debug 工作流',
     layer: 'concurrency'
@@ -48,7 +48,7 @@ const layers: LayerItem[] = [
   {
     id: 'L5',
     name: '系统层',
-    chapterRange: '第10章-第12章',
+    chapterRange: '第13章-第19章（实践复盘）',
     question: '如何构建可扩展 Agent 系统？',
     output: '任务、后台、多智能体协作架构',
     layer: 'collaboration'
@@ -56,7 +56,7 @@ const layers: LayerItem[] = [
   {
     id: 'L6',
     name: '组织层',
-    chapterRange: '第13章 + 第14章',
+    chapterRange: '第19章（自主代码库）-第30章（含 27.1-27.2）',
     question: '如何把个人速度升级为团队速度？',
     output: '治理与扩展路线图',
     layer: 'strategy'

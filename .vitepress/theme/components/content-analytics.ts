@@ -1,27 +1,27 @@
 type RawModules = Record<string, string>
 
 const markdownModules: RawModules = {
-  ...(import.meta.glob('/part-1-introduction/**/*.md', {
+  ...(import.meta.glob('/part-1/**/*.md', {
     query: '?raw',
     import: 'default',
     eager: true
   }) as RawModules),
-  ...(import.meta.glob('/part-2-core-tools/**/*.md', {
+  ...(import.meta.glob('/part-2/**/*.md', {
     query: '?raw',
     import: 'default',
     eager: true
   }) as RawModules),
-  ...(import.meta.glob('/part-3-advanced-techniques/**/*.md', {
+  ...(import.meta.glob('/part-3/**/*.md', {
     query: '?raw',
     import: 'default',
     eager: true
   }) as RawModules),
-  ...(import.meta.glob('/part-4-practice/**/*.md', {
+  ...(import.meta.glob('/part-4/**/*.md', {
     query: '?raw',
     import: 'default',
     eager: true
   }) as RawModules),
-  ...(import.meta.glob('/part-5-self-driving-codebase/**/*.md', {
+  ...(import.meta.glob('/part-5/**/*.md', {
     query: '?raw',
     import: 'default',
     eager: true
@@ -45,20 +45,20 @@ export interface ContentGroup {
 }
 
 const PART_META: Record<string, { title: string; subtitle: string }> = {
-  'part-1-introduction': { title: '第一部分：入门', subtitle: 'Foundations' },
-  'part-2-core-tools': { title: '第二部分：核心工具详解', subtitle: 'Core Tools' },
-  'part-3-advanced-techniques': { title: '第三部分：高级技巧与实战', subtitle: 'Advanced Techniques' },
-  'part-4-practice': { title: '第四部分：实践 - 从零构建 Agent', subtitle: 'Practice' },
-  'part-5-self-driving-codebase': { title: '第五部分：自主代码库', subtitle: 'Self-driving Codebase' },
+  'part-1': { title: '第一部分：入门', subtitle: 'Foundations' },
+  'part-2': { title: '第二部分：核心工具详解', subtitle: 'Core Tools' },
+  'part-3': { title: '第三部分：高级技巧与实战', subtitle: 'Advanced Techniques' },
+  'part-4': { title: '第四部分：实践 - 从零构建 Agent', subtitle: 'Practice' },
+  'part-5': { title: '第五部分：自主代码库', subtitle: 'Self-driving Codebase' },
   appendix: { title: '附录', subtitle: 'Appendix' }
 }
 
 const ORDER = [
-  'part-1-introduction',
-  'part-2-core-tools',
-  'part-3-advanced-techniques',
-  'part-4-practice',
-  'part-5-self-driving-codebase',
+  'part-1',
+  'part-2',
+  'part-3',
+  'part-4',
+  'part-5',
   'appendix'
 ]
 

@@ -102,6 +102,86 @@ display_order: 62
 
 **结论**：现在算是功能比较完整的一个现代化 RSS 工具了。
 
+#### 衍生实践：Mercury 背后的本地推理栈
+
+Mercury 提供了自动摘要、翻译、自动标签等 agent 功能之后，我很快发现一个更合理的分工：高难度、开放式的推理仍然更适合云端强模型，但高频、结构化、可验证的任务非常适合下沉到本地。典型例子包括文章摘要、标签生成、批量翻译、轻量分类，以及 embedding 这类基础处理。
+
+本地化的收益也很直接：调用成本更低、响应更稳定、隐私边界更清晰。对产品来说，这往往比“本地也能跑一个大模型”更有意义。
+
+我这套配置跑在一台 Apple M1 Max + 32GB 统一内存的 MacBook Pro 上，通常能给 GPU 留出 20GB 以上可用内存。对 24GB 显存级别的 NVIDIA 卡，这套思路同样有参考价值。
+
+##### 模型选择
+
+这一阶段我常驻的模型大致分成三类：
+
+- `Qwen3.5-35B-A3B`：主力通用模型，主要负责摘要、标签、分类、轻量问答等高频任务。在 M1 Max 上能到 50+ tokens/s，适合做产品里的默认后台劳动力。
+- `Qwen3.5-27B`：能力更强但速度明显更慢，更适合留给需要更好理解力的场景，而不是作为常驻默认模型。
+- `HY-MT1.5-1.8B`：翻译专用小模型，适合承接大批量文本翻译，因为足够小，也更容易与主力模型同时驻留。
+
+量化上的经验也很务实：主力通用模型可以优先选 4-bit 档位，小型专项模型则可以适当提高量化精度，换取更稳定的输出质量。
+
+##### 引擎与工具
+
+我没有只押注一种格式，而是同时保留 GGUF 和 MLX 两套链路：
+
+- `llama.cpp`：GGUF 方案的保底引擎。优势在于生态成熟、量化选择多、API 完整。
+- `llama-swap`：负责 on-demand 加载、模型切换和统一入口。它很适合把同一个模型文件包装成多个“逻辑实例”。
+- `oMLX`：Apple 芯片上的 MLX 主力方案，速度优势很明显，适合承担日常高频调用。
+- `LM Studio`：我主要把它当成模型搜索、下载和初步测试工具使用，而不是核心服务端。
+
+我之所以两套并行，而不是二选一，原因很简单：MLX 在 Apple 芯片上适合做主力，GGUF/`llama.cpp` 生态更稳，适合兜底。对本地部署来说，速度和可维护性通常都要保留一条后路。
+
+##### 一个精简但够用的 `llama-swap` 配置
+
+下面这份配置不是完整生产版，只保留了最核心的结构：宏复用、统一模型目录，以及一个可对外暴露的模型实例。
+
+```yaml
+healthCheckTimeout: 300
+startPort: 9001
+
+macros:
+  "latest-llama": |
+    /opt/homebrew/bin/llama-server
+    --port ${PORT}
+  "default_ctx": 16384
+  "models_dir": "${env.HOME}/.lmstudio/models"
+
+models:
+  "qwen3.5-35b-a3b":
+    cmd: |
+      ${latest-llama}
+      --model ${models_dir}/unsloth/Qwen3.5-35B-A3B-GGUF/Qwen3.5-35B-A3B-UD-Q4_K_L.gguf
+      --ctx-size ${default_ctx}
+      --cache-type-k q8_0
+      --cache-type-v q8_0
+      -np 1
+      -ngl 99
+    aliases:
+      - "qwen3.5"
+```
+
+如果需要扩展到翻译模型、embedding 模型，或者同一个模型的 thinking / non-thinking 双实例，再按同样结构继续往下追加即可。
+
+准备好配置文件后，我会把它放到 `~/.config/llama-swap/llama-swap.yaml`，然后用下面这条命令启动：
+
+```bash
+llama-swap -config ~/.config/llama-swap/llama-swap.yaml -listen 0.0.0.0:9000
+```
+
+这样一来，本地模型就能以兼容 OpenAI API 的方式统一暴露出来。客户端只需要把 `base_url` 指向 `http://0.0.0.0:9000/v1`，`api_key` 随便填一个字符串即可。进一步把它做成 macOS 的 LaunchAgent 之后，本地就等于有了一个常驻的模型路由层。
+
+##### 在 Mercury 里的实际分工
+
+我在 Mercury 里把这套本地模型链路分成两个 provider：一个指向 `llama-swap`，另一个指向 `oMLX`。然后按任务性质分配模型：
+
+| Agent 任务 | 主模型 | 备份模型 |
+|------|------|------|
+| Summary | `oMLX` 下的 `Qwen3.5-35B`（关闭 thinking） | DeepSeek |
+| Translation | `llama-swap` 下的 `HY-MT1.5` | `oMLX` 下的 `Qwen3.5-35B` |
+| Tagging | `oMLX` 下的 `Qwen3.5-35B`（关闭 thinking） | DeepSeek |
+
+这套分工背后的原则其实很朴素：摘要、标签、翻译这类任务输入输出边界清楚，评判标准也相对稳定，因此非常适合交给本地模型长期承接；而一旦任务进入开放式规划、复杂推理或高风险决策，再回退到云端强模型会更稳妥。
+
 ### 7. SWIFT-READABILITY（Swift 阅读增强库）
 
 在编写 Mercury 的过程中发现现有 Swift 的 Readability 库都没法用。
