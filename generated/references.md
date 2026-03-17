@@ -32,12 +32,48 @@
 | --- | --- | --- |
 | [background-agents.com](https://background-agents.com/) | [第18章: 从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践](/part-4/chapter-17-skeptic-believer)<br>[第19章: 自主代码库 - 背景智能体与软件交付的下一个时代](/part-5/chapter-18-self-driving-codebase) | 2 |
 
+## code.claude.com
+
+| 参考链接 | 被引用章节 | 次数 |
+| --- | --- | --- |
+| [code.claude.com/docs/en/sub-agents](https://code.claude.com/docs/en/sub-agents) | [6.2: Codex 核心能力与技术特点](/part-2/chapter-5-2-codex-capabilities) | 1 |
+
+## code.visualstudio.com
+
+| 参考链接 | 被引用章节 | 次数 |
+| --- | --- | --- |
+| [code.visualstudio.com/docs/copilot/agents/subagents](https://code.visualstudio.com/docs/copilot/agents/subagents) | [6.2: Codex 核心能力与技术特点](/part-2/chapter-5-2-codex-capabilities) | 1 |
+
+## cursor.com
+
+| 参考链接 | 被引用章节 | 次数 |
+| --- | --- | --- |
+| [cursor.com/docs/subagents](https://cursor.com/docs/subagents) | [6.2: Codex 核心能力与技术特点](/part-2/chapter-5-2-codex-capabilities) | 1 |
+
+## developers.openai.com
+
+| 参考链接 | 被引用章节 | 次数 |
+| --- | --- | --- |
+| [developers.openai.com/codex/subagents](https://developers.openai.com/codex/subagents) | [6.2: Codex 核心能力与技术特点](/part-2/chapter-5-2-codex-capabilities) | 1 |
+
 ## docs.anthropic.com
 
 | 参考链接 | 被引用章节 | 次数 |
 | --- | --- | --- |
 | [docs.anthropic.com/en/docs/agents-and-tools/claude-...](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview) | [第20章: 在 Agent-First 的世界中充分发挥 Codex 的威力](/part-5/chapter-19-leveraging-codex) | 1 |
 | [docs.anthropic.com/en/docs/claude-code/overview](https://docs.anthropic.com/en/docs/claude-code/overview) | [第23章: 周末氛围直播复盘——AI Coding 的十倍加速时代](/part-5/chapter-23-vibed-coding-indigo) | 1 |
+
+## docs.mistral.ai
+
+| 参考链接 | 被引用章节 | 次数 |
+| --- | --- | --- |
+| [docs.mistral.ai/mistral-vibe/agents-skills](https://docs.mistral.ai/mistral-vibe/agents-skills#agent-selection) | [6.2: Codex 核心能力与技术特点](/part-2/chapter-5-2-codex-capabilities) | 1 |
+
+## geminicli.com
+
+| 参考链接 | 被引用章节 | 次数 |
+| --- | --- | --- |
+| [geminicli.com/docs/core/subagents](https://geminicli.com/docs/core/subagents/) | [6.2: Codex 核心能力与技术特点](/part-2/chapter-5-2-codex-capabilities) | 1 |
 
 ## gist.github.com
 
@@ -100,6 +136,12 @@
 | [openai.com/index/harness-engineering](https://openai.com/index/harness-engineering/) | [第21章: Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力](/part-5/chapter-20-harness-engineering) | 1 |
 | [openai.com/index/unrolling-the-codex-agent-...](https://openai.com/index/unrolling-the-codex-agent-loop/) | [第21章: Harness Engineering —— 在 Agent-First 世界中充分发挥 Codex 的威力](/part-5/chapter-20-harness-engineering) | 1 |
 
+## opencode.ai
+
+| 参考链接 | 被引用章节 | 次数 |
+| --- | --- | --- |
+| [opencode.ai/docs/agents](https://opencode.ai/docs/agents/) | [6.2: Codex 核心能力与技术特点](/part-2/chapter-5-2-codex-capabilities) | 1 |
+
 ## pencil.dev
 
 | 参考链接 | 被引用章节 | 次数 |
@@ -111,6 +153,12 @@
 | 参考链接 | 被引用章节 | 次数 |
 | --- | --- | --- |
 | [platform.claude.com/docs/en/agents-and-tools/agent-s...](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) | [5.3: Agent Skills（智能体技能）入门](/part-2/chapter-4-3-agent-skills) | 1 |
+
+## simonwillison.net
+
+| 参考链接 | 被引用章节 | 次数 |
+| --- | --- | --- |
+| [simonwillison.net/2026/Mar/16/codex-subagents](https://simonwillison.net/2026/Mar/16/codex-subagents/#atom-everything) | [6.2: Codex 核心能力与技术特点](/part-2/chapter-5-2-codex-capabilities) | 1 |
 
 ## support.claude.com
 

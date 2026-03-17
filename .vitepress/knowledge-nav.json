@@ -16,11 +16,18 @@
       },
       {
         "text": "第4章：Coding Agents 如何重塑工程、产品与设计（EPD）",
-        "link": "/part-1/chapter-4-coding-agents-reshaping-epd"
-      },
-      {
-        "text": "附章A（第1部分延伸）: AI 优先的软件开发时代",
-        "link": "/part-1/chapter-4-ai-first-software-development"
+        "link": "/part-1/chapter-4-coding-agents-reshaping-epd",
+        "items": [
+          {
+            "text": "4.1（第1部分延伸）: AI 优先的软件开发时代",
+            "link": "/part-1/chapter-4-ai-first-software-development"
+          },
+          {
+            "text": "4.2（第1部分延伸）: 对 AI 的认识与智能体（AI Agent）的演进方向",
+            "link": "/part-1/chapter-4-2-ai-cognition-and-agent-evolution"
+          }
+        ],
+        "collapsed": false
       }
     ]
   },

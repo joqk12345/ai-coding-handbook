@@ -11,7 +11,15 @@ architecture_layer:
   - "models-and-tools"
 timeline_era: "autonomous-systems"
 related: []
-references: []
+references:
+  - "https://developers.openai.com/codex/subagents"
+  - "https://simonwillison.net/2026/Mar/16/codex-subagents/#atom-everything"
+  - "https://code.claude.com/docs/en/sub-agents"
+  - "https://geminicli.com/docs/core/subagents/"
+  - "https://code.visualstudio.com/docs/copilot/agents/subagents"
+  - "https://opencode.ai/docs/agents/"
+  - "https://docs.mistral.ai/mistral-vibe/agents-skills#agent-selection"
+  - "https://cursor.com/docs/subagents"
 status: "published"
 display_order: 48
 ---
@@ -116,7 +124,57 @@ Codex 不只是生成器，也可作为“代码理解与迁移助手”：
 
 ---
 
-## 3.2.5 Codex 的工程优势：速度之外的复用价值
+## 3.2.5 能力五：子智能体与自定义代理正在成为行业标配
+
+2026 年 3 月 16 日，OpenAI 为 Codex 发布了 [subagents 文档](https://developers.openai.com/codex/subagents)，把“让一个 agent 去委派另一个 agent”正式提升为 Codex 的原生工作方式之一。Simon Willison 在当天的[文章](https://simonwillison.net/2026/Mar/16/codex-subagents/#atom-everything)中也指出，这说明子智能体正在从单个产品的技巧，演变成 coding agent 的通用设计模式。
+
+更重要的是，这并不是 Codex 一家的特性。到 2026 年 3 月，OpenAI Codex、Claude Code、Gemini CLI、VS Code Copilot、OpenCode、Cursor 都已经把 subagent/custom agent 写成显式能力；Mistral Vibe 虽然抽象更轻，但也已经具备 `task` 式子任务委派。
+
+### 跨产品对照
+
+| 系统 | 典型定义入口 | 关键特征 |
+| --- | --- | --- |
+| [Codex](https://developers.openai.com/codex/subagents) | `.codex/agents/*.toml` | 主打并行 subagent、父会话安全边界继承、以及 CSV fan-out 这类批量子任务工作流。 |
+| [Claude Code](https://code.claude.com/docs/en/sub-agents) | `.claude/agents/`、`~/.claude/agents/`、`--agents` | YAML frontmatter 定义代理，可配置工具白名单/黑名单、模型、memory、background 和 worktree 隔离。 |
+| [Gemini CLI](https://geminicli.com/docs/core/subagents/) | `.gemini/agents/*.md` + `settings.json` | 支持自动委派，也支持 `@agent-name` 强制调用；可用 tool wildcards 和全局 overrides 调整行为。 |
+| [VS Code Copilot](https://code.visualstudio.com/docs/copilot/agents/subagents) | custom agent frontmatter | 通过 `runSubagent` / `agent` 工具触发子代理，可设置 `user-invocable`、`disable-model-invocation` 和 allowed agents 列表。 |
+| [OpenCode](https://opencode.ai/docs/agents/) | `opencode.json` 或 `.opencode/agents/*.md` | 明确区分 `primary` 和 `subagent` 两类代理，支持 `@` 调用、`mode: subagent` 以及 hidden internal agents。 |
+| [Mistral Vibe](https://docs.mistral.ai/mistral-vibe/agents-skills#agent-selection) | `~/.vibe/agents/*.toml` | built-in agent + `task` 委派，子代理独立运行，结果以文本返回；能力更轻，但安全边界更清楚。 |
+| [Cursor](https://cursor.com/docs/subagents) | 官方文档/更新说明 | 强调 subagents 并行执行、各自上下文、可配置 prompt / tool access / model，并作为编辑器与 CLI 的共同能力推出。 |
+
+这些系统在具体文件格式上并不一致，有的用 Markdown + frontmatter，有的用 TOML，有的偏向 JSON 配置；但它们收敛出的核心抽象非常一致：**主 agent 做协调，子 agent 做专职工作；子 agent 有独立上下文、受限工具面和更强的角色约束。**
+
+从这个角度看，subagent 不是“多开几个窗口”那么简单，而是把一个大任务拆成“协调者 + 专家代理”的执行结构。
+
+这项能力在工程上通常可以拆成三层：
+
+- **delegation**：把复杂任务拆成边界清晰的子任务，由主 agent 委派、等待并汇总结果。
+- **agent profiles**：允许用户定义 reviewer、planner、explorer、docs-researcher 这类专职代理，为不同任务绑定不同的系统提示、模型和工具集合。
+- **isolation controls**：对子代理附加只读工具、worktree、memory scope、approval policy 等约束，防止它在错误方向上越跑越远。
+
+### 价值
+
+- **隔离上下文**：把探索、检索、测试、审查等子任务放进独立上下文，减少主线程被无关细节污染。
+- **并行展开**：这些官方文档已经普遍把代码审计、日志分析、架构对照、代码库探索、多视角 review 等模式纳入示例，说明子任务拆分不只是串行委派，而是明确面向并行执行设计。
+- **角色专业化**：可以定义 reviewer、debugger、docs-writer、migration planner 等专职 agent，让不同任务拥有不同的行为边界。
+
+### 风险
+
+- **并发写冲突**：多个 subagent 同时修改同一片代码时，收益很容易被合并和回滚成本抵消。
+- **错误分解放大**：如果主 agent 把问题拆错了，多个子智能体只会更快地把错误方向做深。
+- **配置债务**：agent 角色越多，维护成本越高，最终可能把单一 prompt 的复杂度，转移成一组难以维护的代理配置。
+
+### 使用建议
+
+- 优先把 subagent 用在“读多写少”的任务上，例如代码库探索、差异比较、日志分析、文档汇总和测试排查。
+- custom agent 的说明要聚焦“职责边界”和“输出格式”，而不是写成长篇泛化人格描述。
+- 对写操作保持收敛：让 explorer、reviewer 一类 agent 尽量只读，把最终修改集中回主 agent 或单一执行 agent。
+- 尽量把“谁可以再委派谁”做成显式约束。VS Code、Claude Code、OpenCode 这类系统都已经提供了 agent allowlist、hidden internal agent 或工具白名单，本质上都是为了防止错误路由和能力漂移。
+- Codex、Claude Code 这类系统允许子智能体继承父会话的部分默认边界，但实际使用时仍应优先考虑更严格的隔离，而不是为了省一步确认去放宽权限。
+
+---
+
+## 3.2.6 Codex 的工程优势：速度之外的复用价值
 
 团队采用 Codex 的收益，不止是写代码更快，还包括：
 
@@ -128,7 +186,7 @@ Codex 不只是生成器，也可作为“代码理解与迁移助手”：
 
 ---
 
-## 3.2.6 局限性与防护清单
+## 3.2.7 局限性与防护清单
 
 无论模型多强，都要长期坚持以下防护：
 
@@ -141,13 +199,14 @@ Codex 不只是生成器，也可作为“代码理解与迁移助手”：
 
 ---
 
-## 3.2.7 小结
+## 3.2.8 小结
 
-Codex 的核心能力可以概括为四件事：
+Codex 的核心能力可以概括为五件事：
 
 1. 快速生成（Generate）
 2. 准确理解（Understand）
 3. 辅助修复（Debug）
-4. 支持演进（Refactor/Migrate）
+4. 委派协作（Delegate）
+5. 支持演进（Refactor/Migrate）
 
 但真正决定交付质量的，是这些能力是否被放进可验证、可回归、可追踪的工程闭环中。

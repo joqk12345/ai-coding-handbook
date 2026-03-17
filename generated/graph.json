@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-03-17T15:20:40.608Z",
+  "generatedAt": "2026-03-17T15:35:09.473Z",
   "nodeCount": 83,
-  "edgeCount": 145,
+  "edgeCount": 153,
   "nodes": [
     {
       "id": "readme",
@@ -695,7 +695,16 @@
         ],
         "timeline_era": "autonomous-systems",
         "related": [],
-        "references": [],
+        "references": [
+          "https://developers.openai.com/codex/subagents",
+          "https://simonwillison.net/2026/Mar/16/codex-subagents/#atom-everything",
+          "https://code.claude.com/docs/en/sub-agents",
+          "https://geminicli.com/docs/core/subagents/",
+          "https://code.visualstudio.com/docs/copilot/agents/subagents",
+          "https://opencode.ai/docs/agents/",
+          "https://docs.mistral.ai/mistral-vibe/agents-skills#agent-selection",
+          "https://cursor.com/docs/subagents"
+        ],
         "status": "published",
         "display_order": 25,
         "summary_order": 25,
@@ -1975,6 +1984,46 @@
     {
       "source": "part-2-chapter-4-14-git-worktree-mode",
       "target": "https://x.com/trq212/status/1909886882662789170",
+      "type": "references"
+    },
+    {
+      "source": "part-2-chapter-5-2-codex-capabilities",
+      "target": "https://developers.openai.com/codex/subagents",
+      "type": "references"
+    },
+    {
+      "source": "part-2-chapter-5-2-codex-capabilities",
+      "target": "https://simonwillison.net/2026/Mar/16/codex-subagents/#atom-everything",
+      "type": "references"
+    },
+    {
+      "source": "part-2-chapter-5-2-codex-capabilities",
+      "target": "https://code.claude.com/docs/en/sub-agents",
+      "type": "references"
+    },
+    {
+      "source": "part-2-chapter-5-2-codex-capabilities",
+      "target": "https://geminicli.com/docs/core/subagents/",
+      "type": "references"
+    },
+    {
+      "source": "part-2-chapter-5-2-codex-capabilities",
+      "target": "https://code.visualstudio.com/docs/copilot/agents/subagents",
+      "type": "references"
+    },
+    {
+      "source": "part-2-chapter-5-2-codex-capabilities",
+      "target": "https://opencode.ai/docs/agents/",
+      "type": "references"
+    },
+    {
+      "source": "part-2-chapter-5-2-codex-capabilities",
+      "target": "https://docs.mistral.ai/mistral-vibe/agents-skills#agent-selection",
+      "type": "references"
+    },
+    {
+      "source": "part-2-chapter-5-2-codex-capabilities",
+      "target": "https://cursor.com/docs/subagents",
       "type": "references"
     },
     {
