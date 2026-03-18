@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-03-18T10:36:13.582Z",
+  "generatedAt": "2026-03-18T23:15:24.420Z",
   "nodeCount": 90,
-  "edgeCount": 163,
+  "edgeCount": 167,
   "nodes": [
     {
       "id": "readme",
@@ -1357,7 +1357,11 @@
         "timeline_era": "autonomous-systems",
         "related": [],
         "references": [
-          "https://x.com/kishan_dahya/status/2028971339974099317"
+          "https://x.com/kishan_dahya/status/2028971339974099317",
+          "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents",
+          "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2",
+          "https://builders.ramp.com/post/why-we-built-our-background-agent",
+          "https://rywalker.com/research/in-house-coding-agents"
         ],
         "status": "published",
         "display_order": 46,
@@ -2216,6 +2220,26 @@
     {
       "source": "part-5-chapter-18-self-driving-codebase",
       "target": "https://x.com/kishan_dahya/status/2028971339974099317",
+      "type": "references"
+    },
+    {
+      "source": "part-5-chapter-18-self-driving-codebase",
+      "target": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents",
+      "type": "references"
+    },
+    {
+      "source": "part-5-chapter-18-self-driving-codebase",
+      "target": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2",
+      "type": "references"
+    },
+    {
+      "source": "part-5-chapter-18-self-driving-codebase",
+      "target": "https://builders.ramp.com/post/why-we-built-our-background-agent",
+      "type": "references"
+    },
+    {
+      "source": "part-5-chapter-18-self-driving-codebase",
+      "target": "https://rywalker.com/research/in-house-coding-agents",
       "type": "references"
     },
     {

@@ -32,6 +32,12 @@
 | --- | --- | --- |
 | [background-agents.com](https://background-agents.com/) | [第18章: 从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践](/part-4/chapter-17-skeptic-believer) | 1 |
 
+## builders.ramp.com
+
+| 参考链接 | 被引用章节 | 次数 |
+| --- | --- | --- |
+| [builders.ramp.com/post/why-we-built-our-background...](https://builders.ramp.com/post/why-we-built-our-background-agent) | [第19章: 自主代码库 - 背景智能体与软件交付的下一个时代](/part-5/chapter-18-self-driving-codebase) | 1 |
+
 ## code.claude.com
 
 | 参考链接 | 被引用章节 | 次数 |
@@ -147,11 +153,24 @@
 | --- | --- | --- |
 | [platform.claude.com/docs/en/agents-and-tools/agent-s...](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) | [5.3: Agent Skills（智能体技能）入门](/part-2/chapter-4-3-agent-skills) | 1 |
 
+## rywalker.com
+
+| 参考链接 | 被引用章节 | 次数 |
+| --- | --- | --- |
+| [rywalker.com/research/in-house-coding-agents](https://rywalker.com/research/in-house-coding-agents) | [第19章: 自主代码库 - 背景智能体与软件交付的下一个时代](/part-5/chapter-18-self-driving-codebase) | 1 |
+
 ## simonwillison.net
 
 | 参考链接 | 被引用章节 | 次数 |
 | --- | --- | --- |
 | [simonwillison.net/2026/Mar/16/codex-subagents](https://simonwillison.net/2026/Mar/16/codex-subagents/#atom-everything) | [6.2: Codex 核心能力与技术特点](/part-2/chapter-5-2-codex-capabilities) | 1 |
+
+## stripe.dev
+
+| 参考链接 | 被引用章节 | 次数 |
+| --- | --- | --- |
+| [stripe.dev/blog/minions-stripes-one-shot-en...](https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents) | [第19章: 自主代码库 - 背景智能体与软件交付的下一个时代](/part-5/chapter-18-self-driving-codebase) | 1 |
+| [stripe.dev/blog/minions-stripes-one-shot-en...](https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2) | [第19章: 自主代码库 - 背景智能体与软件交付的下一个时代](/part-5/chapter-18-self-driving-codebase) | 1 |
 
 ## support.claude.com
 
