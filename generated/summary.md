@@ -80,6 +80,7 @@
 - [第27章: Harness Engineering 框架——从漂移的 Agent 到复合的系统](/part-5/chapter-27-harness-engineering-framework)
     - [27.1: Why AI Agents Need a Harness：Lessons from Utah](/part-5/chapter-27-1-why-ai-agents-need-a-harness-lessons-from-utah)
     - [27.2: The Anatomy of an Agent Harness](/part-5/chapter-27-2-the-anatomy-of-an-agent-harness)
+    - [27.3: How Coding Agents Work：LLM、系统提示与工具循环](/part-5/chapter-27-3-how-coding-agents-work)
 - [第28章: 研究品味——当 AI 让工程师商品化，什么变得稀缺](/part-5/chapter-28-research-taste)
 - [第29章: 自主上下文压缩——让 Agent 掌控自己的记忆](/part-5/chapter-29-autonomous-context-compression)
 - [第30章: AgentOS——从应用孤岛到自然语言驱动的数据生态](/part-5/chapter-29-agentos-from-silos-to-nui)

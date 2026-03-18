@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-03-17T15:44:11.540Z",
-  "nodeCount": 83,
-  "edgeCount": 153,
+  "generatedAt": "2026-03-18T00:04:39.299Z",
+  "nodeCount": 90,
+  "edgeCount": 165,
   "nodes": [
     {
       "id": "readme",
@@ -1710,6 +1710,80 @@
       }
     },
     {
+      "id": "part-5-chapter-27-3-how-coding-agents-work",
+      "label": "27.3: How Coding Agents Work：LLM、系统提示与工具循环",
+      "type": "article",
+      "file": "part-5/chapter-27-3-how-coding-agents-work.md",
+      "metadata": {
+        "id": "part-5-chapter-27-3-how-coding-agents-work",
+        "title": "27.3 How Coding Agents Work：LLM、系统提示与工具循环",
+        "slug": "part-5-chapter-27-3-how-coding-agents-work",
+        "date": "2025-01-01",
+        "type": "article",
+        "topics": [
+          "coding-agents",
+          "tools"
+        ],
+        "concepts": [
+          "Token Budget",
+          "System Prompt",
+          "Tool Loop",
+          "Reasoning",
+          "Chat Template"
+        ],
+        "tools": [
+          "OpenAI Codex",
+          "Claude Code",
+          "Gemini CLI"
+        ],
+        "architecture_layer": [
+          "systems-and-governance"
+        ],
+        "timeline_era": "autonomous-systems",
+        "related": [
+          "part-5-chapter-27-harness-engineering-framework",
+          "part-5-chapter-27-2-the-anatomy-of-an-agent-harness",
+          "part-4-chapter-12-building-agent"
+        ],
+        "references": [],
+        "status": "published",
+        "display_order": 57,
+        "summary_order": 57,
+        "summary_section": "第五部分：自主代码库 (第19-30章)",
+        "summary_title": "27.3: How Coding Agents Work：LLM、系统提示与工具循环"
+      }
+    },
+    {
+      "id": "concept:Token Budget",
+      "label": "Token Budget",
+      "type": "concept"
+    },
+    {
+      "id": "concept:System Prompt",
+      "label": "System Prompt",
+      "type": "concept"
+    },
+    {
+      "id": "concept:Tool Loop",
+      "label": "Tool Loop",
+      "type": "concept"
+    },
+    {
+      "id": "concept:Reasoning",
+      "label": "Reasoning",
+      "type": "concept"
+    },
+    {
+      "id": "concept:Chat Template",
+      "label": "Chat Template",
+      "type": "concept"
+    },
+    {
+      "id": "tool:Gemini CLI",
+      "label": "Gemini CLI",
+      "type": "tool"
+    },
+    {
       "id": "part-5-chapter-28-research-taste",
       "label": "第28章: 研究品味——当 AI 让工程师商品化，什么变得稀缺",
       "type": "article",
@@ -1744,8 +1818,8 @@
         ],
         "references": [],
         "status": "published",
-        "display_order": 57,
-        "summary_order": 57,
+        "display_order": 58,
+        "summary_order": 58,
         "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第28章: 研究品味——当 AI 让工程师商品化，什么变得稀缺"
       }
@@ -1801,8 +1875,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 58,
-        "summary_order": 58,
+        "display_order": 59,
+        "summary_order": 59,
         "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第29章: 自主上下文压缩——让 Agent 掌控自己的记忆"
       }
@@ -1833,8 +1907,8 @@
           "https://arxiv.org/html/2603.08938v1"
         ],
         "status": "published",
-        "display_order": 59,
-        "summary_order": 59,
+        "display_order": 60,
+        "summary_order": 60,
         "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第30章: AgentOS——从应用孤岛到自然语言驱动的数据生态"
       }
@@ -1860,8 +1934,8 @@
         "related": [],
         "references": [],
         "status": "published",
-        "display_order": 60,
-        "summary_order": 60,
+        "display_order": 61,
+        "summary_order": 61,
         "summary_section": "附录",
         "summary_title": "附录A: 常用AI工具速查表"
       }
@@ -1893,8 +1967,8 @@
           "https://github.com/heilcheng/awesome-agent-skills/tree/main"
         ],
         "status": "published",
-        "display_order": 61,
-        "summary_order": 61,
+        "display_order": 62,
+        "summary_order": 62,
         "summary_section": "附录",
         "summary_title": "附录B: 推荐资源与社区"
       }
@@ -2287,6 +2361,61 @@
       "type": "related"
     },
     {
+      "source": "part-5-chapter-27-3-how-coding-agents-work",
+      "target": "concept:Token Budget",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-27-3-how-coding-agents-work",
+      "target": "concept:System Prompt",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-27-3-how-coding-agents-work",
+      "target": "concept:Tool Loop",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-27-3-how-coding-agents-work",
+      "target": "concept:Reasoning",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-27-3-how-coding-agents-work",
+      "target": "concept:Chat Template",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-27-3-how-coding-agents-work",
+      "target": "tool:OpenAI Codex",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-27-3-how-coding-agents-work",
+      "target": "tool:Claude Code",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-27-3-how-coding-agents-work",
+      "target": "tool:Gemini CLI",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-27-3-how-coding-agents-work",
+      "target": "part-5-chapter-27-harness-engineering-framework",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-27-3-how-coding-agents-work",
+      "target": "part-5-chapter-27-2-the-anatomy-of-an-agent-harness",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-27-3-how-coding-agents-work",
+      "target": "part-4-chapter-12-building-agent",
+      "type": "related"
+    },
+    {
       "source": "part-5-chapter-28-research-taste",
       "target": "concept:Research vs Engineering",
       "type": "related"
@@ -2643,6 +2772,11 @@
     },
     {
       "source": "part-5-chapter-27-2-the-anatomy-of-an-agent-harness",
+      "target": "part-5-chapter-27-3-how-coding-agents-work",
+      "type": "evolution"
+    },
+    {
+      "source": "part-5-chapter-27-3-how-coding-agents-work",
       "target": "part-5-chapter-28-research-taste",
       "type": "evolution"
     },

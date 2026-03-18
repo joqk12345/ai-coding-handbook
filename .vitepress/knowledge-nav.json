@@ -253,6 +253,10 @@
           {
             "text": "27.2: The Anatomy of an Agent Harness",
             "link": "/part-5/chapter-27-2-the-anatomy-of-an-agent-harness"
+          },
+          {
+            "text": "27.3: How Coding Agents Work：LLM、系统提示与工具循环",
+            "link": "/part-5/chapter-27-3-how-coding-agents-work"
           }
         ],
         "collapsed": false
