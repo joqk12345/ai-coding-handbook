@@ -18,6 +18,7 @@ references:
   - "https://openai.com/index/harness-engineering/"
   - "https://openai.com/index/unrolling-the-codex-agent-loop/"
   - "https://background-agents.com/"
+  - "https://x.com/kishan_dahya/status/2028971339974099317"
   - "https://github.com/mindfold-ai/Trellis"
   - "https://github.com/runesleo/claude-code-workflow"
   - "https://x.com/systematicls/status/2028814227004395561"
@@ -62,6 +63,7 @@ display_order: 70
 | 资源名称 | 链接 | 描述 |
 |---------|------|------|
 | Background Agents | [background-agents.com](https://background-agents.com/) | 背景智能体的概念、架构和最佳实践 |
+| Enough About Harnesses, Your Org Needs Its Own Coding Agent | [X/Twitter](https://x.com/kishan_dahya/status/2028971339974099317) | 以 Stripe、Ramp、Coinbase 为样本，系统拆解组织级 Coding Agent 的 7 个关键决策（Harness、Sandbox、Context、Orchestration、Validation、Invocation、Adoption） |
 
 ---
 

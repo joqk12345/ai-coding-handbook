@@ -30,7 +30,7 @@
 
 | 参考链接 | 被引用章节 | 次数 |
 | --- | --- | --- |
-| [background-agents.com](https://background-agents.com/) | [第18章: 从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践](/part-4/chapter-17-skeptic-believer)<br>[第19章: 自主代码库 - 背景智能体与软件交付的下一个时代](/part-5/chapter-18-self-driving-codebase) | 2 |
+| [background-agents.com](https://background-agents.com/) | [第18章: 从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践](/part-4/chapter-17-skeptic-believer) | 1 |
 
 ## code.claude.com
 
@@ -103,13 +103,6 @@
 | [github.com/shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) | [第18章: 从怀疑者到信徒 —— 一位AI编码怀疑论者的深度实践](/part-4/chapter-17-skeptic-believer) | 1 |
 | [github.com/shareAI-lab/learn-claude-code/bl...](https://github.com/shareAI-lab/learn-claude-code/blob/main/docs/zh/s01-the-agent-loop.md) | [第13章: 从零构建 AI Agent](/part-4/chapter-12-building-agent) | 1 |
 
-## google.com
-
-| 参考链接 | 被引用章节 | 次数 |
-| --- | --- | --- |
-| [google.com/search](https://www.google.com/search?q=Don%27t+Build+Your+Own+Sandbox+Lou+Bichard+Ona) | [第19章: 自主代码库 - 背景智能体与软件交付的下一个时代](/part-5/chapter-18-self-driving-codebase) | 1 |
-| [google.com/search](https://www.google.com/search?q=Industrializing+Software+Development+Christian+Weichel+Ona) | [第19章: 自主代码库 - 背景智能体与软件交付的下一个时代](/part-5/chapter-18-self-driving-codebase) | 1 |
-
 ## lennyspodcast.com
 
 | 参考链接 | 被引用章节 | 次数 |
@@ -174,6 +167,7 @@
 | [x.com/hwchase17/status/203105111516980...](https://x.com/hwchase17/status/2031051115169808685) | [第4章：Coding Agents 如何重塑工程、产品与设计（EPD）](/part-1/chapter-4-coding-agents-reshaping-epd) | 1 |
 | [x.com/i/collections/1841683833448468480](https://x.com/i/collections/1841683833448468480) | [第23章: 周末氛围直播复盘——AI Coding 的十倍加速时代](/part-5/chapter-23-vibed-coding-indigo) | 1 |
 | [x.com/karpathy/status/2031135152349524125](https://x.com/karpathy/status/2031135152349524125?s=20) | [第24章: Autoresearch 实测提速 11% —— Agent 自主调参正在成为”最终战场”](/part-5/chapter-24-autoresearch-nanochat) | 1 |
+| [x.com/kishan_dahya/status/202897133997...](https://x.com/kishan_dahya/status/2028971339974099317) | [第19章: 自主代码库 - 背景智能体与软件交付的下一个时代](/part-5/chapter-18-self-driving-codebase) | 1 |
 | [x.com/odysseus0z/status/20304167581386...](https://x.com/odysseus0z/status/2030416758138634583) | [第25章: 从”拧阀门”到”掌舵”——Harness Engineering 的控制论转向](/part-5/chapter-25-cybernetic-steering) | 1 |
 | [x.com/trq212/status/1909886882662789170](https://x.com/trq212/status/1909886882662789170) | [5.14: Git Worktree 模式与 Agent 工具设计艺术](/part-2/chapter-4-14-git-worktree-mode) | 1 |
 

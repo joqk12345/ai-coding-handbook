@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-03-18T00:26:51.968Z",
+  "generatedAt": "2026-03-18T10:35:43.660Z",
   "nodeCount": 90,
-  "edgeCount": 165,
+  "edgeCount": 163,
   "nodes": [
     {
       "id": "readme",
@@ -1357,9 +1357,7 @@
         "timeline_era": "autonomous-systems",
         "related": [],
         "references": [
-          "https://background-agents.com/",
-          "https://www.google.com/search?q=Don%27t+Build+Your+Own+Sandbox+Lou+Bichard+Ona",
-          "https://www.google.com/search?q=Industrializing+Software+Development+Christian+Weichel+Ona"
+          "https://x.com/kishan_dahya/status/2028971339974099317"
         ],
         "status": "published",
         "display_order": 46,
@@ -2217,17 +2215,7 @@
     },
     {
       "source": "part-5-chapter-18-self-driving-codebase",
-      "target": "https://background-agents.com/",
-      "type": "references"
-    },
-    {
-      "source": "part-5-chapter-18-self-driving-codebase",
-      "target": "https://www.google.com/search?q=Don%27t+Build+Your+Own+Sandbox+Lou+Bichard+Ona",
-      "type": "references"
-    },
-    {
-      "source": "part-5-chapter-18-self-driving-codebase",
-      "target": "https://www.google.com/search?q=Industrializing+Software+Development+Christian+Weichel+Ona",
+      "target": "https://x.com/kishan_dahya/status/2028971339974099317",
       "type": "references"
     },
     {
