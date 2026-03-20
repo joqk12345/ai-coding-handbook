@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-03-18T23:15:24.420Z",
-  "nodeCount": 90,
-  "edgeCount": 167,
+  "generatedAt": "2026-03-20T10:31:55.294Z",
+  "nodeCount": 98,
+  "edgeCount": 176,
   "nodes": [
     {
       "id": "readme",
@@ -1346,22 +1346,39 @@
         "id": "part-5-chapter-18-self-driving-codebase",
         "title": "第20章：自主代码库 —— 背景智能体与软件交付的下一个时代",
         "slug": "part-5-chapter-18-self-driving-codebase",
-        "date": "2025-01-01",
+        "date": "2026-03-20",
         "type": "article",
-        "topics": [],
-        "concepts": [],
-        "tools": [],
+        "topics": [
+          "coding-agents",
+          "architecture",
+          "workflow"
+        ],
+        "concepts": [
+          "harness-engineering",
+          "context-management",
+          "multi-agent"
+        ],
+        "tools": [
+          "Open-SWE",
+          "LangGraph",
+          "Deep Agents",
+          "Slack",
+          "Linear"
+        ],
         "architecture_layer": [
+          "models-and-tools",
+          "workflows-and-practices",
           "systems-and-governance"
         ],
         "timeline_era": "autonomous-systems",
         "related": [],
         "references": [
-          "https://x.com/kishan_dahya/status/2028971339974099317",
           "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents",
           "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2",
           "https://builders.ramp.com/post/why-we-built-our-background-agent",
-          "https://rywalker.com/research/in-house-coding-agents"
+          "https://rywalker.com/research/in-house-coding-agents",
+          "https://github.com/langchain-ai/open-swe",
+          "https://x.com/kishan_dahya/status/2028971339974099317"
         ],
         "status": "published",
         "display_order": 46,
@@ -1369,6 +1386,46 @@
         "summary_section": "第五部分：自主代码库 (第19-30章)",
         "summary_title": "第19章: 自主代码库 - 背景智能体与软件交付的下一个时代"
       }
+    },
+    {
+      "id": "concept:harness-engineering",
+      "label": "harness-engineering",
+      "type": "concept"
+    },
+    {
+      "id": "concept:context-management",
+      "label": "context-management",
+      "type": "concept"
+    },
+    {
+      "id": "concept:multi-agent",
+      "label": "multi-agent",
+      "type": "concept"
+    },
+    {
+      "id": "tool:Open-SWE",
+      "label": "Open-SWE",
+      "type": "tool"
+    },
+    {
+      "id": "tool:LangGraph",
+      "label": "LangGraph",
+      "type": "tool"
+    },
+    {
+      "id": "tool:Deep Agents",
+      "label": "Deep Agents",
+      "type": "tool"
+    },
+    {
+      "id": "tool:Slack",
+      "label": "Slack",
+      "type": "tool"
+    },
+    {
+      "id": "tool:Linear",
+      "label": "Linear",
+      "type": "tool"
     },
     {
       "id": "part-5-chapter-19-leveraging-codex",
@@ -2219,8 +2276,43 @@
     },
     {
       "source": "part-5-chapter-18-self-driving-codebase",
-      "target": "https://x.com/kishan_dahya/status/2028971339974099317",
-      "type": "references"
+      "target": "concept:harness-engineering",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-18-self-driving-codebase",
+      "target": "concept:context-management",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-18-self-driving-codebase",
+      "target": "concept:multi-agent",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-18-self-driving-codebase",
+      "target": "tool:Open-SWE",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-18-self-driving-codebase",
+      "target": "tool:LangGraph",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-18-self-driving-codebase",
+      "target": "tool:Deep Agents",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-18-self-driving-codebase",
+      "target": "tool:Slack",
+      "type": "related"
+    },
+    {
+      "source": "part-5-chapter-18-self-driving-codebase",
+      "target": "tool:Linear",
+      "type": "related"
     },
     {
       "source": "part-5-chapter-18-self-driving-codebase",
@@ -2240,6 +2332,16 @@
     {
       "source": "part-5-chapter-18-self-driving-codebase",
       "target": "https://rywalker.com/research/in-house-coding-agents",
+      "type": "references"
+    },
+    {
+      "source": "part-5-chapter-18-self-driving-codebase",
+      "target": "https://github.com/langchain-ai/open-swe",
+      "type": "references"
+    },
+    {
+      "source": "part-5-chapter-18-self-driving-codebase",
+      "target": "https://x.com/kishan_dahya/status/2028971339974099317",
       "type": "references"
     },
     {

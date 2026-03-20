@@ -66,7 +66,7 @@
 | 第17章 | `workflow`, `system` |
 | 第18章 | `workflow`, `org` |
 | 第19章（从怀疑到实践） | `workflow`, `org` |
-| 第19章（自主代码库） | `system`, `org` |
+| 第19章（自主代码库） | `tooling` |
 | 第20章 | `system`, `org` |
 | 第21章 | `system`, `org` |
 | 第22章 | `system`, `org`, `workflow` |
