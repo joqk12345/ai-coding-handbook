@@ -2,21 +2,35 @@
 id: "part-5-chapter-18-self-driving-codebase"
 title: "第20章：自主代码库 —— 背景智能体与软件交付的下一个时代"
 slug: "part-5-chapter-18-self-driving-codebase"
-date: "2025-01-01"
+date: "2026-03-20"
 type: "article"
-topics: []
-concepts: []
-tools: []
+topics:
+  - "coding-agents"
+  - "architecture"
+  - "workflow"
+concepts:
+  - "harness-engineering"
+  - "context-management"
+  - "multi-agent"
+tools:
+  - "Open-SWE"
+  - "LangGraph"
+  - "Deep Agents"
+  - "Slack"
+  - "Linear"
 architecture_layer:
+  - "models-and-tools"
+  - "workflows-and-practices"
   - "systems-and-governance"
 timeline_era: "autonomous-systems"
 related: []
 references:
-  - "https://x.com/kishan_dahya/status/2028971339974099317"
   - "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents"
   - "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2"
   - "https://builders.ramp.com/post/why-we-built-our-background-agent"
   - "https://rywalker.com/research/in-house-coding-agents"
+  - "https://github.com/langchain-ai/open-swe"
+  - "https://x.com/kishan_dahya/status/2028971339974099317"
 status: "published"
 display_order: 63
 ---
@@ -81,6 +95,18 @@ Ramp 这个案例额外揭示了两点：
 
 这篇文章还有一个很重要的判断：**大多数团队仍然应该 buy，而不是 build。** 其给出的经验门槛是：通常要到 **1000+ 工程师**、**1000 万行以上代码**、有可调度的 DevEx 团队、并且存在专有框架或强合规约束时，自研才开始显得合理。否则，更现实的路径通常是先购买现成 agent，再围绕自身流程补 sandboxes、验证和集成层。
 
+### Open-SWE：把「大厂内建 Agent 架构」产品化为开源基线
+
+LangChain 在 2026 年 3 月发布的 [Open-SWE](https://github.com/langchain-ai/open-swe) 值得单独补一笔：它不是在讲抽象理念，而是把 Stripe / Ramp / Coinbase 这类组织已经验证过的架构，打包成可直接部署的开源框架。
+
+从工程视角看，Open-SWE 的意义主要有三点：
+
+- **把“组织级 agent”降维成可复用模板**：默认就包含云沙箱、Slack/Linear/GitHub 触发、自动提交与开 PR、运行时消息回注等关键链路。
+- **将架构共识显式化**：隔离执行环境、精选工具集、上下文预注入、确定性中间件兜底，这些都已经内建为默认设计，不再需要每个团队从零拼装。
+- **给中型团队一条现实路径**：过去“自研平台”门槛过高，而 Open-SWE 提供了可组合的中间层（Deep Agents + LangGraph），让团队可以先落地，再按需要替换沙箱、模型、工具和治理流程。
+
+这意味着行业从“只有超大公司能做组织级 coding agents”，开始进入“更多团队可以基于开源框架复现同类能力”的阶段。
+
 ---
 
 ## 0. 为什么这是“组织能力”而不是“个人效率插件”
@@ -96,7 +122,7 @@ Ramp 这个案例额外揭示了两点：
 
 ## 1) Agent Harness：先决定你的底座策略
 
-三家公司给出了三种不同路线：
+四种路线已经逐步成型：
 
 ### Stripe：Fork
 - 基于开源 coding agent 分叉，再加入强约束编排。
@@ -119,6 +145,7 @@ Ramp 这个案例额外揭示了两点：
 - Fork = 更快落地 + 一定控制
 - Compose = 升级路径 + 框架耦合
 - Build = 最大自主 + 最大负担
+- OSS Baseline（Open-SWE）= 最短路径复用行业最佳实践 + 保留二次定制空间
 
 ---
 

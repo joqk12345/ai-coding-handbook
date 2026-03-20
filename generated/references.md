@@ -102,6 +102,7 @@
 | [github.com/heimanba/order-analysis-skill/bl...](https://github.com/heimanba/order-analysis-skill/blob/main/README.md) | [5.3: Agent Skills（智能体技能）入门](/part-2/chapter-4-3-agent-skills) | 1 |
 | [github.com/heimanba/order-analysis-skill/bl...](https://github.com/heimanba/order-analysis-skill/blob/main/SKILL.md) | [5.3: Agent Skills（智能体技能）入门](/part-2/chapter-4-3-agent-skills) | 1 |
 | [github.com/karpathy/nanochat/commit/6ed7d1d...](https://github.com/karpathy/nanochat/commit/6ed7d1d82cee16c2e26f45d559ad3338447a6c1b) | [第24章: Autoresearch 实测提速 11% —— Agent 自主调参正在成为”最终战场”](/part-5/chapter-24-autoresearch-nanochat) | 1 |
+| [github.com/langchain-ai/open-swe](https://github.com/langchain-ai/open-swe) | [第19章: 自主代码库 - 背景智能体与软件交付的下一个时代](/part-5/chapter-18-self-driving-codebase) | 1 |
 | [github.com/mindfold-ai/Trellis](https://github.com/mindfold-ai/Trellis) | [第17章: Trellis —— 为 AI 设置规则的开放框架](/part-4/chapter-16-trellis) | 1 |
 | [github.com/openai/codex](https://github.com/openai/codex) | [第20章: 在 Agent-First 的世界中充分发挥 Codex 的威力](/part-5/chapter-19-leveraging-codex) | 1 |
 | [github.com/runesleo/claude-code-workflow](https://github.com/runesleo/claude-code-workflow) | [第16章: Claude Code Workflow —— 经过实战检验的 Agent 工作流模板](/part-4/chapter-15-claude-workflow) | 1 |
